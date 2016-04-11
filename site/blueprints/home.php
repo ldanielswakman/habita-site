@@ -6,6 +6,10 @@ fields:
   title:
     label: Title
     type:  text
+  tagline:
+    label: Tagline
+    type: text
+    icon: comment-o
   text:
     label: Text
     type:  textarea

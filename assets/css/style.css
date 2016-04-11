@@ -1,0 +1,69 @@
+/* --- CSS reset --- */
+a,abbr,address,blockquote,body,caption,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,form,h1,h2,h3,h4,h5,h6,html,iframe,img,ins,label,legend,li,object,ol,p,pre,q,small,span,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,ul{border:0;margin:0;padding:0}article,aside,figcaption,figure,figure img,footer,header,hgroup,nav,object,section,video{display:block}a img{border:0}figure{position:relative}figure img{width:100%}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+figure { margin: 0; }
+
+
+
+/* --- Color classes --- */
+.c-textlight {
+  color: #d3d4d5;
+}
+.c-orangedark {
+  color: #e17046;
+}
+
+
+/* --- Utility classes --- */
+.u-mb50 {
+  margin-bottom: 50px;
+}
+.u-aligncenter {
+  text-align: center;
+}
+
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/anemptyspace.jpg');
+  background-size: cover;
+  background-position: center 25%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  font-size: 100%;
+  font-family: "Karla", Arial, sans-serif;
+  font-kerning: normal;
+  line-height: 1.5em;
+
+  color: #72716c;
+
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-height: 100vh;
+  min-width: 200px;
+  max-width: 40vw;
+  padding: 50px;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width: 991px) {
+  main {
+    max-width: 60vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    left: 0;
+    top: 50vw;
+    max-width: 100vw;
+    width: 100vw;
+  }
+}

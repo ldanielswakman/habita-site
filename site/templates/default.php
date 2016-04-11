@@ -1,11 +1,13 @@
 <?php snippet('header') ?>
 
-  <main class="main" role="main">
+  <main>
 
-    <div class="text">
-      <h1><?php echo $page->title()->html() ?></h1>
-      <?php echo $page->text()->kirbytext() ?>
-    </div>
+    <header class="u-aligncenter u-mb50">
+      <h1 class="c-textlight">Habita</h1>
+      <h2 class="c-orangedark"><?= $page->tagline()->kirbytext() ?></h2>
+    </header>
+
+    <?= $page->text()->kirbytext() ?>
 
   </main>
 

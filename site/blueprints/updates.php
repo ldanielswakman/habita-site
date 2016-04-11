@@ -2,12 +2,9 @@
 
 title: Projects
 pages:
-  template: project
+  template: update
 files: false
 fields:
   title:
     label: Title
     type:  text
-  text:
-    label: Text
-    type:  textarea
