@@ -8,9 +8,9 @@ fields:
   title:
     label: Title
     type:  text
-  year:
-    label: Year
-    type:  text
+  date:
+    label: Publish date
+    type:  date
   text:
     label: Text
     type:  textarea

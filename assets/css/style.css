@@ -8,18 +8,44 @@ figure { margin: 0; }
 .c-textlight {
   color: #d3d4d5;
 }
+.c-orange {
+  color: #ff5000;
+}
 .c-orangedark {
   color: #e17046;
+}
+.bg-white {
+  background-color: #fff !important;
 }
 
 
 /* --- Utility classes --- */
+.u-mb20 {
+  margin-bottom: 20px !important;
+}
 .u-mb50 {
-  margin-bottom: 50px;
+  margin-bottom: 50px !important;
+}
+.u-pa20 {
+  padding: 20px !important;
+}
+.u-block {
+  display: block !important;
+}
+.u-inlineblock {
+  display: inline-block !important;
 }
 .u-aligncenter {
   text-align: center;
 }
+.u-fullwidth {
+  width: 100% !important;
+}
+
+
+
+/* --- Interaction classes --- */
+
 
 
 body {
@@ -66,4 +92,40 @@ main {
     max-width: 100vw;
     width: 100vw;
   }
+}
+
+
+
+/* --- Component: Article --- */
+article, .article {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+.article.isLoaded {
+  opacity: 1;
+}
+
+
+
+/* --- Component: Field --- */
+.field {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-bottom: 2px solid #d3d4d5;
+  line-height: 40px;
+  font-family: "Karla", Arial, sans-serif;
+  font-size: 1rem;
+  color: #72716c;
+}
+.field:focus {
+  outline: none;
+  border-bottom-color: #ff5000;
+}
+.field.isActive {
+  color: #ff5000;
 }
