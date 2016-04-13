@@ -45,4 +45,12 @@ c::set('languages', array(
   ),
 ));
 
+
+
 c::set('debug', 'true');
+
+
+
+c::set('date.handler','strftime');
+setlocale(LC_ALL, 'tr_TR');
+
