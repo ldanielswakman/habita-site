@@ -29,6 +29,7 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 
 */
 
+
 c::set('languages', array(
   array(
     'code' => 'tr',
@@ -46,11 +47,8 @@ c::set('languages', array(
 ));
 
 
-
 c::set('debug', 'true');
 
 
-
 c::set('date.handler','strftime');
-setlocale(LC_ALL, 'tr_TR');
 

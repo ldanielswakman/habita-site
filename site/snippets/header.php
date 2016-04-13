@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="<?= $site->language() ?>">
 
   <head>
 
@@ -11,9 +11,14 @@
     <meta name="description" content="<?php echo $site->description()->html() ?>">
     <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
 
-    <?php echo css('assets/css/main.css') ?>
+    <?= css('assets/css/main.css') ?>
+    <?= css('assets/css/style.css') ?>
 
-    <?php echo css('assets/css/style.css') ?>
+    <?= js('assets/js/jquery-2.2.3.min.js') ?>
+    <?= js('assets/js/jquery.smooth-scroll.min.js') ?>
+    <?= js('assets/js/jquery.sticky-kit.min.js') ?>
+
+    <?= js('assets/js/updates-api.js') ?>
 
   </head>
 
