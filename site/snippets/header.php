@@ -11,14 +11,19 @@
     <meta name="description" content="<?php echo $site->description()->html() ?>">
     <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
 
-    <?= css('assets/css/main.css') ?>
-    <?= css('assets/css/style.css') ?>
+    <?= css(array(
+      'assets/css/main.css',
+      'assets/css/style.css',
+      '//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic',
+      '//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css',
+    )) ?>
 
-    <?= js('assets/js/jquery-2.2.3.min.js') ?>
-    <?= js('assets/js/jquery.smooth-scroll.min.js') ?>
-    <?= js('assets/js/jquery.sticky-kit.min.js') ?>
-
-    <?= js('assets/js/updates-api.js') ?>
+    <?= js(array(
+      'assets/js/jquery-2.2.3.min.js',
+      'assets/js/jquery.smooth-scroll.min.js',
+      'assets/js/jquery.sticky-kit.min.js',
+      // 'assets/js/updates-api.js',
+    ), true) ?>
 
   </head>
 
