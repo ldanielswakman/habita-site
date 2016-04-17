@@ -1,13 +1,4 @@
 $(document).ready(function() {
-
-    // initiate smooth scroll
-    $('a[href^="#"]').smoothScroll();
-
-    // initiate sticky kit
-    $('.i-sticky').each(function() {
-        $(this).stick_in_parent();
-    });
-
     // listen to input change for async search
     $('#updates_search').on('input', function() {
 

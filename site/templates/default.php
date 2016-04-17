@@ -13,9 +13,32 @@
 
     <div class="u-mb50"><?= $page->text()->kirbytext() ?></div>
 
-    <div class="u-relative">
-      <input id="updates_search" class="field u-fullwidth u-mb20" placeholder="What are you looking for?" name="q" value="<?= $_GET['q'] ?>" />
-    </div>
+    <form class="u-relative u-mb20">
+
+      <input id="updates_search" class="field u-mb20" placeholder="What are you looking for?" name="q" value="<?= get('q') ?>" />
+      <button type="submit" class="u-hide"></button>
+
+      <div class="u-pinned-topright u-mt10">
+        <? if($tag = param('tag')) :?>
+          <!-- <span class="tag"><?= $tag ?> <a href="<?= url() ?>" class="u-ml5"><i class="ion ion-close-round"></i></a></span> -->
+        <? endif ?>
+        <? if($q = get('q')) :?>
+          <a href="<?= url() ?>"><i class="ion ion-close-round"></i></a>
+        <? endif ?>
+      </div>
+
+      <div class="tags">
+        <? $updates_tags = $pages->find('updates')->children()->visible()->pluck('tags',',', true) ?>
+        <? foreach($updates_tags as $tag): ?>
+          <? if (param('tag') == $tag) :?>
+            <span class="tag"><?= html($tag) ?><a href="<?= url() ?>" class="u-ml5"><i class="ion ion-close-round"></i></a></span>
+          <? else :?>
+            <a href="<?= url('/tag:' . $tag) ?>" class="tag<?= e(!$active, ' tag--inactive') ?>"><?= html($tag) ?></a>
+          <? endif ?>
+        <? endforeach ?>
+      </div>
+
+    </form>
 
     <div id="updates" class="u-mt50">
       <?
@@ -24,10 +47,14 @@
       if($tag = param('tag')) {
         $articles = $articles->filterBy('tags', $tag, ',');
       }
+      // add the tag filter
+      if($q = get('q')) {
+        $articles = $articles->search($q);
+      }
       ?>
       <? foreach ($articles as $article) :?>
 
-        <article id="<?= $article->slug() ?>" class="article u-mb80 <? e($article->hasImages(), ' article-hasImages') ?>">
+        <article id="<?= $article->slug() ?>" class="article u-mb80 <? e($article->hasImages(), ' article--hasImages') ?>">
 
           <h3><?= $article->title() ?></h3>
           <time datetime="<?= $article->date('%Y-%m-%d') ?>" pubdate class="date"><?= $article->date('%d %B %Y') ?></time><br />

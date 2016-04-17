@@ -38,6 +38,12 @@ figure { margin: 0; }
 .u-mb80 {
   margin-bottom: 80px !important;
 }
+.u-ml5 {
+  margin-left: 5px !important;
+}
+.u-mr20 {
+  margin-right: 20px !important;
+}
 .u-pa20 {
   padding: 20px !important;
 }
@@ -50,12 +56,33 @@ figure { margin: 0; }
 .u-aligncenter {
   text-align: center;
 }
+.u-floatleft {
+  display: inline-block !important;
+  float: left !important;
+}
 .u-floatright {
   display: inline-block !important;
   float: right !important;
 }
 .u-fullwidth {
   width: 100% !important;
+}
+.u-hide {
+  display: none !important;
+}
+.u-flex {
+  display: flex !important;
+}
+.u-flex-grow {
+  flex: 1 1 auto;
+}
+.u-relative {
+  position: relative !important;
+}
+.u-pinned-topright {
+  position: absolute !important;
+  top: 0;
+  right: 0;
 }
 
 
@@ -158,7 +185,8 @@ main {
   -moz-appearance: none;
   appearance: none;
   background-color: #fff;
-  padding: 5px 10px;
+  width: 100%;
+  padding: 5px 0;
   border-bottom: 2px solid #d3d4d5;
   line-height: 40px;
   font-family: "Karla", Arial, sans-serif;
@@ -186,7 +214,15 @@ main {
   line-height: 1rem;
   color: #72716c;
 }
-.tag:hover {
+.tag .ion {
+  line-height: 1.2rem;
+}
+a.tag:hover {
   background-color: #ff5000;
+  border-color: transparent;
   color: #fff;
+}
+.tag.tag--inactive {
+  background-color: transparent;
+  border: 1px solid #edeeef;
 }
