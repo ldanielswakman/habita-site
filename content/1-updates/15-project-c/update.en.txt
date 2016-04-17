@@ -1,4 +1,4 @@
-Title: Location: found!
+Title: It starts with an idea…
 
 ----
 
@@ -6,7 +6,7 @@ Date: 2016-04-08
 
 ----
 
-Tags: stuff
+Tags: about,concept
 
 ----
 

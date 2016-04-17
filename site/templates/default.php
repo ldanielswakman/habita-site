@@ -31,9 +31,9 @@
         <? $updates_tags = $pages->find('updates')->children()->visible()->pluck('tags',',', true) ?>
         <? foreach($updates_tags as $tag): ?>
           <? if (param('tag') == $tag) :?>
-            <span class="tag"><?= html($tag) ?><a href="<?= url() ?>" class="u-ml5"><i class="ion ion-close-round"></i></a></span>
+            <span class="tag"><?= html($tag) ?><a href="<?= $site->language()->url() ?>" class="u-ml5"><i class="ion ion-close-round"></i></a></span>
           <? else :?>
-            <a href="<?= url('/tag:' . $tag) ?>" class="tag<?= e(!$active, ' tag--inactive') ?>"><?= html($tag) ?></a>
+            <a href="<?= $site->language()->url() . '/tag:' . $tag ?>" class="tag<?= e(!$active, ' tag--inactive') ?>"><?= html($tag) ?></a>
           <? endif ?>
         <? endforeach ?>
       </div>

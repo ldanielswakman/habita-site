@@ -2,7 +2,7 @@ Title: Home
 
 ----
 
-Text: Here is the tagline about why it is such an awesome space.
+Text: Here is the TR tagline about why it is such an awesome space.
 
 ----
 

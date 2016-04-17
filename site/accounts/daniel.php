@@ -7,8 +7,8 @@ password: >
 language: en
 role: admin
 history:
-  - updates/project-b
-  - updates/project-c
-  - updates/project-a
   - home
-  - updates
+  - updates/construction-progress
+  - updates/how-a-logo-works
+  - updates/construction-has-started
+  - updates/founders-who-are-we
