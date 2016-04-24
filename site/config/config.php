@@ -45,6 +45,7 @@ c::set('languages', array(
     'url' => '/en',
   ),
 ));
+// c::set('language.detect', true); 
 
 
 c::set('debug', 'true');
