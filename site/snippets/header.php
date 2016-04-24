@@ -12,7 +12,6 @@
     <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
 
     <?= css(array(
-      'assets/css/main.css',
       'assets/css/style.css',
       'assets/css/ionicons.min.css',
       // '//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic',
