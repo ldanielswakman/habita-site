@@ -1,33 +1,48 @@
 <?php snippet('header') ?>
 
-  <main id="top">
+  <div class="panel-impression"></div>
 
-    <a href="#top" class="u-block u-aligncenter u-pa20 bg-white i-sticky">
+  <main class="panel-content" id="top">
+
+    <a href="#top" class="u-block u-aligncenter u-pa20 u-pt50 bg-white">
       <?php snippet('logo-svg', array('height' => '30px')) ?>
     </a>
 
-    <header class="u-aligncenter u-mb50">
+    <header class="u-aligncenter u-ph50 u-mb50">
+
       <h1 class="c-textlight">Habita</h1>
-      <h2 class="c-orangedark"><?= $page->tagline()->kirbytext() ?></h2>
+      <h2 class="c-orangedark u-mb20"><?= $page->tagline()->kirbytext() ?></h2>
+
+      <?= $page->text()->kirbytext() ?>
+
     </header>
 
-    <div class="u-mb50"><?= $page->text()->kirbytext() ?></div>
+    <form class="u-mb20 bg-white i-sticky u-ph20 u-pr20">
 
-    <form class="u-relative u-mb20">
+      <div class="u-flex">
 
-      <input id="updates_search" class="field u-mb20" placeholder="What are you looking for?" name="q" value="<?= get('q') ?>" />
-      <button type="submit" class="u-hide"></button>
+        <a href="#top" class="u-floatleft u-ph15 u-pt15 u-aligncenter" style="width: 80px;">
+          <?php snippet('logo-svg', array('height' => '30px')) ?>
+        </a>
 
-      <div class="u-pinned-topright u-mt10">
-        <? if($tag = param('tag')) :?>
-          <!-- <span class="tag"><?= $tag ?> <a href="<?= url() ?>" class="u-ml5"><i class="ion ion-close-round"></i></a></span> -->
-        <? endif ?>
-        <? if($q = get('q')) :?>
-          <a href="<?= url() ?>"><i class="ion ion-close-round"></i></a>
-        <? endif ?>
+        <div class="u-flex-grow">
+          <input id="updates_search" class="field u-mb10" placeholder="<?= l::get('search_field_placeholder') ?>" name="q" value="<?= get('q') ?>" />
+          <button type="submit" class="u-hide"></button>
+
+          <div class="u-pinned-topright u-mt10">
+            <? if($tag = param('tag')) :?>
+              <!-- <span class="tag"><?= $tag ?> <a href="<?= url() ?>" class="u-ml5"><i class="ion ion-close-round"></i></a></span> -->
+            <? endif ?>
+            <? if($q = get('q')) :?>
+              <a href="<?= url() ?>"><i class="ion ion-close-round"></i></a>
+            <? endif ?>
+          </div>
+
+        </div>
+
       </div>
 
-      <div class="tags">
+      <div class="tags u-ml80">
         <? $updates_tags = $pages->find('updates')->children()->visible()->pluck('tags',',', true) ?>
         <? foreach($updates_tags as $tag): ?>
           <? if (param('tag') == $tag) :?>
@@ -40,7 +55,7 @@
 
     </form>
 
-    <div id="updates" class="u-mt50">
+    <div id="updates" class="u-ph50 u-pt50">
       <?
       $articles = $pages->find('updates')->children()->visible()->sortby('date', 'desc');
       // add the tag filter
