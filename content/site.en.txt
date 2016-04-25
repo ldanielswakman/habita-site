@@ -1,0 +1,17 @@
+Title: habita
+
+----
+
+Author: L Daniel Swakman, www.ldaniel.eu
+
+----
+
+Description: habita site description
+
+----
+
+Keywords: 
+
+----
+
+Copyright: <small>© (date: Year) Nasa Ofis Kiralama Danısmanlık ve Organizasyon Hizmetleri Tic. Ltd. Sti.</small>
