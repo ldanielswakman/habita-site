@@ -10,8 +10,7 @@
 
     <header class="u-aligncenter u-ph50 u-mb50">
 
-      <h1 class="c-textlight">Habita</h1>
-      <h2 class="c-orangedark u-mb20"><?= $page->tagline()->kirbytext() ?></h2>
+      <h2 class="c-orangedark u-mb20"><?= $page->tagline()->text() ?></h2>
 
       <?= $page->text()->kirbytext() ?>
 
@@ -19,14 +18,14 @@
 
     <form class="u-mb20 bg-white i-sticky u-ph20 u-pr20">
 
-      <div class="u-flex">
+      <div class="u-flex u-hideoverflow">
 
-        <a href="#top" class="u-floatleft u-ph15 u-pt15 u-aligncenter" style="width: 80px;">
-          <?php snippet('logo-svg', array('height' => '30px')) ?>
+        <a href="#top" class="u-floatleft u-ph15 u-pt15 u-aligncenter u-width80 i-slideinonscroll" data-scroll-offset="400">
+          <?php snippet('logo-svg', array('height' => '30px', 'emblem' => true)) ?>
         </a>
 
-        <div class="u-flex-grow">
-          <input id="updates_search" class="field u-mb10" placeholder="<?= l::get('search_field_placeholder') ?>" name="q" value="<?= get('q') ?>" />
+        <div class="u-relative u-flex-grow">
+          <input id="updates_search" class="field u-mv10" placeholder="<?= l::get('search_field_placeholder') ?>" name="q" value="<?= get('q') ?>" />
           <button type="submit" class="u-hide"></button>
 
           <div class="u-pinned-topright u-mt10">
@@ -34,7 +33,7 @@
               <!-- <span class="tag"><?= $tag ?> <a href="<?= url() ?>" class="u-ml5"><i class="ion ion-close-round"></i></a></span> -->
             <? endif ?>
             <? if($q = get('q')) :?>
-              <a href="<?= url() ?>"><i class="ion ion-close-round"></i></a>
+              <a href="<?= url() ?>" class="u-inlineblock u-pv10"><i class="ion ion-close-round"></i></a>
             <? endif ?>
           </div>
 

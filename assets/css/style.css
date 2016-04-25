@@ -41,6 +41,10 @@ figure { margin: 0; }
 .u-mb80 {
   margin-bottom: 80px !important;
 }
+.u-mv10 {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
 .u-ml5 {
   margin-left: 5px !important;
 }
@@ -52,6 +56,10 @@ figure { margin: 0; }
 }
 .u-pt15 {
   padding-top: 15px !important;
+}
+.u-pv10 {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
 }
 .u-ph15 {
   padding-left: 15px !important;
@@ -78,6 +86,9 @@ figure { margin: 0; }
 }
 .u-pr20 {
   padding-right: 20px !important;
+}
+.u-width80 {
+  width: 80px !important;
 }
 .u-block {
   display: block !important;
@@ -118,6 +129,9 @@ figure { margin: 0; }
   top: 0;
   right: 0;
 }
+.u-hideoverflow {
+  overflow: hidden;
+}
 
 
 
@@ -125,6 +139,15 @@ figure { margin: 0; }
 .is_stuck {
   z-index: 10;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.i-slideinonscroll {
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-100px);
+  opacity: 0;
+}
+.i-slideinonscroll.isVisible {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 
@@ -149,8 +172,14 @@ a {
   text-decoration: none;
   color: #ff5000;
 }
-a:not(.tag):hover {
+a:hover {
   color: #cc4100;
+}
+p {
+  line-height: 1.8em;
+  max-width: 50em;
+}
+p a:hover {
   background-image: linear-gradient(to top, transparent, transparent 0, #cc4100 0, #cc4100 1px, transparent 1px);
 }
 
@@ -186,6 +215,7 @@ a:not(.tag):hover {
     width: 100vw;
   }
 }
+
 
 
 /* --- Component: Content panel --- */
@@ -230,10 +260,11 @@ a:not(.tag):hover {
   color: #999;
   font-size: 0.85rem;
 }
-.article p {
+.article p,
+.article figure,
+.article ul,
+.article ol {
   margin-top: 1rem;
-  line-height: 1.8em;
-  max-width: 50em;
 }
 .article:before {
   content: "\f391";
@@ -267,7 +298,7 @@ a:not(.tag):hover {
   -moz-appearance: none;
   appearance: none;
   background-color: #fff;
-  line-height: 40px;
+  line-height: 30px;
   font-family: "Karla", Arial, sans-serif;
   font-size: 1rem;
   color: #72716c;

@@ -7,8 +7,6 @@ password: >
 language: en
 role: admin
 history:
+  - updates/ve-iste-habita
+  - updates/her-sey-bir-hayal-ile-basladi
   - home
-  - updates/construction-progress
-  - updates/how-a-logo-works
-  - updates/construction-has-started
-  - updates/founders-who-are-we
