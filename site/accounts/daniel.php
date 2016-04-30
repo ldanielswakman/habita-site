@@ -8,5 +8,4 @@ language: en
 role: admin
 history:
   - updates/ve-iste-habita
-  - updates/her-sey-bir-hayal-ile-basladi
   - home

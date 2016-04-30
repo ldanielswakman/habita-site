@@ -2,8 +2,8 @@ Title: Home
 
 ----
 
-Text: Here is the TR tagline about why it is such an awesome space.
+Text: Paylaşan, konuşan, tartışan, üreten herkese açık bir komünitenin ortak yaşam ve çalışma alanı...
 
 ----
 
-Tagline: An open & transparent  coworking hub for everyone.
+Tagline: Çoğaltan Paylaşım İklimi
