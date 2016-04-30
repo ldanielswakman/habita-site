@@ -13,7 +13,7 @@ fields:
     type:  date
   text:
     label: Text
-    type:  textarea
+    type:  markdown
   tags:
     label: Tags
     type:  tags
