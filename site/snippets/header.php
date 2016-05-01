@@ -14,6 +14,8 @@
     <?= css(array(
       'assets/css/style.css',
       'assets/css/ionicons.min.css',
+      'https://fonts.googleapis.com/css?family=Work+Sans:400,600,700,500',
+      'https://fonts.googleapis.com/css?family=Martel:400,700,600',
     )) ?>
 
     <?= js(array(
