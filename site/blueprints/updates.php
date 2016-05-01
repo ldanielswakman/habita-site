@@ -3,6 +3,7 @@
 title: Projects
 pages:
   template: update
+  sortable: false
 files: false
 fields:
   title:

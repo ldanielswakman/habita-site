@@ -3,7 +3,12 @@
 title: Update
 pages: false
 files:
-  sortable: true
+  type: 
+    - image
+    - video
+  width: 1200
+  height: 1200
+preview: parent
 fields:
   title:
     label: Title
