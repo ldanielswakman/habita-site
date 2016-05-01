@@ -2,8 +2,12 @@ Title: Home
 
 ----
 
-Text: Paylaşan, konuşan, tartışan, üreten herkese açık bir komünitenin ortak yaşam ve çalışma alanı...
+Text: 
+
+<!-- Çoğaltan Paylaşım İklimi -->
+
+Madem habita her şeyin paylaşıldığı bir iklim yaratma hayali ile yola çıkıyor, sadece fiziksel mekanımızın değil komünitemizin de hayatlarının, hikayelerinin, deneyimlerinin, her türlü fikir ve bilginin de paylaşıldığı bir platform yaratmak istedik. Biz kendimizin ve habita’nın hikayesi ile başlıyoruz.  Sayımız çoğaldıkça hepinizi bekliyoruz!
 
 ----
 
-Tagline: Çoğaltan Paylaşım İklimi
+Tagline: Paylaşan, konuşan, tartışan, üreten herkese açık bir komünitenin ortak yaşam ve çalışma alanı...

@@ -7,5 +7,8 @@ password: >
 language: en
 role: admin
 history:
-  - updates/ve-iste-habita
+  - updates/biz
   - home
+  - updates/lokasyon-arayislar
+  - updates/habita-blog
+  - updates/ve-iste-habita
