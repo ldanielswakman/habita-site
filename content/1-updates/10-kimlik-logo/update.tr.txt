@@ -12,15 +12,15 @@ Aklımızın içinde uçuşan fikir ve düşünceleri hayata geçirmek, kağıda
 
 Logoya geldi sıra. Önce ve her şeyden önce paylaşmak dedik;
 
-(image: image-15.jpg)
+(image: image-15.svg class: small)
 
 Paylaşarak çoğalsın her şey dedik;
 
-(image: image-16.jpg)
+(image: image-16.svg class: small)
 
 Son olarak habita ile bütünleşti…
 
-(image: image-17.jpg)
+(image: image-17.svg class: small)
 
 ----
 

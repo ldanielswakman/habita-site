@@ -14,8 +14,6 @@ Text:
 
 (image: image-19.jpg)
 
-(image: image-20.jpg)
-
 ----
 
 Tags: proje
