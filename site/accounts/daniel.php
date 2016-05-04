@@ -8,7 +8,7 @@ language: en
 role: admin
 history:
   - updates/biz
-  - home
-  - updates/lokasyon-arayislar
-  - updates/habita-blog
+  - updates/insaat-basladi
+  - updates/kimlik-logo
+  - updates/insaat-ilerliyor
   - updates/ve-iste-habita

@@ -236,7 +236,7 @@ p {
   max-width: 50em;
 }
 p a {
-  background-image: linear-gradient(to top, transparent, transparent 0, #eee 0, #eee 1px, transparent 1px);
+  background-image: linear-gradient(to top, transparent, transparent 0, #ddd 0, #ddd 1px, transparent 1px);
 }
 p a:hover {
   background-image: linear-gradient(to top, transparent, transparent 0, #cc4100 0, #cc4100 1px, transparent 1px);
@@ -440,13 +440,19 @@ a.tag:hover {
   margin-top: 1rem;
 }
 .article figure {
-  margin: 2rem 0;
+  margin: 2rem auto;
+}
+.article figure.medium {
+  max-width: 50%;
+}
+.article figure.small {
+  max-width: 30%;
 }
 .article:before {
   content: "\f391";
   position: absolute;
   left: -60px;
-  top: 5px;
+  top: 0;
   width: 40px;
   height: 40px;
   background-color: #eee;
