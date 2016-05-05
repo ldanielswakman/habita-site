@@ -15,7 +15,7 @@ for more information: http://getkirby.com/license
 
 */
 
-c::set('license', 'put your license key here');
+c::set('license', 'K2-PERSONAL-097cfa25afc51dafbf35c8ec6455abad');
 
 /*
 
@@ -45,7 +45,7 @@ c::set('languages', array(
     'url' => '/en',
   ),
 ));
-// c::set('language.detect', true); 
+c::set('language.detect', true); 
 
 
 c::set('debug', 'true');
