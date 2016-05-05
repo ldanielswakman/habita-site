@@ -58,6 +58,10 @@ figure { margin: 0; }
   margin-top: 10px !important;
   margin-bottom: 10px !important;
 }
+.u-mv20 {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
 .u-ml5 {
   margin-left: 5px !important;
 }
@@ -72,6 +76,9 @@ figure { margin: 0; }
 }
 .u-mr20 {
   margin-right: 20px !important;
+}
+.u-mr50 {
+  margin-right: 50px !important;
 }
 .u-pt10 {
   padding-top: 10px !important;
@@ -240,6 +247,10 @@ p a {
 }
 p a:hover {
   background-image: linear-gradient(to top, transparent, transparent 0, #cc4100 0, #cc4100 1px, transparent 1px);
+}
+hr {
+  border: none;
+  border-bottom: 1px solid #d3d4d5;
 }
 .text-600 {
   font-weight: 600;
