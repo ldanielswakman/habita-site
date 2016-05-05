@@ -1,7 +1,24 @@
 $(document).ready(function() {
 
   // initiate smooth scroll
-  $('a[href^="#"]').smoothScroll();
+  $('a[href^="#"]').smoothScroll({
+    offset: -70,
+    afterScroll: function() {
+      if(history.pushState) {
+        history.pushState(null, null, $(this).attr('href'));
+      }
+      else {
+        location.hash = $(this).attr('href');
+      }
+    },
+  });
+  // execute smoothscroll on page load if hash is present
+  if(location.hash) {
+    $.smoothScroll({
+      offset: -70,
+      scrollTarget: location.hash
+    });
+  }
 
 
   // Interaction Class: sticky kit

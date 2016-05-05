@@ -84,7 +84,7 @@
 
         <article id="<?= $article->slug() ?>" class="article u-mb80 <? e($article->hasImages(), ' article--hasImages') ?>">
 
-          <h3><?= $article->title() ?></h3>
+          <h3><?= $article->title() ?> <a href="#<?= $article->slug() ?>" class="c-textlight u-ml5"><i class="ion ion-link"></i></a></h3>
           <time datetime="<?= $article->date('%Y-%m-%d') ?>" pubdate class="date"><?= $article->date('%d %B %Y') ?></time><br />
 
           <?= $article->text()->kirbytext() ?>
