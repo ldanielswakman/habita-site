@@ -39,7 +39,7 @@
 
     </header>
 
-    <form class="bg-white i-sticky u-pr50">
+    <form action="#updates" class="bg-white i-sticky u-pr50">
 
       <div class="u-flex u-hideoverflow">
 
