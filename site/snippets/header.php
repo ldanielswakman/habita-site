@@ -11,28 +11,34 @@
     <meta name="description" content="<?php echo $site->description()->html() ?>">
     <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
 
-    <?= css(array(
+    <?
+    $css_assets = ($_SERVER['SERVER_NAME'] == 'localhost') ? array(
       'assets/css/style.css',
       'assets/css/ionicons.min.css',
+      ) : array(
+      'assets/css/style.css',
+      'https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css',
       'https://fonts.googleapis.com/css?family=Work+Sans:400,600,700,500',
       'https://fonts.googleapis.com/css?family=Martel:400,700,600',
-    )) ?>
+      );
 
-    <? $js_assets = ($_SERVER['SERVER_NAME'] == 'localhost') ? array(
+    $js_assets = ($_SERVER['SERVER_NAME'] == 'localhost') ? array(
       // local assets
       'assets/js/jquery-2.2.3.min.js',
       'assets/js/jquery.smooth-scroll.min.js',
       'assets/js/jquery.sticky-kit.min.js',
       'assets/js/scripts.js',
       // 'assets/js/updates-api.js',
-    ) : array(
-    // production assets
+      ) : array(
+      // production assets
       '//code.jquery.com/jquery-2.2.3.min.js',
       '//cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.7.2/jquery.smooth-scroll.min.js',
       '//cdn.jsdelivr.net/jquery.sticky-kit/1.1.2/jquery.sticky-kit.min.js',
       'assets/js/scripts.js',
-    ) ?>
+      );
+    ?>
     
+    <?= css($css_assets) ?>
     <?= js($js_assets) ?>
 
   </head>
