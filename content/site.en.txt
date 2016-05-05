@@ -6,11 +6,11 @@ Author: L Daniel Swakman, www.ldaniel.eu
 
 ----
 
-Description: habita site description
+Description: An open & transparent coworking hub for everyone...
 
 ----
 
-Keywords: 
+Keywords: coworking,calisma alani,istanbul,komunite,acik,freelance,ofis
 
 ----
 

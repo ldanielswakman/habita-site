@@ -6,11 +6,11 @@ Author: L Daniel Swakman, www.ldaniel.eu
 
 ----
 
-Description: habita site description
+Description: Paylaşan, konuşan, tartışan, üreten herkese açık bir komünitenin ortak yaşam ve çalışma alanı...
 
 ----
 
-Keywords: 
+Keywords: coworking,calisma alani,istanbul,komunite,acik,freelance,ofis
 
 ----
 
