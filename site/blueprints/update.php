@@ -19,6 +19,8 @@ fields:
   text:
     label: Text
     type:  markdown
+    header1: h3
+    header2: h4
   tags:
     label: Tags
     type:  tags

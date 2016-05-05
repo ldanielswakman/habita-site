@@ -7,8 +7,8 @@ password: >
 language: en
 role: admin
 history:
-  - updates/biz
-  - updates/insaat-basladi
-  - updates/kimlik-logo
+  - updates/proje
+  - home
   - updates/insaat-ilerliyor
-  - updates/ve-iste-habita
+  - updates/kimlik-logo
+  - updates/insaat-basladi
