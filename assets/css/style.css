@@ -276,6 +276,14 @@ p a:hover {
   line-height: 40px;
   text-align: center;
 }
+.button-white {
+  background-color: #fff;
+  color: #ff5000;
+}
+.button-white:hover {
+  background-color: #fff;
+  color: #cc4100;
+}
 .button-facebook {
   background-color: #3b5999;
 }

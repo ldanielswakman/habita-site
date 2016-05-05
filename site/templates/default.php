@@ -3,19 +3,19 @@
   <div class="panel-impression">
     
     <div class="u-pinned-bottomleft u-fullwidth u-aligncenter u-pa10">
-      <a href="mailto:info@habita.com.tr" target="_blank" class="button button-rounded u-mr5">
+      <a href="mailto:info@habita.com.tr" target="_blank" class="button button-white button-rounded u-mr5">
         <i class="ion ion-android-mail ion-15x"></i>
         <!-- Email us -->
       </a>
-      <a href="https://www.facebook.com/habita_co" target="_blank" class="button button-rounded u-mr5">
+      <a href="https://www.facebook.com/habita.coworking" target="_blank" class="button button-white button-rounded u-mr5">
         <i class="ion ion-social-facebook ion-15x"></i>
         <!-- Facebook -->
       </a>
-      <a href="https://www.twitter.com/habita_co/" target="_blank" class="button button-rounded u-mr5">
+      <a href="https://twitter.com/habita_co" target="_blank" class="button button-white button-rounded u-mr5">
         <i class="ion ion-social-twitter ion-15x"></i>
         <!-- Twitter -->
       </a>
-      <a href="https://www.instagram.com/habita_co/" target="_blank" class="button button-rounded u-mr5">
+      <a href="https://www.instagram.com/habita_co" target="_blank" class="button button-white button-rounded u-mr5">
         <i class="ion ion-social-instagram ion-15x"></i>
         <!-- Instagram -->
       </a>
