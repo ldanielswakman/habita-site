@@ -8,29 +8,28 @@ Date: 2016-03-07
 
 Text: 
 
-(image: founders.jpg)
+(image: levent.png class:small)
 
-**Levent**
+## Levent
+Bugün sahip olduğu maddi ve manevi her şeyi, büyük ölçüde borçlu olduğunu düşündüğü Tarsus Amerikan’dan mezun oldu. Bilkent, Bocconi  Üniversitesi derken İstanbul’da iş hayatına danışmanlık ile başladı. 8 yıl Mag Consulting, IBM ve Hay Group’ta çalışıp danışman olarak kurumsal hayatı arkasında bıraktı. 
 
-(image: image-6.jpg class:small)
+Kurumsal hayatı da, işini de sevdi ama her zaman daha mutlu olmak istedi ve bunun yollarını aradı. Levent, insanların yaşadığı, var olduğu ve bulundukları ortamların onları etkilediğine ve farklılaştırdığına inanıyor. Paylaşımın ise bu ortamları sürekli yenilediğini düşünüyor. Yemek yemeyi (yemek üzerine konuşup, hayal kurmayı da), atları ve sporun her türlüsünü bir ayrı seviyor!
 
-Bugün sahip olduğu maddi ve manevi her şeyi, büyük ölçüde borçlu olduğunu düşündüğü Tarsus Amerikan’dan mezun oldu. Bilkent, Bocconi  Üniversitesi derken İstanbul’da iş hayatına danışmanlık ile başladı. 8 yıl Mag Consulting, IBM ve Hay Group’ta çalışıp danışman olarak kurumsal hayatı arkasında bıraktı. Kurumsal hayatı da, işini de sevdi ama her zaman daha mutlu olmak istedi ve bunun yollarını aradı. Levent, insanların yaşadığı, var olduğu ve bulundukları ortamların onları etkilediğine ve farklılaştırdığına inanıyor. Paylaşımın ise bu ortamları sürekli yenilediğini düşünüyor. Yemek yemeyi (yemek üzerine konuşup, hayal kurmayı da), atları ve sporun her türlüsünü bir ayrı seviyor!
+(image: serdar.png class:small)
 
-**Serdar**
-
-(image: image-6b.jpg class:medium)
-
+## Serdar
 1981 yılında memur şehri Ankara'da doğsa da bir aile geleneği olan makus memur talihini 2016 yılı başında kırdı ve yaklaşık 10 sene Dış Ticaret Müsteşarlığı ve Ekonomi Bakanlığında çeşitli kademelerde görev yaptıktan sonra kendini zor da olsa soğuk bürokrasi koridorlarının dışına atmayı başardı. 
 
 Bilkent Üniversitesi Ekonomi Bölümü'nden mezun olduktan sonra Cornell Üniversitesi'nde  yüksek lisansını tamamlayan Serdar için mutlu olmanın yolu farklı yerler görmek, yeni insanlar tanımak ve sürekli bir şeyler üretmekten geçiyor.
 
-Girişimci ruhu ve enerjisi habita ile hayat bulan Serdar, "Bazen hedef yolun ta kendisidir." mottosuyla hayalini gerçekleştirmek için çıktığı bu yolda sürecin her anından büyük heyecan duyuyor ve keyif almaya çalışıyor.
+Girişimci ruhu ve enerjisi habita ile hayat bulan Serdar, "Bazen hedef yolun ta kendisidir" mottosuyla hayalini gerçekleştirmek için çıktığı bu yolda sürecin her anından büyük heyecan duyuyor ve keyif almaya çalışıyor.
 
-**Burak**
+(image: burak.png class:small)
 
-(image: image-6c.jpg class: medium)
+ ## Burak
+Mersin'de doğup büyüyen Burak, Tarsus Amerikan Lisesi'nden mezun olduktan sonra sırasıyla İstanbul Teknik Üniversitesi'nde Kimya mühendisliği ve Middlesex University'de Pazarlama yönetimi okudu. Babasından aldığı girişimcilik heyecanını hep içinde taşıyan Burak, eğitimin ardından deneyim edinmek amacıyla girdiği kurumsal hayatta Stemcor, BP, Prista şirketlerinde satış departmanlarının farklı pozisyonlarında görev aldı. 
 
-Mersin'de doğup büyüyen Burak, Tarsus Amerikan Lisesi'nden mezun olduktan sonra sırasıyla İstanbul Teknik Üniversitesi'nde Kimya mühendisliği ve Middlesex University'de Pazarlama yönetimi okudu. Babasından aldığı girişimcilik heyecanını hep içinde taşıyan Burak, eğitimin ardından deneyim edinmek amacıyla girdiği kurumsal hayatta Stemcor, BP, Prista şirketlerinde satış departmanlarının farklı pozisyonlarında görev aldı. Kurumsal hayatın sandığı kadar deneyim kazandırmadığını sonunda fark ederek, ilk girişimini kendi başına deneyimledi ve başarısız oldu. Dolayısıyla bireylerin başarısının paylaşım ve etkileşim yolundan geçtiğine inanmaya başlayan Burak habita'da bunu gerçekleştireceğini düşünüyor; bilimi ve insanı barındıran her mevzuya ilgi duyuyor.
+Kurumsal hayatın sandığı kadar deneyim kazandırmadığını sonunda fark ederek, ilk girişimini kendi başına deneyimledi ve başarısız oldu. Dolayısıyla bireylerin başarısının paylaşım ve etkileşim yolundan geçtiğine inanmaya başlayan Burak habita'da bunu gerçekleştireceğini düşünüyor; bilimi ve insanı barındıran her mevzuya ilgi duyuyor.
 
 ----
 
