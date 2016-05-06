@@ -7,8 +7,8 @@ password: >
 language: en
 role: admin
 history:
+  - updates/etkinlik
   - home
   - updates/kimlik-logo
   - updates/proje
   - updates/insaat-ilerliyor
-  - updates/insaat-basladi
