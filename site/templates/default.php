@@ -89,11 +89,13 @@
 
           <?= $article->text()->kirbytext() ?>
 
-          <div class="tags u-mt10">
-            <? foreach(explode(',',$article->tags()) as $tag) :?>
-              <a href="<?= url() . '/tag:' . $tag ?>" class="tag"><?= $tag ?></a>
-            <? endforeach ?>
-          </div>
+          <? if(strlen($article->tags()->text()) > 0) :?>
+            <div class="tags u-mt10">
+              <? foreach(explode(',',$article->tags()) as $tag) :?>
+                <a href="<?= url() . '/tag:' . $tag ?>" class="tag"><?= $tag ?></a>
+              <? endforeach ?>
+            </div>
+          <? endif ?>
 
         </article>
 
