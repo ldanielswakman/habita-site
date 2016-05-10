@@ -7,8 +7,8 @@ password: >
 language: en
 role: admin
 history:
+  - updates/yukseliyoruz
+  - updates/tribunsuz-etkinlik-olmaz
+  - updates/caylar-sirketten
+  - updates/biraz-kafa-dinlemek-lazim-bazen
   - updates/etkinlik
-  - home
-  - updates/kimlik-logo
-  - updates/proje
-  - updates/insaat-ilerliyor
