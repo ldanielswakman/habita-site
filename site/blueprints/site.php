@@ -1,7 +1,10 @@
 <?php if(!defined('KIRBY')) exit ?>
 
 title: Site
-pages: default
+pages: true
+  template:
+    - default
+    - landing
 fields:
   title:
     label: Title
