@@ -15,6 +15,3 @@
   </footer>
 
   <? snippet('google-analytics') ?>
-
-</body>
-</html>

@@ -5,17 +5,35 @@ figure { margin: 0; }
 
 
 /* --- Color classes --- */
-.c-textlight {
-  color: #d3d4d5;
-}
 .c-orange {
   color: #ff5000;
 }
 .c-orangedark {
   color: #e17046;
 }
+.c-textlight {
+  color: #d3d4d5;
+}
+.c-grey {
+  color: #8a8a8d;
+  /*color: #72716c;*/
+}
+.bg-orange {
+  background-color: #ff5000;
+  color: #fff;
+}
 .bg-white {
   background-color: #fff !important;
+}
+.bg-greylightest {
+  background-color: #edeeef !important;
+}
+.bg-greylight {
+  background-color: #d3d4d5;
+}
+.bg-grey {
+  background-color: #8a8a8d;
+  color: #fff;
 }
 .c-facebook {
   color: #3b5999;
@@ -80,6 +98,9 @@ figure { margin: 0; }
 .u-mr50 {
   margin-right: 50px !important;
 }
+.u-pt5 {
+  padding-top: 5px !important;
+}
 .u-pt10 {
   padding-top: 10px !important;
 }
@@ -89,6 +110,10 @@ figure { margin: 0; }
 .u-pv10 {
   padding-top: 10px !important;
   padding-bottom: 10px !important;
+}
+.u-pv20 {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
 }
 .u-ph15 {
   padding-left: 15px !important;
@@ -134,8 +159,14 @@ figure { margin: 0; }
 .u-inlineblock {
   display: inline-block !important;
 }
+.u-alignleft {
+  text-align: left;
+}
 .u-aligncenter {
   text-align: center;
+}
+.u-alignright {
+  text-align: right;
 }
 .u-floatleft {
   display: inline-block !important;
@@ -159,6 +190,14 @@ figure { margin: 0; }
   -webkit-flex: 1 1 auto !important;
   flex: 1 1 auto !important;
 }
+.u-flex-center {
+  -webkit-flex: flex !important;
+  display: flex !important;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
 .u-relative {
   position: relative !important;
 }
@@ -174,6 +213,15 @@ figure { margin: 0; }
 }
 .u-hideoverflow {
   overflow: hidden;
+}
+.u-rounded {
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  border-radius: 0.3rem;
+}
+.u-clearfix:after {
+  content: "";
+  display: table;
 }
 
 
@@ -215,8 +263,9 @@ body {
   height: 100%;
 
   font-size: 100%;
-  font-family: "Work Sans", Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   font-kerning: normal;
+  font-weight: 500;
   line-height: 1.5em;
 
   color: #72716c;
@@ -224,19 +273,6 @@ body {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-a {
-  text-decoration: none;
-  color: #ff5000;
-}
-a:hover {
-  color: #cc4100;
-}
-a.link--grey {
-  color: #d3d4d5;
-}
-a.link--grey:hover {
-  color: #ff5000; 
 }
 p {
   line-height: 1.8em;
@@ -252,9 +288,6 @@ hr {
   border: none;
   border-bottom: 1px solid #d3d4d5;
 }
-.text-600 {
-  font-weight: 600;
-}
 :selection {
   background-color: #ff5000;
   color: #fff;
@@ -266,14 +299,56 @@ hr {
 
 
 
+/* --- Element: Link */
+a {
+  text-decoration: none;
+  color: #ff5000;
+}
+a:hover {
+  color: #cc4100;
+}
+a.link--grey {
+  color: #d3d4d5;
+}
+a.link--grey:hover {
+  color: #ff5000; 
+}
+a.link--bgorange {
+  background-color: #ff5000;
+  color: #fff;
+}
+a.link--bgorange:hover {
+  background-color: #cc4100;
+}
+
+
+
+/* --- Element: Blockquote --- */
+blockquote {
+  padding: 0.5em 0;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+
+
+
 /* --- Element: Button --- */
 .button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   display: inline-block;
   padding: 10px 20px;
   background-color: #ff5000;
+  border: none;
   color: #fff;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
   border-radius: 0.3rem;
   line-height: 20px;
+  font-size: 1rem;
+  cursor: pointer;
 }
 .button:hover {
   background-color: #cc4100;
@@ -316,6 +391,10 @@ hr {
   background-color: #356082;
   color: #fff;
 }
+.button-small {
+  padding: 5px 10px;
+  font-size: 0.9em;
+}
 
 
 
@@ -329,8 +408,9 @@ hr {
   -moz-appearance: none;
   appearance: none;
   background-color: #fff;
+  background-color: transparent;
   line-height: 20px;
-  font-family: "Work Sans", Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 1rem;
   color: #72716c;
 }
@@ -357,7 +437,7 @@ hr {
   padding: 0.2rem 0.5rem;
   border-radius: 0.3rem;
   background-color: #edeeef;
-  font-family: "Work Sans", Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 0.85em;
   line-height: 1rem;
   color: #72716c;
@@ -377,70 +457,86 @@ a.tag:hover {
 
 
 
-/* --- Component: Impression panel --- */
-.panel-impression {
+
+/* --- Component: Bootstrapgrid --- */
+.row.row--nopadding {
+  margin-left: 0;
+  margin-right: 0;
+}
+.row.row--nopadding > [class*="col-"] {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+
+
+/* --- Component: Panel --- */
+.panel {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100%; // fallback for some browsers
-  height: 100vh;
+  min-height: 100%; // fallback for some browsers
+  min-height: 100vh;
   width: 50%; // fallback for some browsers
   width: 50vw;
 
-  background-image: url('../images/anemptyspace.jpg');
+  background-color: white;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
+@media screen and (max-width: 768px) {
+  .panel {
+    left: 0;
+    width: 100%; // fallback for some browsers
+    width: 100vw;
+  }
+}
+/* --- Component modifier: Impression panel --- */
+.panel--impression {
+  background-image: url('../images/anemptyspace.jpg');
+}
 @media screen and (max-width: 991px) {
-  .panel-impression {
+  .panel--impression {
     width: 40%; // fallback for some browsers
     width: 40vw;
   }
 }
 @media screen and (max-width: 768px) {
-  .panel-impression {
-    left: 0;
+  .panel--impression {
     height: 200px; // fallback for some browsers
     height: 60vw;
-    width: 100%; // fallback for some browsers
-    width: 100vw;
   }
 }
 
-
-
-/* --- Component: Content panel --- */
-.panel-content {
+/* --- Component modifier: Content panel --- */
+.panel--content {
   position: absolute;
+  left: auto;
   right: 0;
-  top: 0;
-  min-height: 100%; // fallback for some browsers
-  min-height: 100vh;
-  width: 50%; // fallback for some browsers
-  width: 50vw;
-  background-color: white;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
 }
 @media screen and (max-width: 991px) {
-  .panel-content {
+  .panel--content {
     width: 60%; // fallback for some browsers
     width: 60vw;
   }
 }
 @media screen and (max-width: 768px) {
-  .panel-content {
-    left: 0;
+  .panel--content {
     top: 200px; // fallback for some browsers
     top: 60vw;
-    width: 100%; // fallback for some browsers
-    width: 100vw;
   }
 }
 
 
 
+
 /* --- Component: Article --- */
+.articles {
+  padding: 20px 50px 0;
+}
 .article {
   position: relative;
   margin-left: 30px;
@@ -485,4 +581,57 @@ a.tag:hover {
 }
 .article.article--hasImages:before {
   content: "\f148";
+}
+
+@media screen and (max-width: 480px) {
+  .articles {
+    padding: 20px 20px 0;
+  }
+  .article {
+    margin-left: 0;
+  }
+  .article:before {
+    display: none;
+  }
+}
+
+
+
+/* --- Component: Owl Carousel --- */
+.owl-carousel {
+  min-height: 200px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.owl-carousel .owl-prev,
+.owl-carousel .owl-next {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #ff5000;
+  line-height: 40px;
+  text-align: center;
+
+  transition: transform 0.3s ease;
+  transform: translateY(50px);
+}
+.owl-carousel:hover .owl-prev,
+.owl-carousel:hover .owl-next {
+  transform: translateY(0);
+}
+.owl-carousel .owl-prev:hover,
+.owl-carousel:hover .owl-next:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.owl-carousel .owl-prev:active,
+.owl-carousel .owl-next:active {
+  background-color: #fff;
+}
+.owl-carousel .owl-next {
+  left: auto;
+  right: 0;
 }
