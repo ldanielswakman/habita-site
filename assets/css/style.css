@@ -505,8 +505,12 @@ a.tag:hover {
 }
 @media screen and (max-width: 768px) {
   .panel--impression {
-    height: 200px; // fallback for some browsers
+    left: 0;
+    width: 100%; // fallback for some browsers
+    width: 100vw;
+    height: 200px;
     height: 60vw;
+    min-height: 200px;
   }
 }
 
@@ -525,6 +529,9 @@ a.tag:hover {
 }
 @media screen and (max-width: 768px) {
   .panel--content {
+    left: 0;
+    width: 100%; // fallback for some browsers
+    width: 100vw;
     top: 200px; // fallback for some browsers
     top: 60vw;
   }

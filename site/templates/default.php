@@ -91,7 +91,7 @@
           $articles = $articles->search($q);
         }
         $randompos = rand(0, $articles->count()/3);
-        $randompos = 2;
+        // $randompos = 2;
         ?>
         <? foreach ($articles as $article) :?>
 
