@@ -24,6 +24,8 @@
 
     <div class="panel panel--content">
 
+      <? snippet('language-switcher') ?>
+
       <div class="u-aligncenter u-pa50">
         <? snippet('logo-svg', ['color' => '#8a8a8d', 'emblem_color' => '#ff5000', 'height' => 40]) ?>
       </div>
