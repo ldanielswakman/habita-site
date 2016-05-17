@@ -48,7 +48,7 @@
         </div>
       <? endif ?>
 
-      <blockquote class="u-ph50 u-mt50">
+      <blockquote class="u-pa50">
         Açık alanda sabit masalar, kapalı ofisler ve esnek çalışma alanları açılsa tekliflere yeni habitan'ları bekliyor!
       </blockquote>
 
