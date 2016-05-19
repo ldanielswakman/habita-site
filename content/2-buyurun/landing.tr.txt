@@ -22,7 +22,7 @@ Features:
 
 - 
   type: "0"
-  title: Atıştırmalıklar
+  title: ATIŞTIRMALIKLAR
   icon: food
 - 
   type: "1"
