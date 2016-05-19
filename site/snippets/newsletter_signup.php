@@ -1,3 +1,6 @@
+<? $showname = (isset($name)) ? $name : false; ?>
+<? $showtelephone = (isset($telephone)) ? $telephone : false; ?>
+
 <!-- Begin MailChimp Signup Form -->
 <div id="mc_embed_signup" class="u-aligncenter">
   <form action="//habita.us13.list-manage.com/subscribe/post?u=f12afb9c7fac0362abb729571&amp;id=8b50cfe5d5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -15,6 +18,19 @@
       <div class="mc-field-group u-floatleft u-mr20">
         <input type="email" value="" name="EMAIL" class="field required email" id="mce-EMAIL" placeholder="<?= l::get('email_address') ?>" style="width: 160px;">
       </div>
+
+      <? if($showname) :?>
+      <div class="u-clearfix"></div>
+      <div class="mc-field-group u-block u-mr20 u-mt10 u-mb10">
+        <input type="text" value="" name="NAME" class="field name" id="mce-NAME" placeholder="<?= l::get('name') ?>" style="width: 160px;">
+      </div>
+      <? endif ?>
+
+      <? if($showtelephone) :?>
+      <div class="mc-field-group u-block u-mr20 u-mb20">
+        <input type="text" value="" name="TEL" class="field tel" id="mce-TEL" placeholder="<?= l::get('telephone') ?>" style="width: 160px;">
+      </div>
+      <? endif ?>
 
       <input type="submit" value="<?= l::get('subscribe') ?>" name="subscribe" id="mc-embedded-subscribe" class="button button-small">
 

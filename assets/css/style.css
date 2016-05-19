@@ -219,9 +219,13 @@ figure { margin: 0; }
   -moz-border-radius: 0.3rem;
   border-radius: 0.3rem;
 }
+.u-clearfix:before,
 .u-clearfix:after {
-  content: "";
   display: table;
+  content: "";
+}
+.u-clearfix:after {
+  clear: both;
 }
 
 

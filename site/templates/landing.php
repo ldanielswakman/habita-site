@@ -16,7 +16,7 @@
 
         <h2 class="u-ph50 u-mb50 u-aligncenter"><?= l::get('want_to_stay_up_to_date') ?></h2>
 
-        <? snippet('newsletter_signup') ?>
+        <?php snippet('newsletter_signup', ['name' => true, 'telephone' => true]) ?>
 
       </div>
 
