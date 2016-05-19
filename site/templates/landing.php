@@ -34,10 +34,10 @@
 
         <div class="row">
           <div class="col-xs-4 col-xs-offset-4 col-sm-3 col-sm-offset-1 u-aligncenter">
-            <figure class="u-inlineblock"><img src="<?= url('assets/images/talk.svg') ?>" alt="" /></figure>
+            <figure><img src="<?= url('assets/images/talk.svg') ?>" alt="" /></figure>
           </div>
           <div class="first-sm col-xs-12 col-sm-8">
-            <blockquote><?= $page->intro_1_text() ?></blockquote>
+            <blockquote><?= $page->events_title() ?></blockquote>
           </div>
         </div>
 
@@ -52,7 +52,7 @@
         </div>
       <? endif ?>
 
-      <blockquote class="u-pa50"><?= $page->intro_2_text() ?></blockquote>
+      <blockquote class="u-pa50"><?= $page->events_title() ?></blockquote>
 
       <div class="bg-greylightest u-pa50">
 
@@ -97,11 +97,20 @@
 
       <div class="u-pa50 bg-grey">
 
-        <figure class="u-floatleft u-mr20 u-mt50" style="width: 160px;"><img src="<?= url('assets/images/projection.svg') ?>" alt="" /></figure>
 
-        <h3 class="u-mb20"><?= $page->events_title() ?></h3>
 
-        <p style="margin-left: 180px;"><?= $page->events_text() ?></p>
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-4 col-sm-3 col-sm-offset-1 u-aligncenter">
+            <figure><img src="<?= url('assets/images/projection.svg') ?>" alt="" /></figure>
+          </div>
+          <div class="first-sm col-xs-12 col-sm-8">
+
+            <h3 class="u-mb20"><?= $page->events_title() ?></h3>
+
+            <p style="margin-left: 180px;"><?= $page->events_text() ?></p>
+
+          </div>
+        </div>
 
       </div>
 
