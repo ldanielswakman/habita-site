@@ -564,10 +564,10 @@ a.tag:hover {
 .article figure {
   margin: 2rem auto;
 }
-.article figure.medium {
+figure.medium {
   max-width: 50%;
 }
-.article figure.small {
+figure.small {
   max-width: 30%;
 }
 .article:before {

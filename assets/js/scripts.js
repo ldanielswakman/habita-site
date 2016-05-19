@@ -28,7 +28,7 @@ $(document).ready(function() {
       loop: true,
       nav: true,
       navText: ["<i class='ion ion-15x ion-arrow-left-c'></i>", "<i class='ion ion-15x ion-arrow-right-c'></i>"],
-      lazyLoad : true,
+      // lazyLoad : true,
       autoPlay: true,
       autoplayTimeout: 5000,
       // slideSpeed : 300,
