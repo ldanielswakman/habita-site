@@ -120,7 +120,7 @@
               <div class="u-mb20">
                 <i class="ion ion-android-drafts ion-2x c-textlight u-floatleft u-mr20 u-mb20"></i>
                 <h3 class="c-orange u-pt5"><?= l::get('newsletter_signup_title') ?></h3>
-                <p><small><?= l::get('newsletter_signup_descr') ?></small></p>
+                <p><small><?= l::get('newsletter_signup_descr') . '!' ?></small></p>
               </div>
               <?php snippet('newsletter_signup') ?>
             </div>

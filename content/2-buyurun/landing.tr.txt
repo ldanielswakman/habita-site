@@ -2,4 +2,83 @@ Title: Buyurun
 
 ----
 
-Text: asdlf;jas;lfjkasl;dfkjasl;fkjsa asdlfkajsl asdlf;jas;lfjkasl;dfkjasl;fkjsa asdlfkajsl asdlf;jas;lfjkasl;dfkjasl;fkjsa asdlfkajsl asdlf;jas;lfjkasl;dfkjasl;fkjsa asdlfkajslasdlf;jas;lfjkasl;dfkjasl;fkjsa asdlfkajsl
+Intro-1-text: Paylaşan, konuşan, tartışan, üreten herkese açık bir komünitenin ortak yaşam ve çalışma alanı.
+
+----
+
+Intro-2-text: Açık alanda sabit masalar, kapalı ofisler ve esnek çalışma alanları açılsa tekliflere yeni habitan'ları bekliyor!
+
+----
+
+Features-title: habita'da neler var?
+
+----
+
+Features-text: Zaman, verim ve nitelikten ödün vermeden çalışabilmeniz için ihtiyacınız olan herşey habita’da mevcut!
+
+----
+
+Features: 
+
+- 
+  type: "0"
+  title: Atıştırmalıklar
+  icon: food
+- 
+  type: "1"
+  title: MİNİMUM 10 MBPS SİMETRİK İNTERNET
+  icon: wifi
+- 
+  type: "2"
+  title: 24/7 ÇALIŞMA
+  icon: time
+- 
+  type: "3"
+  title: BAR
+  icon: drink
+- 
+  type: "4"
+  title: ADRES GÖSTERME
+  icon: envelope
+- 
+  title: TOPLANTI ODALARI
+  icon: presentation
+- 
+  title: SICAK İÇECEKLER
+  icon: coffee
+- 
+  title: PRİNTER
+  icon: printer
+- 
+  title: MUTFAK
+  icon: boiler
+
+----
+
+Membership-title: üyelik seçenekleri
+
+----
+
+Membership-text: habita’da kendini çalışırken daha iyi hissetmek isteyen, nefes almaya ihtiyaç duyan ve belki de en önemlisi hep beraber “güzel şeylerin” yaratıldığı bir ekosistemin parçası olmak isteyen herkese göre bir şeyler var...
+
+----
+
+Membership-options: 
+
+- 
+  title: SABİT MASALAR
+  icon: desk
+- 
+  title: KAPALI OFİSLER
+  icon: office
+- 
+  title: ESNEK ÇALIŞMA ALANLARI
+  icon: flexible
+
+----
+
+Events-title: etkinlikler
+
+----
+
+Events-text: İlham veren hikayeler, yol gösterici öneriler, üretilen ve yaratılan güzellikler kısacası paylaştıkça çoğalan, değerlenen her şey için habita event space...
