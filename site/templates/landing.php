@@ -38,6 +38,8 @@
           </div>
           <div class="first-sm col-xs-12 col-sm-8">
             <blockquote><?= $page->intro_1_text() ?></blockquote>
+
+            <p><?= $page->intro_3_text() ?></p>
           </div>
         </div>
 
@@ -52,7 +54,9 @@
         </div>
       <? endif ?>
 
-      <blockquote class="u-pa50"><?= $page->intro_1_text() ?></blockquote>
+      <blockquote class="u-pa50"><?= $page->intro_2_text() ?></blockquote>
+
+      <blockquote><?= $page->intro_3_text() ?></blockquote>
 
       <div class="bg-greylightest u-pa50">
 
@@ -66,7 +70,7 @@
           <? foreach ($page->features()->toStructure() as $feature) :?>
             <div class="col-xs-12 col-sm-6 u-pv10">
               <? snippet('icon-svg', ['type' => $feature->icon(), 'size' => '40', 'classes' => 'u-floatleft u-mr10']) ?>
-              <h4 class="c-grey u-mt10"><?= $feature->title() ?></h4>
+              <h4 class="c-grey u-mt10 u-ml50"><?= $feature->title() ?></h4>
             </div>
           <? endforeach ?>
 

@@ -23,7 +23,14 @@ fields:
     label: Intro text (second block)
     type:  text
     icon: text-width
+  intro_3_text:
+    label: Intro 3 text (test)
+    type: text
+    icon: text-width
 
+  greatness:
+    label: Greatness
+    type: text
 
 
 

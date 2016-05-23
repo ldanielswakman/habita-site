@@ -83,6 +83,9 @@ figure { margin: 0; }
 .u-ml5 {
   margin-left: 5px !important;
 }
+.u-ml50 {
+  margin-left: 50px !important;
+}
 .u-ml80 {
   margin-left: 80px !important;
 }
