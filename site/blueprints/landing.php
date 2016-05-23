@@ -24,6 +24,16 @@ fields:
     type: text
     icon: text-width
 
+  test_text:
+    label: Test text
+    type: textarea
+    icon: text-width
+
+  testagain_text:
+    label: Test again text
+    type: textarea
+    icon: text-width
+
 
   features_headline:
     label: Features
@@ -104,24 +114,4 @@ fields:
   events_text:
     label: Events text
     type: textarea
-    icon: text-width
-
-  test_text:
-    label: Test text
-    type: textarea
-    icon: text-width
-
-  testagain_text:
-    label: Test again text
-    type: textarea
-    icon: text-width
-
-  introtext:
-    label: Intro text (first block)
-    type: text
-    icon: text-width
-
-  secondtext:
-    label: Intro text (second block)
-    type: text
     icon: text-width

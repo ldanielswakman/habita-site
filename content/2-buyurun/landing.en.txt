@@ -93,7 +93,7 @@ We designed flexible and functional solutions which can play host to a variety o
 
 ----
 
-Test-text: Testing a texxxt
+Test-text: An open & transparent coworking hub for everyone...
 
 ----
 
@@ -102,3 +102,11 @@ Introtext: First text block.
 ----
 
 Secondtext: Second text block.
+
+----
+
+Introfirst-text: Paylaşan, konuşan, tartışan, üreten herkese açık bir komünitenin ortak yaşam ve çalışma alanı.
+
+----
+
+Testagain-text: Fixed desks in an open space, closed offices and flexible working places… We are waiting for new habitans!
