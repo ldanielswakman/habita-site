@@ -1,4 +1,4 @@
-Title: Buyurun
+Title: form
 
 ----
 
@@ -6,7 +6,7 @@ Features-title: What is in habita?
 
 ----
 
-Features-text: In habita, you can find everything you need to work effective and efficient
+Features-text: In habita, you can find everything you need to work effectively and efficiently
 
 ----
 
@@ -47,7 +47,7 @@ Features:
 
 ----
 
-Membership-title: Membership Options
+Membership-title: membership options
 
 ----
 
@@ -73,7 +73,7 @@ Membership-options:
 
 ----
 
-Events-title: Events
+Events-title: events
 
 ----
 
@@ -89,4 +89,4 @@ Test-text: An open & transparent coworking hub for everyone...
 
 ----
 
-Testagain-text: Fixed desks in an open space, closed offices and flexible working places… We are waiting for new habitans!
+Testagain-text: Fixed desks in an open space, closed offices and flexible working places waiting for new habitans!

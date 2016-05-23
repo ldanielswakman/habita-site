@@ -1,4 +1,4 @@
-Title: Buyurun
+Title: form
 
 ----
 
@@ -81,4 +81,4 @@ Test-text: Paylaşan, konuşan, tartışan, üreten herkese açık bir komünite
 
 ----
 
-Testagain-text: Açık alanda sabit masalar, kapalı ofisler ve esnek çalışma alanları açılsa tekliflere yeni habitan'ları bekliyor!
+Testagain-text: Açık alanda sabit masalar, kapalı ofisler ve esnek çalışma alanları yeni habitan'ları bekliyor!
