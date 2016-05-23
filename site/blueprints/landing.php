@@ -106,6 +106,11 @@ fields:
     type: textarea
     icon: text-width
 
+  test_text:
+    label: Events text
+    type: textarea
+    icon: text-width
+
   introtext:
     label: Intro text (first block)
     type: text
