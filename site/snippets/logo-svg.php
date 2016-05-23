@@ -8,10 +8,10 @@ $emblem_color = (isset($emblem_color)) ? $emblem_color : $color;
 if ($emblem) :
 ?>
 
-<svg class="logo-svg" height="<?= $height ?>" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
+<svg class="logo-svg logo-svg-emblem" height="<?= $height ?>" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
 <style type="text/css">
-  .logo-svg .st0{fill:<?= $color ?>;}
-  .logo-svg .emblem .st0{fill:<?= $emblem_color ?>;}
+  .logo-svg-emblem .st0{fill:<?= $color ?>;}
+  .logo-svg-emblem .emblem .st0{fill:<?= $emblem_color ?>;}
 </style>
 <g>
   <polygon class="st0" points="32.1,24.5 32.1,35.5 60,35.5 60,24.5  "/>
@@ -24,10 +24,10 @@ if ($emblem) :
 
 <? else :?>
 
-<svg class="logo-svg" height="<?= $height ?>" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 65.5" style="enable-background:new 0 0 400 65.5;" xml:space="preserve">
+<svg class="logo-svg logo-svg-full" height="<?= $height ?>" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 65.5" style="enable-background:new 0 0 400 65.5;" xml:space="preserve">
 <style type="text/css">
-  .logo-svg .st0{fill:<?= $color ?>;}
-  .logo-svg .emblem .st0{fill:<?= $emblem_color ?>;}
+  .logo-svg-full .st0{fill:<?= $color ?>;}
+  .logo-svg-full .emblem .st0{fill:<?= $emblem_color ?>;}
 </style>
 <g>
   <g>

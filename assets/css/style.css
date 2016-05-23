@@ -118,6 +118,10 @@ figure { margin: 0; }
   padding-top: 20px !important;
   padding-bottom: 20px !important;
 }
+.u-pv50 {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
 .u-ph15 {
   padding-left: 15px !important;
   padding-right: 15px !important;
@@ -229,6 +233,21 @@ figure { margin: 0; }
 }
 .u-clearfix:after {
   clear: both;
+}
+/* super specific utility classes */
+@media screen and (max-width: 768px) {
+  .u-rotate270-xs {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+  .u-pa30-xs {
+    padding: 30px !important;
+  }
+  .u-ph30-xs {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
 }
 
 
@@ -495,6 +514,7 @@ a.tag:hover {
 }
 @media screen and (max-width: 768px) {
   .panel {
+    position: relative;
     left: 0;
     width: 100%; // fallback for some browsers
     width: 100vw;
@@ -515,7 +535,6 @@ a.tag:hover {
     left: 0;
     width: 100%; // fallback for some browsers
     width: 100vw;
-    height: 200px;
     height: 60vw;
     min-height: 200px;
   }
@@ -527,6 +546,7 @@ a.tag:hover {
   left: auto;
   right: 0;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  z-index: 2;
 }
 @media screen and (max-width: 991px) {
   .panel--content {
@@ -536,11 +556,12 @@ a.tag:hover {
 }
 @media screen and (max-width: 768px) {
   .panel--content {
+    position: relative;
     left: 0;
     width: 100%; // fallback for some browsers
     width: 100vw;
-    top: 200px; // fallback for some browsers
-    top: 60vw;
+    // top: 200px; // fallback for some browsers
+    // top: 60vw;
   }
 }
 
