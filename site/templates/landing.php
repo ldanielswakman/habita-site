@@ -37,7 +37,7 @@
             <figure><img src="<?= url('assets/images/talk.svg') ?>" alt="" /></figure>
           </div>
           <div class="first-sm col-xs-12 col-sm-8">
-            <blockquote><?= $page->intro_1_text()->html() ?></blockquote>
+            <blockquote><?= $page->test_text() ?></blockquote>
 
             <p><?= $page->features_title() ?></p>
           </div>
@@ -54,7 +54,7 @@
         </div>
       <? endif ?>
 
-      <blockquote class="u-pa50"><?= $page->intro2_text() ?></blockquote>
+      <blockquote class="u-pa50"><?= $page->intro_2_text() ?></blockquote>
 
       <blockquote><?= $page->features_text() ?></blockquote>
 

@@ -6,7 +6,7 @@ Intro-1-text: Paylaşan, konuşan, tartışan, üreten herkese açık bir komün
 
 ----
 
-Introsecond-text: Açık alanda sabit masalar, kapalı ofisler ve esnek çalışma alanları açılsa tekliflere yeni habitan'ları bekliyor!
+Intro-2-text: Açık alanda sabit masalar, kapalı ofisler ve esnek çalışma alanları açılsa tekliflere yeni habitan'ları bekliyor!
 
 ----
 
@@ -85,7 +85,7 @@ Events-text: İlham veren hikayeler, yol gösterici öneriler, üretilen ve yara
 
 ----
 
-Test-text: Testing a texxxt
+Test-text: Paylaşan, konuşan, tartışan, üreten herkese açık bir komünitenin ortak yaşam ve çalışma alanı.
 
 ----
 
@@ -94,3 +94,7 @@ Introtext: First text block.
 ----
 
 Secondtext: Second text block.
+
+----
+
+Introfirst-text: Paylaşan, konuşan, tartışan, üreten herkese açık bir komünitenin ortak yaşam ve çalışma alanı.

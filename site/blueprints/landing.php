@@ -19,7 +19,7 @@ fields:
     type: text
     size: small
     icon: text-width
-  introsecond_text:
+  intro_2_text:
     label: Intro text (second block)
     type: text
     icon: text-width
