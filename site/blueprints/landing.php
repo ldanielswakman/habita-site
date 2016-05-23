@@ -14,18 +14,14 @@ fields:
     label: Intro
     type: headline
 
-  intro_1_text:
+  introfirst_text:
     label: Intro text (first block)
     type:  text
     size:  small
     icon: text-width
-  intro_2_text:
+  introsecond_text:
     label: Intro text (second block)
     type:  text
-    icon: text-width
-  intro_3_text:
-    label: Intro 3 text (test)
-    type: text
     icon: text-width
 
   greatness:
@@ -113,7 +109,3 @@ fields:
     label: Events text
     type: textarea
     icon: text-width
-
-  test:
-    label: Testing
-    type: text

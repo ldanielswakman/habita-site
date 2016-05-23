@@ -2,11 +2,11 @@ Title: Buyurun
 
 ----
 
-Intro-1-text: Paylaşan, konuşan, tartışan, üreten herkese açık bir komünitenin ortak yaşam ve çalışma alanı.
+Introfirst-text: Paylaşan, konuşan, tartışan, üreten herkese açık bir komünitenin ortak yaşam ve çalışma alanı.
 
 ----
 
-Intro-2-text: Açık alanda sabit masalar, kapalı ofisler ve esnek çalışma alanları açılsa tekliflere yeni habitan'ları bekliyor!
+Introsecond-text: Açık alanda sabit masalar, kapalı ofisler ve esnek çalışma alanları açılsa tekliflere yeni habitan'ları bekliyor!
 
 ----
 
@@ -82,15 +82,3 @@ Events-title: etkinlikler
 ----
 
 Events-text: İlham veren hikayeler, yol gösterici öneriler, üretilen ve yaratılan güzellikler kısacası paylaştıkça çoğalan, değerlenen her şey için habita event space...
-
-----
-
-Intro-3-text: Testing
-
-----
-
-Greatness: Grandure
-
-----
-
-Test: Yes.

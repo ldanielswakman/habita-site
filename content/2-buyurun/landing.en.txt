@@ -2,11 +2,11 @@ Title: Buyurun
 
 ----
 
-Intro-1-text: An open & transparent coworking hub for everyone...
+Introfirst-text: An open & transparent coworking hub for everyone...
 
 ----
 
-Intro-2-text: Fixed desks in an open space, closed offices and flexible working places… We are waiting for new habitans!
+Introsecond-text: Fixed desks in an open space, closed offices and flexible working places… We are waiting for new habitans!
 
 ----
 
