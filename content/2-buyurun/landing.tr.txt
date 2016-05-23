@@ -2,14 +2,6 @@ Title: Buyurun
 
 ----
 
-Intro-1-text: Paylaşan, konuşan, tartışan, üreten herkese açık bir komünitenin ortak yaşam ve çalışma alanı.
-
-----
-
-Intro-2-text: Açık alanda sabit masalar, kapalı ofisler ve esnek çalışma alanları açılsa tekliflere yeni habitan'ları bekliyor!
-
-----
-
 Features-title: habita'da neler var?
 
 ----
@@ -86,18 +78,6 @@ Events-text: İlham veren hikayeler, yol gösterici öneriler, üretilen ve yara
 ----
 
 Test-text: Paylaşan, konuşan, tartışan, üreten herkese açık bir komünitenin ortak yaşam ve çalışma alanı.
-
-----
-
-Introtext: First text block.
-
-----
-
-Secondtext: Second text block.
-
-----
-
-Introfirst-text: Paylaşan, konuşan, tartışan, üreten herkese açık bir komünitenin ortak yaşam ve çalışma alanı.
 
 ----
 

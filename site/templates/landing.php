@@ -127,10 +127,6 @@
         </a>
       </div>
 
-      <div class="u-pa50">
-        <blockquote><?= $page->test_text() ?></blockquote>
-      </div>
-
     </div>
 
   </body>

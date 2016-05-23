@@ -14,23 +14,13 @@ fields:
     label: Intro
     type: headline
 
-  introfirst_text:
-    label: Intro text (first block)
-    type: text
-    size: small
-    icon: text-width
-  intro_2_text:
-    label: Intro text (second block)
-    type: text
-    icon: text-width
-
   test_text:
-    label: Test text
+    label: Intro text (first block)
     type: textarea
     icon: text-width
 
   testagain_text:
-    label: Test again text
+    label: Intro text (second block)
     type: textarea
     icon: text-width
 

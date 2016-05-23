@@ -2,14 +2,6 @@ Title: Buyurun
 
 ----
 
-Intro-1-text: An open & transparent coworking hub for everyone...
-
-----
-
-Intro-2-text: Fixed desks in an open space, closed offices and flexible working places… We are waiting for new habitans!
-
-----
-
 Features-title: What is in habita?
 
 ----
@@ -94,18 +86,6 @@ We designed flexible and functional solutions which can play host to a variety o
 ----
 
 Test-text: An open & transparent coworking hub for everyone...
-
-----
-
-Introtext: First text block.
-
-----
-
-Secondtext: Second text block.
-
-----
-
-Introfirst-text: Paylaşan, konuşan, tartışan, üreten herkese açık bir komünitenin ortak yaşam ve çalışma alanı.
 
 ----
 
