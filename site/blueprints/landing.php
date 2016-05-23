@@ -33,7 +33,6 @@ fields:
     type: text
 
 
-
   features_headline:
     label: Features
     type: headline
@@ -114,3 +113,7 @@ fields:
     label: Events text
     type: textarea
     icon: text-width
+
+  test:
+    label: Testing
+    type: text

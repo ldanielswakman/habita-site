@@ -37,9 +37,9 @@
             <figure><img src="<?= url('assets/images/talk.svg') ?>" alt="" /></figure>
           </div>
           <div class="first-sm col-xs-12 col-sm-8">
-            <blockquote><?= $page->intro_1_text() ?></blockquote>
+            <blockquote><?= $page->test() ?></blockquote>
 
-            <p><?= $page->intro_3_text() ?></p>
+            <p><?= $page->features_title() ?></p>
           </div>
         </div>
 
@@ -56,7 +56,7 @@
 
       <blockquote class="u-pa50"><?= $page->intro_2_text() ?></blockquote>
 
-      <blockquote><?= $page->intro_3_text() ?></blockquote>
+      <blockquote><?= $page->features_text() ?></blockquote>
 
       <div class="bg-greylightest u-pa50">
 
