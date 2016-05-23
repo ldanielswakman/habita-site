@@ -90,3 +90,11 @@ Events-text:
 Inspiring stories, guiding recommendations, exciting creations... it is clear that everything becomes more valuable when shared…
 
 We designed flexible and functional solutions which can play host to a variety of events.
+
+----
+
+Introtext: First text block.
+
+----
+
+Secondtext: Second text block.

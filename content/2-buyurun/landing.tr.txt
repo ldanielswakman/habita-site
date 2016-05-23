@@ -82,3 +82,11 @@ Events-title: etkinlikler
 ----
 
 Events-text: İlham veren hikayeler, yol gösterici öneriler, üretilen ve yaratılan güzellikler kısacası paylaştıkça çoğalan, değerlenen her şey için habita event space...
+
+----
+
+Introtext: First text block.
+
+----
+
+Secondtext: Second text block.

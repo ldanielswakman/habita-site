@@ -7,7 +7,7 @@ files: true
 fields:
   title:
     label: Title
-    type:  text
+    type: text
 
 
   intro_headline:
@@ -16,17 +16,13 @@ fields:
 
   introfirst_text:
     label: Intro text (first block)
-    type:  text
-    size:  small
+    type: text
+    size: small
     icon: text-width
   introsecond_text:
     label: Intro text (second block)
-    type:  text
-    icon: text-width
-
-  greatness:
-    label: Greatness
     type: text
+    icon: text-width
 
 
   features_headline:
@@ -108,4 +104,14 @@ fields:
   events_text:
     label: Events text
     type: textarea
+    icon: text-width
+
+  introtext:
+    label: Intro text (first block)
+    type: text
+    icon: text-width
+
+  secondtext:
+    label: Intro text (second block)
+    type: text
     icon: text-width
