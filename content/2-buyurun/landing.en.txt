@@ -2,19 +2,19 @@ Title: Buyurun
 
 ----
 
-Intro-1-text: Paylaşan, konuşan, tartışan, üreten herkese açık bir komünitenin ortak yaşam ve çalışma alanı.
+Intro-1-text: An open & transparent coworking hub for everyone...
 
 ----
 
-Intro-2-text: Açık alanda sabit masalar, kapalı ofisler ve esnek çalışma alanları açılsa tekliflere yeni habitan'ları bekliyor!
+Intro-2-text: Fixed desks in an open space, closed offices and flexible working places… We are waiting for new habitans!
 
 ----
 
-Features-title: habita'da neler var?
+Features-title: What is in habita?
 
 ----
 
-Features-text: Zaman, verim ve nitelikten ödün vermeden çalışabilmeniz için ihtiyacınız olan herşey habita’da mevcut!
+Features-text: In habita, you can find everything you need to work effective and efficient
 
 ----
 
@@ -55,30 +55,38 @@ Features:
 
 ----
 
-Membership-title: membership options
+Membership-title: Membership Options
 
 ----
 
-Membership-text: habita’da kendini çalışırken daha iyi hissetmek isteyen, nefes almaya ihtiyaç duyan ve belki de en önemlisi hep beraber “güzel şeylerin” yaratıldığı bir ekosistemin parçası olmak isteyen herkese göre bir şeyler var...
+Membership-text: 
+
+It doesn’t matter if you work for the largest company in the world, as a freelancer or a start up…
+
+No matter what, in habita there is something for everyone who wants to feel happier while working, is in need for a fresh breath and, most importantly, wants to be a part of an ecosystem where good things are created all together…
 
 ----
 
 Membership-options: 
 
 - 
-  title: SABİT MASALAR
+  title: FIXED DESKS
   icon: desk
 - 
-  title: KAPALI OFİSLER
+  title: CLOSED OFFICES
   icon: office
 - 
-  title: ESNEK ÇALIŞMA ALANLARI
+  title: FLEXIBLE WORKING SPACES
   icon: flexible
 
 ----
 
-Events-title: events
+Events-title: Events
 
 ----
 
-Events-text: İlham veren hikayeler, yol gösterici öneriler, üretilen ve yaratılan güzellikler kısacası paylaştıkça çoğalan, değerlenen her şey için habita event space...
+Events-text: 
+
+Inspiring stories, guiding recommendations, exciting creations... it is clear that everything becomes more valuable when shared…
+
+We designed flexible and functional solutions which can play host to a variety of events.
