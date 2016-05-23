@@ -98,3 +98,7 @@ Secondtext: Second text block.
 ----
 
 Introfirst-text: Paylaşan, konuşan, tartışan, üreten herkese açık bir komünitenin ortak yaşam ve çalışma alanı.
+
+----
+
+Testagain-text: Açık alanda sabit masalar, kapalı ofisler ve esnek çalışma alanları açılsa tekliflere yeni habitan'ları bekliyor!

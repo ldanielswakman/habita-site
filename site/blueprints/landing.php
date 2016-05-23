@@ -107,7 +107,12 @@ fields:
     icon: text-width
 
   test_text:
-    label: Events text
+    label: Test text
+    type: textarea
+    icon: text-width
+
+  testagain_text:
+    label: Test again text
     type: textarea
     icon: text-width
 
