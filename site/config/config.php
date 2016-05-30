@@ -35,13 +35,13 @@ c::set('languages', array(
     'code' => 'tr',
     'name' => 'Türkçe',
     'default' => true,
-    'locale' => 'tr_TR',
+    'locale' => 'tr_TR.UTF-8',
     'url' => '/',
   ),
   array(
     'code' => 'en',
     'name' => 'English',
-    'locale' => 'en_US',
+    'locale' => 'en_US.UTF-8',
     'url' => '/en',
   ),
 ));
