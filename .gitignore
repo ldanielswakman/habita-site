@@ -1,6 +1,14 @@
+# Sublime workspace (local)
 *.sublime-workspace
-error_log
+
+# Kirby folders
 site/accounts/
 site/accounts/*
 site/config/
 site/config/*
+
+# Google site verifier html (server)
+googleaa37408530a000c3.html
+
+# error log (server)
+error_log
