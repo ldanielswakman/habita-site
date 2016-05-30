@@ -7,7 +7,7 @@ password: >
 language: en
 role: admin
 history:
+  - updates/caylar-sirketten
   - updates/yukseliyoruz
   - updates/tribunsuz-etkinlik-olmaz
-  - updates/caylar-sirketten
   - updates/biraz-kafa-dinlemek-lazim-bazen

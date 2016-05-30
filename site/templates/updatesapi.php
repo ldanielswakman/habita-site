@@ -8,17 +8,17 @@ header('Content-type: application/json; charset=utf-8');
 $q = $_GET['q'];
 
 // search in updates or just query them
-if(isset($q) && strlen($q) > 0) {
-  $data = $pages->find('updates')->children()->visible()->search($q, 'title|text')->sortBy('date', 'desc')->paginate(10);  
-} else {
-  $data = $pages->find('updates')->children()->visible()->sortBy('date', 'desc')->paginate(10);
-}
+$data = $pages->find('updates')->children()->visible();
+if(isset($q) && strlen($q) > 0) { $data = $data->search($q, 'title|text'); }
+$data = $data->sortBy('date', 'desc'); // ->paginate(10);
 
 // build array basics
 $json = array();
 $json['data'] = array();
-$json['pages'] = $data->pagination()->countPages();
-$json['page']  = $data->pagination()->page();
+if($data->pagination()) {
+  $json['pages'] = $data->pagination()->countPages();
+  $json['page']  = $data->pagination()->page();
+}
 $json['q']  = $q; 
 
 // build array result data
