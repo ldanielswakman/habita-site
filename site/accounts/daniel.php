@@ -7,7 +7,6 @@ password: >
 language: en
 role: admin
 history:
-  - buyurun
   - updates/yukseliyoruz
   - updates/tribunsuz-etkinlik-olmaz
   - updates/caylar-sirketten
