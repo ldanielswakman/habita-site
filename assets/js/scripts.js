@@ -4,11 +4,14 @@ $(document).ready(function() {
   $('a[href^="#"]').smoothScroll({
     offset: -70,
     afterScroll: function() {
+      $hash = $(this).attr('href');
+      $('.article' + $hash).addClass('isExpanded');
+
       if(history.pushState) {
-        history.pushState(null, null, $(this).attr('href'));
+        history.pushState(null, null, $hash);
       }
       else {
-        location.hash = $(this).attr('href');
+        location.hash = $hash;
       }
     },
   });
@@ -16,7 +19,10 @@ $(document).ready(function() {
   if(location.hash) {
     $.smoothScroll({
       offset: -70,
-      scrollTarget: location.hash
+      scrollTarget: location.hash,
+      afterScroll: function() {
+        $('.article' + location.hash).addClass('isExpanded');
+      },
     });
   }
 
@@ -57,6 +63,14 @@ function slideInOnScroll() {
       $(this).removeClass('isVisible');
     }
   });
+}
+
+function expandArticle(obj) {
+  if(obj) {
+    obj.closest('.article').toggleClass('isExpanded');
+  } else {
+    console.log('invalid object...');
+  }
 }
 
 events = 'ready scroll resize scrollstart scrollstop';

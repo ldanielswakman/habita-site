@@ -95,7 +95,12 @@
         ?>
         <? foreach ($articles as $article) :?>
 
-          <article id="<?= $article->slug() ?>" class="article u-mb80 <? e($article->hasImages(), ' article--hasImages') ?>">
+          <article id="<?= $article->slug() ?>" class="article u-pb50 u-mb50 <? e($article->hasImages(), ' article--hasImages') ?>">
+
+            <button class="button button-outline button-small u-pinned-bottomleft u-z2" onclick="expandArticle($(this))">
+              <span class="isExpanded-hide"><i class="ion ion-plus"></i> <?= l::get('read_more') ?></span>
+              <span class="isExpanded-show"><i class="ion ion-minus"></i> <?= l::get('read_less') ?></span>
+            </button>
 
             <h3><?= $article->title() ?> <a href="#<?= $article->slug() ?>" class="c-textlight u-ml5"><i class="ion ion-link"></i></a></h3>
             <time datetime="<?= $article->date('%Y-%m-%d') ?>" pubdate class="date"><?= $article->date('%d %B %Y') ?></time><br />
