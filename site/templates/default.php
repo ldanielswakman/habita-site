@@ -2,7 +2,7 @@
 
 <html lang="<?= $site->language() ?>">
 
-  <?php snippet('header') ?>
+  <?php snippet('updates-header') ?>
 
   <body>
 
