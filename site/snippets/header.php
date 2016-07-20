@@ -15,12 +15,12 @@
 
   <?
   $css_assets = ($_SERVER['SERVER_NAME'] == 'localhost') ? array(
-    'assets/css/style.css',
+    'assets/css/updates-style.css',
     'assets/css/flexboxgrid.min.css',
     'assets/css/ionicons.min.css',
     'assets/css/owl.carousel.min.css',
     ) : array(
-    'assets/css/style.css',
+    'assets/css/updates-style.css',
     '//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css',
     '//cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css',
     // 'https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css',
