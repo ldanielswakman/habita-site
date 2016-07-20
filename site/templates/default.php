@@ -81,7 +81,7 @@
 
       <div id="updates" class="articles u-mt20">
         <?
-        $articles = $pages->find('updates')->children()->visible()->sortby('date', 'desc');
+        $articles = $pages->find('blog')->children()->visible()->sortby('date', 'desc');
         // add the tag filter
         if($tag = param('tag')) {
           $articles = $articles->filterBy('tags', $tag, ',');

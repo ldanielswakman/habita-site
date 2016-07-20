@@ -8,7 +8,7 @@ header('Content-type: application/json; charset=utf-8');
 $q = $_GET['q'];
 
 // search in updates or just query them
-$data = $pages->find('updates')->children()->visible();
+$data = $pages->find('blog')->children()->visible();
 if(isset($q) && strlen($q) > 0) { $data = $data->search($q, 'title|text'); }
 $data = $data->sortBy('date', 'desc'); // ->paginate(10);
 

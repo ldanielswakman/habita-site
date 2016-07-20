@@ -1,6 +1,6 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Update
+title: Blog Article
 pages: false
 files:
   type: 
