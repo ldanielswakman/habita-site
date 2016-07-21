@@ -6,4 +6,8 @@ password: >
   $2a$10$XHjyTBNb7HewG8O4FY//Q.Tfb.au4C20DJKzVDdSNtHcCvnJwvlTe
 language: en
 role: admin
-history: [ ]
+history:
+  - new
+  - membership-options
+  - members
+  - blog

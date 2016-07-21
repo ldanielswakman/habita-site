@@ -2,7 +2,7 @@
 
 <html lang="<?= $site->language() ?>">
 
-  <? snippet('header') ?>
+  <? snippet('updates-header') ?>
 
   <body class="bg-greylightest">
 
