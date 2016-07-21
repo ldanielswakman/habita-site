@@ -20,11 +20,15 @@
   $css_assets = ($_SERVER['SERVER_NAME'] == 'localhost') ? array(
     'assets/css/style.css'
     ) : array(
-    'assets/css/updates-style.css'
+    'assets/css/style.css'
     );
 
   $js_assets = ($_SERVER['SERVER_NAME'] == 'localhost') ? array(
+    'assets/js/jquery-2.2.3.min.js',
+    'assets/js/scripts.js',
     ) : array(
+    'https://code.jquery.com/jquery-2.2.4.min.js',
+    'assets/js/scripts.js',
     );
   ?>
   

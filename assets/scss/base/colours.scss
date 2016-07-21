@@ -1,13 +1,42 @@
 // Colours
-$orange:      #ff5000;
-$orangedark:  #e17046;
+$orange:        #ff5000;
+$orangedark:    #e17046;
+$bluedarkfade:  #26454c;
 
-$white:       #ffffff;
-$black:       #000000;
+$white:         #ffffff;
+$greylightest:  #edeeef;
+$black:         #000000;
 
+// Colour classes
 .c-orange {
   color: $orange;
 }
 .c-orangedark {
   color: $orangedark;
+}
+.c-bluedarkfade {
+  color: $bluedarkfade;
+}
+.c-white {
+  color: $white;
+}
+.c-greylightest {
+  color: $greylightest;
+}
+
+// BG Colour classes
+.bg-orange {
+  background-color: $orange;
+}
+.bg-orangedark {
+  background-color: $orangedark;
+}
+.bg-bluedarkfade {
+  background-color: $bluedarkfade;
+}
+.bg-white {
+  background-color: $white;
+}
+.bg-greylightest {
+  background-color: $greylightest;
 }

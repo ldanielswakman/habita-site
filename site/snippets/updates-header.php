@@ -35,7 +35,7 @@
     'assets/js/jquery.smooth-scroll.min.js',
     'assets/js/jquery.sticky-kit.min.js',
     'assets/js/owl.carousel.min.js',
-    'assets/js/scripts.js',
+    'assets/js/updates-scripts.js',
     // 'assets/js/updates-api.js',
     ) : array(
     // production assets
@@ -44,7 +44,7 @@
     '//cdn.jsdelivr.net/jquery.sticky-kit/1.1.2/jquery.sticky-kit.min.js',
     // '//cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js',
     '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/owl.carousel.min.js',
-    'assets/js/scripts.js',
+    'assets/js/updates-scripts.js',
     );
   ?>
   

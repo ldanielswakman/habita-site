@@ -7,3 +7,9 @@
     <? endforeach ?>
   </ul>
 </nav>
+
+<!-- Nav toggle button -->
+<a href="#" onclick="toggleMenu();" class="nav-toggle"></a>
+
+<!-- Nav content overlay -->
+<a href="#" onclick="toggleMenu('close')" class="nav-fade"></a>

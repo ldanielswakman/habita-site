@@ -17,6 +17,14 @@
   transform: $arguments;
 }
 
+// Transform Origin
+@mixin transform-origin($arguments) {
+  -webkit-transform-origin: $arguments;
+  -moz-transform-origin: $arguments;
+  -o-transform-origin: $arguments;
+  transform-origin: $arguments;
+}
+
 // Drop shadow
 @mixin box-shadow($arguments) {
   -webkit-box-shadow: $arguments;

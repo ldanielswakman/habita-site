@@ -2,6 +2,22 @@
 
 .c-orangedark { color: #e17046; }
 
+.c-bluedarkfade { color: #26454c; }
+
+.c-white { color: #ffffff; }
+
+.c-greylightest { color: #edeeef; }
+
+.bg-orange { background-color: #ff5000; }
+
+.bg-orangedark { background-color: #e17046; }
+
+.bg-bluedarkfade { background-color: #26454c; }
+
+.bg-white { background-color: #ffffff; }
+
+.bg-greylightest { background-color: #edeeef; }
+
 /* --- Reset --- */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, q, small, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { border: 0; margin: 0; padding: 0; }
 
@@ -15,11 +31,32 @@ figure img { width: 100%; }
 
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-body { width: 100%; height: 100%; font-family: "Montserrat", Arial, sans-serif; font-size: 100%; font-kerning: normal; line-height: 1.5em; -webkit-font-smoothing: antialiased; font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body { width: 100%; height: 100%; font-family: "Montserrat", Arial, sans-serif; font-size: 100%; font-kerning: normal; line-height: 1.5em; font-weight: 300; -webkit-font-smoothing: antialiased; font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 a { color: inherit; text-decoration: none; }
 
-nav { position: fixed; top: 0; left: 0; height: 100%; max-width: calc( 100vw - 60px ); background-color: #ff5000; color: #ffffff; padding: 50px; -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); }
-nav ul { list-style: none; font-size: 1.5rem; line-height: 2.5rem; }
+.logo-svg { position: fixed; height: 300px !important; top: 250px; left: 300px; z-index: 11; margin-left: -134.1px; margin-top: -122.4px; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
+.logo-svg .st0 { -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
+
+.navIsOpen .logo-svg { left: 400px; }
+.navIsOpen .logo-svg .st0, .navIsOpen .logo-svg .emblem .st0 { fill: #ffffff !important; }
+
+nav { position: fixed; top: 0; left: 0; z-index: 9; height: 100%; width: 400px; max-width: calc( 100vw - 60px ); background-color: #ff5000; color: #ffffff; padding: 150px 50px 50px; -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; -webkit-transform: translateX(-400px); -moz-transform: translateX(-400px); -o-transform: translateX(-400px); transform: translateX(-400px); }
+nav ul { list-style: none; font-size: 1.5rem; line-height: 3rem; }
+nav a { color: rgba(255, 255, 255, 0.85); }
+nav a:hover { color: #ffffff; }
+
+.navIsOpen nav { -webkit-transform: translateX(0); -moz-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
+
+a.nav-toggle { position: fixed; top: 40px; left: 40px; display: block; width: 80px; height: 80px; z-index: 10; }
+a.nav-toggle:before, a.nav-toggle:after { content: ""; position: absolute; top: 33%; left: 0; width: 100%; border-top: 2px solid #ff5000; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; -webkit-transform-origin: 25% 25%; -moz-transform-origin: 25% 25%; -o-transform-origin: 25% 25%; transform-origin: 25% 25%; }
+a.nav-toggle:after { top: 66%; }
+
+.navIsOpen a.nav-toggle:before { border-top-color: #ffffff; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+.navIsOpen a.nav-toggle:after { border-top-color: #ffffff; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+a.nav-fade { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 8; background-color: transparent; pointer-events: none; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
+
+.navIsOpen a.nav-fade { background-color: rgba(38, 69, 76, 0.5); pointer-events: all; }
 
 /*# sourceMappingURL=style.css.map */

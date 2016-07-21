@@ -1,0 +1,22 @@
+.logo-svg {
+  $size: 300px;
+  position: fixed;
+  height: $size !important;
+  top: 250px;
+  left: 300px;
+  z-index: 11;
+  margin-left: - $size * 0.447;
+  margin-top: - $size * 0.408;
+  @include transition();
+
+  .st0 {
+    @include transition();
+  }
+}
+.navIsOpen .logo-svg {
+  left: 400px;
+
+  .st0, .emblem .st0 {
+    fill: $white !important;
+  }
+}

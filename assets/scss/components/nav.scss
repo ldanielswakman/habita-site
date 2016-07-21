@@ -1,19 +1,85 @@
 nav {
+  $width: 400px;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 9;
   height: 100%;
+  width: $width;
   max-width: calc( 100vw - 60px );
   background-color: $orange;
   color: $white;
 
-  padding: 50px;
+  padding: 150px 50px 50px;
 
   @include box-shadow(0 0 20px rgba($black, 0.25));
+  @include transition();
+  @include transform(translateX(-$width));
 
   ul {
     list-style: none;
     font-size: 1.5rem;
-    line-height: 2.5rem;
+    line-height: 3rem;
   }
+  a {
+    color: rgba($white, 0.85);
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+.navIsOpen nav {
+  @include transform(translateX(0));    
+}
+
+a.nav-toggle {
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  display: block;
+  width: 80px;
+  height: 80px;
+  z-index: 10;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: 33%;
+    left: 0;
+    width: 100%;
+    border-top: 2px solid $orange;
+    @include transition();
+    @include transform-origin(25% 25%);
+  }
+  &:after {
+    top: 66%;
+  }
+}
+.navIsOpen a.nav-toggle {
+  &:before {
+    border-top-color: $white;
+    @include transform(rotate(45deg));
+  }
+  &:after {
+    border-top-color: $white;
+    @include transform(rotate(-45deg));
+  }
+}
+
+a.nav-fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+  background-color: transparent;
+  pointer-events: none;
+  @include transition();
+}
+.navIsOpen a.nav-fade {
+  background-color: rgba($bluedarkfade, 0.5);
+  pointer-events: all;
 }
