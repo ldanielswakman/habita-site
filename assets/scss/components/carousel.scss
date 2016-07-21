@@ -1,0 +1,53 @@
+// Carousel
+.owl-carousel {
+  min-height: 300px;
+  overflow: hidden;
+  @include transition();
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($bluedarkfade, 0.25);
+    pointer-events: none;
+  }
+
+  .owl-prev,
+  .owl-next {
+    $size: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $size;
+    height: $size;
+    padding: 10px;
+    background-color: rgba($white, 0.5);
+    color: $orange;
+    line-height: 40px;
+    text-align: center;
+
+    @include transition(transform 0.3s ease);
+    @include transform(translateY(-$size));
+
+    &:active {
+      background-color: $white !important;
+    }
+  }
+  &:hover .owl-prev,
+  &:hover .owl-next {
+    transform: translateY(0);
+  }
+  .owl-prev:hover,
+  &:hover .owl-next:hover {
+    background-color: rgba($white, 0.9);
+  }
+  .owl-next {
+    left: auto;
+    right: 0;
+  }
+}
+

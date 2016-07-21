@@ -1,0 +1,32 @@
+/* --- Utilities --- */
+$u: 5;
+
+@for $i from 0 through 40 {
+
+  // margins
+  .u-mt#{$i * $u} { margin-top: #{$i * $u}px !important; }
+  .u-mr#{$i * $u} { margin-right: #{$i * $u}px !important; }
+  .u-mb#{$i * $u} { margin-bottom: #{$i * $u}px !important; }
+  .u-ml#{$i * $u} { margin-left: #{$i * $u}px !important; }
+  .u-mv#{$i * $u} { margin-top: #{$i * $u}px !important; margin-bottom: #{$i * $u}px !important; }
+  .u-mh#{$i * $u} { margin-left: #{$i * $u}px !important; margin-right: #{$i * $u}px !important; }
+  .u-ma#{$i * $u} { margin: #{$i * $u}px !important; }
+
+  // paddings
+  .u-pt#{$i * $u} { padding-top: #{$i * $u}px !important; }
+  .u-pr#{$i * $u} { padding-right: #{$i * $u}px !important; }
+  .u-pb#{$i * $u} { padding-bottom: #{$i * $u}px !important; }
+  .u-pl#{$i * $u} { padding-left: #{$i * $u}px !important; }
+  .u-pv#{$i * $u} { padding-top: #{$i * $u}px !important; padding-bottom: #{$i * $u}px !important;}
+  .u-ph#{$i * $u} { padding-left: #{$i * $u}px !important; padding-right: #{$i * $u}px !important;}
+  .u-pa#{$i * $u} { padding: #{$i * $u}px !important; }
+
+  // line-heights
+  .u-lineheight#{$i * $u} { line-height: #{$i * $u}px !important; }
+
+  // height & width
+  .u-width#{$i * $u} { width: #{$i * $u}px !important; }
+  .u-width#{($i * $u) + 200} { width: #{($i * $u) + 200}px !important; }
+  .u-height#{$i * $u} { height: #{$i * $u}px !important; }
+
+}

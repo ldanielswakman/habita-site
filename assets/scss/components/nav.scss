@@ -38,31 +38,34 @@ a.nav-toggle {
   top: 40px;
   left: 40px;
   display: block;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   z-index: 10;
 
-  &:before,
-  &:after {
+  span {
     content: "";
     position: absolute;
-    top: 33%;
+    top: 50%;
     left: 0;
     width: 100%;
     border-top: 2px solid $orange;
     @include transition();
-    @include transform-origin(25% 25%);
+    @include transform-origin(15% 15%);
   }
-  &:after {
-    top: 66%;
+  span:first-child {
+    top: 25%;
+  }
+  span:last-child {
+    top: 75%;
   }
 }
 .navIsOpen a.nav-toggle {
-  &:before {
+  span:nth-child(2) { opacity: 0; }
+  span:first-child {
     border-top-color: $white;
     @include transform(rotate(45deg));
   }
-  &:after {
+  span:last-child {
     border-top-color: $white;
     @include transform(rotate(-45deg));
   }

@@ -2,8 +2,8 @@
 @import 'base/mixins';
 @import 'base/colours';
 @import 'base/reset';
-// @import 'base/typography';
-// @import 'base/utilities';
+@import 'base/typography';
+@import 'base/utilities';
 @import 'base/generic';
 
 
@@ -12,6 +12,7 @@
 
 
 // Components
+@import 'components/carousel';
 @import 'components/nav';
 
 // Put no style definitions here, this is just a collection & compilation file

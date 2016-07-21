@@ -18,16 +18,24 @@
 
   <?
   $css_assets = ($_SERVER['SERVER_NAME'] == 'localhost') ? array(
-    'assets/css/style.css'
+    'assets/css/owl.carousel.min.css',
+    'assets/css/flexboxgrid.min.css',
+    'assets/css/ionicons.min.css',
+    'assets/css/style.css',
     ) : array(
-    'assets/css/style.css'
+    'assets/css/style.css',
+    // --> find flexboxgrid CDN
+    // --> find ionicons CDN
+    // --> find Owl Carousel CDN (v.2.2.1)
     );
 
   $js_assets = ($_SERVER['SERVER_NAME'] == 'localhost') ? array(
     'assets/js/jquery-2.2.3.min.js',
+    'assets/js/owl.carousel.min.js',
     'assets/js/scripts.js',
     ) : array(
     'https://code.jquery.com/jquery-2.2.4.min.js',
+    // --> find Owl Carousel CDN (v2.2.1)
     'assets/js/scripts.js',
     );
   ?>
