@@ -1,0 +1,35 @@
+// Button
+.button {
+  @include no-appearance();
+  display: inline-block;
+  padding: 8px 18px;
+  background-color: $grey;
+  border: 1px solid transparent;
+  color: $white;
+  font: inherit;
+  line-height: 20px;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:focus, &:active {
+    outline: none;
+  }
+  &.button-primary {
+    background-color: $orange;
+
+    &:hover {
+      background-color: darken($orange, 10%);
+    }
+  }
+
+  &.button-outline {
+    background-color: transparent;
+    border: 1px solid $orange;
+    color: $orange;
+
+    &:hover {
+      background-color: $orange;
+      color: $white;
+    }
+  }
+}

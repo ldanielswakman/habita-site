@@ -14,10 +14,13 @@ $(document).ready(function() {
       // paginationSpeed : 400,
     });
   });
-  
+
+
 });
 
 
+
+// UI: toggle menu
 function toggleMenu(state) {
   if(state != 'close') {
     $('body').toggleClass('navIsOpen');

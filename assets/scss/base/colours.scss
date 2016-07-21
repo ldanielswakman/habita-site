@@ -5,6 +5,7 @@ $bluedarkfade:  #26454c;
 
 $white:         #ffffff;
 $greylightest:  #edeeef;
+$greylight:     #d3d4d5;
 $grey:          #72716c;
 $black:         #000000;
 
@@ -23,6 +24,9 @@ $black:         #000000;
 }
 .c-greylightest {
   color: $greylightest;
+}
+.c-greylight {
+  color: $greylight;
 }
 
 // BG Colour classes

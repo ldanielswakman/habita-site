@@ -30,3 +30,26 @@ $u: 5;
   .u-height#{$i * $u} { height: #{$i * $u}px !important; }
 
 }
+
+.u-absolute {
+  position: absolute !important;
+}
+.u-relative {
+  position: relative !important;
+}
+
+.u-z0 {
+  z-index: 0 !important;
+}
+.u-z1 {
+  z-index: 1 !important;
+}
+.u-z2 {
+  z-index: 2 !important;
+}
+.u-z3 {
+  z-index: 3 !important;
+}
+.u-z4 {
+  z-index: 4 !important;
+}
