@@ -1,0 +1,25 @@
+.c-orange { color: #ff5000; }
+
+.c-orangedark { color: #e17046; }
+
+/* --- Reset --- */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, q, small, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { border: 0; margin: 0; padding: 0; }
+
+article, aside, figure, figure img, figcaption, hgroup, footer, header, nav, section, video, object { display: block; }
+
+a img { border: 0; }
+
+figure { position: relative; }
+
+figure img { width: 100%; }
+
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+body { width: 100%; height: 100%; font-family: "Montserrat", Arial, sans-serif; font-size: 100%; font-kerning: normal; line-height: 1.5em; -webkit-font-smoothing: antialiased; font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+a { color: inherit; text-decoration: none; }
+
+nav { position: fixed; top: 0; left: 0; height: 100%; max-width: calc( 100vw - 60px ); background-color: #ff5000; color: #ffffff; padding: 50px; -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); box-shadow: 0 0 20px rgba(0, 0, 0, 0.25); }
+nav ul { list-style: none; font-size: 1.5rem; line-height: 2.5rem; }
+
+/*# sourceMappingURL=style.css.map */

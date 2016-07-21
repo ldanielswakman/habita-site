@@ -1,0 +1,19 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  max-width: calc( 100vw - 60px );
+  background-color: $orange;
+  color: $white;
+
+  padding: 50px;
+
+  @include box-shadow(0 0 20px rgba($black, 0.25));
+
+  ul {
+    list-style: none;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}

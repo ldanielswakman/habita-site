@@ -1,0 +1,26 @@
+// Mixins
+
+
+// CSS transition
+@mixin transition($arguments: all 0.3s ease) {
+  -webkit-transition: $arguments;
+  -moz-transition: $arguments;
+  -o-transition: $arguments;
+  transition: $arguments;
+}
+
+// Transform
+@mixin transform($arguments) {
+  -webkit-transform: $arguments;
+  -moz-transform: $arguments;
+  -o-transform: $arguments;
+  transform: $arguments;
+}
+
+// Drop shadow
+@mixin box-shadow($arguments) {
+  -webkit-box-shadow: $arguments;
+  -moz-box-shadow: $arguments;
+  -o-box-shadow: $arguments;
+  box-shadow: $arguments;
+}
