@@ -2,13 +2,13 @@
 .button {
   @include no-appearance();
   display: inline-block;
-  padding: 8px 18px;
+  padding: 9px 18px;
   background-color: $grey;
   border: 1px solid transparent;
   color: $white;
   font: inherit;
   line-height: 20px;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
 
   &:focus, &:active {
@@ -22,6 +22,11 @@
     }
   }
 
+  &.button-small {
+    font-size: 0.9em;
+    padding: 4px 14px;
+  }
+
   &.button-outline {
     background-color: transparent;
     border: 1px solid $orange;
@@ -30,6 +35,16 @@
     &:hover {
       background-color: $orange;
       color: $white;
+    }
+  }
+
+  &.button-outline-reveal {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: $orange;
+
+    &:hover {
+      border-color: $orange;
     }
   }
 }

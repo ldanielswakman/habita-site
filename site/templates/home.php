@@ -25,7 +25,7 @@
     <div class="u-relative">
 
       <? if ($images = $page->images()->sortBy('sort', 'asc')) : ?>
-        <div class="u-absolute owl-carousel" style="height: calc(100vh - 250px);">
+        <div class="u-absolute owl-carousel" style="height: calc(100vh - 250px - 30px);">
           <? foreach($images as $image) :?>
             <figure><img src="<?= $image->url() ?>" alt="" /></figure>
           <? endforeach ?>
@@ -34,17 +34,22 @@
 
       <div class="row u-relative u-z2">
         <div class="col-xs-12 col-sm-4 col-sm-offset-5">
-          <div class="bg-white u-pa30">
+          <div class="bg-white u-pa20 u-appearOnLoad">
 
-            <h4 class="c-greylight" style="font-weight: 500; letter-spacing: 0.25em;">FROM THE BLOG</h4>
+            <a href="<?= url('blog') ?>" class="button button-small button-outline-reveal u-floatright">See all</a>
 
-            <div id="blog_result">posts will be here...</div>
+            <h4 class="c-greylight u-lineheight30" style="font-weight: 500; letter-spacing: 0.2em;">FROM THE BLOG</h4>
+
+            <div id="blog_result">loading posts...</div>
 
           </div>
 
         </div>
       </div>
 
+    </div>
+
+    <div class="footer">
     </div>
 
     <a href="javascript:toggleMenu();">

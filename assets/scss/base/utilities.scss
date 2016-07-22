@@ -38,6 +38,31 @@ $u: 5;
   position: relative !important;
 }
 
+
+.u-block {
+  display: block !important;
+}
+.u-inlineblock {
+  display: inline-block !important;
+}
+.u-floatleft {
+  display: inline-block !important;
+  float: left !important;
+}
+.u-floatright {
+  display: inline-block !important;
+  float: right !important;
+}
+.u-alignleft {
+  text-align: left !important;
+}
+.u-aligncenter {
+  text-align: center !important;
+}
+.u-alignright {
+  text-align: right !important;
+}
+
 .u-z0 {
   z-index: 0 !important;
 }
@@ -53,3 +78,31 @@ $u: 5;
 .u-z4 {
   z-index: 4 !important;
 }
+
+.u-lineheight10 {
+  line-height: 10px !important;
+}
+.u-lineheight10 {
+  line-height: 10px !important;
+}
+.u-lineheight20 {
+  line-height: 20px !important;
+}
+.u-lineheight30 {
+  line-height: 30px !important;
+}
+
+
+.u-appearOnLoad {
+  opacity: 0;
+  pointer-events: none;
+  @include transition(all 0.6s ease);
+  @include transform(scale(0));
+
+  &.isLoaded {
+    opacity: 1;
+    @include transform(scale(1));
+    pointer-events: all;
+  }
+}
+

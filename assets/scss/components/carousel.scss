@@ -4,6 +4,7 @@
   overflow: hidden;
   @include transition();
 
+  // Subtle colour cover
   &:before {
     content: "";
     position: absolute;
@@ -22,17 +23,22 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 3;
     width: $size;
     height: $size;
     padding: 10px;
-    background-color: rgba($white, 0.5);
-    color: $orange;
+    background-color: rgba($bluedarkfade, 0.25);
+    color: $white;
     line-height: 40px;
     text-align: center;
 
     @include transition(transform 0.3s ease);
     @include transform(translateY(-$size));
 
+    &:hover {
+      background-color: rgba($white, 0.5);
+      color: $orange;
+    }
     &:active {
       background-color: $white !important;
     }
@@ -40,10 +46,6 @@
   &:hover .owl-prev,
   &:hover .owl-next {
     transform: translateY(0);
-  }
-  .owl-prev:hover,
-  &:hover .owl-next:hover {
-    background-color: rgba($white, 0.9);
   }
   .owl-next {
     left: auto;
