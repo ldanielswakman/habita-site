@@ -9,9 +9,9 @@
 </nav>
 
 <!-- Nav toggle button -->
-<a href="#" onclick="toggleMenu();" class="nav-toggle">
+<a href="#" onclick="return toggleMenu();" class="nav-toggle">
   <span></span><span></span><span></span>
 </a>
 
 <!-- Nav content overlay -->
-<a href="#" onclick="toggleMenu('close')" class="nav-fade"></a>
+<a href="#" onclick="return toggleMenu('close')" class="nav-fade"></a>

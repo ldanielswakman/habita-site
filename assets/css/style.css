@@ -20,6 +20,9 @@
 
 .bg-greylightest { background-color: #edeeef; }
 
+.bg-greylightest-extendleft { position: relative; background-color: #edeeef; }
+.bg-greylightest-extendleft:before { content: ""; position: absolute; right: 100%; top: 0; height: 100%; width: 2000px; background-color: #edeeef; }
+
 /* --- Reset --- */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, q, small, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { border: 0; margin: 0; padding: 0; }
 
@@ -1569,9 +1572,13 @@ body { width: 100%; height: 100%; font-family: "Montserrat", Arial, sans-serif; 
 
 a { color: inherit; text-decoration: none; }
 
-p { font-family: "Martel", Times, Times New Roman, serif; }
+p { font-family: "Martel", Times, Times New Roman, serif; line-height: 1.8rem; max-width: 50rem; }
+p + p, p + figure, p + ul, p + blockquote { margin-top: 1.5rem; }
 
 blockquote { font-size: 1.5rem; line-height: 2rem; }
+blockquote p { font: inherit; line-height: inherit; }
+
+h1 { font-size: 2em; font-weight: 600; color: #ff5000; }
 
 .row { max-width: 1200px; margin: 0 auto; }
 

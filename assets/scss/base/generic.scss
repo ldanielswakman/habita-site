@@ -22,11 +22,31 @@ a {
 
 p {
   font-family: "Martel", Times, Times New Roman, serif;
+  line-height: 1.8rem;
+  max-width: 50rem;
+
+  & + p,
+  & + figure,
+  & + ul,
+  & + blockquote {
+    margin-top: 1.5rem;
+  }
 }
 
 blockquote {
   font-size: 1.5rem;
   line-height: 2rem;
+
+  p {
+    font: inherit;
+    line-height: inherit;
+  }
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 600;
+  color: $orange;
 }
 
 

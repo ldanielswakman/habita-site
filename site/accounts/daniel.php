@@ -7,8 +7,8 @@ password: >
 language: en
 role: admin
 history:
+  - whats-inside
+  - new
   - members/juniper
   - members/jude
   - members/jack
-  - members/jennifer
-  - members/joseph

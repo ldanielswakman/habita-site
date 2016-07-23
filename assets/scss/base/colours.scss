@@ -9,6 +9,7 @@ $greylight:     #d3d4d5;
 $grey:          #72716c;
 $black:         #000000;
 
+
 // Colour classes
 .c-orange {
   color: $orange;
@@ -29,6 +30,7 @@ $black:         #000000;
   color: $greylight;
 }
 
+
 // BG Colour classes
 .bg-orange {
   background-color: $orange;
@@ -44,4 +46,21 @@ $black:         #000000;
 }
 .bg-greylightest {
   background-color: $greylightest;
+}
+
+
+// BG Colour classes extend
+.bg-greylightest-extendleft {
+  position: relative;
+  background-color: $greylightest;
+
+  &:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    height: 100%;
+    width: 2000px;
+    background-color: $greylightest;
+  }
 }

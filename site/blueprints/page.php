@@ -1,13 +1,12 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Home
+title: Page
 pages: false
 files: true
-  sortable: true
 fields:
   title:
     label: Title
-    type: text
-  intro:
-    label: Intro text
-    type: textarea
+    type:  text
+  text:
+    label: Text
+    type:  textarea

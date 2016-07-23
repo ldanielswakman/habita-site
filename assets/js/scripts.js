@@ -39,11 +39,13 @@ $(document).ready(function() {
 
 // UI: toggle menu
 function toggleMenu(state) {
+  state = (state) ? state : '';
   if(state != 'close') {
     $('body').toggleClass('navIsOpen');
   } else {
     $('body').removeClass('navIsOpen');
   }
+  return false;
 }
 
 
