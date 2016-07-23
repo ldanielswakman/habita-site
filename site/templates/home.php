@@ -40,7 +40,7 @@
 
             <h4 class="c-greylight u-lineheight30" style="font-weight: 500; letter-spacing: 0.2em;">BLOG</h4>
 
-            <div id="blog_result">loading posts...</div>
+            <div id="blog_result">loading blog posts...</div>
 
           </div>
 

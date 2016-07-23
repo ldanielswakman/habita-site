@@ -7,8 +7,8 @@ password: >
 language: en
 role: admin
 history:
+  - members/juniper
   - members/jude
-  - members/joseph
   - members/jack
-  - members/john
   - members/jennifer
+  - members/joseph

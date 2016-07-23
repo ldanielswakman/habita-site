@@ -1,0 +1,11 @@
+// Badge
+.badge {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  @include rounded(50%);
+  overflow: hidden;
+  background-color: $greylightest;
+  background-size: cover;
+  background-position: center center;
+}

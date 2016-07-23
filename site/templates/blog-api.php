@@ -28,6 +28,7 @@ foreach($data as $article) {
     'slug' => (string)$article->slug(),
     'title' => (string)$article->title(),
     'text'  => (string)$article->text()->kirbytext(),
+    'excerpt'  => (string)excerpt($article->text(), 100),
     'date'  => (string)$article->date('%d %B %Y'),
     'tags'  => (string)$article->tags()
   );

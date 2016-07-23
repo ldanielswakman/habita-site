@@ -92,6 +92,25 @@ $u: 5;
   line-height: 30px !important;
 }
 
+.u-truncate {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.u-clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
 
 .u-appearOnLoad {
   opacity: 0;

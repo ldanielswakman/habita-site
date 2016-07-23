@@ -3,7 +3,11 @@
 title: Member
 pages: false
 icon: user
-files: false
+files:
+  type: 
+    - image
+  width: 1200
+  height: 1200
 fields:
   title:
     label: Name
@@ -12,7 +16,7 @@ fields:
     label: Job Title
     type: text
     width: 1/2
-  profiel_image:
+  profile_image:
     label: Profile image
     type: image
     width: 1/2

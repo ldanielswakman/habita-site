@@ -1,1 +1,33 @@
 Title: Juniper
+
+----
+
+Job-title: 
+
+----
+
+Profile-image: 26.jpg
+
+----
+
+Bio: 
+
+----
+
+Linkedin-url: 
+
+----
+
+Twitter-url: 
+
+----
+
+Facebook-url: 
+
+----
+
+Instagram-url: 
+
+----
+
+Website-url: 

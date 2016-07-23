@@ -23,11 +23,16 @@ $json['q']  = $q;
 
 // build array result data
 foreach($data as $member) {
+
+  $image_obj = $member->profile_image();
+  $image_url = ($image = $member->image($image_obj)) ? $image->url() : '';
+
   $json['data'][] = array(
     'url'   => (string)$member->url(),
     'slug' => (string)$member->slug(),
     'title' => (string)$member->title(),
     'job_title' => (string)$member->job_title(),
+    'profile_image' => $image_url,
   );
 }
 

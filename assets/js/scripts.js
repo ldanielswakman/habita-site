@@ -71,19 +71,28 @@ function getRandomContent(baseURL, target, type) {
 
     // different output structure based on type
     if (type == 'blog') {
+
       var $html  = '<a href="' + item['url'] + '">';
       $html += '<h4>' + item['title'] + '</h4>';
       $html += '<time pubdate class="date">' + item['date'] + '</time><br />';
-      var $excerpt = item['text'].substring(0, 100);
+      var $excerpt = item['excerpt'];
       var $readmore = '...';
       $html += '<p>' + $excerpt + $readmore + '</p>';
       $html += '</a>';
+
     } else if (type == 'member') {
-      var $html  = '<a>';
-      $html += '<h4>' + item['title'] + '</h4>';
+      var $html  = '<a class="u-block u-clearfix u-mt5" href="' + item['url'] + '">';
+
+      $html += '<div class="badge u-floatleft u-mr10" ';
+      $html += 'style="background-image:url(\'' + item['profile_image'] + '\');">';
+      $html += '</div>';
+
+      $html += '<h4 class="u-pt5">' + item['title'] + '</h4>';
+
       if (item['job_title'].length > 0) {
-        $html += '<p>' + item['job_title'] + '</p>';
+        $html += '<p class="u-truncate"><small>' + item['job_title'] + '</small></p>';
       }
+
       $html += '</a>';
     } else if (type == 'event') {
       var $html  = '<a href="' + item['url'] + '">';

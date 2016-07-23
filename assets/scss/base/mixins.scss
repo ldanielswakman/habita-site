@@ -40,3 +40,11 @@
   -o-appearance: none;
   appearance: none;
 }
+
+// Border radius
+@mixin rounded($size: 5px) {
+  -webkit-border-radius: $size;
+  -moz-border-radius: $size;
+  -o-border-radius: $size;
+  border-radius: $size;
+}
