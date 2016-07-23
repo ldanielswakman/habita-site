@@ -32,19 +32,51 @@
         </div>
       <? endif ?>
 
-      <div class="row u-relative u-z2">
+      <div class="row u-relative u-z2 u-no-p-events">
         <div class="col-xs-12 col-sm-4 col-sm-offset-5">
           <div class="bg-white u-pa20 u-appearOnLoad">
 
             <a href="<?= url('blog') ?>" class="button button-small button-outline-reveal u-floatright">See all</a>
 
-            <h4 class="c-greylight u-lineheight30" style="font-weight: 500; letter-spacing: 0.2em;">FROM THE BLOG</h4>
+            <h4 class="c-greylight u-lineheight30" style="font-weight: 500; letter-spacing: 0.2em;">BLOG</h4>
 
             <div id="blog_result">loading posts...</div>
 
           </div>
 
         </div>
+      </div>
+
+      <div class="row u-relative u-z2 u-mt20 u-no-p-events">
+
+        <div class="col-xs-12 col-sm-4 col-sm-offset-2">
+          <div class="bg-white u-pa20 u-mt50 u-appearOnLoad">
+
+            <a href="<?= url('events') ?>" class="button button-small button-outline-reveal u-floatright">See all</a>
+
+            <h4 class="c-greylight u-lineheight30" style="font-weight: 500; letter-spacing: 0.2em;">EVENTS</h4>
+
+            <div id="event_result">
+              loading events...
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-4 col-sm-offset-1 u-no-p-events">
+          <div class="bg-white u-pa20 u-appearOnLoad">
+
+            <a href="<?= url('members') ?>" class="button button-small button-outline-reveal u-floatright">See all</a>
+
+            <h4 class="c-greylight u-lineheight30" style="font-weight: 500; letter-spacing: 0.2em;">MEMBERS</h4>
+
+            <div id="member_result">loading members...</div>
+
+          </div>
+
+        </div>
+
       </div>
 
     </div>

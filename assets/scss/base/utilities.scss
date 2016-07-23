@@ -97,7 +97,8 @@ $u: 5;
   opacity: 0;
   pointer-events: none;
   @include transition(all 0.6s ease);
-  @include transform(scale(0));
+  @include transform(scale(0.75));
+  @include transform-origin(top center);
 
   &.isLoaded {
     opacity: 1;
@@ -106,3 +107,9 @@ $u: 5;
   }
 }
 
+.u-p-events {
+  pointer-events: all !important;
+}
+.u-no-p-events {
+  pointer-events: none !important;
+}
