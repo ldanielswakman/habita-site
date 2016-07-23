@@ -1,1 +1,29 @@
 Title: Joseph
+
+----
+
+Job-title: Freelance Plumber
+
+----
+
+Bio: 
+
+----
+
+Linkedin-url: 
+
+----
+
+Twitter-url: 
+
+----
+
+Facebook-url: 
+
+----
+
+Instagram-url: 
+
+----
+
+Website-url: 

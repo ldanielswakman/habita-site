@@ -27,6 +27,7 @@ foreach($data as $member) {
     'url'   => (string)$member->url(),
     'slug' => (string)$member->slug(),
     'title' => (string)$member->title(),
+    'job_title' => (string)$member->job_title(),
   );
 }
 

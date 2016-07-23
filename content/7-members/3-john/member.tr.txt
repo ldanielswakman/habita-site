@@ -1,1 +1,29 @@
 Title: John
+
+----
+
+Job-title: Designer
+
+----
+
+Bio: 
+
+----
+
+Linkedin-url: 
+
+----
+
+Twitter-url: 
+
+----
+
+Facebook-url: 
+
+----
+
+Instagram-url: 
+
+----
+
+Website-url: 

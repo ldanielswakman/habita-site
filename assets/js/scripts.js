@@ -81,6 +81,9 @@ function getRandomContent(baseURL, target, type) {
     } else if (type == 'member') {
       var $html  = '<a>';
       $html += '<h4>' + item['title'] + '</h4>';
+      if (item['job_title'].length > 0) {
+        $html += '<p>' + item['job_title'] + '</p>';
+      }
       $html += '</a>';
     } else if (type == 'event') {
       var $html  = '<a href="' + item['url'] + '">';

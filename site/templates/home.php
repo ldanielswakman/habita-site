@@ -25,7 +25,7 @@
     <div class="u-relative">
 
       <? if ($images = $page->images()->sortBy('sort', 'asc')) : ?>
-        <div class="u-absolute owl-carousel" style="height: calc(100vh - 250px - 30px);">
+        <div class="u-absolute owl-carousel bg-bluedarkfade" style="height: calc(100vh - 250px - 30px);">
           <? foreach($images as $image) :?>
             <figure><img src="<?= $image->url() ?>" alt="" /></figure>
           <? endforeach ?>

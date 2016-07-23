@@ -1,1 +1,29 @@
 Title: Jennifer
+
+----
+
+Job-title: Data Scientist
+
+----
+
+Bio: 
+
+----
+
+Linkedin-url: 
+
+----
+
+Twitter-url: 
+
+----
+
+Facebook-url: 
+
+----
+
+Instagram-url: 
+
+----
+
+Website-url: 
