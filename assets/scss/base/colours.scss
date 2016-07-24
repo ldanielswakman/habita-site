@@ -6,6 +6,7 @@ $bluedarkfade:  #26454c;
 $white:         #ffffff;
 $greylightest:  #edeeef;
 $greylight:     #d3d4d5;
+$greymedium:    #8a8a8d;
 $grey:          #72716c;
 $black:         #000000;
 
@@ -29,6 +30,12 @@ $black:         #000000;
 .c-greylight {
   color: $greylight;
 }
+.c-greymedium {
+  color: $greymedium;
+}
+.c-grey {
+  color: $grey;
+}
 
 
 // BG Colour classes
@@ -44,8 +51,20 @@ $black:         #000000;
 .bg-white {
   background-color: $white;
 }
+.bg-white-faded90 {
+  background-color: rgba($white, 0.9);
+}
 .bg-greylightest {
   background-color: $greylightest;
+}
+.bg-greylight {
+  background-color: $greylight;
+}
+.bg-greymedium {
+  background-color: $greymedium;
+}
+.bg-grey {
+  background-color: $grey;
 }
 
 

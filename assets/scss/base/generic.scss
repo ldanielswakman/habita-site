@@ -24,13 +24,6 @@ p {
   font-family: "Martel", Times, Times New Roman, serif;
   line-height: 1.8rem;
   max-width: 50rem;
-
-  & + p,
-  & + figure,
-  & + ul,
-  & + blockquote {
-    margin-top: 1.5rem;
-  }
 }
 
 blockquote {
@@ -44,15 +37,26 @@ blockquote {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: 600;
   color: $orange;
+}
+h4.h4-capped {
+  color: $greylight;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  line-height: 2rem;
+}
+
+date {
+  color: $greymedium;
+  font-size: 0.85rem;
 }
 
 
 
 // Grid system tweak
 .row {
-  max-width: 1200px;
+  // max-width: 1200px;
   margin: 0 auto;
 }

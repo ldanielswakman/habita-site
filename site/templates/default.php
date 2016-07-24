@@ -134,7 +134,7 @@
         <? endforeach ?>
       </div>
 
-      <?php snippet('footer') ?>
+      <?php snippet('updates-footer') ?>
 
     </main>
 

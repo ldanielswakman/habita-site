@@ -3,3 +3,9 @@ Title: Blog
 ----
 
 Text: 
+
+**habita** believes in sharing information and knowledge, since together we are more than the sum of our parts alone. That is what this blog is all about: it tells you about what interests us, what we think might interest you, and what our *habitans* think is interesting. All around the field of coworking, habita, startups and healthy life!
+
+<div class="u-mt15">
+(link: #newsletter-signup text: keep in touch <i class="ion ion-android-arrow-down"></i> class: button button-small button-outline)
+</div>

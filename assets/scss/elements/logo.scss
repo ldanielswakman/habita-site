@@ -1,4 +1,4 @@
-.logo-svg {
+.nav-logo .logo-svg {
   $size: 300px;
   position: fixed;
   height: $size !important;
@@ -13,10 +13,17 @@
     @include transition();
   }
 }
-.navIsOpen .logo-svg {
+.navIsOpen .nav-logo .logo-svg {
   left: 400px;
 
   .st0, .emblem .st0 {
     fill: $white !important;
+  }
+}
+
+.logo-svg-word {
+
+  .word {
+    @include transform(translateX(-118px));
   }
 }

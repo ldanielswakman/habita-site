@@ -31,11 +31,28 @@ $u: 5;
 
 }
 
+.u-height100vh {
+  height: 100% !important; // fallback
+  height: 100vh !important;
+}
+
+// min-widths & min-heights
+.u-minheight100vh {
+  min-height: 100% !important; // fallback
+  min-height: 100vh !important;
+}
+
 .u-absolute {
   position: absolute !important;
 }
 .u-relative {
   position: relative !important;
+}
+.u-pin-topfull {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 
@@ -62,21 +79,16 @@ $u: 5;
 .u-alignright {
   text-align: right !important;
 }
+.u-hide {
+  display: none !important;
+}
 
-.u-z0 {
-  z-index: 0 !important;
-}
-.u-z1 {
-  z-index: 1 !important;
-}
-.u-z2 {
-  z-index: 2 !important;
-}
-.u-z3 {
-  z-index: 3 !important;
-}
-.u-z4 {
-  z-index: 4 !important;
+
+// z-indexes
+@for $i from 0 through 20 {
+  .u-z#{$i} {
+    z-index: #{$i} !important;
+  }
 }
 
 .u-lineheight10 {
@@ -112,12 +124,25 @@ $u: 5;
 }
 
 
+.u-semibold {
+  font-weight: 500 !important;
+}
+
+
+.u-overflowscroll {
+  overflow: scroll !important;
+}
+.u-overflowhidden {
+  overflow: hidden !important;
+}
+
+
 .u-appearOnLoad {
   opacity: 0;
   pointer-events: none;
   @include transition(all 0.6s ease);
   @include transform(scale(0.75));
-  @include transform-origin(top center);
+  @include transform-origin(bottom center);
 
   &.isLoaded {
     opacity: 1;

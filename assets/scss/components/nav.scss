@@ -3,7 +3,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9;
+  z-index: 10;
   height: 100%;
   width: $width;
   max-width: calc( 100vw - 60px );
@@ -24,8 +24,14 @@ nav {
   a {
     color: rgba($white, 0.85);
 
+    &.isActive { 
+      color: $white; 
+      font-weight: 600;
+    }
+
     &:hover {
       color: $white;
+      @include underline(currentColor, 1px, 0);
     }
   }
 }
@@ -35,12 +41,12 @@ nav {
 
 a.nav-toggle {
   position: fixed;
-  top: 40px;
+  top: 30px;
   left: 40px;
   display: block;
   width: 60px;
   height: 60px;
-  z-index: 10;
+  z-index: 11;
 
   span {
     content: "";
@@ -54,18 +60,22 @@ a.nav-toggle {
   }
   span:first-child {
     top: 25%;
+    width: 85%;
   }
   span:last-child {
     top: 75%;
+    width: 65%;
   }
 }
 .navIsOpen a.nav-toggle {
   span:nth-child(2) { opacity: 0; }
   span:first-child {
+    width: 100%;
     border-top-color: $white;
     @include transform(rotate(45deg));
   }
   span:last-child {
+    width: 100%;
     border-top-color: $white;
     @include transform(rotate(-45deg));
   }
@@ -78,11 +88,13 @@ a.nav-fade {
   width: 100%;
   height: 100%;
   z-index: 8;
-  background-color: transparent;
+  background-color: rgba($bluedarkfade, 0.5);
+  color: transparent;
+  opacity: 0;
   pointer-events: none;
   @include transition();
 }
 .navIsOpen a.nav-fade {
-  background-color: rgba($bluedarkfade, 0.5);
+  opacity: 1;
   pointer-events: all;
 }

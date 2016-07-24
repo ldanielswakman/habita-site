@@ -11,24 +11,23 @@ $(document).ready(function() {
       loop: true,
       nav: true,
       navText: ["<i class='ion ion-15x ion-ios-arrow-back'></i>", "<i class='ion ion-15x ion-ios-arrow-forward'></i>"],
-      // lazyLoad : true,
-      autoPlay: true,
-      autoplayTimeout: 1000,
-      // slideSpeed : 300,
-      // paginationSpeed : 400,
+      lazyLoad : true,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      autoplaySpeed: 1000,
     });
   });
 
   // start with fetching random blog post...
-  getRandomContent('blog/api', '#blog_result', 'blog');
+  getRandomContent('events/api', '#event_result', 'event');
 
   // .. when done, get random member ...
-  randomContentRequest['blog'].done(function() {
+  randomContentRequest['event'].done(function() {
     getRandomContent('members/api', '#member_result', 'member');
 
     // .. when done, get random member ...
     randomContentRequest['member'].done(function() {
-      getRandomContent('events/api', '#event_result', 'event');
+      getRandomContent('blog/api', '#blog_result', 'blog');
     });
 
   });

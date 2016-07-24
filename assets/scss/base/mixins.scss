@@ -48,3 +48,8 @@
   -o-border-radius: $size;
   border-radius: $size;
 }
+
+// Creates more elegant text underlines
+@mixin underline($color, $weight: 2px, $offset: 0px) {
+  background-image: linear-gradient(to top, transparent, transparent $offset, $color $offset, $color ($offset + $weight), transparent ($offset + $weight))
+}

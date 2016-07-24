@@ -2,6 +2,7 @@
 // defaults
 $height = (isset($height)) ? $height . 'px' : '20px';
 $emblem = (isset($emblem)) ? $emblem : false;
+$word = (isset($word)) ? $word : false;
 $color = (isset($color)) ? $color : '#d3d4d5';
 $emblem_color = (isset($emblem_color)) ? $emblem_color : $color;
 
@@ -24,13 +25,14 @@ if ($emblem) :
 
 <? else :?>
 
-<svg class="logo-svg logo-svg-full" height="<?= $height ?>" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 65.5" style="enable-background:new 0 0 400 65.5;" xml:space="preserve">
+<? $class = ($word == true) ? ' logo-svg-word' : ''; ?>
+<svg class="logo-svg logo-svg-full<?= $class ?>" height="<?= $height ?>" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 65.5" style="enable-background:new 0 0 400 65.5;" xml:space="preserve">
 <style type="text/css">
   .logo-svg-full .st0{fill:<?= $color ?>;}
   .logo-svg-full .emblem .st0{fill:<?= $emblem_color ?>;}
 </style>
 <g>
-  <g>
+  <g class="word">
     <path class="st0" d="M118.7,1h13.1v24.6c3.8-5.3,8.5-7.1,14-7.1c12.7,0,16.1,10.1,16.1,21.6v24.5h-13.1V40.3c0-6.2-2.3-11-8.4-11
       c-6.1,0-8.6,4.8-8.6,11.1v24.2h-13.1V1z"/>
     <path class="st0" d="M219.2,19.4v45.1h-13.1V58c-3.3,4.7-7.6,7.6-14.2,7.6c-13.7,0-22-10.6-22-23.8c0-12.7,7.7-23.3,21.7-23.3
@@ -47,13 +49,15 @@ if ($emblem) :
       c6.1,0,11.3,3,14.4,7.1v-6.2H400z M375.5,54.9c6.4,0,11.8-4.1,11.8-12.3c0-8.4-5-13.5-12.1-13.5c-7.2,0-11.3,5.8-11.3,12.8
       C363.8,49.1,368.2,54.9,375.5,54.9z"/>
   </g>
-  <g class="emblem">
-    <polygon class="st0" points="40.7,29.6 40.7,43.6 76,43.6 76,29.6    "/>
-    <rect x="51.6" y="10" class="st0" width="13.5" height="11.8"/>
-    <rect x="51.6" y="51.4" class="st0" width="13.5" height="11.8"/>
-    <polygon class="st0" points="19.9,64.6 33.9,64.6 33.9,8.6 19.9,8.6    "/>
-    <rect x="0" y="29.6" class="st0" width="13.2" height="14"/>
-  </g>
+  <? if ($word != true) : ?>
+    <g class="emblem">
+      <polygon class="st0" points="40.7,29.6 40.7,43.6 76,43.6 76,29.6    "/>
+      <rect x="51.6" y="10" class="st0" width="13.5" height="11.8"/>
+      <rect x="51.6" y="51.4" class="st0" width="13.5" height="11.8"/>
+      <polygon class="st0" points="19.9,64.6 33.9,64.6 33.9,8.6 19.9,8.6    "/>
+      <rect x="0" y="29.6" class="st0" width="13.2" height="14"/>
+    </g>
+  <? endif ?>
 </g>
 </svg>
 

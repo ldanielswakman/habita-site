@@ -3,7 +3,7 @@
 <nav>
   <ul>
     <? foreach($pages as $page) : ?>
-      <li><a href="<?= $page->url() ?>"><?= $page->title() ?></a></li>
+      <li><a href="<?= $page->url() ?>"<?= ($page->isOpen()) ? ' class="isActive"' : ''; ?>><?= $page->title() ?></a></li>
     <? endforeach ?>
   </ul>
 </nav>
