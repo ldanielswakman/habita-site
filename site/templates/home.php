@@ -28,49 +28,52 @@
 
     <div class="u-relative bg-bluedarkfade u-overflowhidden" style="display: flex; min-height: calc(100vh - 250px - 10px);">
 
-      <? if ($images = $page->images()->sortBy('sort', 'asc')) : ?>
+      <? if ($carousel = $page->carousel_images()->toStructure()) : ?>
         <div class="u-absolute owl-carousel" style="height: 100%;">
-          <? foreach($images as $image) :?>
-            <figure><img src="<?= $image->url() ?>" alt="" /></figure>
+          <? foreach($carousel as $image) :?>
+            <figure><img src="<?= $page->image($image)->url() ?>" alt="" /></figure>
           <? endforeach ?>
         </div>
       <? endif ?>
 
       <div style="width: 100%; align-self: flex-end;">
+      <? $boxes = $page->content_boxes()->split() ?>
 
         <div class="row u-relative u-z2 u-no-p-events">
           <div class="col-xs-12 col-sm-3 col-sm-offset-2" style="display: flex;">
 
-            <div class="bg-white-faded90 u-pa15 u-appearOnLoad" style="width: 100%; align-self: flex-end;">
-              <a href="<?= url('events') ?>" class="button button-small button-outline-reveal u-floatright">See all</a>
-              <h4 class="h4-capped"><?= strtoupper($site->find('events')->title()) ?></h4>
-              <div id="event_result"></div>
-            </div>
+            <? if (in_array('event', $boxes)) : ?>
+              <div class="bg-white-faded90 u-pa15 u-appearOnLoad" style="width: 100%; align-self: flex-end;">
+                <a href="<?= url('events') ?>" class="button button-small button-outline-reveal u-floatright">See all</a>
+                <h4 class="h4-capped"><?= strtoupper($site->find('events')->title()) ?></h4>
+                <div id="event_result"></div>
+              </div>
+            <? endif ?>
 
           </div>
-
           <div class="col-xs-12 col-sm-4" style="display: flex;">
 
-            <div class="bg-white-faded90 u-pa15 u-appearOnLoad" style="width: 100%; align-self: flex-end;">
-              <a href="<?= url('blog') ?>" class="button button-small button-outline-reveal u-floatright">See all</a>
-              <h4 class="h4-capped"><?= strtoupper($site->find('blog')->title()) ?></h4>
-              <div id="blog_result"></div>
-            </div>
+            <? if (in_array('blog', $boxes)) : ?>
+              <div class="bg-white-faded90 u-pa15 u-appearOnLoad" style="width: 100%; align-self: flex-end;">
+                <a href="<?= url('blog') ?>" class="button button-small button-outline-reveal u-floatright">See all</a>
+                <h4 class="h4-capped"><?= strtoupper($site->find('blog')->title()) ?></h4>
+                <div id="blog_result"></div>
+              </div>
+            <? endif ?>
 
           </div>
-
           <div class="col-xs-12 col-sm-3 u-no-p-events" style="display: flex;">
 
-            <div class="bg-white-faded90 u-pa15 u-appearOnLoad" style="width: 100%; align-self: flex-end;">
-              <a href="<?= url('members') ?>" class="button button-small button-outline-reveal u-floatright">See all</a>
-              <h4 class="h4-capped"><?= strtoupper($site->find('members')->title()) ?></h4>
-              <div id="member_result"></div>
-            </div>
+            <? if (in_array('member', $boxes)) : ?>
+              <div class="bg-white-faded90 u-pa15 u-appearOnLoad" style="width: 100%; align-self: flex-end;">
+                <a href="<?= url('members') ?>" class="button button-small button-outline-reveal u-floatright">See all</a>
+                <h4 class="h4-capped"><?= strtoupper($site->find('members')->title()) ?></h4>
+                <div id="member_result"></div>
+              </div>
+            <? endif ?>
 
           </div>
-
         </div>
-
       </div>
 
     </div>
