@@ -29,4 +29,4 @@ Carousel-images:
 
 ----
 
-Content-boxes: 
+Content-boxes: blog, event

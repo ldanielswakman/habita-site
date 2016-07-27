@@ -51,7 +51,7 @@ function alignLogo(scroll) {
   logo_offset_top = 55;
   logo_offset_left = 180;
   small_scale = 0.3;
-  $logo = $('.nav-logo .logo-svg');
+  $logo = $('.nav-logo-animated .logo-svg');
 
   if ($logo && scroll < 0) {
     // before start

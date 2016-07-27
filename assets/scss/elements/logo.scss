@@ -28,3 +28,9 @@
     @include transform(translateX(-118px));
   }
 }
+
+.nav-logo-watermark .logo-svg {
+  top: auto;
+  bottom: 50px;
+  left: 33.33333%;
+}

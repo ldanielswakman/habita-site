@@ -16,6 +16,14 @@
     background-color: rgba($bluedarkfade, 0.25);
     pointer-events: none;
   }
+  &.owl-loaded {
+    cursor: -webkit-grab;
+    cursor: grab;
+  }
+  .owl-grab {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+  }
 
   .owl-prev,
   .owl-next {
