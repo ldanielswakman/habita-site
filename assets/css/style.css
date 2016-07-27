@@ -1657,10 +1657,10 @@ date { color: #8a8a8d; font-size: 0.85rem; }
 .button.button-outline-reveal { background-color: transparent; border: 1px solid transparent; color: #ff5000; }
 .button.button-outline-reveal:hover { border-color: #ff5000; }
 
-.nav-logo .logo-svg { position: fixed; height: 300px !important; top: 250px; left: 300px; z-index: 11; margin-left: -134.1px; margin-top: -122.4px; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
+.nav-logo .logo-svg { position: fixed; height: 300px !important; top: 250px; left: 300px; z-index: 11; margin-left: -134.1px; margin-top: -122.7px; -webkit-transition: left 0.3s ease; -moz-transition: left 0.3s ease; -o-transition: left 0.3s ease; transition: left 0.3s ease; -webkit-transform-origin: 44.7% 40.9%; -moz-transform-origin: 44.7% 40.9%; -o-transform-origin: 44.7% 40.9%; transform-origin: 44.7% 40.9%; }
 .nav-logo .logo-svg .st0 { -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
 
-.navIsOpen .nav-logo .logo-svg { left: 400px; }
+.navIsOpen .nav-logo .logo-svg { left: 400px !important; }
 .navIsOpen .nav-logo .logo-svg .st0, .navIsOpen .nav-logo .logo-svg .emblem .st0 { fill: #ffffff !important; }
 
 .logo-svg-word .word { -webkit-transform: translateX(-118px); -moz-transform: translateX(-118px); -o-transform: translateX(-118px); transform: translateX(-118px); }

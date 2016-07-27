@@ -6,15 +6,16 @@
   left: 300px;
   z-index: 11;
   margin-left: - $size * 0.447;
-  margin-top: - $size * 0.408;
-  @include transition();
+  margin-top: - $size * 0.409;
+  @include transition(left 0.3s ease);
+  @include transform-origin(44.7% 40.9%);
 
   .st0 {
     @include transition();
   }
 }
 .navIsOpen .nav-logo .logo-svg {
-  left: 400px;
+  left: 400px !important;
 
   .st0, .emblem .st0 {
     fill: $white !important;

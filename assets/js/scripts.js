@@ -35,6 +35,46 @@ $(document).ready(function() {
 });
 
 
+$(document).on('ready scroll resize scrollstart scrollstop', function() { scrollActions() });
+
+// UI actions on scroll
+function scrollActions() {
+  scroll = $(window).scrollTop();
+
+  alignLogo(scroll);
+}
+
+
+
+function alignLogo(scroll) {
+  threshold = 250;
+  logo_offset_top = 55;
+  logo_offset_left = 180;
+  small_scale = 0.3;
+  $logo = $('.nav-logo .logo-svg');
+
+  if ($logo && scroll < 0) {
+    // before start
+    $logo.removeAttr('style');
+  } else if ($logo && scroll > (threshold - logo_offset_top)) {
+    // past threshold
+    $logo.css('top', logo_offset_top)
+      // .css('left', logo_offset_left)
+      .css('transform', '-webkit-scale(' + small_scale + ')')
+      .css('transform', '-moz-scale(' + small_scale + ')')
+      .css('transform', 'scale(' + small_scale + ')');
+  } else {
+    scale = 1 - scroll / (threshold-logo_offset_top) * (1 - small_scale);
+    console.log(scale);
+    $logo.css('top', threshold - scroll)
+      // .css('left', (threshold - scroll))
+      .css('transform', '-webkit-scale(' + scale + ')')
+      .css('transform', '-moz-scale(' + scale + ')')
+      .css('transform', 'scale(' + scale + ')');
+  }
+}
+
+
 
 // UI: toggle menu
 function toggleMenu(state) {
