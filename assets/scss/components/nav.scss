@@ -4,19 +4,22 @@ nav {
   top: 0;
   left: 0;
   z-index: 10;
+  -webkit-display: flex;
+  display: flex;
   height: 100%;
   width: $width;
   max-width: calc( 100vw - 60px );
   background-color: $orange;
   color: $white;
 
-  padding: 150px 50px 50px;
+  padding: 100px 50px 35px;
 
   @include box-shadow(0 0 20px rgba($black, 0.25));
   @include transition();
   @include transform(translateX(-$width));
 
   ul {
+    align-self: flex-end;
     list-style: none;
     font-size: 1.5rem;
     line-height: 3rem;

@@ -4,7 +4,7 @@
 
   <? snippet('header') ?>
 
-    <? snippet('nav') ?>
+  <? snippet('nav') ?>
 
   <body>
 

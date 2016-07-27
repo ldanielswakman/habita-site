@@ -31,6 +31,9 @@ $u: 5;
 
 }
 
+.u-widthfull {
+  width: 100% !important;
+}
 .u-height100vh {
   height: 100% !important; // fallback
   height: 100vh !important;
@@ -81,6 +84,46 @@ $u: 5;
 }
 .u-hide {
   display: none !important;
+}
+
+// Flexbox
+.u-flex {
+  -webkit-display: flex !important;
+  display: flex !important;
+}
+.u-flex-row {
+  -webkit-display: flex !important;
+  display: flex !important;
+  -webkit-flex-direction: row !important;
+  flex-direction: row !important;
+}
+.u-flex-column {
+  -webkit-display: flex !important;
+  display: flex !important;
+  -webkit-flex-direction: column !important;
+  flex-direction: column !important;
+}
+.u-flex-alignstart {
+  -webkit-align-self: flex-start !important;
+  align-self: flex-start !important;
+}
+.u-flex-alignend {
+  -webkit-align-self: flex-end !important;
+  align-self: flex-end !important;
+}
+.u-flex-grow1 {
+  -webkit-display: flex !important;
+  display: flex !important;
+  -webkit-flex-grow: 1 !important;
+  flex-grow: 1 !important;
+}
+.u-flex-center {
+  -webkit-display: flex !important;
+  display: flex !important;
+  -webkit-align-items: center !important;
+  align-items: center !important;
+  -webkit-justify-content: center !important;
+  justify-content: center !important;
 }
 
 
