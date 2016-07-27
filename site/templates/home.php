@@ -4,13 +4,13 @@
 
   <? snippet('header') ?>
 
-  <? snippet('nav') ?>
-
-  <a href="#" onclick="return toggleMenu();" class="nav-logo nav-logo-animated">
-    <? snippet('logo-svg', array('emblem' => true, 'color' => '#ff5000')) ?>
-  </a>
-
   <body>
+
+    <? snippet('nav') ?>
+
+    <a href="#" onclick="return toggleMenu();" class="nav-logo nav-logo-animated">
+      <? snippet('logo-svg', array('emblem' => true, 'color' => '#ff5000')) ?>
+    </a>
 
     <div class="bg-greylightest" style="height: 250px;">
       <div class="row">

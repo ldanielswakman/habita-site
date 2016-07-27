@@ -12,6 +12,10 @@ $is_article = ($page->template() == 'blog-article') ? true : false;
 
     <? snippet('nav') ?>
 
+    <a href="#" onclick="return toggleMenu();" class="nav-logo nav-logo-watermark">
+      <? snippet('logo-svg', array('emblem' => true, 'color' => 'rgba(86, 81, 73, 0.1)')) ?>
+    </a>
+
     <? $header_bg = ($is_article) ? 'bg-greylightest' : 'bg-white'; ?>
     <section class="<?= $header_bg ?> u-pv50">
 

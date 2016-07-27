@@ -4,13 +4,13 @@
 
   <? snippet('header') ?>
 
-  <? snippet('nav') ?>
-
-  <a href="#" onclick="return toggleMenu();" class="nav-logo nav-logo-watermark">
-    <? snippet('logo-svg', array('emblem' => true, 'color' => 'rgba(86, 81, 73, 0.1)')) ?>
-  </a>
-
   <body>
+
+    <? snippet('nav') ?>
+
+    <a href="#" onclick="return toggleMenu();" class="nav-logo nav-logo-watermark">
+      <? snippet('logo-svg', array('emblem' => true, 'color' => 'rgba(86, 81, 73, 0.1)')) ?>
+    </a>
 
     <section>
 

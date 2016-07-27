@@ -3,6 +3,7 @@
 title: Event
 pages:
   template: member
+icon: calendar
 files: false
 fields:
   title:

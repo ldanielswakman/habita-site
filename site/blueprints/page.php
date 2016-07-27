@@ -3,10 +3,6 @@
 title: Page
 pages: false
 files: true
-  fields:
-    caption:
-      label: Caption
-      type: textarea
 fields:
   title:
     label: Title

@@ -2,6 +2,7 @@
 
 title: Blog Article
 pages: false
+icon: pencil-square-o
 files:
   type: 
     - image
