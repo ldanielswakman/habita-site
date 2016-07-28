@@ -7,8 +7,8 @@ password: >
 language: en
 role: admin
 history:
+  - intro
   - members
   - whats-inside
   - new
   - blog
-  - blog/son-durum
