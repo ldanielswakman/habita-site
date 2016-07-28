@@ -32,7 +32,7 @@
       </div>
       <? endif ?>
 
-      <input type="submit" value="<?= l::get('subscribe') ?>" name="subscribe" id="mc-embedded-subscribe" class="button button-small">
+      <input type="submit" value="<?= l::get('send') ?>" name="subscribe" id="mc-embedded-subscribe" class="button button-small">
 
     </div>
 

@@ -469,6 +469,7 @@ blockquote {
 .field:focus {
   outline: none;
   border-bottom-color: #ff5000;
+  color: #ff5000;
 }
 .field.isActive {
   color: #ff5000;
