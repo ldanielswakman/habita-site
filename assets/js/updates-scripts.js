@@ -35,10 +35,10 @@ $(document).ready(function() {
       nav: true,
       navText: ["<i class='ion ion-15x ion-arrow-left-c'></i>", "<i class='ion ion-15x ion-arrow-right-c'></i>"],
       // lazyLoad : true,
-      autoPlay: true,
-      autoplayTimeout: 5000,
-      // slideSpeed : 300,
-      // paginationSpeed : 400,
+      autoplay: true,
+      autoplayTimeout: 4000,
+      autoplaySpeed: 1000,
+      navSpeed: 1000,
     });
   });
 

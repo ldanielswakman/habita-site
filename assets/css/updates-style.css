@@ -722,3 +722,11 @@ figure.small {
   left: auto;
   right: 0;
 }
+.owl-carousel.owl-loaded {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.owl-carousel .owl-grab {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
