@@ -23,10 +23,10 @@
     'assets/css/ionicons.min.css',
     'assets/css/style.css',
     ) : array(
-    'assets/css/style.css',
     'https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css',
     'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css',
     'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css',
+    'assets/css/style.css',
     );
 
   $js_assets = ($_SERVER['SERVER_NAME'] == 'localhost') ? array(

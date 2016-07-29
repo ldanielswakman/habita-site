@@ -10,23 +10,23 @@ Bio:
 
 ----
 
-Linkedin-url: 
+Linkedin-url: http://linkedin.com/in/ldanielswakman
 
 ----
 
-Twitter-url: 
+Twitter-url: https://twitter.com/habita_co
 
 ----
 
-Facebook-url: 
+Facebook-url: https://www.facebook.com/habita.coworking
 
 ----
 
-Instagram-url: 
+Instagram-url: https://www.instagram.com/habita_co/
 
 ----
 
-Website-url: 
+Website-url: http://habita.com.tr
 
 ----
 
