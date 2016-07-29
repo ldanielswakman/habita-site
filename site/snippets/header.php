@@ -18,9 +18,9 @@
 
   <?
   $css_assets = ($_SERVER['SERVER_NAME'] == 'localhost') ? array(
-    'assets/css/owl.carousel.min.css',
     'assets/css/flexboxgrid.min.css',
     'assets/css/ionicons.min.css',
+    'assets/css/owl.carousel.min.css',
     'assets/css/style.css',
     ) : array(
     'https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css',
