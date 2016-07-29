@@ -8,7 +8,14 @@ files: false
 fields:
   title:
     label: Title
-    type:  text
+    type: text
   date:
     label: Event date
-    type:  date
+    type: date
+  description:
+    label: Description
+    type: markdown
+  facebook_link:
+    label: Facebook link (if existing)
+    type: url
+    icon: facebook
