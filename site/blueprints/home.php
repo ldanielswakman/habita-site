@@ -7,7 +7,7 @@ fields:
   title:
     label: Title
     type: text
-  intro:
+  text:
     label: Intro text
     type: textarea
   carousel_images:

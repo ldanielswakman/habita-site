@@ -20,7 +20,7 @@
             <? snippet('logo-svg', array('word' => true, 'color' => '#8a8a8d')) ?>
           </h1>
 
-          <?= $page->intro()->kirbytext() ?>
+          <?= $page->text()->kirbytext() ?>
 
         </div>
       </div>

@@ -4,6 +4,12 @@ Title: Anasayfa
 
 Text: 
 
+>  An open & transparent<br>**coworking hub** for everyone...
+
+<div class="u-mv20">
+(link: /whats-inside text: explore class: button button-primary u-mr10) (link: /contact text: contact us class: button button-white)
+</div>
+
 ----
 
 Intro: 
