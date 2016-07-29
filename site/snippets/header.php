@@ -24,9 +24,9 @@
     'assets/css/style.css',
     ) : array(
     'assets/css/style.css',
-    // --> find flexboxgrid CDN
-    // --> find ionicons CDN
-    // --> find Owl Carousel CDN (v.2.2.1)
+    'https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css',
+    'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css',
+    'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css',
     );
 
   $js_assets = ($_SERVER['SERVER_NAME'] == 'localhost') ? array(
@@ -35,7 +35,7 @@
     'assets/js/scripts.js',
     ) : array(
     'https://code.jquery.com/jquery-2.2.4.min.js',
-    // --> find Owl Carousel CDN (v2.2.1)
+    'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/owl.carousel.min.js',
     'assets/js/scripts.js',
     );
   ?>
