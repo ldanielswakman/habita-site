@@ -1,7 +1,5 @@
-Title: Intro
+Title: Intro (redirect)
 
 ----
 
-Link: /intro
-
-----
+Link: intro

@@ -7,8 +7,8 @@ password: >
 language: en
 role: admin
 history:
+  - home
+  - form
   - new/whats-inside
   - new/membership-options
   - members/jude
-  - intro
-  - members

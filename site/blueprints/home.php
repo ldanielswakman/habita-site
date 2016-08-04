@@ -4,6 +4,7 @@ title: Home
 pages:
   template: home-section
 files: true
+icon: home
 fields:
   title:
     label: Title

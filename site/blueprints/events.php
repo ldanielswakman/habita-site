@@ -4,6 +4,7 @@ title: Events
 pages:
   template: event
 files: false
+icon: calendar
 fields:
   title:
     label: Title

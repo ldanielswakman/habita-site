@@ -4,6 +4,7 @@ title: Landing Page
 pages: false
 files: true
   sortable: true
+icon: th-list
 fields:
   title:
     label: Title

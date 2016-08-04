@@ -5,6 +5,7 @@ pages: true
   template:
     - default
     - landing
+    - redirect
 fields:
   title:
     label: Title

@@ -1,1 +1,1 @@
-<?= go($page->link()) ?>
+<?= go('/' . $page->link()) ?>

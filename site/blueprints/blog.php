@@ -4,6 +4,7 @@ title: Blog
 pages:
   template: blog-article
 files: false
+icon: pencil-square-o
 fields:
   title:
     label: Title
