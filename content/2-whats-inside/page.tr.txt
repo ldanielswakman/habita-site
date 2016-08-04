@@ -1,15 +1,31 @@
-Title: Meet habita!
+Title: Ve işte habita!
 
 ----
 
 Text: 
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+habita, yatırım yapmak, ofis idaresi gibi yük ve zorunlulukları ortadan kaldırarak etkileşime, paylaşarak büyümeye ve yaratıcı düşünceye zaman yaratıyor.
 
-(image: coworking.jpg caption: We always had this dream of providing a coworking space for whomever wanted to come.... and here it is now!)
+habita, ortak aklın serpildiği, fikirlerin ivmelendiği, verimli ilişkilerin kurulduğu, birlikte öğrenilen, çok yönlü bir paylaşım iklimi, bir habitus sunma hayali ile ortaya çıktı.
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+(image: coworking.jpg caption: habitus: Dünyaya ortak bir pencereden bakan insanların, değer, paylaşım ve üretim pratikleri toplamı.) 
 
-* sdlfkjsldkfj
-* sdlfksldfkjsd
-* sldfkjsdlfkj
+İster dünyanın en büyük holdinglerinde çalışıyor olun, ister freelance, ister start up... habita'da kendini çalışırken daha iyi hissetmek isteyen, nefes almaya ihtiyaç duyan ve belki de en önemlisi hep beraber "güzel şeylerin" yaratıldığı  bir ekosistemin parçası olmak isteyen herkese göre bir şeyler var.
+
+Zaman, verim, ve nitelikten ödün vermeden çalışabilmeniz için ihtiyacınız olan her şey habita'da mevcut.
+
+We can use icons from our intro presentation.
+
+* 7/24 çalışma
+* Toplantı Odaları
+* Mutfak
+* Bar
+* Sıcak İçecekler
+* Lounge ve Dinlenme Alanları
+* Atıştırmalıklar
+* Minimum 10mbps Simetrik İnternet
+* Adres Gösterme/Sekreterlik
+* Printer
+* Vale
+* Güvenlik
+* Dolap

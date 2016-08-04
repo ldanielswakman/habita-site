@@ -4,10 +4,10 @@ Title: Anasayfa
 
 Text: 
 
->  An open & transparent<br>**coworking hub** for everyone...
+>  Paylaşan, konuşan, tartışan, üreten herkese<br>**açık bir komünitenin** ortak yaşam ve çalışma alanı...
 
 <div class="u-mv20">
-(link: /whats-inside text: explore class: button button-primary u-mr10) (link: /contact text: contact us class: button button-white)
+(link: /whats-inside text: keşfet class: button button-primary u-mr10) (link: /contact text: iletişim class: button button-white)
 </div>
 
 ----
