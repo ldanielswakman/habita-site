@@ -1652,7 +1652,7 @@ a { color: inherit; text-decoration: none; }
 
 a.link-block:hover { background-color: rgba(38, 69, 76, 0.1); }
 
-p { font-family: "Martel", Times, Times New Roman, serif; line-height: 1.8rem; max-width: 50rem; }
+p { line-height: 1.8rem; max-width: 50rem; }
 
 blockquote { font-size: 1.5rem; line-height: 2rem; }
 blockquote p { font: inherit; line-height: inherit; }
@@ -1701,6 +1701,7 @@ date { color: #8a8a8d; font-size: 0.85rem; }
 .article figure { position: relative; margin-left: -5rem; margin-right: -5rem; width: calc(100% + 10rem); }
 .article figure + p { margin-top: 1.5rem; }
 .article figure figcaption { position: absolute; bottom: 0; right: 100%; display: block; width: 40%; padding: 0 1rem; text-align: right; font-size: 0.875rem; font-style: italic; line-height: 1.25rem; }
+.article p { font-family: "Martel", Times, Times New Roman, serif; }
 .article p + p, .article p + figure, .article p + ul, .article p + blockquote { margin-top: 1.5rem; }
 .article ul { margin-left: 1.25rem; font-family: "Martel", Times, Times New Roman, serif; line-height: 1.8rem; max-width: 50rem; }
 

@@ -80,6 +80,30 @@
 
     <? snippet('social-bar') ?>
 
+    <? // Configurable sections from subpages ?>
+    <? foreach ($page->children()->visible() as $section) : ?>
+
+      <? $bgcolor = ($section->bgcolor()->isNotEmpty()) ? 'bg-' . $section->bgcolor() : 'bg-white'; ?>
+
+      <section class="<?= $bgcolor ?> u-pv50">
+        <div class="row">
+          <div class="col-xs col-sm-4 col-sm-offset-1 u-aligncenter u-pv20">
+            <?
+            if($section->slug() == 'whats-inside') :
+              snippet('icon-svg', ['type' => 'food', 'size' => '60', 'classes' => '']);
+              snippet('icon-svg', ['type' => 'printer', 'size' => '60', 'classes' => '']);
+              snippet('icon-svg', ['type' => 'presentation', 'size' => '60', 'classes' => '']);
+            endif;
+            ?>
+          </div>
+          <div class="col-xs col-sm-5">
+            <?= $section->text()->kirbytext() ?>
+          </div>
+        </div>
+      </section>
+
+    <? endforeach ?>
+
     <? snippet('footer') ?>
 
   </body>
