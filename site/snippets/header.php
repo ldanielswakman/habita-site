@@ -23,9 +23,10 @@
     'assets/css/owl.carousel.min.css',
     'assets/css/style.css',
     ) : array(
-    'https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css',
-    'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css',
-    'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css',
+    '//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css',
+    '//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css',
+    '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css',
+    '//fonts.googleapis.com/css?family=Martel:400,700|Montserrat:400,700&subset=latin-ext',
     'assets/css/style.css',
     );
 
