@@ -3,3 +3,9 @@ Title: Blog
 ----
 
 Text: 
+
+Since **habita**  begins its journey with the dream of creating a habitat in which everything is shared, we wanted to have a platform where our community share their lives, stories, experiences, ideas and information rather than sharing just the physical space itself. Here we start explaining our stories and habita’s story. As we grow in number, we expect everyone to join us!
+
+<div class="u-mt15">
+(link: #newsletter-signup text: keep in touch <i class="ion ion-android-arrow-down"></i> class: button button-small button-outline)
+</div>

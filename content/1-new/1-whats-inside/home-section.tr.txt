@@ -4,9 +4,9 @@ Title: What's inside
 
 Text: 
 
-This is a small summary of what **habita** has to offer, inspiring curiosity to click through.
+Zaman, verim, ve nitelikten ödün vermeden çalışabilmeniz için ihtiyacınız olan her şey habita'da mevcut.
 
-(link: /whats-inside text: explore further class: button button-primary u-mt20)
+(link: /whats-inside text: daha fazla class: button button-primary u-mt20)
 
 ----
 
