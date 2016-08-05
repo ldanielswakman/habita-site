@@ -81,3 +81,13 @@ date {
   margin-left: -0.5em !important;
   margin-right: -0.5em !important;
 }
+
+
+// Language switcher
+.language-switcher {
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
+}

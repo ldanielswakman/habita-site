@@ -60,6 +60,11 @@ $u: 5;
   left: 0;
   width: 100%;
 }
+.u-pinned-topright {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+}
 
 
 .u-block {
@@ -155,6 +160,9 @@ $u: 5;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.u-nowrap {
+  white-space: nowrap !important;
 }
 
 .u-clearfix {

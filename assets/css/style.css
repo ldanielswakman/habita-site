@@ -1545,6 +1545,8 @@ figure img { width: 100%; }
 
 .u-pin-topfull { position: fixed !important; top: 0; left: 0; width: 100%; }
 
+.u-pinned-topright { position: absolute !important; top: 0; right: 0; }
+
 .u-block { display: block !important; }
 
 .u-inlineblock { display: inline-block !important; }
@@ -1627,6 +1629,8 @@ figure img { width: 100%; }
 
 .u-truncate { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 
+.u-nowrap { white-space: nowrap !important; }
+
 .u-clearfix { *zoom: 1; }
 .u-clearfix:before, .u-clearfix:after { display: table; content: ""; }
 .u-clearfix:after { clear: both; }
@@ -1670,6 +1674,9 @@ date { color: #8a8a8d; font-size: 0.85rem; }
 .row-nopadding > * { padding-left: 0 !important; padding-right: 0 !important; }
 
 .row-internalpadding { margin-left: -0.5em !important; margin-right: -0.5em !important; }
+
+.language-switcher { opacity: 0.5; }
+.language-switcher:hover { opacity: 1; }
 
 .badge { display: inline-block; width: 60px; height: 60px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; overflow: hidden; background-color: #edeeef; background-size: cover; background-position: center center; }
 
@@ -1746,9 +1753,9 @@ nav { position: fixed; top: 0; left: 0; z-index: 10; -webkit-display: flex; disp
 @media screen and (max-width: 768px) { nav { padding: 3rem 2rem 1.5rem; } }
 nav ul { align-self: flex-end; list-style: none; font-size: 1.5rem; line-height: 3rem; }
 @media screen and (max-width: 768px) { nav ul { font-size: 1.25rem; line-height: 2.5rem; } }
-nav a { color: rgba(255, 255, 255, 0.85); }
-nav a.isActive { color: #ffffff; font-weight: 600; }
-nav a:hover { color: #ffffff; background-image: linear-gradient(to top, transparent, transparent 0, currentColor 0, currentColor 1px, transparent 1px); }
+nav ul a { color: rgba(255, 255, 255, 0.85); }
+nav ul a.isActive { color: #ffffff; font-weight: 600; }
+nav ul a:hover { color: #ffffff; background-image: linear-gradient(to top, transparent, transparent 0, currentColor 0, currentColor 1px, transparent 1px); }
 
 .navIsOpen nav { -webkit-transform: translateX(0); -moz-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
 

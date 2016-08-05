@@ -6,6 +6,9 @@
       <li><a href="<?= $page->url() ?>"<?= ($page->isOpen()) ? ' class="isActive"' : ''; ?>><?= $page->title() ?></a></li>
     <? endforeach ?>
   </ul>
+
+  <? snippet('language-switcher') ?>
+  
 </nav>
 
 <!-- Nav toggle button -->
