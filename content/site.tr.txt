@@ -15,3 +15,12 @@ Keywords: coworking,calisma alani,istanbul,komunite,acik,freelance,ofis
 ----
 
 Copyright: <small>© (date: Year) Habita</small>
+
+----
+
+Footertext: 
+
+**Habita** Coworking Alanı
+Yeşilce Mahallesi Ulubaş Cad No:23/3
+34418 Kağıthane, Istanbul
+(tel: 0555 1234567 text: 0555 1234567)

@@ -18,7 +18,10 @@ fields:
     type:  textarea
   keywords:
     label: Keywords
-    type:  tags
+    type: tags
+  footertext:
+    label: Footer contact text
+    type: textarea
   copyright:
     label: Copyright
     type:  textarea

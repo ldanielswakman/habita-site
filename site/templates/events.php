@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="<?= $site->language() ?>">
@@ -73,6 +74,8 @@
         </div>
       </section>
     <? endif ?>
+
+    <? snippet('newsletter-next-bar') ?>
 
     <? snippet('footer') ?>
 

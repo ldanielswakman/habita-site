@@ -1,0 +1,42 @@
+/* --- Element: Field --- */
+.field {
+  width: 100%;
+  padding: 5px 0;
+  border: none;
+  border-bottom: 2px solid $greylight;
+  @include no-appearance();
+  background-color: transparent;
+  line-height: 20px;
+  font-family: inherit;
+  font-size: 1rem;
+  color: $grey;
+
+  &:focus {
+    outline: none;
+    border-bottom-color: $orange;
+    color: $orange;
+  }
+  &.isActive {
+    color: $orange;
+  }
+  &.field-light {
+    border-bottom-color: rgba($white, 0.75);
+    color: $white;
+
+    &:focus {
+      border-bottom-color: $white;
+    }
+    &::-webkit-input-placeholder {
+      color: rgba($white, 0.5);
+    }
+    &:-moz-placeholder {
+      color: rgba($white, 0.5);
+    }
+    &::-moz-placeholder {
+      color: rgba($white, 0.5);
+    }
+    &:-ms-input-placeholder {  
+      color: rgba($white, 0.5);
+    }
+  }
+}

@@ -1,5 +1,6 @@
 <? $showname = (isset($name)) ? $name : false; ?>
 <? $showtelephone = (isset($telephone)) ? $telephone : false; ?>
+<? $light = (isset($theme) && $theme == 'light') ? ' field-light' : ''; ?>
 
 <!-- Begin MailChimp Signup Form -->
 <div id="mc_embed_signup" class="u-aligncenter">
@@ -16,19 +17,19 @@
       <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f12afb9c7fac0362abb729571_8b50cfe5d5" tabindex="-1" value=""></div>
 
       <div class="mc-field-group u-floatleft u-mr20">
-        <input type="email" value="" name="EMAIL" class="field required email" id="mce-EMAIL" placeholder="<?= l::get('email_address') ?>" style="width: 160px;">
+        <input type="email" value="" name="EMAIL" class="field <?= $light ?> required email" id="mce-EMAIL" placeholder="<?= l::get('email_address') ?>" style="width: 160px;">
       </div>
 
       <? if($showname) :?>
       <div class="u-clearfix"></div>
       <div class="mc-field-group u-block u-mr20 u-mt10 u-mb10">
-        <input type="text" value="" name="NAME" class="field name" id="mce-NAME" placeholder="<?= l::get('name') ?>" style="width: 160px;">
+        <input type="text" value="" name="NAME" class="field <?= $light ?> name" id="mce-NAME" placeholder="<?= l::get('name') ?>" style="width: 160px;">
       </div>
       <? endif ?>
 
       <? if($showtelephone) :?>
       <div class="mc-field-group u-block u-mr20 u-mb20">
-        <input type="text" value="" name="TEL" class="field tel" id="mce-TEL" placeholder="<?= l::get('telephone') ?>" style="width: 160px;">
+        <input type="text" value="" name="TEL" class="field <?= $light ?> tel" id="mce-TEL" placeholder="<?= l::get('telephone') ?>" style="width: 160px;">
       </div>
       <? endif ?>
 

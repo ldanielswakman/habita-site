@@ -1,11 +1,11 @@
 <div class="footer bg-white u-pt50 u-pb100">
 
   <div class="row">
-    <div class="col-xs-12 col-sm-3 col-sm-offset-4 u-pl80">
+    <div class="col-xs-7 col-sm-3 col-sm-offset-4 content">
       
       <? $pages = $site->pages()->visible() ?>
-      <? $pagecount = (count($pages->toArray())/2); ?>
-      <ul class="footer-menu">
+      <? $pagecount = round((count($pages->toArray())/2)); ?>
+      <ul class="footer-menu u-mb20">
         <? $i = 0; ?>
         <? foreach($pages as $page) : ?>
           <? $i++; ?>
@@ -14,8 +14,8 @@
           <? if ($i == $pagecount): ?>
               </ul>
             </div>
-            <div class="col-xs-12 col-sm-2">
-              <ul class="footer-menu">
+            <div class="col-xs-5 col-sm-2">
+              <ul class="footer-menu u-mb20">
           <? endif ?>
 
         <? endforeach ?>
@@ -23,10 +23,9 @@
 
     </div>
     <div class="col-xs-12 col-sm-2">
-      <small class="u-block u-lineheight20 c-greymedium">Nasa Ofis Kiralama Danısmanlık ve 
-      Organizasyon Hizmetleri Tic. Ltd. Sti.<br>
-      Yeşilce Mahallesi Ulubaş Cad. No:23/3<br>
-      34418 Kağıthane, Istanbul</small>
+      <small class="u-block u-lineheight20 c-greymedium">
+        <?= $site->footertext()->kirbytext() ?>
+      </small>
     </div>
 
   </div>

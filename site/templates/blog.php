@@ -81,6 +81,8 @@ $is_article = ($page->template() == 'blog-article') ? true : false;
       </section>
     <? endif ?>
 
+    <? snippet('newsletter-next-bar') ?>
+
     <? snippet('footer') ?>
 
   </body>

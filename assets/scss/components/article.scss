@@ -19,10 +19,10 @@
   }
 }
 
+$padding_md: 5rem;
+$padding_xs: 1rem;
+
 .article {
-  $padding_md: 5rem;
-  $padding_xs: 1rem;
-  
   padding-left: $padding_md;
   padding-right: $padding_md;
 
@@ -80,5 +80,15 @@
     font-family: "Martel", Times, Times New Roman, serif;
     line-height: 1.8rem;
     max-width: 50rem;
+  }
+}
+
+.content {
+  padding-left: $padding_md;
+  padding-right: $padding_md;
+
+  @media screen and (max-width: 768px) {
+    padding-left: $padding_xs;
+    padding-right: $padding_xs;
   }
 }

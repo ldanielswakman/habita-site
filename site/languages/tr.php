@@ -14,3 +14,5 @@ l::set('telephone', 'Telefon numarası');
 l::set('send', 'Gönder');
 // Landing page
 l::set('continue_to_blog', 'Bloga devam et');
+// Footer
+l::set('next', 'Sonraki');

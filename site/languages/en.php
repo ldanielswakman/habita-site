@@ -14,3 +14,5 @@ l::set('telephone', 'Telephone');
 l::set('send', 'Send');
 // Landing page
 l::set('continue_to_blog', 'Continue to the blog');
+// Footer
+l::set('next', 'Next');
