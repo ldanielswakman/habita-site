@@ -1,0 +1,11 @@
+label: Icons
+type: checkboxes
+options:
+  food: Food
+  drink: Drink
+  coffee: Coffee
+  wifi: Wifi
+  envelope: Envelope
+  printer: Printer
+  time: Time
+  presentation: Presentation

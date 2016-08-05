@@ -1,13 +1,53 @@
-Title: Üyelik Seçenekleri
+Title: Üyelik seçenekleri
 
 ----
 
-Text: 
+Text: Açık alanda sabit masalar, kapalı ofisler ve esnek çalışma alanları... Yeni habitan'ları bekliyor!
 
-Açık alanda sabit masalar, kapalı ofisler ve esnek çalışma alanları... Yeni habitan'ları bekliyor!
+----
 
-Sabit Masalar 590 TL'den başlayan fiyatlar
-Kapalı Ofisler 1,500 TL'den başlayan fiyatlar
-Esnek Çalışma Alanları 390 TL'den başlayan fiyatlar
+Cards: 
 
-Paylaştıkça çoğalan, zenginleşen, değerlenen tüm ifadeler etkinlik alanımızda yer bulacak.
+- 
+  title: Sabit Masalar
+  image: desks.jpg
+  text: |
+    <small>[assigned desk space in open office]
+    [rentable per month or longer]</small>
+    <b class="c-orange">590 TL</b>'den başlayan fiyatlar
+  bgcolor: bluedarkfade
+  type: desk
+  icons: coffee, wifi, printer, time
+  action: '(link: #contactform text: İlgileniyorum class: button button-primary u-floatright)'
+- 
+  title: Kapalı Ofisler
+  type: office
+  bgcolor: bluedarkfade
+  image: closed-offices.jpg
+  icons: >
+    coffee, wifi, envelope, printer, time,
+    presentation
+  text: |
+    <small>[private closeable office; rentable per 6 months or longer]</small>
+    <b class="c-orange">1500 TL</b>'den başlayan fiyatlar
+  action: '(link: #contactform text: İlgileniyorum class: button button-primary u-floatright)'
+- 
+  title: Esnek Çalışma Alanları
+  type: flexible
+  bgcolor: bluedarkfade
+  image: open-spaces.jpg
+  icons: coffee, wifi, printer, time
+  text: |
+    <small>[flexible desk space in open office; rentable per day or longer]</small>
+    <b class="c-orange">390 TL</b>'den başlayan fiyatlar
+  action: '(link: #contactform text: İlgileniyorum class: button button-primary u-floatright)'
+- 
+  title: Etkinlik alanı
+  type: event
+  bgcolor: bluedarkfade
+  image: event-space.jpg
+  icons: food, drink, coffee, wifi, presentation
+  text: |
+    <small>[2 flexible event spaces, fitting either 60 or 120 people. Rentable for a day, options available]</small>
+    <b class="c-orange">contact us</b> for specific prices
+  action: '(link: #contactform text: İlgileniyorum class: button button-primary u-floatright)'

@@ -65,7 +65,6 @@ function alignLogo(scroll) {
       .css('transform', 'scale(' + small_scale + ')');
   } else {
     scale = 1 - scroll / (threshold-logo_offset_top) * (1 - small_scale);
-    console.log(scale);
     $logo.css('top', threshold - scroll)
       // .css('left', (threshold - scroll))
       .css('transform', '-webkit-scale(' + scale + ')')

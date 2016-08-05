@@ -4,17 +4,17 @@
 
 <svg class="svg-icon <?= $classes ?>" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve" width="<?= $size ?>">
 <style type="text/css">
-  .svg-icon .st0{fill:#FFFFFF;stroke:#F37A4C;stroke-width:2.4;stroke-miterlimit:10;}
-  .svg-icon .st1{fill:none;stroke:#F37A4C;stroke-width:2.4;stroke-miterlimit:10;}
-  .svg-icon .st2{fill:#F37A4C;}
+  .svg-icon .st0{fill:#FFFFFF;stroke:#ff5000;stroke-width:2.4;stroke-miterlimit:10;}
+  .svg-icon .st1{fill:none;stroke:#ff5000;stroke-width:2.4;stroke-miterlimit:10;}
+  .svg-icon .st2{fill:#ff5000;}
   .svg-icon .st3{fill:#FFFFFF;}
   .svg-icon .st4{fill:none;stroke:#FFFFFF;stroke-width:2.4;stroke-miterlimit:10;}
-  .svg-icon .st5{fill:#FFFFFF;stroke:#F37A4C;stroke-width:2.4017;stroke-miterlimit:10;}
-  .svg-icon .st6{fill:none;stroke:#F37A4C;stroke-width:2.0256;stroke-miterlimit:10;}
-  .svg-icon .st7{fill:none;stroke:#F37A4C;stroke-width:2.0256;stroke-miterlimit:10;stroke-dasharray:1.5192,2.0256;}
-  .svg-icon .st8{fill:#FFFFFF;stroke:#F37A4C;stroke-width:2.2607;stroke-miterlimit:10;}
-  .svg-icon .st9{fill:none;stroke:#F37A4C;stroke-width:2.1;stroke-miterlimit:10;}
-  .svg-icon .st10{fill:none;stroke:#F37A4C;stroke-width:2.4017;stroke-miterlimit:10;}
+  .svg-icon .st5{fill:#FFFFFF;stroke:#ff5000;stroke-width:2.4017;stroke-miterlimit:10;}
+  .svg-icon .st6{fill:none;stroke:#ff5000;stroke-width:2.0256;stroke-miterlimit:10;}
+  .svg-icon .st7{fill:none;stroke:#ff5000;stroke-width:2.0256;stroke-miterlimit:10;stroke-dasharray:1.5192,2.0256;}
+  .svg-icon .st8{fill:#FFFFFF;stroke:#ff5000;stroke-width:2.2607;stroke-miterlimit:10;}
+  .svg-icon .st9{fill:none;stroke:#ff5000;stroke-width:2.1;stroke-miterlimit:10;}
+  .svg-icon .st10{fill:none;stroke:#ff5000;stroke-width:2.4017;stroke-miterlimit:10;}
   .svg-icon__space{fill:#8A8A8D;}
 </style>
 
@@ -242,6 +242,54 @@
           <g>
             <rect x="15.4" y="32.3" class="svg-icon__space" width="6.2" height="0.4"/>
           </g>
+        </g>
+      </g>
+    </g>
+  <? break; ?>
+
+  <? case 'event': ?>
+    <g id="event">
+      <g>
+        <g>
+          <g>
+            <g>
+              <g>
+                <circle class="svg-icon__space" cx="32.1" cy="22.5" r="1.5"/>
+              </g>
+              <g>
+                <polygon class="svg-icon__space" points="29.2,32.4 27.5,32.4 27.5,27.9 31.3,27.9 31.3,25 32.9,25 32.9,29.5 29.2,29.5"/>
+              </g>
+            </g>
+            <g>
+              <g>
+                <circle class="svg-icon__space" cx="38.8" cy="19.7" r="1.5"/>
+              </g>
+              <g>
+                <polygon class="svg-icon__space" points="35.9,29.6 34.2,29.6 34.2,25.1 37.9,25.1 37.9,22.2 39.6,22.2 39.6,26.7 35.9,26.7"/>
+              </g>
+            </g>
+          </g>
+          <g>
+            <g>
+              <g>
+                <circle class="svg-icon__space" cx="15.9" cy="22.5" r="1.5"/>
+              </g>
+              <g>
+                <polygon class="svg-icon__space" points="20.5,32.4 18.8,32.4 18.8,29.5 15.1,29.5 15.1,25 16.7,25 16.7,27.9 20.5,27.9"/>
+              </g>
+            </g>
+            <g>
+              <g>
+                <circle class="svg-icon__space" cx="9.2" cy="19.7" r="1.5"/>
+              </g>
+              <g>
+                <polygon class="svg-icon__space" points="13.8,29.6 12.1,29.6 12.1,26.7 8.4,26.7 8.4,22.2 10.1,22.2 10.1,25.1 13.8,25.1             "/>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g>
+          <path class="svg-icon__space" d="M44,37.7H4V10.3h40V37.7z M5.7,36.1h36.7V11.9H5.7V36.1z"/>
         </g>
       </g>
     </g>

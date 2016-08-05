@@ -20,13 +20,33 @@
 }
 
 .article {
-  padding-left: 5rem;
-  padding-right: 5rem;
+  $padding_md: 5rem;
+  $padding_xs: 1rem;
+  
+  padding-left: $padding_md;
+  padding-right: $padding_md;
+
+  @media screen and (max-width: 768px) {
+    padding-left: $padding_xs;
+    padding-right: $padding_xs;
+  }
+
+  .article__edgetoedge {
+    margin-left: -$padding_md;
+    margin-right: -$padding_md;
+    width: calc(100% + 2 * $padding_md);
+
+    @media screen and (max-width: 768px) {
+      margin-left: -$padding_xs;
+      margin-right: -$padding_xs;
+      width: calc(100% + 2 * $padding_xs);
+    }
+  }
 
   figure {
     position: relative;
-    margin-left: -5rem;
-    margin-right: -5rem;
+    margin-left: -$padding_md;
+    margin-right: -$padding_md;
     width: calc(100% + 10rem);
 
     & + p {

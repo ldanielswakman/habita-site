@@ -18,11 +18,20 @@ nav {
   @include transition();
   @include transform(translateX(-$width));
 
+  @media screen and (max-width: 768px) {
+    padding: 3rem 2rem 1.5rem;
+  }
+
   ul {
     align-self: flex-end;
     list-style: none;
     font-size: 1.5rem;
     line-height: 3rem;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.25rem;
+      line-height: 2.5rem;
+    }
   }
   a {
     color: rgba($white, 0.85);
@@ -50,6 +59,11 @@ a.nav-toggle {
   width: 60px;
   height: 60px;
   z-index: 11;
+
+  @media screen and (max-width: 768px) {
+    top: 10px;
+    left: 20px;
+  }
 
   span {
     content: "";
