@@ -44,4 +44,6 @@
   <?= css($css_assets) ?>
   <?= js($js_assets) ?>
 
+  <link rel="shortcut icon" href="assets/images/favicon<?= ($_SERVER['SERVER_NAME'] == 'localhost') ? '_testing' : '' ?>.ico">
+
 </head>
