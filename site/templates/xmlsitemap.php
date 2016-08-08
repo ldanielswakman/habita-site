@@ -14,7 +14,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>';
   <?php if(in_array($p->uri(), $ignore)) continue ?>
   <url>
     <loc><?php echo html($p->url()) ?></loc>
-    <lastmod><?php echo $p->modified('%Y-%m-%dT%H:%M') ?></lastmod>
+    <lastmod><?php echo $p->modified('%FT%H:%M%z') ?></lastmod>
     <priority><?php echo ($p->isHomePage()) ? 1 : number_format(0.5/$p->depth(), 1) ?></priority>
   </url>
   <?php endforeach ?>
