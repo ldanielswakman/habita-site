@@ -295,9 +295,8 @@ body {
   height: 100%;
 
   font-size: 100%;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   font-kerning: normal;
-  font-weight: 500;
   line-height: 1.5em;
 
   color: #72716c;
@@ -305,6 +304,9 @@ body {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
 }
 p {
   line-height: 1.8em;
@@ -359,7 +361,6 @@ a.link--bgorange:hover {
 blockquote {
   padding: 0.5em 0;
   font-size: 1.5em;
-  font-weight: 600;
   line-height: 1.5em;
 }
 
@@ -379,9 +380,9 @@ blockquote {
   -moz-border-radius: 0.3rem;
   border-radius: 0.3rem;
   line-height: 20px;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   cursor: pointer;
 }
 .button:hover {
@@ -462,7 +463,7 @@ blockquote {
   background-color: #fff;
   background-color: transparent;
   line-height: 20px;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   font-size: 1rem;
   color: #72716c;
 }
@@ -490,7 +491,7 @@ blockquote {
   padding: 0.2rem 0.5rem;
   border-radius: 0.3rem;
   background-color: #edeeef;
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   font-size: 0.85em;
   line-height: 1rem;
   color: #72716c;

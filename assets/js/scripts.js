@@ -6,6 +6,9 @@ $(document).ready(function() {
 
   // Owl carousel
   $('.owl-carousel').each(function() {
+
+    $autoHeightBool = ($(this).attr('data-varheight')) ? true : false;
+
     $(this).owlCarousel({
       items: 1,
       loop: true,
@@ -15,6 +18,7 @@ $(document).ready(function() {
       autoplay: true,
       autoplayTimeout: 4000,
       autoplaySpeed: 1000,
+      autoHeight: $autoHeightBool
     });
   });
 

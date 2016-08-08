@@ -28,6 +28,34 @@
 
         </div>
 
+        <? if (count($page->features()->yaml())) : ?>
+
+          <div class="col-xs-8 col-xs-offset-4 col-sm-3 col-sm-offset-1 bg-greylightest-extendleft"></div>
+
+          <div class="col-xs-12 col-sm-7 u-ph0 u-pb50">
+
+            <div class="article__edgetoedge">
+              <div class="row row-internalpadding u-aligncenter">
+
+                <? foreach ($page->features()->toStructure() as $feature) : ?>
+
+                  <div class="col-xs-6 col-sm-3 u-mb30">
+                    <? if ($feature->icon()->isNotEmpty()) : ?>
+                      <? snippet('icon-svg', ['type' => $feature->icon(), 'size' => '60', 'classes' => '']) ?><br>
+                    <? else : ?>
+                      <div class="u-inlineblock u-width50 u-height50 bg-greylightest u-mt10"></div><br>
+                    <? endif ?>
+                    <b class="c-grey"><?= $feature->title() ?></b>
+                  </div>
+                <? endforeach ?>
+                
+              </div>
+            </div>
+
+          </div>
+
+        <? endif ?>
+
         <? if (count($page->cards()->yaml())) : ?>
 
           <div class="col-xs-8 col-xs-offset-4 col-sm-3 col-sm-offset-1 bg-greylightest-extendleft u-pv50"></div>

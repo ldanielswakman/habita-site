@@ -1637,6 +1637,14 @@ figure img { width: 100%; }
 
 .u-semibold { font-weight: 500 !important; }
 
+.u-text1 { font-size: 1rem !important; line-height: 1.2rem !important; }
+
+.u-text1_5 { font-size: 1.5rem !important; line-height: 2.25rem !important; }
+
+.u-text2 { font-size: 2rem !important; line-height: 2.4rem !important; }
+
+.u-text3 { font-size: 3rem !important; line-height: 3.6rem !important; }
+
 .u-overflowscroll { overflow: scroll !important; }
 
 .u-overflowhidden { overflow: hidden !important; }
@@ -1660,7 +1668,7 @@ a.link-block:hover { background-color: rgba(38, 69, 76, 0.1); }
 
 p { line-height: 1.8rem; max-width: 50rem; }
 
-blockquote { font-size: 1.5rem; line-height: 2rem; }
+blockquote { font-size: 1.5rem; line-height: 2.25rem; }
 blockquote p { font: inherit; line-height: inherit; }
 
 h1 { font-size: 2rem; font-weight: 600; color: #ff5000; }
@@ -1723,18 +1731,21 @@ date { color: #8a8a8d; font-size: 0.85rem; }
 @media screen and (max-width: 768px) { .article { padding-left: 1rem; padding-right: 1rem; } }
 .article .article__edgetoedge { margin-left: -5rem; margin-right: -5rem; width: calc(100% + 2 * $padding_md); }
 @media screen and (max-width: 768px) { .article .article__edgetoedge { margin-left: -1rem; margin-right: -1rem; width: calc(100% + 2 * $padding_xs); } }
-.article figure { position: relative; margin-left: -5rem; margin-right: -5rem; width: calc(100% + 10rem); }
+.article figure, .article .owl-carousel { position: relative; margin-left: -5rem; margin-right: -5rem; width: calc(100% + 10rem); }
+.article figure figure, .article .owl-carousel figure { margin-left: 0; margin-right: 0; width: 100%; }
+@media screen and (max-width: 768px) { .article figure, .article .owl-carousel { margin-left: -1rem; margin-right: -1rem; width: calc(100% + 2 * $padding_xs); } }
 .article figure + p { margin-top: 1.5rem; }
 .article figure figcaption { position: absolute; bottom: 0; right: 100%; display: block; width: 40%; padding: 0 1rem; text-align: right; font-size: 0.875rem; font-style: italic; line-height: 1.25rem; }
 .article p { font-family: "Martel", Times, Times New Roman, serif; }
 .article p + p, .article p + figure, .article p + ul, .article p + blockquote { margin-top: 1.5rem; }
 .article ul { margin-left: 1.25rem; font-family: "Martel", Times, Times New Roman, serif; line-height: 1.8rem; max-width: 50rem; }
+.article blockquote + p { margin-top: 1.5rem; }
 
 .content { padding-left: 5rem; padding-right: 5rem; }
 @media screen and (max-width: 768px) { .content { padding-left: 1rem; padding-right: 1rem; } }
 
-.owl-carousel { min-height: 300px; overflow: hidden; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
-.owl-carousel:before { content: ""; position: absolute; top: 0; left: 0; z-index: 2; width: 100%; height: 100%; background-color: rgba(38, 69, 76, 0.25); pointer-events: none; }
+.owl-carousel { max-width: 100vw; overflow: hidden; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
+.owl-carousel.owl-carousel-muted:before { content: ""; position: absolute; top: 0; left: 0; z-index: 2; width: 100%; height: 100%; background-color: rgba(38, 69, 76, 0.25); pointer-events: none; }
 .owl-carousel.owl-loaded { cursor: -webkit-grab; cursor: grab; }
 .owl-carousel .owl-grab { cursor: -webkit-grabbing; cursor: grabbing; }
 .owl-carousel .owl-prev, .owl-carousel .owl-next { position: absolute; top: 0; left: 0; z-index: 3; width: 50px; height: 50px; padding: 10px; background-color: rgba(38, 69, 76, 0.25); color: #ffffff; line-height: 40px; text-align: center; -webkit-transition: transform 0.3s ease; -moz-transition: transform 0.3s ease; -o-transition: transform 0.3s ease; transition: transform 0.3s ease; -webkit-transform: translateY(-50px); -moz-transform: translateY(-50px); -o-transform: translateY(-50px); transform: translateY(-50px); }

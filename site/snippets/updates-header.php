@@ -25,8 +25,7 @@
     '//cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css',
     // 'https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css',
     '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css',
-    '//fonts.googleapis.com/css?family=Raleway:400,500,700',
-    '//fonts.googleapis.com/css?family=Martel:400,700,600',
+    '//fonts.googleapis.com/css?family=Martel:400,700|Montserrat:400,700&subset=latin-ext',
     );
 
   $js_assets = ($_SERVER['SERVER_NAME'] == 'localhost') ? array(

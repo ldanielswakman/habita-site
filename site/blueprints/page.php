@@ -12,6 +12,21 @@ fields:
     type:  markdown
     header1: h3
     header2: h4
+  features:
+    label: Features + icons
+    type: structure
+    style: table
+    entry: >
+      <b>{{title}}</b><br>
+      <i>{{icon}}</i>
+    modalsize: small
+    fields:
+      title:
+        label: Title
+        type: text
+      icon:
+        extends: icons
+        type: select
   cards:
     label: Membership options cards
     type: structure

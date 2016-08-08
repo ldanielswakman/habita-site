@@ -43,12 +43,24 @@ $padding_xs: 1rem;
     }
   }
 
-  figure {
+  figure, .owl-carousel {
     position: relative;
     margin-left: -$padding_md;
     margin-right: -$padding_md;
     width: calc(100% + 10rem);
-
+    
+    figure {
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+    }
+    @media screen and (max-width: 768px) {
+      margin-left: -$padding_xs;
+      margin-right: -$padding_xs;
+      width: calc(100% + 2 * $padding_xs);
+    }
+  }
+  figure {
     & + p {
       margin-top: 1.5rem;
     }
@@ -80,6 +92,11 @@ $padding_xs: 1rem;
     font-family: "Martel", Times, Times New Roman, serif;
     line-height: 1.8rem;
     max-width: 50rem;
+  }
+  blockquote {
+    & + p {
+      margin-top: 1.5rem;
+    }
   }
 }
 

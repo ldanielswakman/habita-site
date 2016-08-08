@@ -7,8 +7,8 @@ password: >
 language: en
 role: admin
 history:
+  - whats-inside
+  - new
+  - events/opening-party
   - membership-options
   - home
-  - form
-  - new/whats-inside
-  - new/membership-options

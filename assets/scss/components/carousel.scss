@@ -1,11 +1,12 @@
 // Carousel
 .owl-carousel {
-  min-height: 300px;
+  // min-height: 300px;
+  max-width: 100vw;
   overflow: hidden;
   @include transition();
 
   // Subtle colour cover
-  &:before {
+  &.owl-carousel-muted:before {
     content: "";
     position: absolute;
     top: 0;
