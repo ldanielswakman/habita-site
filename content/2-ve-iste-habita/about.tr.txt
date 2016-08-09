@@ -1,21 +1,10 @@
-Title: Ve işte habita!
+Title: ...ve işte habita!
 
 ----
 
 Text: 
 
 > habita, yatırım yapmak, ofis idaresi gibi yük ve zorunlulukları ortadan kaldırarak etkileşime, paylaşarak büyümeye ve yaratıcı düşünceye zaman yaratıyor.
-
-<div class="owl-carousel bg-bluedarkfade u-mv40">
-(image: 1dm46997.jpg)
-(image: 1dm47064.jpg)
-(image: 1dm47066.jpg)
-(image: 1dm47136.jpg)
-(image: 1dm47144.jpg)
-(image: 1dm47219.jpg)
-(image: 1dm47299.jpg)
-(image: 1dm47336.jpg)
-</div>
 
 (image: talk.svg class: u-width100 u-floatright u-mh20)
 Etkileşim halinde, paylaşan, konuşan, tartışan, üreten, mutlu bir komünite oluşturma vizyonu ile yola çıkan habita; hayatın her alanında paylaşım kültürünün, yaratıcılığın ve pozitif enerjinin ön plana çıktığı bir yaşam alanı olarak tasarlandı.
@@ -24,7 +13,7 @@ Etkileşim halinde, paylaşan, konuşan, tartışan, üreten, mutlu bir komünit
 
 Ortak aklın serpildiği, fikirlerin ivmelendiği, verimli ilişkilerin kurulduğu, birlikte öğrenilen, çok yönlü bir paylaşım iklimi, bir **habitus** sunma hayali ile ortaya çıkan habita'da,  kendini çalışırken daha iyi hissetmek isteyen, nefes almaya ihtiyaç duyan ve belki de en önemlisi hep beraber "güzel şeylerin" yaratıldığı  bir ekosistemin parçası olmak isteyen herkese göre bir şeyler var.
 
-<div class="c-orange u-mv30 u-text1_5">Zaman, verim, ve nitelikten ödün vermeden çalışabilmeniz için ihtiyacınız olan her şey habita'da mevcut.</div>
+<div class="c-orange u-mt30 u-text1_5">Zaman, verim, ve nitelikten ödün vermeden çalışabilmeniz için ihtiyacınız olan her şey habita'da mevcut.</div>
 
 ----
 
@@ -70,3 +59,24 @@ Features:
 - 
   title: Cabinets
   icon: ""
+
+----
+
+Carousel-images: 
+
+- 
+  carousel_image: 1dm46997.jpg
+- 
+  carousel_image: 1dm47064.jpg
+- 
+  carousel_image: 1dm47066.jpg
+- 
+  carousel_image: 1dm47136.jpg
+- 
+  carousel_image: 1dm47144.jpg
+- 
+  carousel_image: 1dm47219.jpg
+- 
+  carousel_image: 1dm47299.jpg
+- 
+  carousel_image: 1dm47336.jpg

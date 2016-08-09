@@ -12,15 +12,7 @@ fields:
   text:
     label: Intro text
     type: textarea
-  carousel_images:
-    label: Carousel images
-    type: structure
-    modalsize: small
-    style: table
-    fields:
-      carousel_image:
-        label: Image
-        type: image
+  carousel_images: carousel
   content_boxes:
     label: Show/hide random content sections
     type: checkboxes

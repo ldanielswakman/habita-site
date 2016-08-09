@@ -12,7 +12,7 @@
       <? snippet('logo-svg', array('emblem' => true, 'color' => 'rgba(86, 81, 73, 0.1)')) ?>
     </a>
 
-  <section>
+    <section>
 
       <div class="row">
         <div class="col-xs-8 col-xs-offset-4 col-sm-3 col-sm-offset-1 bg-greylightest-extendleft u-pv50">

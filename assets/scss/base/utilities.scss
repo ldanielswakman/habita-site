@@ -47,6 +47,13 @@ $u: 5;
 .u-maxwidth100p {
   max-width: 100% !important;
 }
+.u-mt70vh-sm {
+  margin-top: 70vh;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+  }
+}
 
 .u-absolute {
   position: absolute !important;

@@ -13,7 +13,7 @@
 
   &:focus {
     outline: none;
-    border-bottom-color: $orange;
+    border-color: $orange;
     color: $orange;
   }
   &.isActive {
@@ -37,6 +37,28 @@
     }
     &:-ms-input-placeholder {  
       color: rgba($white, 0.5);
+    }
+  }
+  &.field-box {
+    padding: 15px 30px 15px;
+    line-height: 40px;
+    border-bottom-width: 0;
+    border-top: 2px solid $greylightest;
+
+    // @include vertical-gradient(transparent, rgba($bluedarkfade, 0.05));
+
+
+    &::-webkit-input-placeholder {
+      color: rgba($bluedarkfade, 0.25);
+    }
+    &:-moz-placeholder {
+      color: rgba($bluedarkfade, 0.25);
+    }
+    &::-moz-placeholder {
+      color: rgba($bluedarkfade, 0.25);
+    }
+    &:-ms-input-placeholder {  
+      color: rgba($bluedarkfade, 0.25);
     }
   }
 }

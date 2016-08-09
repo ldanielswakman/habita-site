@@ -91,6 +91,19 @@ function toggleMenu(state) {
 }
 
 
+
+// UI: toggle menu
+function toggleDialog(state) {
+  state = (state) ? state : '';
+  if(state != 'close') {
+    $('body').toggleClass('dialogIsOpen');
+  } else {
+    $('body').removeClass('dialogIsOpen');
+  }
+  return false;
+}
+
+
 // retrieve blog posts from API and output a random post
 function getRandomContent(baseURL, target, type) {
 

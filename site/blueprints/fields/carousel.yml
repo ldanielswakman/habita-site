@@ -1,0 +1,9 @@
+label: Carousel images
+type: structure
+modalsize: small
+style: table
+fields:
+  carousel_image:
+    label: Image
+    type: image
+    

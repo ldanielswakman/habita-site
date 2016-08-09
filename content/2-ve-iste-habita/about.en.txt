@@ -1,4 +1,4 @@
-Title: Meet habita!
+Title: ...meet habita!
 
 ----
 
@@ -22,7 +22,7 @@ We have a dream to offer a “habitus”, which is aimed to be a multi faceted s
 
 No matter if you work in the biggest holdings in the world or you work as a freelance and be a start-up…habita involves something for everyone, who desires to feel better while working; needs to take a breath and maybe more importantly wants to be a part of an ecosystem where “nice things” are created altogether.
 
-<div class="c-orange u-mv30 u-text1_5">In habita you can find everything you need in order to work without sacrificing your time, efficiency and quality of your work.</div>
+<div class="c-orange u-mt30 u-text1_5">In habita you can find everything you need in order to work without sacrificing your time, efficiency and quality of your work.</div>
 
 ----
 
@@ -68,3 +68,28 @@ Features:
 - 
   title: Cabinets
   icon: ""
+
+----
+
+Carousel-images: 
+
+- 
+  carousel_image: 1dm46997.jpg
+- 
+  carousel_image: 1dm47064.jpg
+- 
+  carousel_image: 1dm47066.jpg
+- 
+  carousel_image: 1dm47136.jpg
+- 
+  carousel_image: 1dm47144.jpg
+- 
+  carousel_image: 1dm47219.jpg
+- 
+  carousel_image: 1dm47299.jpg
+- 
+  carousel_image: 1dm47336.jpg
+
+----
+
+Url-key: meet-habita

@@ -7,7 +7,7 @@ password: >
 language: en
 role: admin
 history:
-  - whats-inside
+  - ve-iste-habita
   - new
   - events/opening-party
   - membership-options
