@@ -7,5 +7,32 @@ Text:
 >  An open & transparent<br>**coworking hub** for everyone...
 
 <div class="u-mv20">
+(link: /ve-iste-habita text: explore class: button button-primary u-mr10) (link: #contactform text: contact us class: button button-white)
+</div>
+
+----
+
+Intro: 
+
+>  An open & transparent<br>**coworking hub** for everyone...
+
+<div class="u-mv20">
 (link: /whats-inside text: explore class: button button-primary u-mr10) (link: /contact text: contact us class: button button-white)
 </div>
+
+----
+
+Carousel-images: 
+
+- 
+  carousel_image: sitting-meeting.jpg
+- 
+  carousel_image: plants-desks.jpg
+- 
+  carousel_image: pizza-time.jpg
+- 
+  carousel_image: chilling-kitchen.jpg
+
+----
+
+Content-boxes: blog, event

@@ -4,7 +4,7 @@
 
   <? snippet('header') ?>
 
-  <body class="dialogIsOpen">
+  <body>
 
     <? snippet('nav') ?>
 

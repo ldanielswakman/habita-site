@@ -36,6 +36,11 @@ $(document).ready(function() {
 
   });
 
+  //
+  $('[href="#contactform"]').click(function() {
+    toggleDialog('open');
+  });
+
 });
 
 
@@ -95,10 +100,12 @@ function toggleMenu(state) {
 // UI: toggle menu
 function toggleDialog(state) {
   state = (state) ? state : '';
-  if(state != 'close') {
-    $('body').toggleClass('dialogIsOpen');
-  } else {
+  if(state == 'close') {
     $('body').removeClass('dialogIsOpen');
+  } else if (state == 'open') {
+    $('body').addClass('dialogIsOpen');
+  } else {
+    $('body').toggleClass('dialogIsOpen');
   }
   return false;
 }
