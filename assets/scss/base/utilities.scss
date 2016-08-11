@@ -61,6 +61,12 @@ $u: 5;
 .u-relative {
   position: relative !important;
 }
+.u-stick-bottomfull {
+  position: absolute !important;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
 .u-pin-topfull {
   position: fixed !important;
   top: 0;

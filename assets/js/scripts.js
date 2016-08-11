@@ -22,17 +22,28 @@ $(document).ready(function() {
     });
   });
 
+
   // start with fetching random blog post...
-  getRandomContent('events/api', '#event_result', 'event');
+  getRandomContent('blog/api', '#blog_result', 'blog');
 
   // .. when done, get random member ...
-  randomContentRequest['event'].done(function() {
-    getRandomContent('members/api', '#member_result', 'member');
+  randomContentRequest['blog'].done(function() {
 
-    // .. when done, get random member ...
-    randomContentRequest['member'].done(function() {
-      getRandomContent('blog/api', '#blog_result', 'blog');
-    });
+    if($('#event_result').length) {
+      console.log('event result exists');
+      getRandomContent('events/api', '#event_result', 'event');
+
+      // .. when done, get random member ...
+      randomContentRequest['event'].done(function() {
+        if($('#member_result').length) {
+          console.log('member result exists');
+          getRandomContent('members/api', '#member_result', 'member');
+        }
+      });
+    } else if($('#member_result').length) {
+      console.log('member result exists');
+      getRandomContent('members/api', '#member_result', 'member');
+    }
 
   });
 

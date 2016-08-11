@@ -30,53 +30,53 @@
       </div>
     </div>
 
-    <div class="u-relative bg-bluedarkfade u-overflowhidden" style="display: flex; min-height: calc(100vh - 250px - 10px);">
+    <div class="u-relative bg-bluedarkfade u-overflowhidden" style="display: flex; min-height: calc(100vh - 250px);">
 
       <? snippet('image-carousel', array('page' => $page)) ?>
 
+      <section class="u-stick-bottomfull u-pb10">
+
+        <? $boxes = $page->content_boxes()->split() ?>
+
+        <div class="row u-relative u-z2 u-no-p-events" style="margin-top: -50px;">
+          <div class="col-xs-12 col-sm-1 col-md-4 col-md-offset-1" style="display: flex;">
+
+            <? if (in_array('member', $boxes)) : ?>
+              <div class="bg-white-faded90 u-pa15 u-widthfull u-appearOnLoad u-mb10">
+                <a href="<?= url('members') ?>" class="button button-small button-outline-reveal u-floatright">See all</a>
+                <h4 class="h4-capped"><?= strtoupper($site->find('members')->title()) ?></h4>
+                <div id="member_result"></div>
+              </div>
+            <? endif ?>
+
+          </div>
+          <div class="col-xs-12 col-sm-5 col-md-3" style="display: flex;">
+
+            <? if (in_array('blog', $boxes)) : ?>
+              <div class="bg-white-faded90 u-pa15 u-widthfull u-appearOnLoad u-mb10">
+                <a href="<?= url('blog') ?>" class="button button-small button-outline-reveal u-floatright">See all</a>
+                <h4 class="h4-capped"><?= strtoupper($site->find('blog')->title()) ?></h4>
+                <div id="blog_result"></div>
+              </div>
+            <? endif ?>
+
+          </div>
+          <div class="col-xs-12 col-sm-5 col-md-3 u-no-p-events" style="display: flex;">
+
+            <? if (in_array('event', $boxes)) : ?>
+              <div class="bg-white-faded90 u-pa15 u-widthfull u-appearOnLoad u-mb10">
+                <a href="<?= url('events') ?>" class="button button-small button-outline-reveal u-floatright">See all</a>
+                <h4 class="h4-capped"><?= strtoupper($site->find('events')->title()) ?></h4>
+                <div id="event_result"></div>
+              </div>
+            <? endif ?>
+
+          </div>
+        </div>
+
+      </section>
+
     </div>
-
-    <section class="bg-bluedarkfade u-pb10">
-
-      <? $boxes = $page->content_boxes()->split() ?>
-
-      <div class="row u-relative u-z2 u-no-p-events" style="margin-top: -50px;">
-        <div class="col-xs-12 col-sm-4 col-sm-offset-1" style="display: flex;">
-
-          <? if (in_array('member', $boxes)) : ?>
-            <div class="bg-white-faded90 u-pa15 u-widthfull u-appearOnLoad u-mb10">
-              <a href="<?= url('members') ?>" class="button button-small button-outline-reveal u-floatright">See all</a>
-              <h4 class="h4-capped"><?= strtoupper($site->find('members')->title()) ?></h4>
-              <div id="member_result"></div>
-            </div>
-          <? endif ?>
-
-        </div>
-        <div class="col-xs-12 col-sm-3" style="display: flex;">
-
-          <? if (in_array('blog', $boxes)) : ?>
-            <div class="bg-white-faded90 u-pa15 u-widthfull u-appearOnLoad u-mb10">
-              <a href="<?= url('blog') ?>" class="button button-small button-outline-reveal u-floatright">See all</a>
-              <h4 class="h4-capped"><?= strtoupper($site->find('blog')->title()) ?></h4>
-              <div id="blog_result"></div>
-            </div>
-          <? endif ?>
-
-        </div>
-        <div class="col-xs-12 col-sm-3 u-no-p-events" style="display: flex;">
-
-          <? if (in_array('event', $boxes)) : ?>
-            <div class="bg-white-faded90 u-pa15 u-widthfull u-appearOnLoad u-mb10">
-              <a href="<?= url('events') ?>" class="button button-small button-outline-reveal u-floatright">See all</a>
-              <h4 class="h4-capped"><?= strtoupper($site->find('events')->title()) ?></h4>
-              <div id="event_result"></div>
-            </div>
-          <? endif ?>
-
-        </div>
-      </div>
-
-    </section>
 
     <? snippet('social-bar') ?>
 
