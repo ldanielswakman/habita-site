@@ -31,7 +31,7 @@ Features:
   icon: presentation
 - 
   title: Kitchen
-  icon: ""
+  icon: boiler
 - 
   title: Bar
   icon: drink
@@ -40,7 +40,7 @@ Features:
   icon: coffee
 - 
   title: Lounge
-  icon: ""
+  icon: lounge
 - 
   title: Snacks
   icon: food
@@ -55,10 +55,10 @@ Features:
   icon: printer
 - 
   title: Security
-  icon: ""
+  icon: security
 - 
   title: Cabinets
-  icon: ""
+  icon: cabinets
 
 ----
 

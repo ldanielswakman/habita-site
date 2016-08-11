@@ -454,6 +454,73 @@
     </g>
   <? break; ?>
 
+  <? case 'cabinets': ?>
+    <g id="cabinets">
+      <g>
+        <g>
+          <rect x="6.1" y="6.8" class="st0" width="15.9" height="34.4"/>
+          <g>
+            <rect x="8.7" y="35.4" class="st2" width="10.6" height="1"/>
+            <rect x="8.7" y="33.3" class="st2" width="10.6" height="1"/>
+            <rect x="8.7" y="37.6" class="st2" width="10.6" height="1"/>
+          </g>
+        </g>
+        <g>
+          <circle class="st2" cx="17.4" cy="22.5" r="1.5"/>
+          <polygon class="st2" points="18.8,27 16.1,27 16.7,22.9 18.1,22.9      "/>
+        </g>
+      </g>
+      <g>
+        <g>
+          <rect x="26" y="6.8" class="st0" width="15.9" height="34.4"/>
+          <g>
+            <rect x="28.7" y="35.4" class="st2" width="10.6" height="1"/>
+            <rect x="28.7" y="33.3" class="st2" width="10.6" height="1"/>
+            <rect x="28.7" y="37.6" class="st2" width="10.6" height="1"/>
+          </g>
+        </g>
+        <g>
+          <circle class="st2" cx="37.4" cy="22.5" r="1.5"/>
+          <polygon class="st2" points="38.7,27 36,27 36.7,22.9 38.1,22.9      "/>
+        </g>
+      </g>
+    </g>
+  <? break; ?>
+
+  <? case 'security': ?>
+    <g id="security">
+      <path class="st5" d="M14.6,22v-3.2c0-5.2,4.2-9.4,9.4-9.4h0c5.2,0,9.4,4.2,9.4,9.4V22 M30,22v-3c0-3.3-2.7-6-6-6h0
+        c-3.3,0-6,2.7-6,6v3"/>
+      <g>
+        <g>
+          <path class="st1" d="M14.6,22v-3.2c0-5.2,4.2-9.4,9.4-9.4h0c5.2,0,9.4,4.2,9.4,9.4V22"/>
+          <path class="st1" d="M18,22v-3c0-3.3,2.7-6,6-6h0c3.3,0,6,2.7,6,6v3"/>
+        </g>
+        <rect x="11.8" y="22" class="st0" width="24.3" height="15.2"/>
+      </g>
+    </g>
+  <? break; ?>
+
+  <? case 'lounge': ?>
+    <g id="lounge">
+      <path class="st5" d="M39.3,14.8c-0.8,0.2-1.6,0.5-2.3,0.9v-0.5c-1.1-1.2-2.7-1.9-4.5-1.9H15.6c-1.8,0-3.4,0.8-4.6,2L10.7,16
+        c-0.9-0.5-1.8-0.9-2.8-1.1c-0.8-0.2-1.6-0.3-2.5-0.3v4.4v13h17.7h6h13.3v-13v-4.4C41.6,14.5,40,14.6,39.3,14.8z"/>
+      <g>
+        <g>
+          <g>
+            <path class="st0" d="M29.2,24.5h2.6c0-4.6,3.1-8.6,7.4-9.7c0.8-0.2,2.4-0.3,3.2-0.3v4.4v13H29.2h-6H5.5v-13v-4.4
+              c0.9,0,1.7,0.1,2.5,0.3c4.3,1.1,8.2,5,8.2,9.7h7H29.2z"/>
+          </g>
+          <path class="st0" d="M36.9,15.3c-1.1-1.2-2.7-1.9-4.5-1.9H15.6c-1.8,0-3.4,0.8-4.6,2"/>
+        </g>
+        <g>
+          <rect x="35.4" y="32.3" class="st2" width="4.8" height="2.4"/>
+          <rect x="7.9" y="32.3" class="st2" width="4.8" height="2.4"/>
+        </g>
+      </g>
+    </g>
+  <? break; ?>
+
   <? default: ?>
     <g id="boiler">
       <g>

@@ -9,3 +9,7 @@ options:
   printer: Printer
   time: Time
   presentation: Presentation
+  boiler: Kitchen
+  cabinets: Cabinets
+  security: Security
+  lounge: Lounge

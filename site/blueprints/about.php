@@ -28,3 +28,4 @@ fields:
       icon:
         extends: icons
         type: select
+      
