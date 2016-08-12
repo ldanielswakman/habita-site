@@ -6,13 +6,19 @@ Text:
 
 habita, Sanayi Mahallesinde, üretken atölyelerle çevrili kent dokusu ile iç içe, sosyal olanaklara yakın, araçla ulaşıma elverişli, toplu taşıma ve metro duraklarının yanıbaşında.
 
-Google map
+(image: detailed-map.jpg)
 
-info@habita.com.tr
-www.habita.com.tr/intro
+(email: info@habita.com.tr)
 
-Do we need to give our phones? Not sure
+Do we need to give our phones? Not sure 
+>> remark from Daniel: should be **one** phone number that is always reachable
 
 Levent : 532 549 19 43
 Serdar: 532 294 80 91
 Burak: 533 744 03 29
+
+>> remark from Daniel: maybe its wise to mention the opening hours?
+
+----
+
+Cards: 
