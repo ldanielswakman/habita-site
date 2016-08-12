@@ -7,8 +7,8 @@ password: >
 language: en
 role: admin
 history:
+  - membership-options
   - ve-iste-habita
   - new
   - events/opening-party
-  - membership-options
   - home

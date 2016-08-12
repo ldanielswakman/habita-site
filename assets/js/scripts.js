@@ -47,9 +47,15 @@ $(document).ready(function() {
 
   });
 
-  //
+  // open contact form
   $('[href="#contactform"]').click(function() {
     toggleDialog('open');
+  });
+
+  // expand card
+  $('.card [href="#expand"]').click(function() {
+    $(this).closest('.card').toggleClass('isExpanded');
+    $(this).toggleClass('u-hide');
   });
 
 });

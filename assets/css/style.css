@@ -1691,6 +1691,10 @@ date { color: #8a8a8d; font-size: 0.85rem; }
 .language-switcher { opacity: 0.5; }
 .language-switcher:hover { opacity: 1; }
 
+.card .detail, .card.isExpanded .not-detail { display: none !important; }
+
+.card.isExpanded .detail { display: inherit !important; }
+
 .badge { display: inline-block; width: 60px; height: 60px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; overflow: hidden; background-color: #edeeef; background-size: cover; background-position: center center; }
 
 .button { -webkit-appearance: none; -moz-appearance: none; -o-appearance: none; appearance: none; display: inline-block; padding: 9px 18px; background-color: #72716c; border: 1px solid transparent; color: #ffffff; font: inherit; line-height: 20px; font-weight: 500; cursor: pointer; }
@@ -1704,6 +1708,8 @@ date { color: #8a8a8d; font-size: 0.85rem; }
 .button.button-outline:hover { background-color: #ff5000; color: #ffffff; }
 .button.button-outline-reveal { background-color: transparent; border: 1px solid transparent; color: #ff5000; }
 .button.button-outline-reveal:hover { border-color: #ff5000; }
+.button.button-transp { background-color: rgba(0, 0, 0, 0.2); }
+.button.button-transp:hover { background-color: rgba(0, 0, 0, 0.3); }
 
 /* --- Element: Field --- */
 .field { width: 100%; padding: 5px 0; border: none; border-bottom: 2px solid #d3d4d5; -webkit-appearance: none; -moz-appearance: none; -o-appearance: none; appearance: none; background-color: transparent; line-height: 20px; font-family: inherit; font-size: 1rem; color: #72716c; }

@@ -91,3 +91,10 @@ date {
     opacity: 1;
   }
 }
+
+.card .detail, .card.isExpanded .not-detail {
+  display: none !important;
+}
+.card.isExpanded .detail {
+  display: inherit !important;
+}

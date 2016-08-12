@@ -71,7 +71,7 @@
                   <? $bgcolor = ($card->bgcolor()->isNotEmpty()) ? 'bg-' . $card->bgcolor() : 'bg-white'; ?>
 
                   <div class="col-xs-12 col-sm-6">
-                    <div class="<?= $bgcolor ?> c-white u-mb30">
+                    <div class="<?= $bgcolor ?> c-white u-mb30 card">
 
                       <? if ($image = $card->image()) : ?>
                         <img src="<?= $page->image($image)->url() ?>" alt="" class="u-block u-maxwidth100p" />
@@ -87,11 +87,19 @@
 
                         <h3 class="u-mb5"><?= $card->title() ?></h3>
 
-                        <? foreach($card->icons()->split() as $icon) : ?>
-                          <? snippet('icon-svg', ['type' => $icon, 'size' => '30', 'classes' => '']) ?>
-                        <? endforeach ?>
-
-                        <br>
+                        <div class="u-clearfix detail">
+                          <? foreach($card->icons()->split() as $icon) : ?>
+                            <div class="u-clearfix" title="<?= ucfirst($icon) ?>">
+                              <div class="u-floatleft"><? snippet('icon-svg', ['type' => $icon, 'size' => '30', 'classes' => '']) ?></div>
+                              <div class="u-floatleft u-lineheight30 u-ml10"><?= ucfirst($icon) ?></div>
+                            </div>
+                          <? endforeach ?>
+                        </div>
+                        <div class="not-detail">
+                          <? foreach($card->icons()->split() as $icon) : ?>
+                            <span title="<?= ucfirst($icon) ?>"><? snippet('icon-svg', ['type' => $icon, 'size' => '30', 'classes' => '']) ?>
+                          <? endforeach ?>
+                        </div>
 
                         <?= $card->text()->kirbytext() ?>
 

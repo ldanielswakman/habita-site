@@ -58,4 +58,12 @@
       border-color: $orange;
     }
   }
+  &.button-transp {
+    background-color: rgba($black, 0.2);
+
+    &:hover {
+      background-color: rgba($black, 0.3);
+    }
+  }
+
 }

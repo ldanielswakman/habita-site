@@ -12,7 +12,7 @@ Cards:
   title: Sabit Masalar
   image: desks.jpg
   text: |
-    <small>[kişiye özel masalarda açık ofis deneyimi]
+    <small class="detail">[kişiye özel masalarda açık ofis deneyimi]
     </small>
     <b class="c-orange">590 TL</b>'den başlayan fiyatlar
   bgcolor: bluedarkfade
@@ -20,7 +20,7 @@ Cards:
   icons: >
     food, coffee, wifi, printer, time,
     presentation
-  action: '(link: #contactform text: İlgileniyorum class: button button-primary u-floatright)'
+  action: '(link: #expand text: Detay class: button button-transp) (link: #contactform text: İlgileniyorum class: button button-primary u-floatright)'
 - 
   title: Kapalı Ofisler
   type: office
@@ -28,21 +28,21 @@ Cards:
   image: closed-offices.jpg
   icons: >
     food, coffee, wifi, envelope, printer,
-    time, presentation
+    presentation
   text: |
-    <small>[farklı büyüklüklerde, dilediğiniz gibi tasarlayacağınız özel ofisler]</small>
+    <small class="detail">[farklı büyüklüklerde, dilediğiniz gibi tasarlayacağınız özel ofisler]</small>
     <b class="c-orange">1500 TL</b>'den başlayan fiyatlar
-  action: '(link: #contactform text: İlgileniyorum class: button button-primary u-floatright)'
+  action: '(link: #expand text: Detay class: button button-transp) (link: #contactform text: İlgileniyorum class: button button-primary u-floatright)'
 - 
   title: Esnek Çalışma Alanları
   type: flexible
   bgcolor: bluedarkfade
   image: open-spaces.jpg
-  icons: coffee, wifi, printer, time
+  icons: coffee, wifi, printer
   text: |
-    <small>[kısa süreli işleriniz için günlük kiralama seçenekleri ile esnek çalışma alanları]</small>
+    <small class="detail">[kısa süreli işleriniz için günlük kiralama seçenekleri ile esnek çalışma alanları]</small>
     <b class="c-orange">30 TL</b>'den başlayan fiyatlar
-  action: '(link: #contactform text: İlgileniyorum class: button button-primary u-floatright)'
+  action: '(link: #expand text: Detay class: button button-transp) (link: #contactform text: İlgileniyorum class: button button-primary u-floatright)'
 - 
   title: habita venue
   type: event
@@ -50,7 +50,7 @@ Cards:
   image: event-space.jpg
   icons: food, drink, coffee, wifi, presentation
   text: |
-    <small>[Etkinliğinizin içeriğini bütünleyecek şekilde istediğiniz gibi tasarlayabileceğiniz, misafirlerinize etkin ve akılda kalıcı marka deneyimleri yaşatabileceğiniz bir etkinlik alanı]</small>
+    <small class="detail">[Etkinliğinizin içeriğini bütünleyecek şekilde istediğiniz gibi tasarlayabileceğiniz, misafirlerinize etkin ve akılda kalıcı marka deneyimleri yaşatabileceğiniz bir etkinlik alanı]</small>
     
     <b class="c-orange">özel fiyatlar</b> için bilgi al
   action: ""
