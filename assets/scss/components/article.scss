@@ -76,6 +76,12 @@ $padding_xs: 1rem;
       font-style: italic;
       line-height: 1.25rem;
     }
+    &.medium {
+      max-width: 50%;
+    }
+    &.small {
+      max-width: 30%;
+    }
   }
   p {
     font-family: "Martel", Times, Times New Roman, serif;
