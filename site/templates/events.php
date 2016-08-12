@@ -36,8 +36,7 @@
 
     </section>
 
-    <? $article_padding = ($is_article) ? 'u-pb50' : 'u-pv50'; ?>
-    <section class="bg-greylightest <?= $article_padding ?> article-list">
+    <section class="bg-greylightest u-pv50 article-list">
       <div class="row">
         <div class="col-xs-12 col-sm-3 col-sm-offset-1"></div>
 
@@ -65,34 +64,7 @@
 
         </div>
 
-        <!-- <div class="row u-mb30">
-          <div class="col-xs-12 col-sm-3 col-sm-offset-1"></div>  
-          <div class="col-xs-12 col-sm-5 article">
-
-            <a href="<?= $article->url() ?>" class="u-block">
-              <h3><?= $article->title() ?></h3>
-              <date><?= $article->date('%d %B %Y') ?></date>
-              <p class="u-lineheight20 u-mt5"><small><?= excerpt($article->text(), 100) ?></small></p>
-            </a>
-
-          </div>
-        </div> -->
-
     </section>
-
-    <? if ($is_article == true): ?>
-      <section id="article" class="u-pin-topfull u-z10 u-no-p-events u-overflowscroll u-height100vh">
-        <div class="row">
-          <div class="col-xs-12 col-sm-4">
-          </div>
-          <div class="bg-white u-minheight100vh col-xs-12 col-sm-7 u-p-events article">
-            <h1 class="u-pv60"><?= $page->title() ?></h1>
-            <?= $page->text()->kirbytext() ?>
-          </div>
-          <div class="bg-white u-minheight100vh col-xs-12 col-sm-1"></div>
-        </div>
-      </section>
-    <? endif ?>
 
     <? snippet('newsletter-next-bar') ?>
 
