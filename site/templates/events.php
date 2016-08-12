@@ -38,28 +38,45 @@
 
     <? $article_padding = ($is_article) ? 'u-pb50' : 'u-pv50'; ?>
     <section class="bg-greylightest <?= $article_padding ?> article-list">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-sm-offset-1"></div>
 
-      <? foreach ($site->find('events')->children()->visible()->flip() as $article) : ?>
+        <div class="col-xs-12 col-sm-7 article">
 
-        <div class="row u-mb30">
-          <? if ($is_article != true): ?>
-            <div class="col-xs-12 col-sm-3 col-sm-offset-1">
-            </div>
-          <? endif ?>
+          <div class="row row-internalpadding">
+            <? foreach ($site->find('events')->children()->visible()->flip() as $event) : ?>
+
+              <div class="col-xs-12 col-sm-6">
+                <div class="bg-white u-pa20">
+                  <div class="u-aligncenter u-mb20">
+                    <i class="ion ion-calendar ion-3x c-greylightest"></i>
+                  </div>
+                  <h3><?= $event->title() ?></h3>
+                  <date><?= $event->date('%d %B %Y') ?></date>
+                  <p class="u-lineheight20 u-mt5"><small><?= $event->description()->kirbytext() ?></small></p>
+                  <? if ($event->facebook_link()->isNotEmpty()): ?>
+                    <a href="<?= $event->facebook_link() ?>">Event on facebook</a>
+                  <? endif ?>
+                </div>
+              </div>
+
+            <? endforeach ?>
+          </div>
+
+        </div>
+
+        <!-- <div class="row u-mb30">
+          <div class="col-xs-12 col-sm-3 col-sm-offset-1"></div>  
           <div class="col-xs-12 col-sm-5 article">
 
             <a href="<?= $article->url() ?>" class="u-block">
               <h3><?= $article->title() ?></h3>
               <date><?= $article->date('%d %B %Y') ?></date>
-              <? if ($is_article != true): ?>
-                <p class="u-lineheight20 u-mt5"><small><?= excerpt($article->text(), 100) ?></small></p>
-              <? endif ?>
+              <p class="u-lineheight20 u-mt5"><small><?= excerpt($article->text(), 100) ?></small></p>
             </a>
 
           </div>
-        </div>
-
-      <? endforeach ?>
+        </div> -->
 
     </section>
 

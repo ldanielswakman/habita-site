@@ -1768,6 +1768,7 @@ date { color: #8a8a8d; font-size: 0.85rem; }
 .article p + p, .article p + figure, .article p + ul, .article p + blockquote { margin-top: 1.5rem; }
 .article ul { margin-left: 1.25rem; font-family: "Martel", Times, Times New Roman, serif; line-height: 1.8rem; max-width: 50rem; }
 .article blockquote + p { margin-top: 1.5rem; }
+.article a:hover { color: #ff5000; }
 
 .content { padding-left: 5rem; padding-right: 5rem; }
 @media screen and (max-width: 768px) { .content { padding-left: 1rem; padding-right: 1rem; } }
