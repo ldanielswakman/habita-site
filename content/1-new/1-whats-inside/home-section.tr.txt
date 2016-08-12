@@ -4,10 +4,12 @@ Title: What's inside
 
 Text: 
 
-Zaman, verim, ve nitelikten ödün vermeden çalışabilmeniz için ihtiyacınız olan her şey habita'da mevcut.
+## What's inside?
+<br>
+> Zaman, verim, ve nitelikten ödün vermeden çalışabilmeniz için ihtiyacınız olan her şey habita'da mevcut.
 
-(link: /whats-inside text: daha fazla class: button button-primary u-mt20)
+(link: /meet-habita text: daha fazla class: button button-primary u-mt20)
 
 ----
 
-Bgcolor: greylightest
+Bgcolor: bluedarkfade

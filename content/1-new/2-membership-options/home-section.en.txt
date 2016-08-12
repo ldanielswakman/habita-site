@@ -2,7 +2,11 @@ Title: Membership options
 
 ----
 
-Text: It doesn’t matter if you work for the largest company in the world, as a freelancer or a start up… In habita there is something for everyone who wants to feel happier while working.
+Text: 
+
+> It doesn’t matter if you work for the **largest company in the world**, as a **freelancer** or a **start-up**… In habita there is something for everyone who wants to feel happier while working.
+
+(link: /en/membership-options text: explore our spaces! class: button button-primary u-mt20)
 
 ----
 

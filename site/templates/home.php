@@ -85,21 +85,54 @@
 
       <? $bgcolor = ($section->bgcolor()->isNotEmpty()) ? 'bg-' . $section->bgcolor() : 'bg-white'; ?>
 
-      <section class="<?= $bgcolor ?> u-pv50">
+      <section class="<?= $bgcolor ?> u-pv150">
         <div class="row">
-          <div class="col-xs-12 col-sm-4 col-sm-offset-1 u-aligncenter u-pv20">
-            <?
-            // This is temporary
-            if($section->slug() == 'whats-inside') :
-              snippet('icon-svg', ['type' => 'food', 'size' => '60', 'classes' => '']);
-              snippet('icon-svg', ['type' => 'printer', 'size' => '60', 'classes' => '']);
-              snippet('icon-svg', ['type' => 'presentation', 'size' => '60', 'classes' => '']);
-            endif;
-            ?>
-          </div>
-          <div class="col-xs-12 col-sm-5">
-            <?= $section->text()->kirbytext() ?>
-          </div>
+          <? if($section->slug() == 'whats-inside') : ?>
+            <div class="col-xs-12 col-sm-4 col-sm-offset-1 u-aligncenter u-pv20 u-relative">
+              <div class="u-stick-topfull u-aligncenter u-opacity30">
+                <? snippet('icon-svg', ['type' => 'flexible', 'size' => '200', 'classes' => '']); ?>
+                <? snippet('icon-svg', ['type' => 'desk', 'size' => '150', 'classes' => '']); ?>
+              </div>
+              <div class="u-relative u-mt30">
+                <?
+                snippet('icon-svg', ['type' => 'lounge', 'size' => '80', 'classes' => '']);
+                snippet('icon-svg', ['type' => 'coffee', 'size' => '80', 'classes' => '']);
+                snippet('icon-svg', ['type' => 'printer', 'size' => '80', 'classes' => '']);
+                snippet('icon-svg', ['type' => 'presentation', 'size' => '80', 'classes' => '']);
+                ?>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-5 c-white">
+              <?= $section->text()->kirbytext() ?>
+            </div>
+          <? elseif($section->slug() == 'membership-options') : ?>
+            <div class="col-xs-12 col-sm-4 col-sm-offset-1 u-relative">
+
+              <div class="row row-internalpadding u-mt20 u-ph30">
+                <? $membership = $pages->find('membership-options') ?>
+                <? foreach ($membership->cards()->toStructure() as $card) : ?>
+
+                  <div class="col-xs-6 u-mb20">
+                    <a href="<?= $membership->url() ?>" class="u-block bg-bluedarkfade c-white u-heightfull">
+
+                      <? if ($image = $card->image()) : ?>
+                        <img src="<?= thumb($membership->image($image), array('width' => 320))->url() ?>" alt="" class="u-block u-maxwidth100p" />
+                      <? endif ?>
+
+                      <div class="u-pa10">
+                        <h4><?= $card->title() ?></h4>
+                      </div>
+                    </a>
+                  </div>
+
+                <? endforeach ?>
+              </div>
+
+            </div>
+            <div class="col-xs-12 col-sm-5 u-pt50">
+              <?= $section->text()->kirbytext() ?>
+            </div>
+          <?endif; ?>
         </div>
       </section>
 

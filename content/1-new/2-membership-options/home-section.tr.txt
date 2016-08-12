@@ -2,7 +2,11 @@ Title: Membership options
 
 ----
 
-Text: İster dünyanın en büyük holdinglerinde çalışıyor olun, ister freelance, ister start up... habita'da kendini çalışırken daha iyi hissetmek isteyen, nefes almaya ihtiyaç duyan ve belki de en önemlisi hep beraber "güzel şeylerin" yaratıldığı  bir ekosistemin parçası olmak isteyen herkese göre bir şeyler var.
+Text: 
+
+> İster dünyanın en büyük holdinglerinde çalışıyor olun, ister freelance, ister start up... habita'da kendini çalışırken daha iyi hissetmek isteyen, nefes almaya ihtiyaç duyan ve belki de en önemlisi hep beraber "güzel şeylerin" yaratıldığı  bir ekosistemin parçası olmak isteyen herkese göre bir şeyler var.
+
+(link: /membership-options text: alanlarımızı keşfet! class: button button-primary u-mt20)
 
 ----
 

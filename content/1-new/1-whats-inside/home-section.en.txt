@@ -4,10 +4,12 @@ Title: What's inside
 
 Text: 
 
-In habita you can find everything you need in order to work without sacrificing your time, efficiency and quality of your work.
+## What's inside?
+<br>
+> In habita you can find everything you need in order to work without sacrificing your time, efficiency and quality of your work.
 
-(link: /whats-inside text: explore further class: button button-primary u-mt20)
+(link: /en/meet-habita text: explore further class: button button-primary u-mt20)
 
 ----
 
-Bgcolor: greylightest
+Bgcolor: bluedarkfade

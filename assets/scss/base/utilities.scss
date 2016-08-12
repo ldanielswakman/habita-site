@@ -34,6 +34,9 @@ $u: 5;
 .u-widthfull {
   width: 100% !important;
 }
+.u-heightfull {
+  height: 100% !important;
+}
 .u-height100vh {
   height: 100% !important; // fallback
   height: 100vh !important;
@@ -60,6 +63,12 @@ $u: 5;
 }
 .u-relative {
   position: relative !important;
+}
+.u-stick-topfull {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 .u-stick-bottomfull {
   position: absolute !important;
@@ -209,6 +218,17 @@ $u: 5;
 .u-text3 {
   font-size: 3rem !important;
   line-height: 3.6rem !important;
+}
+
+
+.u-opacity70 {
+  opacity: 0.7 !important;
+}
+.u-opacity50 {
+  opacity: 0.5 !important;
+}
+.u-opacity30 {
+  opacity: 0.3 !important;
 }
 
 
