@@ -1,4 +1,4 @@
-<div class="bg-orange c-white u-aligncenter">
+<div id="social" class="bg-orange c-white u-aligncenter">
 
   <div class="row row-nopadding">
 

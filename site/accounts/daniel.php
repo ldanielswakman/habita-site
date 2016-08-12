@@ -7,8 +7,8 @@ password: >
 language: en
 role: admin
 history:
+  - contact
+  - new
   - membership-options
   - new/membership-options
   - new/whats-inside
-  - contact
-  - ve-iste-habita

@@ -7,7 +7,7 @@ Text:
 >  Paylaşan, konuşan, tartışan, üreten herkese<br>**açık bir komünitenin** ortak yaşam ve çalışma alanı...
 
 <div class="u-mv20">
-(link: /ve-iste-habita text: keşfet class: button button-primary u-mr10) (link: #contactform text: iletişim class: button button-white)
+(link: /ve-iste-habita text: keşfet class: button button-primary u-mr10) (link: /en/contact text: iletişim class: button button-white)
 </div>
 
 ----

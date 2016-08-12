@@ -7,7 +7,7 @@ Text:
 >  An open & transparent<br>**coworking hub** for everyone...
 
 <div class="u-mv20">
-(link: /ve-iste-habita text: explore class: button button-primary u-mr10) (link: #contactform text: contact us class: button button-white)
+(link: /ve-iste-habita text: explore class: button button-primary u-mr10) (link: /en/contact text: contact us class: button button-white)
 </div>
 
 ----
