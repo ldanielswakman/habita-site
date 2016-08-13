@@ -87,17 +87,31 @@
 
                         <h3 class="u-mb5"><?= $card->title() ?></h3>
 
+                        <? $features = $pages->filterBy('template', 'about')->first()->features()->toStructure() ?>
+
                         <div class="u-clearfix detail">
                           <? foreach($card->icons()->split() as $icon) : ?>
-                            <div class="u-clearfix" title="<?= ucfirst($icon) ?>">
+                            <?
+                            $title = 'empty';
+                            foreach ($features as $feature):
+                              if($feature->icon() == $icon) { $title = $feature->title(); }
+                            endforeach;
+                            ?>
+                            <div class="u-clearfix" title="<?= $title ?>">
                               <div class="u-floatleft"><? snippet('icon-svg', ['type' => $icon, 'size' => '30', 'classes' => '']) ?></div>
-                              <div class="u-floatleft u-lineheight30 u-ml10"><?= ucfirst($icon) ?></div>
+                              <div class="u-floatleft u-lineheight30 u-ml10"><?= $title ?></div>
                             </div>
                           <? endforeach ?>
                         </div>
                         <div class="not-detail">
                           <? foreach($card->icons()->split() as $icon) : ?>
-                            <span title="<?= ucfirst($icon) ?>"><? snippet('icon-svg', ['type' => $icon, 'size' => '30', 'classes' => '']) ?>
+                            <?
+                            $title = 'empty';
+                            foreach ($features as $feature):
+                              if($feature->icon() == $icon) { $title = $feature->title(); }
+                            endforeach;
+                            ?>
+                            <span title="<?= $title ?>"><? snippet('icon-svg', ['type' => $icon, 'size' => '30', 'classes' => '']) ?>
                           <? endforeach ?>
                         </div>
 
