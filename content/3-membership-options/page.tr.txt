@@ -19,7 +19,7 @@ Cards:
   type: desk
   icons: >
     food, drink, coffee, wifi, envelope,
-    printer, access, presentation, boiler,
+    printer, time, presentation, boiler,
     cabinets, security, lounge
   action: '(link: #expand text: Detay class: button button-transp) (email: info@habita.com.tr?subject=[Sabit%20Masalar] text: İlgileniyorum class: button button-primary u-floatright)'
 - 
@@ -29,7 +29,7 @@ Cards:
   image: closed-offices.jpg
   icons: >
     food, drink, coffee, wifi, envelope,
-    printer, access, presentation, boiler,
+    printer, time, presentation, boiler,
     security, lounge
   text: |
     <small class="detail">[farklı büyüklüklerde, dilediğiniz gibi tasarlayacağınız özel ofisler]</small>

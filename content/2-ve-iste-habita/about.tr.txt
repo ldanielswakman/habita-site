@@ -24,7 +24,7 @@ Features:
 
 - 
   title: 24/7 çalışma imkanı
-  icon: access
+  icon: time
 - 
   title: Toplantı Odaları
   icon: presentation

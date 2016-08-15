@@ -7,7 +7,7 @@ options:
   wifi: Wifi
   envelope: Envelope
   printer: Printer
-  access: Access
+  time: 24/7 Access
   presentation: Presentation
   boiler: Kitchen
   cabinets: Cabinets
