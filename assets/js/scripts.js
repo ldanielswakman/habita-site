@@ -38,11 +38,21 @@ $(document).ready(function() {
         if($('#member_result').length) {
           console.log('member result exists');
           getRandomContent('members/api', '#member_result', 'member');
+          randomContentRequest['member'].done(function() {
+            contentFinished();
+          });
+        } else {
+          contentFinished();
         }
       });
     } else if($('#member_result').length) {
       console.log('member result exists');
       getRandomContent('members/api', '#member_result', 'member');
+      randomContentRequest['member'].done(function() {
+        contentFinished();
+      });
+    } else {
+      contentFinished();
     }
 
   });
@@ -57,11 +67,6 @@ $(document).ready(function() {
     $(this).closest('.card').toggleClass('isExpanded');
     $(this).toggleClass('u-hide');
   });
-
-  // change favicon
-  setTimeout(function() {
-    $("#favicon").attr("href","assets/images/favicon.ico");
-  }, 500);
 
 });
 
@@ -196,4 +201,11 @@ function getRandomContent(baseURL, target, type) {
     $target.closest('.u-appearOnLoad').addClass('isLoaded');
 
   })
+}
+
+function contentFinished() {
+  // change favicon
+  setTimeout(function() {
+    $("#favicon").attr("href","assets/images/favicon.ico");
+  }, 500);
 }
