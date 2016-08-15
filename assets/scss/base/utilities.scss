@@ -50,6 +50,17 @@ $u: 5;
 .u-maxwidth100p {
   max-width: 100% !important;
 }
+
+.u-pt1r {
+  padding-top: 1rem !important;
+}
+.u-mb1r {
+  margin-bottom: 1rem !important;
+}
+.u-pv15vw {
+  padding-top: 15vw !important;
+  padding-bottom: 15vw !important;
+}
 .u-mt70vh-sm {
   margin-top: 70vh;
 
@@ -112,9 +123,18 @@ $u: 5;
 .u-alignright {
   text-align: right !important;
 }
-.u-hide {
+.u-hide, .u-xs-show, .u-sm-show {
   display: none !important;
 }
+@media screen and (max-width: 480px) {
+  .u-xs-hide { display: none !important; }
+  .u-xs-show { display: inherit !important; }
+}
+@media screen and (max-width: 768px) {
+  .u-sm-hide { display: none !important; }
+  .u-sm-show { display: inherit !important; }
+}
+
 
 // Flexbox
 .u-flex {

@@ -16,13 +16,17 @@
       <? snippet('logo-svg', array('emblem' => true, 'color' => '#ff5000')) ?>
     </a>
 
-    <div class="bg-greylightest" style="height: 250px;">
-      <div class="row">
+    <div class="bg-greylightest">  <!-- style="height: 250px;" -->
+
+      <div class="row logo-aligner">
         <div class="col-xs-12 col-sm-6 col-sm-offset-5 u-pt50 c-bluedarkfade">
         
-          <h1 class="u-mb30">
+          <h1 class="u-mb30 u-xs-hide">
             <? snippet('logo-svg', array('word' => true, 'color' => '#8a8a8d')) ?>
           </h1>
+
+          <div class="u-xs-show u-pv20">
+          </div>
 
           <?= $page->text()->kirbytext() ?>
 
@@ -30,19 +34,25 @@
       </div>
     </div>
 
-    <div class="u-relative bg-bluedarkfade u-overflowhidden" style="display: flex; min-height: calc(100vh - 250px);">
+    <?
+    if ($image = $page->carousel_images()->toStructure()->first()) {
+      $firstimg = $page->image($image)->url();
+    }
+    ?>
+
+    <div class="u-relative bg-bluedarkfade u-overflowhidden u-flex-column" style="min-height: calc(100vh - 250px);"> <!-- background-image: url('<?= $firstimg ?>'); -->
 
       <? snippet('image-carousel', array('page' => $page)) ?>
 
-      <section class="u-stick-bottomfull u-pb10">
+      <section class="intro-box-container u-pt1r">
 
         <? $boxes = $page->content_boxes()->split() ?>
 
-        <div class="row u-relative u-z2 u-no-p-events" style="margin-top: -50px;">
+        <div class="row u-relative u-z2 u-no-p-events">
           <div class="col-xs-12 col-sm-1 col-md-4 col-md-offset-1" style="display: flex;">
 
             <? if (in_array('member', $boxes)) : ?>
-              <div class="bg-white-faded90 u-pa15 u-widthfull u-appearOnLoad u-mb10">
+              <div class="bg-white-faded90 u-pa15 u-widthfull u-appearOnLoad u-mb1r">
                 <a href="<?= url('members') ?>" class="button button-small button-outline-reveal u-floatright">See all</a>
                 <h4 class="h4-capped"><?= strtoupper($site->find('members')->title()) ?></h4>
                 <div id="member_result"></div>
@@ -53,7 +63,7 @@
           <div class="col-xs-12 col-sm-5 col-md-3" style="display: flex;">
 
             <? if (in_array('blog', $boxes)) : ?>
-              <div class="bg-white-faded90 u-pa15 u-widthfull u-appearOnLoad u-mb10">
+              <div class="bg-white-faded90 u-pa15 u-widthfull u-appearOnLoad u-mb1r">
                 <a href="<?= url('blog') ?>" class="button button-small button-outline-reveal u-floatright">See all</a>
                 <h4 class="h4-capped"><?= strtoupper($site->find('blog')->title()) ?></h4>
                 <div id="blog_result"></div>
@@ -64,7 +74,7 @@
           <div class="col-xs-12 col-sm-5 col-md-3 u-no-p-events" style="display: flex;">
 
             <? if (in_array('event', $boxes)) : ?>
-              <div class="bg-white-faded90 u-pa15 u-widthfull u-appearOnLoad u-mb10">
+              <div class="bg-white-faded90 u-pa15 u-widthfull u-appearOnLoad u-mb1r">
                 <a href="<?= url('events') ?>" class="button button-small button-outline-reveal u-floatright">See all</a>
                 <h4 class="h4-capped"><?= strtoupper($site->find('events')->title()) ?></h4>
                 <div id="event_result"></div>
@@ -85,7 +95,7 @@
 
       <? $bgcolor = ($section->bgcolor()->isNotEmpty()) ? 'bg-' . $section->bgcolor() : 'bg-white'; ?>
 
-      <section class="<?= $bgcolor ?> u-pv150">
+      <section class="<?= $bgcolor ?> u-pv15vw">
         <div class="row">
           <? if($section->slug() == 'whats-inside') : ?>
             <div class="col-xs-12 col-sm-4 col-sm-offset-1 u-aligncenter u-pv20 u-relative">

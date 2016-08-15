@@ -58,6 +58,11 @@ $(document).ready(function() {
     $(this).toggleClass('u-hide');
   });
 
+  // change favicon
+  setTimeout(function() {
+    $("#favicon").attr("href","assets/images/favicon.ico");
+  }, 500);
+
 });
 
 
@@ -67,13 +72,13 @@ $(document).on('ready scroll resize scrollstart scrollstop', function() { scroll
 function scrollActions() {
   scroll = $(window).scrollTop();
 
-  alignLogo(scroll);
+  alignLogo(scroll, '.logo-aligner');
 }
 
 
 
-function alignLogo(scroll) {
-  threshold = 250;
+function alignLogo(scroll, align_obj) {
+  threshold = ($(align_obj)) ? $(align_obj).outerHeight() : 250;
   logo_offset_top = 55;
   logo_offset_left = 180;
   small_scale = 0.3;
@@ -176,7 +181,9 @@ function getRandomContent(baseURL, target, type) {
 
       $html += '</a>';
     } else if (type == 'event') {
-      var $html  = '<a href="' + item['url'] + '">';
+      // var $html  = '<a href="' + item['url'] + '">';
+      var $html  = '<a href="events">';
+      $html += '<div class="u-widthfull u-height120 u-mv10 bg-imagemuted" style="background-image: url(\'' + item['image']['small'] + '\');"></div>';
       $html += '<h4>' + item['title'] + '</h4>';
       $html += '<time pubdate class="date">' + item['date'] + '</time><br />';
       $html += '</a>';

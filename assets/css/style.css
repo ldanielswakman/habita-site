@@ -1545,6 +1545,12 @@ figure img { width: 100%; }
 
 .u-maxwidth100p { max-width: 100% !important; }
 
+.u-pt1r { padding-top: 1rem !important; }
+
+.u-mb1r { margin-bottom: 1rem !important; }
+
+.u-pv15vw { padding-top: 15vw !important; padding-bottom: 15vw !important; }
+
 .u-mt70vh-sm { margin-top: 70vh; }
 @media screen and (max-width: 768px) { .u-mt70vh-sm { margin-top: 0; } }
 
@@ -1574,8 +1580,12 @@ figure img { width: 100%; }
 
 .u-alignright { text-align: right !important; }
 
-.u-hide { display: none !important; }
+.u-hide, .u-xs-show, .u-sm-show { display: none !important; }
 
+@media screen and (max-width: 480px) { .u-xs-hide { display: none !important; }
+  .u-xs-show { display: inherit !important; } }
+@media screen and (max-width: 768px) { .u-sm-hide { display: none !important; }
+  .u-sm-show { display: inherit !important; } }
 .u-flex { -webkit-display: flex !important; display: flex !important; }
 
 .u-flex-row { -webkit-display: flex !important; display: flex !important; -webkit-flex-direction: row !important; flex-direction: row !important; }
@@ -1690,6 +1700,7 @@ p + p { margin-top: 1.5rem; }
 
 blockquote { font-size: 1.5rem; line-height: 2.25rem; }
 blockquote p { font: inherit; line-height: inherit; }
+@media screen and (max-width: 768px) { blockquote { font-size: 1.2rem; line-height: 1.8rem; } }
 
 h1 { font-size: 2rem; font-weight: 600; color: #ff5000; }
 
@@ -1697,7 +1708,7 @@ h2 { font-size: 1.5rem; line-height: 1.25em; font-weight: 600; color: #ff5000; }
 
 h4.h4-capped { color: #d3d4d5; font-weight: 500; letter-spacing: 0.2em; line-height: 2rem; }
 
-date { color: #8a8a8d; font-size: 0.85rem; }
+.date { color: #8a8a8d; font-size: 0.85rem; }
 
 .row { margin: 0 auto; }
 
@@ -1705,12 +1716,16 @@ date { color: #8a8a8d; font-size: 0.85rem; }
 
 .row-internalpadding { margin-left: -0.5em !important; margin-right: -0.5em !important; }
 
+@media screen and (max-width: 480px) { .col-xs-12 { padding-left: 1rem; padding-right: 1rem; } }
 .language-switcher { opacity: 0.5; }
 .language-switcher:hover { opacity: 1; }
 
 .card .detail, .card.isExpanded .not-detail { display: none !important; }
 
 .card.isExpanded .detail { display: inherit !important; }
+
+.intro-box-container { position: absolute; bottom: 0; left: 0; width: 100%; }
+@media screen and (max-width: 768px) { .intro-box-container { position: relative; } }
 
 .badge { display: inline-block; width: 60px; height: 60px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; overflow: hidden; background-color: #edeeef; background-size: cover; background-position: center center; }
 
@@ -1746,6 +1761,7 @@ date { color: #8a8a8d; font-size: 0.85rem; }
 
 .nav-logo .logo-svg { position: fixed; height: 280px !important; top: 250px; left: 300px; z-index: 11; margin-left: -125.16px; margin-top: -114.52px; -webkit-transition: left 0.3s ease; -moz-transition: left 0.3s ease; -o-transition: left 0.3s ease; transition: left 0.3s ease; -webkit-transform-origin: 44.7% 40.9%; -moz-transform-origin: 44.7% 40.9%; -o-transform-origin: 44.7% 40.9%; transform-origin: 44.7% 40.9%; }
 .nav-logo .logo-svg .st0 { -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
+@media screen and (max-width: 768px) { .nav-logo .logo-svg { left: auto; right: 1rem; height: 120px !important; margin-left: -53.64px; margin-top: -49.08px; } }
 
 .navIsOpen .nav-logo .logo-svg { left: 400px !important; }
 .navIsOpen .nav-logo .logo-svg .st0, .navIsOpen .nav-logo .logo-svg .emblem .st0 { fill: #ffffff !important; }
@@ -1816,7 +1832,7 @@ nav ul a:hover { color: #ffffff; background-image: linear-gradient(to top, trans
 .navIsOpen nav { -webkit-transform: translateX(0); -moz-transform: translateX(0); -o-transform: translateX(0); transform: translateX(0); }
 
 a.nav-toggle { position: fixed; top: 30px; left: 40px; display: block; width: 60px; height: 60px; z-index: 11; }
-@media screen and (max-width: 768px) { a.nav-toggle { top: 10px; left: 20px; } }
+@media screen and (max-width: 768px) { a.nav-toggle { top: 0.5rem; left: 1rem; } }
 a.nav-toggle span { content: ""; position: absolute; top: 50%; left: 0; width: 100%; border-top: 2px solid #ff5000; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; -webkit-transform-origin: 15% 15%; -moz-transform-origin: 15% 15%; -o-transform-origin: 15% 15%; transform-origin: 15% 15%; }
 a.nav-toggle span:first-child { top: 25%; width: 85%; }
 a.nav-toggle span:last-child { top: 75%; width: 65%; }

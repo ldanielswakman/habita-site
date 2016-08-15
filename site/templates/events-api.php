@@ -22,12 +22,21 @@ if($data->pagination()) {
 $json['q']  = $q;
 
 // build array result data
-foreach($data as $member) {
+foreach($data as $event) {
+
+  $image_obj = $event->cover_image();
+  $image_url = ($image = $event->image($image_obj)) ? $image : '';
+
   $json['data'][] = array(
-    'url' => (string)$member->url(),
-    'slug' => (string)$member->slug(),
-    'title' => (string)$member->title(),
-    'date'  => (string)$member->date('%d %B %Y'),
+    'url' => (string)$event->url(),
+    'slug' => (string)$event->slug(),
+    'title' => (string)$event->title(),
+    'date'  => (string)$event->date('%d %B %Y'),
+    'image' => array(
+      'orignal' => (string)$image->url(),
+      'medium' => (string)thumb($image, array('width' => 600))->url(),
+      'small' => (string)thumb($image, array('width' => 320))->url(),
+    ),
   );
 }
 

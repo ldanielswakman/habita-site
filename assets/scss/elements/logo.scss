@@ -1,8 +1,9 @@
 .nav-logo .logo-svg {
   $size: 280px;
+  $size_sm: 120px;
   position: fixed;
   height: $size !important;
-  top: 250px;
+  top: 250px; // irrelevant, gets aligned with js
   left: 300px;
   z-index: 11;
   margin-left: - $size * 0.447;
@@ -12,6 +13,13 @@
 
   .st0 {
     @include transition();
+  }
+  @media screen and (max-width: 768px) {
+    left: auto;
+    right: 1rem;
+    height: $size_sm !important;
+    margin-left: - $size_sm * 0.447;
+    margin-top: - $size_sm * 0.409;
   }
 }
 .navIsOpen .nav-logo .logo-svg {

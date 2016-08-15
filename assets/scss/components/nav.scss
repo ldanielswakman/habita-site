@@ -61,8 +61,8 @@ a.nav-toggle {
   z-index: 11;
 
   @media screen and (max-width: 768px) {
-    top: 10px;
-    left: 20px;
+    top: 0.5rem;
+    left: 1rem;
   }
 
   span {

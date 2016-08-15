@@ -51,6 +51,10 @@ blockquote {
     font: inherit;
     line-height: inherit;
   }
+  @media screen and (max-width: 768px) {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
 }
 
 h1 {
@@ -71,7 +75,7 @@ h4.h4-capped {
   line-height: 2rem;
 }
 
-date {
+.date {
   color: $greymedium;
   font-size: 0.85rem;
 }
@@ -91,6 +95,13 @@ date {
   margin-left: -0.5em !important;
   margin-right: -0.5em !important;
 }
+@media screen and (max-width: 480px) {
+  .col-xs-12 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 
 
 // Language switcher
@@ -102,9 +113,27 @@ date {
   }
 }
 
+
+
+// Card detail
 .card .detail, .card.isExpanded .not-detail {
   display: none !important;
 }
 .card.isExpanded .detail {
   display: inherit !important;
+}
+
+
+
+// Intro box container
+
+.intro-box-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  @media screen and (max-width: 768px) {
+    position: relative;
+  }
 }
