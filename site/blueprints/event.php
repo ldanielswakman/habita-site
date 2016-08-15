@@ -1,10 +1,8 @@
 <?php if(!defined('KIRBY')) exit ?>
 
 title: Event
-pages:
-  template: member
+pages: false
 icon: calendar
-files: false
 fields:
   title:
     label: Title
