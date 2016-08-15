@@ -4,11 +4,11 @@ Title: What's inside
 
 Text: 
 
-## What's inside?
+## habita'da neler var?
 <br>
 > Zaman, verim, ve nitelikten ödün vermeden çalışabilmeniz için ihtiyacınız olan her şey habita'da mevcut.
 
-(link: /meet-habita text: daha fazla class: button button-primary u-mt20)
+(link: /ve-iste-habita text: daha fazla class: button button-primary u-mt20)
 
 ----
 

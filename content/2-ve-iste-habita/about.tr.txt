@@ -9,7 +9,6 @@ Text:
 (image: talk.svg class: u-width100 u-floatright u-mh20)
 Etkileşim halinde, paylaşan, konuşan, tartışan, üreten, mutlu bir komünite oluşturma vizyonu ile yola çıkan habita; hayatın her alanında paylaşım kültürünün, yaratıcılığın ve pozitif enerjinin ön plana çıktığı bir yaşam alanı olarak tasarlandı.
 
-(we can add the other photo for the caption of habitan: habita komünitesini oluşturan yaratıcı, katılımcı birey)
 
 Ortak aklın serpildiği, fikirlerin ivmelendiği, verimli ilişkilerin kurulduğu, birlikte öğrenilen, çok yönlü bir paylaşım iklimi, bir **habitus** sunma hayali ile ortaya çıkan habita'da,  kendini çalışırken daha iyi hissetmek isteyen, nefes almaya ihtiyaç duyan ve belki de en önemlisi hep beraber "güzel şeylerin" yaratıldığı  bir ekosistemin parçası olmak isteyen herkese göre bir şeyler var.
 
@@ -24,40 +23,40 @@ Cards:
 Features: 
 
 - 
-  title: 24/7 access
-  icon: time
+  title: 24/7 çalışma imkanı
+  icon: access
 - 
-  title: Meeting rooms
+  title: Toplantı Odaları
   icon: presentation
 - 
-  title: Kitchen
+  title: Mutfak
   icon: boiler
 - 
   title: Bar
   icon: drink
 - 
-  title: Complimentary drinks
+  title: Sıcak İçecekler
   icon: coffee
 - 
   title: Lounge
   icon: lounge
 - 
-  title: Snacks
+  title: Atıştırmalıklar
   icon: food
 - 
   title: Minimum 10 Mbps internet
   icon: wifi
 - 
-  title: Secretary services
+  title: Adres Gösterme
   icon: envelope
 - 
   title: Printer
   icon: printer
 - 
-  title: Security
+  title: Güvenlik
   icon: security
 - 
-  title: Cabinets
+  title: Kilitli Dolap
   icon: cabinets
 
 ----

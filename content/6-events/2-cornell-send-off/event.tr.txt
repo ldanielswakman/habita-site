@@ -6,8 +6,16 @@ Date: 2016-08-04
 
 ----
 
-Description: You are kindly invited for al get together before you embark upon your journey to Cornell.  It will be an informal gathering where new students and their families can meet alumni and converse.
+Description: Cornell mezunları yeni öğrencilerle buluştu. Şarap, pizza ve eğlence dolu akşam için tüm katılımcılara teşekkür ederiz.
 
 ----
 
 Facebook-link: 
+
+----
+
+Start-time: 
+
+----
+
+End-time: 

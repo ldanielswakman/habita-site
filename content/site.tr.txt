@@ -20,29 +20,29 @@ Copyright: <small>© (date: Year) Habita</small>
 
 Footertext: 
 
-**Habita** Coworking Alanı
-Yeşilce Mahallesi Ulubaş Cad No:23/3
+**Habita** Coworking
+Yeşilce Mahallesi Ulubaş Cad No:23 Kat:2
 34418 Kağıthane, Istanbul
-(tel: 0555 1234567)
+(tel: +90 532 549 19 43)
 
 ----
 
 Socialmedia: 
 
 - 
-  text: Get habita in your news feed
+  text: arkadaşlarına ekle
   link: >
     https://www.facebook.com/habita.coworking
   type: social-facebook
 - 
-  text: See our latest photos
+  text: takip et
   link: https://www.instagram.com/habita_co/
   type: social-instagram
 - 
-  text: Have a look at our tweets
+  text: tweet at
   link: https://twitter.com/habita_co
   type: social-twitter
 - 
-  text: Drop us an email
+  text: e-posta gönder
   link: mailto:info@habita.com.tr
   type: android-mail
