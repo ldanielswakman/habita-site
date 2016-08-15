@@ -13,7 +13,7 @@ Fixed desks in an open space, closed offices and flexible working places… We a
 Cards: 
 
 - 
-  title: Sabit Masalar
+  title: Dedicated desks
   image: desks.jpg
   text: |
     <small class="detail">[kişiye özel masalarda açık ofis deneyimi]
@@ -22,11 +22,13 @@ Cards:
   bgcolor: bluedarkfade
   type: desk
   icons: >
-    food, coffee, wifi, printer, time,
+    food, coffee, wifi, printer,
     presentation
-  action: '(link: #expand text: Detay class: button button-transp) (link: #contactform text: İlgileniyorum class: button button-primary u-floatright)'
+  action: |
+    (link: #expand text: More class: button button-transp)
+    (email: info@habita.com.tr?subject=[Dedicated%20desks] text: I'm interested class: button button-primary u-floatright)
 - 
-  title: Kapalı Ofisler
+  title: Closed offices
   type: office
   bgcolor: bluedarkfade
   image: closed-offices.jpg
@@ -36,9 +38,11 @@ Cards:
   text: |
     <small class="detail">[farklı büyüklüklerde, dilediğiniz gibi tasarlayacağınız özel ofisler]</small>
     <b class="c-orange">1500 TL</b>'den başlayan fiyatlar
-  action: '(link: #expand text: Detay class: button button-transp) (link: #contactform text: İlgileniyorum class: button button-primary u-floatright)'
+  action: |
+    (link: #expand text: More class: button button-transp)
+    (email: info@habita.com.tr?subject=[Closed%20offices] text: I'm interested class: button button-primary u-floatright)
 - 
-  title: Esnek Çalışma Alanları
+  title: Flexible desks
   type: flexible
   bgcolor: bluedarkfade
   image: open-spaces.jpg
@@ -46,7 +50,7 @@ Cards:
   text: |
     <small class="detail">[kısa süreli işleriniz için günlük kiralama seçenekleri ile esnek çalışma alanları]</small>
     <b class="c-orange">30 TL</b>'den başlayan fiyatlar
-  action: '(link: #expand text: Detay class: button button-transp) (link: #contactform text: İlgileniyorum class: button button-primary u-floatright)'
+  action: "(link: #expand text: More class: button button-transp) (email: info@habita.com.tr?subject=[Flexible%20desks] text: I'm interested class: button button-primary u-floatright)"
 - 
   title: habita venue
   type: event
@@ -57,4 +61,4 @@ Cards:
     <small class="detail">[Etkinliğinizin içeriğini bütünleyecek şekilde istediğiniz gibi tasarlayabileceğiniz, misafirlerinize etkin ve akılda kalıcı marka deneyimleri yaşatabileceğiniz bir etkinlik alanı]</small>
     
     <b class="c-orange">özel fiyatlar</b> için bilgi al
-  action: ""
+  action: "(email: info@habita.com.tr?subject=[habita%20venue] text: I'm interested class: button button-primary u-floatright)"

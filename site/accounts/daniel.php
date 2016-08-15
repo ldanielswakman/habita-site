@@ -7,8 +7,8 @@ password: >
 language: en
 role: admin
 history:
+  - membership-options
   - events
   - events/opening-party
   - contact
   - new
-  - membership-options
