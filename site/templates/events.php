@@ -15,7 +15,15 @@
       <? snippet('logo-svg', array('emblem' => true, 'color' => 'rgba(86, 81, 73, 0.1)')) ?>
     </a>
 
-    <section class="bg-greylightest u-pv50">
+    <?
+    $bgimage = '';
+    if($image = $page->bgimage()) {
+      $bgimage .= ' style="background-image: url(\'';
+      $bgimage .= $page->image($image)->url();
+      $bgimage .= '\');"';
+    }
+    ?>
+    <section class="bg-greylightest bg-imagemuted c-white u-pv50"<?= $bgimage ?>>
 
       <div class="row">
         <div class="col-xs-9 col-xs-offset-3 col-sm-3 col-sm-offset-1">
@@ -28,7 +36,7 @@
           <? endif ?>
 
         </div>
-        <div class="col-xs-12 col-sm-5 u-pl80">
+        <div class="col-xs-12 col-sm-6 u-pl80">
           <h1><?= $page->title() ?></h1>
           <div class="u-block u-mt30"><?= $page->text()->kirbytext() ?></div>
         </div>
@@ -52,7 +60,7 @@
                   </div>
                   <h3><?= $event->title() ?></h3>
                   <date><?= $event->date('%d %B %Y') ?></date>
-                  <p class="u-lineheight20 u-mt5"><small><?= $event->description()->kirbytext() ?></small></p>
+                  <div class="u-lineheight20 u-mt5"><small><?= $event->description()->kirbytext() ?></small></div>
                   <? if ($event->facebook_link()->isNotEmpty()): ?>
                     <a href="<?= $event->facebook_link() ?>">Event on facebook</a>
                   <? endif ?>

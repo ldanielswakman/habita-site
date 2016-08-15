@@ -3,7 +3,6 @@
 title: Events
 pages:
   template: event
-files: false
 icon: calendar
 fields:
   title:
@@ -11,6 +10,10 @@ fields:
     type:  text
   text:
     label: Text
-    type:  markdown
+    type: markdown
     header1: h3
     header2: h4
+  bgimage:
+    label: Background Photo
+    type: image
+    help: Leave empty for a light grey background

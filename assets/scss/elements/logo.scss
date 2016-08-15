@@ -34,4 +34,5 @@
   bottom: 20px;
   left: 33.33333%;
   @include transform(scale(0.75));
+  pointer-events: none;
 }
