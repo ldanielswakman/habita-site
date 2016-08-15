@@ -19,3 +19,7 @@ Start-time:
 ----
 
 End-time: 
+
+----
+
+Cover-image: 1dm47506.jpg

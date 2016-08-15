@@ -48,22 +48,32 @@
       <div class="row">
         <div class="col-xs-12 col-sm-3 col-sm-offset-1"></div>
 
-        <div class="col-xs-12 col-sm-7 article">
+        <div class="col-xs-12 col-sm-8 col-md-7 article">
 
           <div class="row row-internalpadding">
             <? foreach ($site->find('events')->children()->visible()->flip() as $event) : ?>
 
-              <div class="col-xs-12 col-sm-6">
-                <div class="bg-white u-pa20">
-                  <div class="u-aligncenter u-mb20">
-                    <i class="ion ion-calendar ion-3x c-greylightest"></i>
+              <div class="col-xs-12 col-sm-6 u-flex-grow1">
+                <div class="bg-white u-mb20">
+                  <?
+                  $bgimage = '';
+                  if ($image = $event->cover_image()) {
+                    $bgimage = ' style="background-image: url(\'' . thumb($event->image(), array('width' => 320))->url() . '\');"';
+                  }
+                  ?>
+                  <div class="bg-greylight bg-imagemuted u-aligncenter u-height150 u-pv30"<?= $bgimage ?>>
+                    <? if ($event->cover_image()->isEmpty()): ?>
+                      <i class="ion ion-calendar ion-3x c-greylight"></i>
+                    <? endif ?>
                   </div>
-                  <h3><?= $event->title() ?></h3>
-                  <date><?= $event->date('%d %B %Y') ?></date>
-                  <div class="u-lineheight20 u-mt5"><small><?= $event->description()->kirbytext() ?></small></div>
-                  <? if ($event->facebook_link()->isNotEmpty()): ?>
-                    <a href="<?= $event->facebook_link() ?>">Event on facebook</a>
-                  <? endif ?>
+                  <div class="u-pa20">
+                    <h3><?= $event->title() ?></h3>
+                    <date><?= $event->date('%d %B %Y') ?></date>
+                    <div class="u-lineheight20 u-mt5"><small><?= $event->description()->kirbytext() ?></small></div>
+                    <? if ($event->facebook_link()->isNotEmpty()): ?>
+                      <a href="<?= $event->facebook_link() ?>">Event on facebook</a>
+                    <? endif ?>
+                  </div>
                 </div>
               </div>
 

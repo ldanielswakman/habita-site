@@ -19,3 +19,7 @@ Start-time:
 ----
 
 End-time: 
+
+----
+
+Cover-image: image1-1.jpg

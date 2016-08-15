@@ -37,6 +37,10 @@ a.link-block {
 p {
   line-height: 1.8rem;
   max-width: 50rem;
+
+  & + p {
+    margin-top: 1.5rem;
+  }
 }
 
 blockquote {

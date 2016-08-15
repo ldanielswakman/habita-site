@@ -25,6 +25,9 @@ fields:
     type: info
     text: >
       <span style="color: #999;">Leave the start and end time empty to hide them in the actual page</span>
+  cover_image:
+    label: Cover image
+    type: image
   description:
     label: Description
     type: markdown
