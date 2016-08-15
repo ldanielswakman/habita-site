@@ -36,3 +36,7 @@ Carousel-images:
 ----
 
 Content-boxes: blog, event
+
+----
+
+Url-key: home

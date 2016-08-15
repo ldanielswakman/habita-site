@@ -7,8 +7,8 @@ password: >
 language: en
 role: admin
 history:
+  - home
   - about-us
   - events/opening-party
   - events/cornell-send-off
   - events
-  - ve-iste-habita

@@ -1,10 +1,10 @@
 <section class="bg-orange c-white">
   <div class="row">
-    <div id="newsletter-signup" class="col-xs-12 col-sm-4 u-pv80 u-ph20 u-aligncenter">
+    <div id="newsletter-signup" class="col-xs-12 col-sm-4 u-pv70 u-ph20 u-aligncenter">
       <h3><?= l::get('newsletter_signup_title') ?></h3>
       <p><?= l::get('newsletter_signup_descr') . '!' ?></p>
     </div>
-    <div class="col-xs-12 col-sm-4 u-pv80 u-ph20 u-alignleft">
+    <div class="col-xs-12 col-sm-4 u-pv75 u-ph20 u-alignleft">
       <? snippet('newsletter_signup', ['theme' => 'light']) ?>
     </div>
     <div class="col-xs-12 col-sm-3 firt-xs last-sm u-aligncenter">
