@@ -22,22 +22,26 @@ $(document).ready(function() {
     });
   });
 
+  // setting language for API requests
+  // (note: works with TR as default language)
+  $lang = ($('html').attr('lang') && $('html').attr('lang') != 'tr') ? $('html').attr('lang') + '/' : '';
 
   // start with fetching random blog post...
-  getRandomContent('blog/api', '#blog_result', 'blog');
+  getRandomContent($lang + 'blog/api', '#blog_result', 'blog');
+  console.log($('html').attr('lang'));
 
   // .. when done, get random member ...
   randomContentRequest['blog'].done(function() {
 
     if($('#event_result').length) {
       console.log('event result exists');
-      getRandomContent('events/api', '#event_result', 'event');
+      getRandomContent($lang + 'events/api', '#event_result', 'event');
 
       // .. when done, get random member ...
       randomContentRequest['event'].done(function() {
         if($('#member_result').length) {
           console.log('member result exists');
-          getRandomContent('members/api', '#member_result', 'member');
+          getRandomContent($lang + 'members/api', '#member_result', 'member');
           randomContentRequest['member'].done(function() {
             contentFinished();
           });
@@ -47,7 +51,7 @@ $(document).ready(function() {
       });
     } else if($('#member_result').length) {
       console.log('member result exists');
-      getRandomContent('members/api', '#member_result', 'member');
+      getRandomContent($lang + 'members/api', '#member_result', 'member');
       randomContentRequest['member'].done(function() {
         contentFinished();
       });
