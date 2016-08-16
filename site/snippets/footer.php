@@ -41,3 +41,5 @@
     </div>
   </div>
 </a>
+
+<? snippet('google-analytics') ?>
