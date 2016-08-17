@@ -1,6 +1,6 @@
 <?
 // image
-$meta_image_url = ($image = $page->image()) ? thumb($image, array('width' => 1200, 'height' => 630, 'crop' => true))->url() : url('assets/images/sitting-meeting.jpg');
+$meta_image_url = ($image = $page->image()) ? thumb($image, array('width' => 1200, 'height' => 630))->url() : url('assets/images/sitting-meeting.jpg');
 // description
 $description = (isset($meta_descr)) ? $meta_descr : excerpt($page->text(), 160);
 if (strlen($description) < 1) { $description = $site->description()->html(); }
