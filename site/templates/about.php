@@ -23,7 +23,7 @@
     <section class="u-relative u-z1 u-no-p-events">
 
       <div class="row">
-        <div class="col-xs-12 col-sm-3 col-sm-offset-1">
+        <div class="col-xs-12 col-sm-4">
 
           <!-- Layout boxes -->
           <div class="u-pt50 u-sm-hide"></div>
