@@ -47,8 +47,15 @@ $u: 5;
   min-height: 100% !important; // fallback
   min-height: 100vh !important;
 }
+.u-maxheight100vh {
+  max-height: 100% !important; // fallback
+  max-height: 100vh !important;
+}
 .u-maxwidth100p {
   max-width: 100% !important;
+}
+.u-maxheight100p {
+  max-height: 100% !important;
 }
 
 .u-pt1r {

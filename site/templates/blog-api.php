@@ -23,6 +23,17 @@ $json['q']  = $q;
 
 // build array result data
 foreach($data as $article) {
+
+  $image_data = 'no';
+  if ($article->hasImages()):
+    $image = $article->images()->first();
+    $image_data = array(
+      'original' => (string)$image->url(),
+      'medium' => (string)thumb($image, array('width' => 600))->url(),
+      'small' => (string)thumb($image, array('width' => 320))->url(),
+    );
+  endif;
+
   $json['data'][] = array(
     'url'   => (string)$article->url(),
     'slug' => (string)$article->slug(),
@@ -30,7 +41,8 @@ foreach($data as $article) {
     'text'  => (string)$article->text()->kirbytext(),
     'excerpt'  => (string)excerpt($article->text(), 100),
     'date'  => (string)$article->date('%d %B %Y'),
-    'tags'  => (string)$article->tags()
+    'tags'  => (string)$article->tags(),
+    'image' => $image_data,
   );
 }
 

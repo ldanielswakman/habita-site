@@ -41,6 +41,6 @@
   <?= css($css_assets) ?>
   <?= js($js_assets) ?>
 
-  <link id="favicon" rel="shortcut icon" href="assets/images/favicon_loading.ico">
+  <link id="favicon" rel="shortcut icon" href="<?= url('assets/images/favicon_loading.ico') ?>">
 
 </head>

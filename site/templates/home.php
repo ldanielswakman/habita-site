@@ -161,6 +161,8 @@
 
     <? snippet('footer') ?>
 
+    <? snippet('scripts-home') ?>
+
   </body>
 
 </html>

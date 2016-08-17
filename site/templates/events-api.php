@@ -33,7 +33,7 @@ foreach($data as $event) {
     'title' => (string)$event->title(),
     'date'  => (string)$event->date('%d %B %Y'),
     'image' => array(
-      'orignal' => (string)$image->url(),
+      'original' => (string)$image->url(),
       'medium' => (string)thumb($image, array('width' => 600))->url(),
       'small' => (string)thumb($image, array('width' => 320))->url(),
     ),

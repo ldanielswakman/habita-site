@@ -68,7 +68,7 @@ $padding_xs: 1rem;
     @media screen and (max-width: 768px) {
       margin-left: -$padding_xs;
       margin-right: -$padding_xs;
-      width: calc(100% + 2 * $padding_xs);
+      width: calc(100% + 2rem);
     }
   }
   figure {

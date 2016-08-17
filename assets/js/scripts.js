@@ -22,55 +22,19 @@ $(document).ready(function() {
     });
   });
 
-  // setting language for API requests
-  // (note: works with TR as default language)
-  $lang = ($('html').attr('lang') && $('html').attr('lang') != 'tr') ? $('html').attr('lang') + '/' : '';
-
-  // start with fetching random blog post...
-  getRandomContent($lang + 'blog/api', '#blog_result', 'blog');
-  console.log($('html').attr('lang'));
-
-  // .. when done, get random member ...
-  randomContentRequest['blog'].done(function() {
-
-    if($('#event_result').length) {
-      console.log('event result exists');
-      getRandomContent($lang + 'events/api', '#event_result', 'event');
-
-      // .. when done, get random member ...
-      randomContentRequest['event'].done(function() {
-        if($('#member_result').length) {
-          console.log('member result exists');
-          getRandomContent($lang + 'members/api', '#member_result', 'member');
-          randomContentRequest['member'].done(function() {
-            contentFinished();
-          });
-        } else {
-          contentFinished();
-        }
-      });
-    } else if($('#member_result').length) {
-      console.log('member result exists');
-      getRandomContent($lang + 'members/api', '#member_result', 'member');
-      randomContentRequest['member'].done(function() {
-        contentFinished();
-      });
-    } else {
-      contentFinished();
-    }
-
-  });
 
   // open contact form
   $('[href="#contactform"]').click(function() {
     toggleDialog('open');
   });
 
+
   // expand card
   $('.card [href="#expand"]').click(function() {
     $(this).closest('.card').toggleClass('isExpanded');
     $(this).toggleClass('u-hide');
   });
+
 
 });
 
@@ -141,73 +105,104 @@ function toggleDialog(state) {
 
 
 // retrieve blog posts from API and output a random post
-function getRandomContent(baseURL, target, type) {
+function getHabitaContent(baseURL, target, type, random) {
 
   // define parameters
   var $url = (baseURL) ? baseURL : '';
   var $target = (target) ? $(target) : '';
   var $type = (type) ? type : 'undefined';
+  var $random = (random == true) ? true : false;
 
-  console.log('making ' + type + ' API call...');
+  console.log('making ' + $type + ' API call...');
 
   randomContentRequest = [];
   randomContentRequest[$type] = $.getJSON( $url, function(r) {
 
-    console.log('...reply for ' + type + ' received!');
+    console.log('...reply for ' + $type + ' received!');
 
     // empty target container
     $target.html('');
 
     // get random item from array
-    var $randompost = Math.floor((Math.random() * r['data'].length));
-    item = r['data'][$randompost];
+    if ($random) {
 
-    // different output structure based on type
-    if (type == 'blog') {
+      var $randompost = Math.floor((Math.random() * r['data'].length));
+      $item = r['data'][$randompost];
 
-      var $html  = '<a href="' + item['url'] + '">';
-      $html += '<h4>' + item['title'] + '</h4>';
-      $html += '<time pubdate class="date">' + item['date'] + '</time><br />';
-      var $excerpt = item['excerpt'];
-      var $readmore = '...';
-      $html += '<p>' + $excerpt + $readmore + '</p>';
-      $html += '</a>';
-
-    } else if (type == 'member') {
-      var $html  = '<a class="u-block u-clearfix u-mt5" href="' + item['url'] + '">';
-
-      $html += '<div class="badge u-floatleft u-mr10" ';
-      $html += 'style="background-image:url(\'' + item['profile_image'] + '\');">';
-      $html += '</div>';
-
-      $html += '<h4 class="u-pt5">' + item['title'] + '</h4>';
-
-      if (item['job_title'].length > 0) {
-        $html += '<p class="u-truncate"><small>' + item['job_title'] + '</small></p>';
-      }
-
-      $html += '</a>';
-    } else if (type == 'event') {
-      // var $html  = '<a href="' + item['url'] + '">';
-      var $html  = '<a href="events">';
-      $html += '<div class="u-widthfull u-height120 u-mv10 bg-imagemuted" style="background-image: url(\'' + item['image']['small'] + '\');"></div>';
-      $html += '<h4>' + item['title'] + '</h4>';
-      $html += '<time pubdate class="date">' + item['date'] + '</time><br />';
-      $html += '</a>';
+      $html = outputHtml($item, $type);
     } else {
-      console.log('wrong or no `type` defined');
+
+      $html = '';
+      $.each(r['data'], function() {
+        $item = $(this)[0];
+        $html += outputHtml($item, $type);
+        $html += '<div class="u-pv20"></div>';
+      });
+
     }
 
     $target.html($html);
-
     $target.closest('.u-appearOnLoad').addClass('isLoaded');
 
   })
 }
 
-function contentFinished() {
-  // change favicon
+
+// different output structure based on type
+function outputHtml(item, type) {
+
+  if (type == 'blog') {
+
+    var $html  = '<a href="' + item['url'] + '">';
+    $html += '<h4>' + item['title'] + '</h4>';
+    $html += '<time pubdate class="date">' + item['date'] + '</time><br />';
+    var $excerpt = item['excerpt'];
+    var $readmore = '...';
+    $html += '<p class="excerpt">' + $excerpt + $readmore + '</p>';
+    $html += '</a>';
+
+  } else if (type == 'member') {
+    var $html  = '<a class="u-block u-clearfix u-mt5" href="' + item['url'] + '">';
+
+    $html += '<div class="badge u-floatleft u-mr10" ';
+    $html += 'style="background-image:url(\'' + item['profile_image'] + '\');">';
+    $html += '</div>';
+
+    $html += '<h4 class="u-pt5">' + item['title'] + '</h4>';
+
+    if (item['job_title'].length > 0) {
+      $html += '<p class="u-truncate"><small>' + item['job_title'] + '</small></p>';
+    }
+
+    $html += '</a>';
+  } else if (type == 'event') {
+    // var $html  = '<a href="' + item['url'] + '">';
+    var $html  = '<a href="events">';
+    $html += '<div class="u-widthfull u-height120 u-mv10 bg-imagemuted" style="background-image: url(\'' + item['image']['small'] + '\');"></div>';
+    $html += '<h4>' + item['title'] + '</h4>';
+    $html += '<time pubdate class="date">' + item['date'] + '</time><br />';
+    $html += '</a>';
+  } else {
+    console.log('wrong or no `type` defined');
+  }
+
+  return $html;
+}
+
+
+// change favicon
+function setFavicon(state) {
+  $favicon = $("#favicon").attr("href");
+  $new_favicon = (state == 'loading') ? $favicon.replace('.ico', '_loading.ico') : $favicon.replace('_loading.ico', '.ico');
   setTimeout(function() {
-    $("#favicon").attr("href","assets/images/favicon.ico");
+    $("#favicon").attr("href", $new_favicon);
   }, 500);
+}
+
+
+// gets language from <html>
+// (note: works with TR as default language)
+function getLang() {
+  $lang = ($('html').attr('lang') && $('html').attr('lang') != 'tr') ? $('html').attr('lang') + '/' : '';
+  return $lang;
 }
