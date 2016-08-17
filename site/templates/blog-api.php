@@ -5,7 +5,7 @@
 header('Content-type: application/json; charset=utf-8');
 
 // get query parameter (null if not set)
-$q = $_GET['q'];
+$q = (isset($_GET['q'])) ? $_GET['q'] : null;
 
 // search in updates or just query them
 $data = $pages->find('blog')->children()->visible();

@@ -2,7 +2,8 @@
 
 <html lang="<?= $site->language() ?>">
 
-  <? snippet('header') ?>
+  <? $meta_image = ($image = $page->image()) ? $image->url() : ''; ?>
+  <? snippet('header', array('meta_title' => $page->title(), 'meta_descr' => excerpt($page->text(), 160), 'meta_image' => $meta_image)) ?>
 
   <body>
 
@@ -31,7 +32,7 @@
           <div class="u-floatleft u-pl70 u-height50 u-sm-show"></div>
           <div class="u-floatleft u-pl120 u-height50 u-sm-hide"></div>
 
-          <a href="<?= $site->url( $site->language()->code() ) ?>" class="u-floatleft u-mr15 logo-svg-word-wrapper">
+          <a href="<?= $site->url( $site->language()->code() ) ?>" class="u-floatleft u-mr15 logo-svg-word-wrapper u-p-events">
             <? snippet('logo-svg', array('word' => true, 'color' => '#fff')) ?>
           </a>
         </div>

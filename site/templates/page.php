@@ -2,7 +2,8 @@
 
 <html lang="<?= $site->language() ?>">
 
-  <? snippet('header') ?>
+  <? $meta_image = ($image = $page->image()) ? $image->url() : ''; ?>
+  <? snippet('header', array('meta_title' => $page->title(), 'meta_descr' => excerpt($page->text(), 160), 'meta_image' => $meta_image)) ?>
 
   <body>
 
