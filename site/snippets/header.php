@@ -5,7 +5,7 @@
 
   <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
 
-  <? snippet('header-metadata', array('page' => $page, 'meta_descr' => $meta_descr, 'meta_image' => $meta_image)) ?>
+  <? snippet('header-metadata', array('page' => $page, 'meta_descr' => (isset($meta_descr)) ? $meta_descr : null, 'meta_image' => (isset($meta_image)) ? $meta_image : null)) ?>
 
   <?
   $css_assets = ($_SERVER['SERVER_NAME'] == 'localhost') ? array(

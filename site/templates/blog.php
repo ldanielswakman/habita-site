@@ -56,9 +56,7 @@
 
             <h3><?= $article->title() ?></h3>
             <time><?= $article->date('%d %B %Y') ?></time>
-            <? if ($is_article != true): ?>
-              <p class="u-lineheight20 u-mt5"><small><?= excerpt($article->text(), 100) ?></small></p>
-            <? endif ?>
+            <p class="u-lineheight20 u-mt5"><small><?= excerpt($article->text(), 100) ?></small></p>
 
           </div>
         </a>
