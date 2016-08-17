@@ -2,7 +2,7 @@
 
 <html lang="<?= $site->language() ?>">
 
-  <? snippet('header') ?>
+  <? snippet('header', array('page' => $page, 'meta_image' => url('assets/images/sitting-meeting.jpg'), 'meta_descr' => $site->description()->html())) ?>
 
   <body>
 

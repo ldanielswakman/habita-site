@@ -4,14 +4,8 @@
   <meta name="author" content="L Daniel Swakman, ldaniel.eu" />
 
   <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
-  <meta name="description" content="<?= (isset($meta_descr)) ? $meta_descr : $site->description()->html() ?>">
-  <meta name="keywords" content="<?= $site->keywords()->html() ?>">
 
-  <!-- Social share parameters -->
-  <meta property="og:image" content="<?= (isset($meta_image)) ? $meta_image : url('assets/images/sitting-meeting.jpg') ?>" />
-  <meta property="og:title" content="<?= (isset($meta_title)) ? $meta_title : $site->title() ?>" />
-  <meta property="og:site_name" content="<?= $site->title() ?>" />
-  <meta property="og:description" content="<?= (isset($meta_descr)) ? $meta_descr : $pages->find('home')->tagline()->text() ?>" />
+  <? snippet('header-metadata', array('page' => $page, 'meta_descr' => $meta_descr, 'meta_image' => $meta_image)) ?>
 
   <?
   $css_assets = ($_SERVER['SERVER_NAME'] == 'localhost') ? array(
