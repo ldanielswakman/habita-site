@@ -22,9 +22,9 @@
         <div class="col-xs-12 col-sm-6 col-sm-offset-5 c-bluedarkfade">
 
           <!-- Layout boxes -->
-          <div class="u-pt50 u-xs-hide"></div>
-          <div class="u-pt20 u-xs-show"></div>
-          <div class="u-floatleft u-pl70 u-height50 u-xs-show"></div>
+          <div class="u-pt50 u-sm-hide"></div>
+          <div class="u-pt20 u-sm-show"></div>
+          <div class="u-floatleft u-pl70 u-height50 u-sm-show"></div>
         
           <h1 class="u-mb30">
             <? snippet('logo-svg', array('word' => true, 'color' => '#8a8a8d')) ?>
