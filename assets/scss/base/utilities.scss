@@ -289,6 +289,18 @@ $u: 5;
     pointer-events: all;
   }
 }
+.u-fromLeftOnLoad {
+  opacity: 0;
+  pointer-events: none;
+  @include transition(all 0.6s ease);
+  @include transform(translateX(-100px));
+
+  &.isLoaded {
+    opacity: 1;
+    @include transform(translateX(0));
+    pointer-events: all;
+  }
+}
 
 .u-p-events {
   pointer-events: all !important;

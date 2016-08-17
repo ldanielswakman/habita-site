@@ -142,7 +142,7 @@ function getHabitaContent(baseURL, target, type, random) {
     }
 
     $target.html($html);
-    $target.closest('.u-appearOnLoad').addClass('isLoaded');
+    $target.closest('.u-appearOnLoad, .u-fromLeftOnLoad').addClass('isLoaded');
 
   })
 }

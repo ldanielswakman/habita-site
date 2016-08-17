@@ -30,7 +30,7 @@
 
           <a href="<?= $site->find('blog')->url() ?>"><h2 class="u-semibold c-greymedium"><?= $site->find('blog')->title() ?></h2></a>
 
-          <div class="u-maxheight100p u-overflowscroll u-mt50 article-list u-pl120 u-sm-hide">
+          <div class="u-maxheight100p u-overflowscroll u-mt50 article-list u-pl120 u-sm-hide u-fromLeftOnLoad">
             <div id="blog_result"></div>
             <style>
               #blog_result .excerpt { display: none; }
