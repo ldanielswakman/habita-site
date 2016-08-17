@@ -67,6 +67,11 @@ $black:         #000000;
   background-color: $grey;
 }
 
+.bg-image {
+  position: relative;
+  background-size: cover;
+  background-position: center 25%;
+}
 .bg-imagemuted {
   position: relative;
   background-position: center 25%;

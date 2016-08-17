@@ -2,18 +2,29 @@
   a {
     color: $grey;
 
-    &:hover, &:focus {
+    &:hover, &:focus, &:visited:hover {
       color: $orange;
 
-      date {
-        color: rgba($orange, 50%);
+      time {
+        color: rgba($orange, 0.75);
       }
     }
     &:visited {
+      display: block;
+      border: 2px solid $orange;
       color: lighten($greymedium, 10%);
+      font-weight: normal;
 
-      date {
+      h3 {
+        font-weight: 400;
+      }
+      time {
         color: rgba(lighten($greymedium, 10%), 0.5);
+      }
+      .article-list-image {
+        opacity: 0.1;
+        // border: 2px solid $orange;
+        // @include filter(saturate, 20%);
       }
     }
   }

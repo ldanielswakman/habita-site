@@ -35,10 +35,14 @@
 }
 
 .logo-svg-word {
-
   .word {
     @include transform(translateX(-118px));
   }
+}
+.logo-svg-word-wrapper {
+  max-width: 90px; 
+  overflow: hidden; 
+  padding-top: 5px;
 }
 
 .nav-logo-watermark .logo-svg {

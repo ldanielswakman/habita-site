@@ -18,25 +18,27 @@ $is_article = ($page->template() == 'blog-article') ? true : false;
       <? snippet('logo-svg', array('emblem' => true, 'color' => 'rgba(86, 81, 73, 0.1)')) ?>
     </a>
 
-    <? $header_bg = ($is_article) ? 'bg-greylightest' : 'bg-white'; ?>
-    <section class="<?= $header_bg ?> u-pv50">
+    <section class="bg-white u-pb50">
 
       <div class="row">
-        <div class="col-xs-9 col-xs-offset-3 col-sm-4 col-sm-offset-1">
-          <a href="<?= $site->url( $site->language()->code() ) ?>" class="u-floatleft" style="padding-top: 2px;">
+        <div class="col-xs-12 col-sm-3 col-md-4">
+
+          <!-- Layout boxes -->
+          <div class="u-pt50 u-sm-hide"></div>
+          <div class="u-pt20 u-sm-show"></div>
+          <div class="u-floatleft u-pl70 u-height50 u-sm-show"></div>
+          <div class="u-floatleft u-pl120 u-height50 u-sm-hide"></div>
+
+          <a href="<?= $site->url( $site->language()->code() ) ?>" class="u-floatleft u-mr15 logo-svg-word-wrapper">
             <? snippet('logo-svg', array('word' => true)) ?>
           </a>
 
-          <? if ($is_article == true): ?>
-            <a href="<?= $site->find('blog')->url() ?>"><h1 class="u-semibold c-greymedium"><?= $site->find('blog')->title() ?></h1></a>
-          <? endif ?>
+          <a href="<?= $site->find('blog')->url() ?>"><h2 class="u-sm-show u-semibold c-greymedium"><?= $site->find('blog')->title() ?></h2></a>
 
         </div>
-        <div class="col-xs-12 col-sm-5">
-          <h1><?= $page->title() ?></h1>
-          <? if ($is_article != true): ?>
-            <div class="u-block u-mt30"><?= $page->text()->kirbytext() ?></div>
-          <? endif ?>
+        <div class="col-xs-12 col-sm-8 col-md-7 article">
+          <a href="<?= $site->find('blog')->url() ?>"><h2 class="u-sm-hide u-mt50 u-semibold c-greymedium"><?= $site->find('blog')->title() ?></h2></a>
+          <div class="u-block u-mt30"><?= $page->text()->kirbytext() ?></div>
         </div>
       </div>
 
@@ -47,23 +49,26 @@ $is_article = ($page->template() == 'blog-article') ? true : false;
 
       <? foreach ($site->find('blog')->children()->visible()->flip() as $article) : ?>
 
-        <div class="row u-mb30">
+        <a href="<?= $article->url() ?>" class="row u-mb30">
           <? if ($is_article != true): ?>
-            <div class="col-xs-12 col-sm-3 col-sm-offset-1">
+            <div class="col-xs-3 col-sm-offset-1 col-sm-2 col-md-offset-2 col-md-2 u-aligncenter u-pt5">
+              <? if ($article->hasImages()): ?>
+                <? $image = $article->image()->first() ?>
+                <div class="article-list-image u-inlineblock u-width120 u-maxwidth100p u-pv40 bg-image" style="background-image: url('<?= thumb($article->image(), array('width' => 320))->url() ?>');">
+                </div>
+              <? endif ?>
             </div>
           <? endif ?>
-          <div class="col-xs-12 col-sm-5 col-sm-offset-1">
+          <div class="col-xs-9 col-sm-8 col-md-7 article">
 
-            <a href="<?= $article->url() ?>" class="u-block">
-              <h3><?= $article->title() ?></h3>
-              <date><?= $article->date('%d %B %Y') ?></date>
-              <? if ($is_article != true): ?>
-                <p class="u-lineheight20 u-mt5"><small><?= excerpt($article->text(), 100) ?></small></p>
-              <? endif ?>
-            </a>
+            <h3><?= $article->title() ?></h3>
+            <time><?= $article->date('%d %B %Y') ?></time>
+            <? if ($is_article != true): ?>
+              <p class="u-lineheight20 u-mt5"><small><?= excerpt($article->text(), 100) ?></small></p>
+            <? endif ?>
 
           </div>
-        </div>
+        </a>
 
       <? endforeach ?>
 
