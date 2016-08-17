@@ -68,6 +68,15 @@ $u: 5;
     margin-top: 0;
   }
 }
+.u-ph30-sm {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+
+  @media screen and (max-width: 768px) {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
 
 .u-absolute {
   position: absolute !important;

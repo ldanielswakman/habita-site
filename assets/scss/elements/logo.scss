@@ -4,7 +4,7 @@
   position: fixed;
   height: $size !important;
   top: 250px; // irrelevant, gets aligned with js
-  left: 300px;
+  left: 25%;
   z-index: 11;
   margin-left: - $size * 0.447;
   margin-top: - $size * 0.409;
@@ -13,6 +13,10 @@
 
   .st0 {
     @include transition();
+  }
+  @media screen and (max-width: 1024px) {
+    height: $size * 0.75 !important;
+    margin-top: - $size_sm * 0.72;
   }
   @media screen and (max-width: 768px) {
     left: auto;
