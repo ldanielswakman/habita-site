@@ -24,15 +24,15 @@ $json['q']  = $q;
 // build array result data
 foreach($data as $article) {
 
-  $image_data = '';
-  if ($article->hasImages()):
-    $image = $article->images()->first();
-    $image_data = array(
-      'original' => (string)$image->url(),
-      'medium' => (string)thumb($image, array('width' => 600))->url(),
-      'small' => (string)thumb($image, array('width' => 320))->url(),
-    );
-  endif;
+  // $image_data = '';
+  // if ($article->hasImages()):
+  //   $image = $article->images()->first();
+  //   $image_data = array(
+  //     'original' => (string)$image->url(),
+  //     'medium' => (string)thumb($image, array('width' => 600))->url(),
+  //     'small' => (string)thumb($image, array('width' => 320))->url(),
+  //   );
+  // endif;
 
   $json['data'][] = array(
     'url'   => (string)$article->url(),
@@ -42,7 +42,7 @@ foreach($data as $article) {
     'excerpt'  => (string)excerpt($article->text(), 100),
     'date'  => (string)$article->date('%d %B %Y'),
     'tags'  => (string)$article->tags(),
-    'image' => $image_data,
+    // 'image' => $image_data,
   );
 }
 
