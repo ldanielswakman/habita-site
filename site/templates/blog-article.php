@@ -38,7 +38,7 @@
           </div>
 
         </div>
-        <div class="bg-white col-xs-12 col-sm-7 article">
+        <div class="bg-white col-xs-12 col-sm-7 article u-pb80">
           <h1 class="u-pv60"><?= $page->title() ?></h1>
           <?= $page->text()->kirbytext() ?>
         </div>

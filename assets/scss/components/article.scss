@@ -10,10 +10,7 @@
       }
     }
     &:visited {
-      display: block;
-      border: 2px solid $orange;
       color: lighten($greymedium, 10%);
-      font-weight: normal;
 
       h3 {
         font-weight: 400;
@@ -23,8 +20,6 @@
       }
       .article-list-image {
         opacity: 0.1;
-        // border: 2px solid $orange;
-        // @include filter(saturate, 20%);
       }
     }
   }
@@ -88,10 +83,18 @@ $padding_xs: 1rem;
       line-height: 1.25rem;
     }
     &.medium {
-      max-width: 50%;
+      text-align: center;
+      img {
+        margin: 0 auto;
+        max-width: 50%;
+      }
     }
     &.small {
-      max-width: 30%;
+      text-align: center;
+      img {
+        margin: 0 auto;
+        max-width: 30%;
+      }
     }
   }
   p {
@@ -115,8 +118,12 @@ $padding_xs: 1rem;
       margin-top: 1.5rem;
     }
   }
-  a:hover {
+  a {
     color: $orange;
+  }
+  a:hover {
+    color: $orangedark;
+    @include underline(currentColor, 1px);
   }
 }
 
