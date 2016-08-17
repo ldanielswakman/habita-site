@@ -24,7 +24,7 @@ $json['q']  = $q;
 // build array result data
 foreach($data as $article) {
 
-  $image_data = 'no';
+  $image_data = '';
   if ($article->hasImages()):
     $image = $article->images()->first();
     $image_data = array(
