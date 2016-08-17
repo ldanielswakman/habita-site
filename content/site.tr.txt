@@ -30,16 +30,16 @@ Yeşilce Mahallesi Ulubaş Cad No:23 Kat:2
 Socialmedia: 
 
 - 
-  text: arkadaşlarına ekle
+  text: "habita'yı beğen"
   link: >
     https://www.facebook.com/habita.coworking
   type: social-facebook
 - 
-  text: takip et
+  text: yakından bak
   link: https://www.instagram.com/habita_co/
   type: social-instagram
 - 
-  text: tweet at
+  text: takip et
   link: https://twitter.com/habita_co
   type: social-twitter
 - 
