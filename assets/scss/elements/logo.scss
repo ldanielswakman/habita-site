@@ -29,6 +29,10 @@
 .navIsOpen .nav-logo .logo-svg {
   left: 400px !important;
 
+  @media screen and (max-width: 768px) {
+    left: calc( 100vw - 4rem ) !important;
+  }
+
   .st0, .emblem .st0 {
     fill: $white !important;
   }

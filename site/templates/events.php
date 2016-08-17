@@ -23,20 +23,23 @@
       $bgimage .= '\');"';
     }
     ?>
-    <section class="bg-greylightest bg-imagemuted c-white u-pv50"<?= $bgimage ?>>
+    <section class="bg-greylightest bg-imagemuted c-white"<?= $bgimage ?>>
 
       <div class="row">
-        <div class="col-xs-9 col-xs-offset-3 col-sm-3 col-sm-offset-1">
-          <a href="<?= $site->url( $site->language()->code() ) ?>" class="u-floatleft" style="padding-top: 2px;">
+        <div class="col-xs-12 col-sm-4">
+
+          <!-- Layout boxes -->
+          <div class="u-pt50 u-sm-hide"></div>
+          <div class="u-pt20 u-sm-show"></div>
+          <div class="u-floatleft u-pl70 u-height50 u-sm-show"></div>
+          <div class="u-floatleft u-pl120 u-height50 u-sm-hide"></div>
+
+          <a href="<?= $site->url( $site->language()->code() ) ?>" class="u-floatleft u-mr15 logo-svg-word-wrapper">
             <? snippet('logo-svg', array('word' => true)) ?>
           </a>
 
-          <? if ($is_article == true): ?>
-            <a href="<?= $site->find('blog')->url() ?>"><h1 class="u-semibold c-greymedium"><?= $site->find('blog')->title() ?></h1></a>
-          <? endif ?>
-
         </div>
-        <div class="col-xs-12 col-sm-6 u-pl80">
+        <div class="col-xs-12 col-sm-6 u-pl80 u-pv50">
           <h1><?= $page->title() ?></h1>
           <div class="u-block u-mt30"><?= $page->text()->kirbytext() ?></div>
         </div>
@@ -87,6 +90,8 @@
     <? snippet('newsletter-next-bar') ?>
 
     <? snippet('footer') ?>
+
+    <script>setFavicon();</script>
 
   </body>
 

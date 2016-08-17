@@ -23,19 +23,29 @@
     <section class="u-relative u-z1 u-no-p-events">
 
       <div class="row">
-        <div class="col-xs-8 col-xs-offset-4 col-sm-3 col-sm-offset-1 u-pv50">
-          <a href="<?= $site->url( $site->language()->code() ) ?>" class="u-floatleft u-p-events" style="padding-top: 2px;">
+        <div class="col-xs-12 col-sm-3 col-sm-offset-1">
+
+          <!-- Layout boxes -->
+          <div class="u-pt50 u-sm-hide"></div>
+          <div class="u-pt20 u-sm-show"></div>
+          <div class="u-floatleft u-pl70 u-height50 u-sm-show"></div>
+          <div class="u-floatleft u-pl120 u-height50 u-sm-hide"></div>
+
+          <a href="<?= $site->url( $site->language()->code() ) ?>" class="u-floatleft u-mr15 logo-svg-word-wrapper">
             <? snippet('logo-svg', array('word' => true, 'color' => '#fff')) ?>
           </a>
         </div>
         <div class="col-xs-12 col-sm-8 article u-p-events u-mt70vh-sm">
 
+          <div class="u-pv20 u-sm-show"></div>
           <h1 class="c-white u-mb50"><?= $page->title() ?></h1>
 
         </div>
         <div class="col-xs-8 col-xs-offset-4 col-sm-3 col-sm-offset-1">
         </div>
-        <div class="col-xs-12 col-sm-7 article u-pv80 bg-white u-p-events">
+        <div class="col-xs-12 col-sm-7 article u-pt40 u-pb80 bg-white u-p-events">
+
+          <div class="u-pv20 u-sm-hide"></div>
 
           <?= $page->text()->kirbytext() ?>
 
