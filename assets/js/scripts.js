@@ -84,12 +84,10 @@ function scrollActions() {
   alignLogo(scroll, '.logo-aligner');
 }
 
-
-
 function alignLogo(scroll, align_obj) {
   threshold = ($(align_obj)) ? $(align_obj).outerHeight() : 250;
-  logo_offset_top = 55;
-  logo_offset_left = 180;
+  logo_offset_top = ($(document).width() < 768) ? 35 : 55;
+  logo_offset_left = 400;
   small_scale = 0.3;
   $logo = $('.nav-logo-animated .logo-svg');
 
