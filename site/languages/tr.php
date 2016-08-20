@@ -16,3 +16,5 @@ l::set('send', 'Gönder');
 l::set('continue_to_blog', 'Bloga devam et');
 // Footer
 l::set('next', 'Sonraki');
+// Error page
+l::set('back', 'Geri');

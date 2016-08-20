@@ -33,6 +33,14 @@ a.link-block {
     background-color: rgba($bluedarkfade, 0.1);
   }
 }
+a.link-classic {
+  color: $orange;
+  
+  &:hover {
+    color: $orangedark;
+    @include underline(currentColor, 1px);
+  }
+}
 
 p {
   line-height: 1.8rem;

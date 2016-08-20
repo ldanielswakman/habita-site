@@ -16,3 +16,5 @@ l::set('send', 'Send');
 l::set('continue_to_blog', 'Continue to the blog');
 // Footer
 l::set('next', 'Next');
+// Error page
+l::set('back', 'Back');

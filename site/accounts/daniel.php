@@ -7,8 +7,8 @@ password: >
 language: en
 role: admin
 history:
+  - error
   - home
   - about-us
   - events/opening-party
   - events/cornell-send-off
-  - events

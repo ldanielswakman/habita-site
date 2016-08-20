@@ -5791,6 +5791,10 @@ figure img {
   height: 100% !important;
   height: 100vh !important; }
 
+.u-minheight90vh {
+  min-height: 90% !important;
+  min-height: 90vh !important; }
+
 .u-minheight100vh {
   min-height: 100% !important;
   min-height: 100vh !important; }
@@ -6135,6 +6139,12 @@ a {
 
 a.link-block:hover {
   background-color: rgba(38, 69, 76, 0.1); }
+
+a.link-classic {
+  color: #ff5000; }
+  a.link-classic:hover {
+    color: #d94c0b;
+    background-image: linear-gradient(to top, transparent, transparent 0px, currentColor 0px, currentColor 1px, transparent 1px); }
 
 p {
   line-height: 1.8rem;

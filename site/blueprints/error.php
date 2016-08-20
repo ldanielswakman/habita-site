@@ -9,5 +9,7 @@ fields:
     type:  text
   text:
     label: Text
-    type:  textarea
-    size:  large
+    type:  text
+  lookingfor_text:
+    label: Page search text
+    type:  text

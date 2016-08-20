@@ -42,7 +42,11 @@ $u: 5;
   height: 100vh !important;
 }
 
-// min-widths & min-heights
+// min/max - width/heights
+.u-minheight90vh {
+  min-height: 90% !important; // fallback
+  min-height: 90vh !important;
+}
 .u-minheight100vh {
   min-height: 100% !important; // fallback
   min-height: 100vh !important;
