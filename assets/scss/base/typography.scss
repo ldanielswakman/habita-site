@@ -1,5 +1,28 @@
 // Typography
+$fontpath: '../fonts/';
 
+// Montserrat
+@font-face {
+  font-family: 'Montserrat';
+  src: url('#{$fontpath}montserrat-light-webfont.woff2') format('woff2'),
+       url('#{$fontpath}montserrat-light-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('#{$fontpath}montserrat-semibold-webfont.woff2') format('woff2'),
+       url('#{$fontpath}montserrat-semibold-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('#{$fontpath}montserrat-bold-webfont.woff2') format('woff2'),
+       url('#{$fontpath}montserrat-bold-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
 
 // Icon classes
 .ion-15x {
