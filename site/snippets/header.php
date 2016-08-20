@@ -17,7 +17,8 @@
     // '//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css',
     // '//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css',
     // '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.1/assets/owl.carousel.min.css',
-    '//fonts.googleapis.com/css?family=Martel:400,700|Montserrat:400,700&subset=latin-ext',
+    // '//fonts.googleapis.com/css?family=Martel:400,700|Montserrat:400,700&subset=latin-ext',
+    '//fonts.googleapis.com/css?family=Martel:400,700',
     'assets/css/style.css',
     );
 
