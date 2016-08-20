@@ -1,7 +1,9 @@
 <head>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta name="author" content="L Daniel Swakman, ldaniel.eu" />
+  <meta http-equiv="Cache-control" content="public">
 
   <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
 
