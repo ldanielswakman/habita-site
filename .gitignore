@@ -4,6 +4,7 @@
 # Kirby folders
 /site/accounts
 /site/config
+/site/cache
 
 # Google site verifier html (server)
 googleaa37408530a000c3.html
