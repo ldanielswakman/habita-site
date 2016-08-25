@@ -55,10 +55,11 @@ function alignLogo(scroll, align_obj) {
   small_scale = 0.3;
   $logo = $('.nav-logo-animated .logo-svg');
 
-  if ($logo && scroll < 0) {
-    // before start
-    $logo.removeAttr('style');
-  } else if ($logo && scroll > (threshold - logo_offset_top)) {
+  // if ($logo && scroll < 0) {
+  //   // before start
+  //   $logo.removeAttr('style');
+  // } else 
+  if ($logo && scroll > (threshold - logo_offset_top)) {
     // past threshold
     $logo.css('top', logo_offset_top)
       // .css('left', logo_offset_left)
