@@ -4,7 +4,7 @@ Title: Home
 
 Text: 
 
->  An open & transparent<br>**coworking hub** for everyone...
+>  An open & transparent <div class="u-sm-hide"></div> **coworking hub** for everyone...
 
 <div class="u-mv20">
 (link: /ve-iste-habita text: explore class: button button-primary u-mr10) (link: /en/contact text: contact us class: button button-white)

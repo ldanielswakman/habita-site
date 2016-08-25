@@ -4,7 +4,7 @@ Title: Anasayfa
 
 Text: 
 
->  Paylaşan, konuşan, tartışan, üreten herkese<br>**açık bir komünitenin** ortak yaşam ve çalışma alanı...
+>  Paylaşan, konuşan, tartışan, üreten herkese <div class="u-sm-hide"></div> **açık bir komünitenin** ortak yaşam ve çalışma alanı...
 
 <div class="u-mv20">
 (link: /ve-iste-habita text: keşfet class: button button-primary u-mr10) (link: /contact text: iletişim class: button button-white)
