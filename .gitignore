@@ -2,10 +2,8 @@
 *.sublime-workspace
 
 # Kirby folders
-site/accounts/
-site/accounts/*
-site/config/
-site/config/*
+/site/accounts
+/site/config
 
 # Google site verifier html (server)
 googleaa37408530a000c3.html
