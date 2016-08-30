@@ -270,6 +270,13 @@ $u: 5;
 .u-opacity30 {
   opacity: 0.3 !important;
 }
+.u-h-opacity50 {
+  opacity: 0.5 !important;
+
+  &:hover {
+    opacity: 1 !important;
+  }
+}
 
 
 .u-overflowscroll {

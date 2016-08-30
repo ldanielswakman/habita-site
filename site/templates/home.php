@@ -159,7 +159,7 @@
 
     <? endforeach ?>
 
-    <? snippet('footer') ?>
+    <? snippet('footer', array('page' => $page)) ?>
 
     <? snippet('scripts-home') ?>
 

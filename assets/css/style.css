@@ -6058,6 +6058,11 @@ figure img {
 .u-opacity30 {
   opacity: 0.3 !important; }
 
+.u-h-opacity50 {
+  opacity: 0.5 !important; }
+  .u-h-opacity50:hover {
+    opacity: 1 !important; }
+
 .u-overflowscroll {
   overflow: scroll !important; }
 
@@ -6197,9 +6202,12 @@ time, .date {
   margin-right: -0.5em !important; }
 
 @media screen and (max-width: 480px) {
-  .col-xs-12 {
-    padding-left: 1rem;
-    padding-right: 1rem; } }
+  .row {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; }
+    .row.row-nopadding, .row.row-internalnopadding {
+      padding-left: 0;
+      padding-right: 0; } }
 .language-switcher {
   opacity: 0.5; }
   .language-switcher:hover {

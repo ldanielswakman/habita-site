@@ -105,9 +105,15 @@ time, .date {
   margin-right: -0.5em !important;
 }
 @media screen and (max-width: 480px) {
-  .col-xs-12 {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  .row {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    
+    &.row-nopadding,
+    &.row-internalnopadding {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }
 
