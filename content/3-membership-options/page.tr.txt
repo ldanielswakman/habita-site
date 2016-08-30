@@ -21,7 +21,7 @@ Cards:
     food, drink, coffee, wifi, envelope,
     printer, time, presentation, boiler,
     cabinets, security, lounge
-  action: '(link: #expand text: Detay class: button button-transp) (email: info@habita.com.tr?subject=[Sabit%20Masalar] text: İlgileniyorum class: button button-primary u-floatright)'
+  action: '(link: #expand text: <span class="not-detail">Detay <i class="ion ion-chevron-down u-ml5 u-opacity50"></i></span><span class="detail">Kapat <i class="ion ion-chevron-up u-ml5 u-opacity50"></i></span> class: button button-transp ) (email: info@habita.com.tr?subject=[Sabit%20Masalar] text: İlgileniyorum class: button button-primary u-floatright)'
 - 
   title: Kapalı Ofisler
   type: office
@@ -34,7 +34,7 @@ Cards:
   text: |
     <small class="detail">[farklı büyüklüklerde, dilediğiniz gibi tasarlayacağınız özel ofisler]</small>
     <b class="c-orange">1500 TL</b>'den başlayan fiyatlar
-  action: '(link: #expand text: Detay class: button button-transp) (link: mailto:info@habita.com.tr?subject=[Kapalı Ofisler] popup: yes text: İlgileniyorum class: button button-primary u-floatright)'
+  action: '(link: #expand text: <span class="not-detail">Detay <i class="ion ion-chevron-down u-ml5 u-opacity50"></i></span><span class="detail">Kapat <i class="ion ion-chevron-up u-ml5 u-opacity50"></i></span> class: button button-transp ) (email: info@habita.com.tr?subject=[Kapalı%20Ofisler] text: İlgileniyorum class: button button-primary u-floatright)'
 - 
   title: Esnek Çalışma Alanları
   type: flexible
@@ -46,7 +46,7 @@ Cards:
   text: |
     <small class="detail">[kısa süreli işleriniz için günlük kiralama seçenekleri ile esnek çalışma alanları]</small>
     <b class="c-orange">30 TL</b>'den başlayan fiyatlar
-  action: '(link: #expand text: Detay class: button button-transp) (link: mailto:info@habita.com.tr?subject=[Esnek Çalışma Alanları] popup: yes text: İlgileniyorum class: button button-primary u-floatright)'
+  action: '(link: #expand text: <span class="not-detail">Detay <i class="ion ion-chevron-down u-ml5 u-opacity50"></i></span><span class="detail">Kapat <i class="ion ion-chevron-up u-ml5 u-opacity50"></i></span> class: button button-transp ) (email: info@habita.com.tr?subject=[Esnek%20Çalışma%20Alanları] text: İlgileniyorum class: button button-primary u-floatright)'
 - 
   title: habita venue
   type: event
@@ -57,4 +57,6 @@ Cards:
     <small class="detail">[Etkinliğinizin içeriğini bütünleyecek şekilde istediğiniz gibi tasarlayabileceğiniz, misafirlerinize etkin ve akılda kalıcı marka deneyimleri yaşatabileceğiniz bir etkinlik alanı]</small>
     
     <b class="c-orange">özel fiyatlar</b> için bilgi al
+  action: '(link: #expand text: <span class="not-detail">Detay <i class="ion ion-chevron-down u-ml5 u-opacity50"></i></span><span class="detail">Kapat <i class="ion ion-chevron-up u-ml5 u-opacity50"></i></span> class: button button-transp ) (email: info@habita.com.tr?subject=[habita%20venue] text: İlgileniyorum class: button button-primary u-floatright)'
+
   action: '(link: mailto:info@habita.com.tr?subject=[habita venue] popup: yes text: İlgileniyorum class: button button-primary u-floatright)'

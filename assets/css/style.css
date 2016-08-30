@@ -3230,7 +3230,7 @@
   color: #d3d4d5; }
 
 .c-greymedium {
-  color: #8a8a8d; }
+  color: #8a8a8d !important; }
 
 .c-grey {
   color: #72716c; }
@@ -6152,7 +6152,7 @@ a.link-classic {
     background-image: linear-gradient(to top, transparent, transparent 0px, currentColor 0px, currentColor 1px, transparent 1px); }
 
 p {
-  line-height: 1.8rem;
+  line-height: 1.8em;
   max-width: 50rem; }
   p + p {
     margin-top: 1.5rem; }
@@ -6398,19 +6398,19 @@ time, .date {
   transform: scale(0.75);
   pointer-events: none; }
 
-.article-list a {
+.article-list a:not(.button) {
   color: #72716c; }
-  .article-list a:hover, .article-list a:focus, .article-list a:visited:hover {
+  .article-list a:not(.button):hover, .article-list a:not(.button):focus, .article-list a:not(.button):visited:hover {
     color: #ff5000; }
-    .article-list a:hover time, .article-list a:focus time, .article-list a:visited:hover time {
+    .article-list a:not(.button):hover time, .article-list a:not(.button):focus time, .article-list a:not(.button):visited:hover time {
       color: rgba(255, 80, 0, 0.75); }
-  .article-list a:visited {
+  .article-list a:not(.button):visited {
     color: #a4a4a6; }
-    .article-list a:visited h3 {
+    .article-list a:not(.button):visited h3 {
       font-weight: 300; }
-    .article-list a:visited time {
+    .article-list a:not(.button):visited time {
       color: rgba(164, 164, 166, 0.5); }
-    .article-list a:visited .article-list-image {
+    .article-list a:not(.button):visited .article-list-image {
       opacity: 0.1; }
 
 .article {
@@ -6477,11 +6477,16 @@ time, .date {
     max-width: 50rem; }
   .article blockquote + p {
     margin-top: 1.5rem; }
-  .article a {
+  .article a:not(.button) {
     color: #ff5000; }
-  .article a:hover {
+  .article a:not(.button):hover {
     color: #d94c0b;
     background-image: linear-gradient(to top, transparent, transparent 0px, currentColor 0px, currentColor 1px, transparent 1px); }
+
+.p-article, .p-article p {
+  font-family: "Martel", Times, Times New Roman, serif; }
+  .p-article + p, .p-article + figure, .p-article + ul, .p-article + blockquote, .p-article p + p, .p-article p + figure, .p-article p + ul, .p-article p + blockquote {
+    margin-top: 1.5rem; }
 
 .content {
   padding-left: 5rem;

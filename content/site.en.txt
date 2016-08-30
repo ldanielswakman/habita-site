@@ -14,13 +14,13 @@ Keywords: coworking,calisma alani,istanbul,komunite,acik,freelance,ofis
 
 ----
 
-Copyright: <small>© (date: Year) Nasa Ofis Kiralama Danısmanlık ve Organizasyon Hizmetleri Tic. Ltd. Sti.</small>
+Copyright: <small>© (date: Year) Habita</small>
 
 ----
 
 Footertext: 
 
-**Habita** Coworking Alanı
+**Habita** Coworking
 Yeşilce Mahallesi Ulubaş Cad No:23 Kat:2
 34418 Kağıthane, Istanbul
 (tel: +90 532 549 19 43)

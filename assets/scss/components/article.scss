@@ -1,5 +1,5 @@
 .article-list {
-  a {
+  a:not(.button) {
     color: $grey;
 
     &:hover, &:focus, &:visited:hover {
@@ -118,12 +118,22 @@ $padding_xs: 1rem;
       margin-top: 1.5rem;
     }
   }
-  a {
+  a:not(.button) {
     color: $orange;
   }
-  a:hover {
+  a:not(.button):hover {
     color: $orangedark;
     @include underline(currentColor, 1px);
+  }
+}
+.p-article, .p-article p {
+  font-family: "Martel", Times, Times New Roman, serif;
+  
+  & + p,
+  & + figure,
+  & + ul,
+  & + blockquote {
+    margin-top: 1.5rem;
   }
 }
 

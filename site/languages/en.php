@@ -14,7 +14,11 @@ l::set('telephone', 'Telephone');
 l::set('send', 'Send');
 // Landing page
 l::set('continue_to_blog', 'Continue to the blog');
-// Footer
+// Events
+l::set('event_fb', 'Event on Facebook');
+
+// Generic
 l::set('next', 'Next');
-// Error page
 l::set('back', 'Back');
+l::set('more', 'More');
+l::set('less', 'Less');

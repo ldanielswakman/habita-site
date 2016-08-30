@@ -14,7 +14,11 @@ l::set('telephone', 'Telefon numarası');
 l::set('send', 'Gönder');
 // Landing page
 l::set('continue_to_blog', 'Bloga devam et');
-// Footer
+// Events
+l::set('event_fb', 'Facebook\'ta etkinlik');
+
+// Generic
 l::set('next', 'Sonraki');
-// Error page
 l::set('back', 'Geri');
+l::set('more', 'Daha');
+l::set('less', 'Daha az');

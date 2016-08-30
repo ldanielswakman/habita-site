@@ -30,9 +30,10 @@ $(document).ready(function() {
 
 
   // expand card
-  $('.card [href="#expand"]').click(function() {
+  $('.card [href="#expand"]').click(function(e) {
+    e.preventDefault();
     $(this).closest('.card').toggleClass('isExpanded');
-    $(this).toggleClass('u-hide');
+    // $(this).toggleClass('u-hide');
   });
 
 

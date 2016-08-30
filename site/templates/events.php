@@ -49,15 +49,15 @@
 
     <section class="bg-greylightest u-pv50 article-list">
       <div class="row">
-        <div class="col-xs-12 col-sm-3 col-sm-offset-1"></div>
+        <div class="col-xs-12 col-sm-1 col-sm-offset-0 col-md-3 col-md-offset-1"></div>
 
-        <div class="col-xs-12 col-sm-8 col-md-7 article">
+        <div class="col-xs-12 col-sm-10 col-md-7">
 
           <div class="row row-internalpadding">
             <? foreach ($site->find('events')->children()->visible()->flip() as $event) : ?>
 
               <div class="col-xs-12 col-sm-6 u-flex-grow1">
-                <div class="bg-white u-mb20">
+                <div class="card bg-white u-mb20">
                   <?
                   $bgimage = '';
                   if ($image = $event->cover_image()) {
@@ -70,12 +70,46 @@
                     <? endif ?>
                   </div>
                   <div class="u-pa20">
+
                     <h3><?= $event->title() ?></h3>
                     <date><?= $event->date('%d %B %Y') ?></date>
-                    <div class="u-lineheight20 u-mt5"><small><?= $event->description()->kirbytext() ?></small></div>
-                    <? if ($event->facebook_link()->isNotEmpty()): ?>
-                      <a href="<?= $event->facebook_link() ?>">Event on facebook</a>
+
+                    <? $excerpt_length = 140; ?>
+                    <? if(strlen($event->description()) > $excerpt_length) : ?>
+
+                      <div class="not-detail p-article u-mt5">
+                        <small class="u-lineheight20"><p><?= excerpt($event->description(), $excerpt_length) ?></p></small>
+                      </div>
+                      <div class="detail p-article u-mt5">
+                        <small class="u-lineheight20"><?= $event->description()->kirbytext() ?></small>
+                      </div>
+
+                    <? else : ?>
+
+                      <div class="p-article u-mt5">
+                        <small class="u-lineheight20"><?= $event->description()->kirbytext() ?></small>
+                      </div>
+
                     <? endif ?>
+
+                  </div>
+                  <div class="u-ph20 u-pb20">
+
+                    <? if ($event->facebook_link()->isNotEmpty()): ?>
+                      <a class="u-floatright" href="<?= $event->facebook_link() ?>" target="_blank"><?= l::get('event_fb') ?></a>
+                    <? endif ?>
+
+                    <? if(strlen($event->description()) > $excerpt_length) : ?>
+                      <a href="#expand" class="not-detail">
+                        <?= l::get('more') ?>
+                        <i class="ion ion-chevron-down"></i>
+                      </a>
+                      <div class="u-inlineblock"><a href="#expand" class="detail">
+                        <?= l::get('less') ?>
+                        <i class="ion ion-chevron-up"></i>
+                      </a></div>
+                    <? endif ?>
+
                   </div>
                 </div>
               </div>
