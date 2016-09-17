@@ -1,8 +1,8 @@
-Title: Esin
+Title: Şiyba
 
 ----
 
-Job-title: 
+Job-title: Freelance Plumber
 
 ----
 
@@ -30,4 +30,4 @@ Website-url:
 
 ----
 
-Profile-image: 57.jpg
+Profile-image: 

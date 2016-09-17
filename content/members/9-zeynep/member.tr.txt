@@ -1,8 +1,12 @@
-Title: Esin
+Title: Zeynep
 
 ----
 
 Job-title: 
+
+----
+
+Profile-image: 
 
 ----
 
@@ -27,7 +31,3 @@ Instagram-url:
 ----
 
 Website-url: 
-
-----
-
-Profile-image: 57.jpg

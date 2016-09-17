@@ -1,8 +1,12 @@
-Title: Joseph
+Title: Murat
 
 ----
 
-Job-title: Freelance Plumber
+Job-title: 
+
+----
+
+Profile-image: 
 
 ----
 

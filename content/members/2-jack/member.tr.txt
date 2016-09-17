@@ -1,8 +1,8 @@
-Title: Jack
+Title: Eren
 
 ----
 
-Job-title: Lawyer
+Job-title: Reklamcı, girişimci, konuşmacı, danışman
 
 ----
 
@@ -10,11 +10,11 @@ Bio:
 
 ----
 
-Linkedin-url: 
+Linkedin-url: https://tr.linkedin.com/in/erendiril
 
 ----
 
-Twitter-url: 
+Twitter-url: https://twitter.com/ErenDiril
 
 ----
 
@@ -22,7 +22,7 @@ Facebook-url:
 
 ----
 
-Instagram-url: 
+Instagram-url: https://www.instagram.com/eren.diril/
 
 ----
 
@@ -30,4 +30,4 @@ Website-url:
 
 ----
 
-Profile-image: 80.jpg
+Profile-image: eren_egitim2.jpg

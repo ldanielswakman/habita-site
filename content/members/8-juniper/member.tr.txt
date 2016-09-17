@@ -1,8 +1,12 @@
-Title: Esin
+Title: Berkay
 
 ----
 
 Job-title: 
+
+----
+
+Profile-image: 26.jpg
 
 ----
 
@@ -27,7 +31,3 @@ Instagram-url:
 ----
 
 Website-url: 
-
-----
-
-Profile-image: 57.jpg

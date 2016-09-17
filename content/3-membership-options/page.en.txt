@@ -22,8 +22,9 @@ Cards:
   bgcolor: bluedarkfade
   type: desk
   icons: >
-    food, coffee, wifi, printer,
-    presentation
+    food, drink, coffee, wifi, envelope,
+    printer, time, presentation, boiler,
+    cabinets, security, lounge
   action: |
     (link: #expand text: <span class="not-detail">More <i class="ion ion-chevron-down u-ml5 u-opacity50"></i></span><span class="detail">Less <i class="ion ion-chevron-up u-ml5 u-opacity50"></i></span> class: button button-transp) (email: info@habita.com.tr?subject=[Dedicated%20desks] text: I'm interested class: button button-primary u-floatright)
 - 
@@ -32,8 +33,9 @@ Cards:
   bgcolor: bluedarkfade
   image: closed-offices.jpg
   icons: >
-    food, coffee, wifi, envelope, printer,
-    presentation
+    food, drink, coffee, wifi, envelope,
+    printer, time, presentation, boiler,
+    security, lounge
   text: |
     <small class="detail">[you can design your private office as you want]</small>
     </b>starting from <b class="c-orange">1500 TL
@@ -44,11 +46,14 @@ Cards:
   type: flexible
   bgcolor: bluedarkfade
   image: open-spaces.jpg
-  icons: coffee, wifi, printer
+  icons: >
+    food, coffee, wifi, printer, boiler,
+    security, lounge
   text: |
     <small class="detail">[flexible working spaces and lounges]</small>
     </b> starting from <b class="c-orange">30 TL
-  action: "(link: #expand text: <span class="not-detail">More <i class="ion ion-chevron-down u-ml5 u-opacity50"></i></span><span class="detail">Less <i class="ion ion-chevron-up u-ml5 u-opacity50"></i></span> class: button button-transp) (email: info@habita.com.tr?subject=[Flexible%20desks] text: I'm interested class: button button-primary u-floatright)"
+  action: |
+    (link: #expand text: <span class="not-detail">More <i class="ion ion-chevron-down u-ml5 u-opacity50"></i></span><span class="detail">Less <i class="ion ion-chevron-up u-ml5 u-opacity50"></i></span> class: button button-transp) (email: info@habita.com.tr?subject=[Flexible%20desks] text: I'm interested class: button button-primary u-floatright)
 - 
   title: habita venue
   type: event

@@ -1,4 +1,4 @@
-Title: Juniper
+Title: Filhub
 
 ----
 
@@ -6,7 +6,7 @@ Job-title:
 
 ----
 
-Profile-image: 26.jpg
+Profile-image: 
 
 ----
 
