@@ -10,7 +10,7 @@ Bio:
 
 ----
 
-Linkedin-url: http://linkedin.com/in/ldanielswakman
+Linkedin-url: 
 
 ----
 

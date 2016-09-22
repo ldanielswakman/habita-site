@@ -10,11 +10,11 @@ Bio:
 
 ----
 
-Linkedin-url: 
+Linkedin-url: https://www.linkedin.com/in/ldanielswakman
 
 ----
 
-Twitter-url: 
+Twitter-url: https://twitter.com/ldanielswakman
 
 ----
 
@@ -26,8 +26,8 @@ Instagram-url:
 
 ----
 
-Website-url: 
+Website-url: http://www.ldaniel.eu/
 
 ----
 
-Profile-image: 
+Profile-image: avatar.jpg

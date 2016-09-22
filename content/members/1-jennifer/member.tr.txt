@@ -2,15 +2,15 @@ Title: Esin
 
 ----
 
-Job-title: 
+Job-title: Bağımsız Kullanıcı Deneyimi Tasarımcısı
 
 ----
 
-Bio: 
+Bio: Esin 2015 'den beri bağımsız Kullanıcı Deneyimi Tasarımcısı olarak insan odaklı tasarımlar yapıyor. Inovasyon odaklı ve/ya startup'lar ile çalışıyor. Süper gücü empati ve yaratıcılığı birleştirebilmesi. Daha önce kurumsal bankacılık bilişim şirketlerinde çalıştı, 2016 Haziran'dan beri de Google Design Expert olarak Google tasarım yaklaşımı ve teknolojilerinin çalışmalarını gerçekleştiriyor. ODTÜ ve TU Delft mezunu. Habita'nın en çok çayını ve hem renkli hem huzurlu çalışma ortamını seviyor. Instagram ve Twitter 'dan #uxwithesin 'den takip edebilirsiniz.
 
 ----
 
-Linkedin-url: 
+Linkedin-url: http://tr.linkedin.com/in/esinis
 
 ----
 
@@ -30,4 +30,4 @@ Website-url:
 
 ----
 
-Profile-image: 57.jpg
+Profile-image: esin.jpg
