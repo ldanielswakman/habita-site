@@ -131,8 +131,8 @@
     </div>
 
     <div id="action_bar" class="u-fixed-bottomfull u-z2 bg-greylightest u-pv10 u-ph15 isVisible">
-      <a href="#newsletter_signup" class="button button-small u-floatright"><?= l::get('contact_us') ?> <i class="ion ion-chevron-down"></i></a>
-      <div style="line-height: 30px;"><?= l::get('interested') ?></div>
+      <a href="#newsletter_signup" class="button button-small u-floatright"><?= $page->actionbar_button()->value ?> <i class="ion ion-chevron-down"></i></a>
+      <div style="line-height: 30px;"><?= $page->actionbar_text()->value ?></div>
     </div>
 
   </body>

@@ -82,3 +82,11 @@ Test-text: Paylaşan, konuşan, tartışan, üreten herkese açık bir komünite
 ----
 
 Testagain-text: Açık alanda sabit masalar, kapalı ofisler ve esnek çalışma alanları yeni habitan'ları bekliyor!
+
+----
+
+Actionbar-text: İlgilendin mi?
+
+----
+
+Actionbar-button: iletişime geç

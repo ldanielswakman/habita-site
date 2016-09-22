@@ -106,3 +106,19 @@ fields:
     label: Events text
     type: textarea
     icon: text-width
+
+  actionbar_info:
+    label: ———
+    type: info
+    text: >
+
+  actionbar_text:
+    label: Action bar text
+    type: text
+    max: 40
+    width: 1/2
+  actionbar_button:
+    label: Action bar button
+    type: text
+    max: 20
+    width: 1/2

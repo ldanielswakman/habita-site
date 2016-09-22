@@ -90,3 +90,11 @@ Test-text: An open & transparent coworking hub for everyone...
 ----
 
 Testagain-text: Fixed desks in an open space, closed offices and flexible working places waiting for new habitans!
+
+----
+
+Actionbar-text: Interested?
+
+----
+
+Actionbar-button: contact us
