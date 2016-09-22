@@ -14,6 +14,8 @@ l::set('telephone', 'Telephone');
 l::set('send', 'Send');
 // Landing page
 l::set('continue_to_blog', 'Continue to the blog');
+l::set('interested', 'Interested?');
+l::set('contact_us', 'contact us');
 // Events
 l::set('event_fb', 'Event on Facebook');
 

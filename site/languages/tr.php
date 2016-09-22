@@ -14,6 +14,8 @@ l::set('telephone', 'Telefon numarası');
 l::set('send', 'Gönder');
 // Landing page
 l::set('continue_to_blog', 'Bloga devam et');
+l::set('interested', 'İlgilendiniz mi?');
+l::set('contact_us', 'iletişime geç');
 // Events
 l::set('event_fb', 'Facebook\'ta etkinlik');
 

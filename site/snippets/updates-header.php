@@ -14,19 +14,13 @@
   <meta property="og:description" content="<?= $pages->find('home')->tagline()->text() ?>" />
 
   <?
-  $css_assets = ($_SERVER['SERVER_NAME'] == 'localhost') ? array(
-    'assets/css/updates-style.css',
-    'assets/css/flexboxgrid.min.css',
-    'assets/css/ionicons.min.css',
-    'assets/css/owl.carousel.min.css',
-    ) : array(
+  $css_assets = array(
     'assets/css/updates-style.css',
     '//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css',
     '//cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css',
-    // 'https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css',
     '//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css',
     '//fonts.googleapis.com/css?family=Martel:400,700|Montserrat:400,700&subset=latin-ext',
-    );
+  );
 
   $js_assets = ($_SERVER['SERVER_NAME'] == 'localhost') ? array(
     // local assets

@@ -73,5 +73,17 @@ function expandArticle(obj) {
   }
 }
 
+function showHideActionBar() {
+  scroll = $(window).scrollTop();
+  if (scroll + $(window).height() > $('#newsletter_signup').offset().top) {
+    $('#action_bar').removeClass('isVisible');
+  } else {
+    $('#action_bar').addClass('isVisible');
+  }
+}
+
 events = 'ready scroll resize scrollstart scrollstop';
-$(document).on(events, function() { slideInOnScroll(); });
+$(document).on(events, function() { 
+  slideInOnScroll();
+  showHideActionBar();
+});
