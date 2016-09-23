@@ -107,7 +107,7 @@
         <a href="<?= url('/') ?>" class="link--bgorange col-xs-6 u-pa50 u-pa30-xs u-alignright">
           <i class="ion ion-arrow-right-c ion-2x"></i>
           <br />
-          <?= l::get('continue_to_blog') ?>
+          <?= l::get('continue_to_site') ?>
         </a>
       </div>
 

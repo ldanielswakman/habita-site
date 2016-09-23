@@ -13,7 +13,7 @@ l::set('name', 'Name');
 l::set('telephone', 'Telephone');
 l::set('send', 'Send');
 // Landing page
-l::set('continue_to_blog', 'Continue to the blog');
+l::set('continue_to_site', 'Continue to the site');
 // Events
 l::set('event_fb', 'Event on Facebook');
 

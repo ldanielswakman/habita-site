@@ -13,7 +13,7 @@ l::set('name', 'Ad soyad');
 l::set('telephone', 'Telefon numarası');
 l::set('send', 'Gönder');
 // Landing page
-l::set('continue_to_blog', 'Bloga devam et');
+l::set('continue_to_site', 'Siteye devam et');
 // Events
 l::set('event_fb', 'Facebook\'ta etkinlik');
 
