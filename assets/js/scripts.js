@@ -37,6 +37,8 @@ $(document).ready(function() {
   });
 
   scrollActions();
+  setTimeout(function() { scrollActions() }, 500);
+  setTimeout(function() { scrollActions() }, 1000);
 
 });
 
