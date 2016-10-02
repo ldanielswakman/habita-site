@@ -1,0 +1,33 @@
+Title: Berkay
+
+----
+
+Job-title: Illustrator
+
+----
+
+Profile-image: berkay1.jpg
+
+----
+
+Bio: 
+
+----
+
+Linkedin-url: 
+
+----
+
+Twitter-url: 
+
+----
+
+Facebook-url: https://www.facebook.com/BerkayDaglarIllustration/?fref=ts
+
+----
+
+Instagram-url: https://www.instagram.com/berkaydaglar/
+
+----
+
+Website-url: http://www.berkaydaglar.com

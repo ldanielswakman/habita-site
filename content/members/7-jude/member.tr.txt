@@ -1,12 +1,8 @@
-Title: Berkay
+Title: Özgür
 
 ----
 
-Job-title: 
-
-----
-
-Profile-image: 26.jpg
+Job-title: Founder, Grey Enerji
 
 ----
 
@@ -31,3 +27,7 @@ Instagram-url:
 ----
 
 Website-url: 
+
+----
+
+Profile-image: ozgur.jpg

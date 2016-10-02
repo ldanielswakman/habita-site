@@ -2,7 +2,7 @@ Title: Şiyba
 
 ----
 
-Job-title: Freelance Plumber
+Job-title: Customer Relations, Grey Enerji
 
 ----
 
@@ -30,4 +30,4 @@ Website-url:
 
 ----
 
-Profile-image: 
+Profile-image: screenshot_2016-09-01-13-14-41.jpg

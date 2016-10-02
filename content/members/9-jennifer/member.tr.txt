@@ -1,0 +1,33 @@
+Title: Esin
+
+----
+
+Job-title: Bağımsız Kullanıcı Deneyimi Tasarımcısı
+
+----
+
+Bio: 
+
+----
+
+Linkedin-url: http://tr.linkedin.com/in/esinis
+
+----
+
+Twitter-url: 
+
+----
+
+Facebook-url: 
+
+----
+
+Instagram-url: 
+
+----
+
+Website-url: 
+
+----
+
+Profile-image: esin.jpg

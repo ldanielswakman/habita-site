@@ -2,11 +2,11 @@ Title: Zeynep
 
 ----
 
-Job-title: 
+Job-title: Architect and Illustrator
 
 ----
 
-Profile-image: 
+Profile-image: profil-resmi.jpg
 
 ----
 
@@ -30,4 +30,4 @@ Instagram-url:
 
 ----
 
-Website-url: 
+Website-url: http://behance.net/zeynepoba

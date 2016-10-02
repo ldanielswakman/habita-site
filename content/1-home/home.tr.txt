@@ -8,7 +8,6 @@ Text:
 
 <div class="u-mv20">
 (link: /ve-iste-habita text: keşfet class: button button-primary u-mr10) (link: /contact text: iletişim class: button button-white)
-</div>
 
 ----
 
