@@ -12,11 +12,32 @@
 
   <form data-action="" class="">
 
-    <textarea class="field field-box" placeholder="Hello great people at habita..." rows="4" required></textarea>
+    <div class="u-relative">
+      <textarea class="field field-box" placeholder="Hello great people at habita..." rows="5" required></textarea>
+      <label class="field-box--label">Message</label>
+    </div>
 
-    <input class="field field-box" type="text" name="name" id="name" placeholder="your name" />
+    <div class="u-relative">
+      <!-- <input class="field field-box" type="text" name="name" id="name" placeholder="your name" /> -->
+      <select class="field field-box">
+        <option disabled selected>-- Space type (optional)</option>
+        <option>Test 1</option>
+        <option>Test 1</option>
+        <option>Test 1</option>
+        <option>Test 1</option>
+      </select>
+      <i class="ion ion-chevron-down u-pinned-topright u-mv25 u-mr15"></i>
+    </div>
 
-    <input class="field field-box" type="email" name="email" id="email" placeholder="your email" required />
+    <div class="u-relative">
+      <input class="field field-box" type="text" name="name" id="name" placeholder="your name" />
+      <label class="field-box--label">Name</label>
+    </div>
+
+    <div class="u-relative">
+      <input class="field field-box" type="email" name="email" id="email" placeholder="your email" required />
+      <label class="field-box--label">Email</label>
+    </div>
 
     <button type="submit" class="button button-primary u-widthfull u-pv20">Send</button>
 

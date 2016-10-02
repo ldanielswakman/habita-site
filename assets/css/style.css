@@ -6323,7 +6323,7 @@ time, .date {
     .field.field-light:-ms-input-placeholder {
       color: rgba(255, 255, 255, 0.5); }
   .field.field-box {
-    padding: 15px 30px 15px;
+    padding: 10px 30px;
     line-height: 40px;
     border-bottom-width: 0;
     border-top: 2px solid #edeeef; }
@@ -6335,6 +6335,28 @@ time, .date {
       color: rgba(38, 69, 76, 0.25); }
     .field.field-box:-ms-input-placeholder {
       color: rgba(38, 69, 76, 0.25); }
+  .field.field-box__notempty + .field-box--label {
+    opacity: 1; }
+
+textarea.field.field-box {
+  padding-top: 15px;
+  line-height: 30px; }
+
+select.field.field-box {
+  height: 62px; }
+
+.field-box--label {
+  position: absolute;
+  color: #d3d4d5;
+  top: 0;
+  left: 30px;
+  font-size: 0.8em;
+  line-height: 30px;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
 
 .nav-logo .logo-svg {
   position: fixed;

@@ -36,6 +36,7 @@ $(document).ready(function() {
     // $(this).toggleClass('u-hide');
   });
 
+  scrollActions();
 
 });
 
@@ -92,7 +93,7 @@ function toggleMenu(state) {
 
 
 
-// UI: toggle menu
+// UI: toggle dialog
 function toggleDialog(state) {
   state = (state) ? state : '';
   if(state == 'close') {
@@ -104,6 +105,18 @@ function toggleDialog(state) {
   }
   return false;
 }
+
+
+// UI: listen for field-box empty
+$(document).ready(function() {
+  $('.field-box').bind('keyup change', function() {
+    if($(this).val().length > 0) {
+      $(this).addClass('field-box__notempty');
+    } else {
+      $(this).removeClass('field-box__notempty');
+    }
+  });
+});
 
 
 // retrieve blog posts from API and output a random post

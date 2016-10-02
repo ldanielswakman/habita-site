@@ -40,7 +40,7 @@
     }
   }
   &.field-box {
-    padding: 15px 30px 15px;
+    padding: 10px 30px;
     line-height: 40px;
     border-bottom-width: 0;
     border-top: 2px solid $greylightest;
@@ -61,4 +61,24 @@
       color: rgba($bluedarkfade, 0.25);
     }
   }
+  &.field-box__notempty + .field-box--label {
+    opacity: 1;
+  }
+}
+textarea.field.field-box {
+  padding-top: 15px;
+  line-height: 30px;
+}
+select.field.field-box {
+  height: 62px;
+}
+.field-box--label {
+  position: absolute;
+  color: $greylight;
+  top: 0;
+  left: 30px;
+  font-size: 0.8em;
+  line-height: 30px;
+  opacity: 0;
+  @include transition(all 0.2s ease);
 }
