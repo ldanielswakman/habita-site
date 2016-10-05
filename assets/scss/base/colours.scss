@@ -75,6 +75,7 @@ $black:         #000000;
 }
 .bg-imagemuted {
   position: relative;
+  background-size: cover;
   background-position: center 25%;
 
   &:before {

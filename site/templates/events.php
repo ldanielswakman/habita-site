@@ -54,6 +54,7 @@
         <div class="col-xs-12 col-sm-10 col-md-7">
 
           <div class="row row-internalpadding">
+
             <? foreach ($site->find('events')->children()->visible()->flip() as $event) : ?>
 
               <div class="col-xs-12 col-sm-6 u-flex-grow1">
@@ -115,6 +116,7 @@
               </div>
 
             <? endforeach ?>
+            
           </div>
 
         </div>

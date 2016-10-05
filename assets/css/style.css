@@ -3269,6 +3269,7 @@
 
 .bg-imagemuted {
   position: relative;
+  background-size: cover;
   background-position: center 25%; }
   .bg-imagemuted:before {
     content: "";
