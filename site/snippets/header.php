@@ -5,7 +5,7 @@
   <meta name="author" content="L Daniel Swakman, ldaniel.eu" />
   <meta http-equiv="Cache-control" content="public">
 
-  <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
+  <title><?= $site->title()->html() ?> | <?= ($page->isHome()) ? $site->description()->html() : $page->title()->html() ?></title>
 
   <? snippet('header-metadata', array('page' => $page, 'meta_descr' => (isset($meta_descr)) ? $meta_descr : null, 'meta_image' => (isset($meta_image)) ? $meta_image : null)) ?>
 
