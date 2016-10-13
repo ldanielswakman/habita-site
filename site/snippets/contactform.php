@@ -1,4 +1,4 @@
-<div class="dialog u-flex-column" style="justify-content: space-between;">
+<form id="contact_form" action="<?= $page->url() ?>#contact_form" method="post" class="dialog u-flex-column bg-greylightest" style="justify-content: space-between;">
 
   <div>
 
@@ -10,23 +10,23 @@
 
   </div>
 
-  <form data-action="" class="">
+  <div class="bg-white">
 
     <div class="u-relative">
-      <textarea class="field field-box" placeholder="Hello great people at habita..." rows="5" required></textarea>
+      <textarea class="field field-box" placeholder="Hello great people at habita..." rows="5"></textarea>
       <label class="field-box--label">Message</label>
     </div>
 
     <div class="u-relative">
       <!-- <input class="field field-box" type="text" name="name" id="name" placeholder="your name" /> -->
       <select class="field field-box">
-        <option disabled selected>-- Space type (optional)</option>
+        <option selected>-- Space type (optional)</option>
         <option>Test 1</option>
         <option>Test 1</option>
         <option>Test 1</option>
         <option>Test 1</option>
       </select>
-      <i class="ion ion-chevron-down u-pinned-topright u-mv25 u-mr15"></i>
+      <i class="ion ion-chevron-down u-pinned-topright u-mv25 u-mr15 u-no-p-events"></i>
     </div>
 
     <div class="u-relative">
@@ -39,10 +39,17 @@
       <label class="field-box--label">Email</label>
     </div>
 
+    <div class="u-relative">
+      <input class="field field-box field--error" type="tel" name="phone" id="phone" placeholder="your phone number" />
+      <label class="field-box--label">Phone number</label>
+    </div>
+
+    <input type="hidden" name="source" id="source" value="<?= $page->title() . ' (' .  $page->slug() . ')' ?>" />
+
     <button type="submit" class="button button-primary u-widthfull u-pv20">Send</button>
 
-  </form>
-</div>
+  </div>
+</form>
 
 <!-- Nav content overlay -->
 <a href="#" onclick="return toggleDialog('close')" class="dialog-fade"></a>

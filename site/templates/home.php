@@ -8,7 +8,7 @@
 
     <? snippet('nav') ?>
 
-    <? // snippet('contactform') ?>
+    <? snippet('contactform') ?>
 
     <? snippet('language-switcher') ?>
 

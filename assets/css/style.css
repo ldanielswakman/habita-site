@@ -3251,7 +3251,7 @@
   background-color: rgba(255, 255, 255, 0.9); }
 
 .bg-greylightest {
-  background-color: #edeeef; }
+  background-color: #edeeef !important; }
 
 .bg-greylight {
   background-color: #d3d4d5; }
@@ -6324,10 +6324,13 @@ time, .date {
     .field.field-light:-ms-input-placeholder {
       color: rgba(255, 255, 255, 0.5); }
   .field.field-box {
+    position: relative;
     padding: 10px 30px;
     line-height: 40px;
     border-bottom-width: 0;
     border-top: 2px solid #edeeef; }
+    .field.field-box.field--error {
+      background-color: rgba(255, 80, 0, 0.25); }
     .field.field-box::-webkit-input-placeholder {
       color: rgba(38, 69, 76, 0.25); }
     .field.field-box:-moz-placeholder {

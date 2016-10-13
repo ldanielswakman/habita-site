@@ -40,13 +40,15 @@
     }
   }
   &.field-box {
+    position: relative;
     padding: 10px 30px;
     line-height: 40px;
     border-bottom-width: 0;
     border-top: 2px solid $greylightest;
 
-    // @include vertical-gradient(transparent, rgba($bluedarkfade, 0.05));
-
+    &.field--error {
+      background-color: rgba($orange, 0.25);
+    }
 
     &::-webkit-input-placeholder {
       color: rgba($bluedarkfade, 0.25);

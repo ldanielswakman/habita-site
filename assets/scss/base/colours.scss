@@ -56,7 +56,7 @@ $black:         #000000;
   background-color: rgba($white, 0.9);
 }
 .bg-greylightest {
-  background-color: $greylightest;
+  background-color: $greylightest !important;
 }
 .bg-greylight {
   background-color: $greylight;

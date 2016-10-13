@@ -23,17 +23,17 @@ $(document).ready(function() {
   });
 
 
-  // open contact form
+  // UI: open contact form
   $('[href="#contactform"]').click(function() {
     toggleDialog('open');
   });
+  if($('.dialog' + window.location.hash).length > 0) { toggleDialog('open'); }
 
 
-  // expand card
+  // UI: expand card
   $('.card [href="#expand"]').click(function(e) {
     e.preventDefault();
     $(this).closest('.card').toggleClass('isExpanded');
-    // $(this).toggleClass('u-hide');
   });
 
   scrollActions();
