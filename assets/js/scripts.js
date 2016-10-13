@@ -27,7 +27,7 @@ $(document).ready(function() {
   $('[href="#contactform"]').click(function() {
     toggleDialog('open');
   });
-  if($('.dialog' + window.location.hash).length > 0) { toggleDialog('open'); }
+  if(window.location.hash && $('.dialog' + window.location.hash).length > 0) { toggleDialog('open'); }
 
 
   // UI: expand card
