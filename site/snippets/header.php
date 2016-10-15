@@ -10,7 +10,7 @@
   <? snippet('header-metadata', array('page' => $page, 'meta_descr' => (isset($meta_descr)) ? $meta_descr : null, 'meta_image' => (isset($meta_image)) ? $meta_image : null)) ?>
 
   <?
-  $css_assets = ($_SERVER['SERVER_NAME'] == 'localhost') ? array(
+  $css_assets = (c::get('env') === 'DEV') ? array(
     // 'assets/css/flexboxgrid.min.css',
     // 'assets/css/ionicons.min.css',
     // 'assets/css/owl.carousel.min.css',
@@ -24,7 +24,7 @@
     'assets/css/style.css',
     );
 
-  $js_assets = ($_SERVER['SERVER_NAME'] == 'localhost') ? array(
+  $js_assets = (c::get('env') === 'DEV') ? array(
     'assets/js/jquery-2.2.3.min.js',
     'assets/js/owl.carousel.min.js',
     'assets/js/scripts.js',
