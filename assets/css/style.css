@@ -6191,6 +6191,10 @@ time, .date {
   color: #8a8a8d;
   font-size: 0.85rem; }
 
+hr {
+  border: 0;
+  border-bottom: 1px solid #d3d4d5; }
+
 .row {
   margin: 0 auto; }
 

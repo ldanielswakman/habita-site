@@ -8,7 +8,7 @@
 
     <? snippet('nav') ?>
 
-    <? snippet('contactform') ?>
+    <? // snippet('contactform') ?>
 
     <a href="#" onclick="return toggleMenu();" class="nav-logo nav-logo-watermark">
       <? snippet('logo-svg', array('emblem' => true, 'color' => 'rgba(86, 81, 73, 0.1)')) ?>
