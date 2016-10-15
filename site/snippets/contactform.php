@@ -15,17 +15,16 @@
     <? endif; ?>
 
   </div>
-
-  <form action="<?= $page->url() ?>#contact_form" method="post" class="bg-white">
+  <form action="<?= $page->url()?>/#contact_form" method="post" class="bg-white">
 
     <div class="u-relative">
-      <textarea class="field field-box" name="message" id="message" placeholder="Hello great people at habita..." rows="5"><? $contact_form_obj->echoValue('message') ?></textarea>
+      <textarea class="field field-box<? e($contact_form_obj->hasError('message'), ' field--error') ?>" name="message" id="message" placeholder="Hello great people at habita..." rows="5"><? $contact_form_obj->echoValue('message') ?></textarea>
       <label class="field-box--label">Message</label>
     </div>
 
     <div class="u-relative">
       <!-- <input class="field field-box" type="text" name="name" id="name" placeholder="your name" /> -->
-      <select class="field field-box">
+      <select class="field field-box<? e($contact_form_obj->hasError('space_type'), ' field--error') ?>" name="space_type" id="space_type">
         <option selected>-- Space type (optional)</option>
         <option>Test 1</option>
         <option>Test 1</option>
@@ -36,17 +35,17 @@
     </div>
 
     <div class="u-relative">
-      <input class="field field-box" type="text" name="name" id="name" placeholder="your name" value="<? $contact_form_obj->echoValue('name') ?>" />
+      <input class="field field-box<? e($contact_form_obj->hasError('name'), ' field--error') ?>" type="text" name="name" id="name" placeholder="your name" value="<? $contact_form_obj->echoValue('name') ?>" />
       <label class="field-box--label">Name</label>
     </div>
 
     <div class="u-relative">
-      <input class="field field-box" type="email" name="_from" id="email" placeholder="your email" />
+      <input class="field field-box<? e($contact_form_obj->hasError('_from'), ' field--error') ?>" type="email" name="_from" id="email" placeholder="your email" value="<? $contact_form_obj->echoValue('_from') ?>" />
       <label class="field-box--label">Email</label>
     </div>
 
     <div class="u-relative">
-      <input class="field field-box field--error" type="tel" name="phone" id="phone" placeholder="your phone number" />
+      <input class="field field-box<? e($contact_form_obj->hasError('phone'), ' field--error') ?>" type="tel" name="phone" id="phone" placeholder="your phone number" value="<? $contact_form_obj->echoValue('phone') ?>" />
       <label class="field-box--label">Phone number</label>
     </div>
 
