@@ -8,8 +8,6 @@
 
     <? snippet('nav') ?>
 
-    <? snippet('contactform') ?>
-
     <? snippet('language-switcher') ?>
 
     <a href="#" onclick="return toggleMenu();" class="nav-logo nav-logo-animated">
