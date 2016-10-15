@@ -89,6 +89,11 @@ time, .date {
   font-size: 0.85rem;
 }
 
+hr {
+  border: 0;
+  border-bottom: 1px solid $greylight;
+}
+
 
 
 // Grid system tweak

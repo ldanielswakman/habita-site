@@ -8,7 +8,7 @@
 
     <? snippet('nav') ?>
 
-    <? snippet('contactform') ?>
+    <? // snippet('contactform') ?>
 
     <a href="#" onclick="return toggleMenu();" class="nav-logo nav-logo-watermark">
       <? snippet('logo-svg', array('emblem' => true, 'color' => 'rgba(86, 81, 73, 0.1)')) ?>
@@ -39,8 +39,22 @@
 
         </div>
         <div class="bg-white col-xs-12 col-sm-7 article u-pb80">
-          <h1 class="u-pv60"><?= $page->title() ?></h1>
+
+          <div class="u-pt60 u-pb40">
+            <h1><?= $page->title() ?></h1>
+            <time class="c-greylight"><?= $page->date('%d %B %Y') ?></time>
+          </div>
+
           <?= $page->text()->kirbytext() ?>
+
+          <div class="u-aligncenter">
+            <div class=" u-mt40">
+              <hr class="u-inlineblock u-width50 u-mr20 u-opacity50">
+              <div class="u-inlineblock" style="vertical-align: middle;"><? snippet('logo-svg', array('emblem' => true, 'height' => 40, 'color' => 'rgba(86, 81, 73, 0.1)')) ?></div>
+              <hr class="u-inlineblock u-width50 u-ml20 u-opacity50">
+            </div>
+          </div>
+
         </div>
         <div class="bg-white col-xs-12 col-sm-1"></div>
       </div>
