@@ -1,4 +1,4 @@
-<form id="contact_form" action="<?= $page->url() ?>#contact_form" method="post" class="dialog u-flex-column bg-greylightest" style="justify-content: space-between;">
+<div id="contact_form" class="dialog u-flex-column bg-greylightest" style="justify-content: space-between;">
 
   <div>
 
@@ -8,12 +8,18 @@
 
     <h2 class="c-orange u-ma30">Get in touch</h2>
 
+    <? if ($contact_form_obj->hasMessage()): ?>
+      <p class="message u-mh30">
+        <? $contact_form_obj->echoMessage() ?>
+      </p>
+    <? endif; ?>
+
   </div>
 
-  <div class="bg-white">
+  <form action="<?= $page->url() ?>#contact_form" method="post" class="bg-white">
 
     <div class="u-relative">
-      <textarea class="field field-box" placeholder="Hello great people at habita..." rows="5"></textarea>
+      <textarea class="field field-box" name="message" id="message" placeholder="Hello great people at habita..." rows="5"><? $contact_form_obj->echoValue('message') ?></textarea>
       <label class="field-box--label">Message</label>
     </div>
 
@@ -30,12 +36,12 @@
     </div>
 
     <div class="u-relative">
-      <input class="field field-box" type="text" name="name" id="name" placeholder="your name" />
+      <input class="field field-box" type="text" name="name" id="name" placeholder="your name" value="<? $contact_form_obj->echoValue('name') ?>" />
       <label class="field-box--label">Name</label>
     </div>
 
     <div class="u-relative">
-      <input class="field field-box" type="email" name="email" id="email" placeholder="your email" required />
+      <input class="field field-box" type="email" name="_from" id="email" placeholder="your email" />
       <label class="field-box--label">Email</label>
     </div>
 
@@ -46,10 +52,13 @@
 
     <input type="hidden" name="source" id="source" value="<?= $page->title() . ' (' .  $page->slug() . ')' ?>" />
 
-    <button type="submit" class="button button-primary u-widthfull u-pv20">Send</button>
+    <input type="text" name="website" id="website" style="position: absolute; top: -9999px; left: -9999px;" />
 
-  </div>
-</form>
+    <button type="submit" name="_submit" value="<?= $contact_form_obj->token() ?>" class="button button-primary u-widthfull u-pv20">Send</button>
+
+  </form>
+
+</div>
 
 <!-- Nav content overlay -->
 <a href="#" onclick="return toggleDialog('close')" class="dialog-fade"></a>

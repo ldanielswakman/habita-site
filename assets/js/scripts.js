@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 
   // UI: open contact form
-  $('[href="#contactform"]').click(function() {
+  $('[href="#contact_form"]').click(function() {
     toggleDialog('open');
   });
   if(window.location.hash && $('.dialog' + window.location.hash).length > 0) { toggleDialog('open'); }
