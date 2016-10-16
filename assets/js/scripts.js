@@ -25,7 +25,11 @@ $(document).ready(function() {
 
   // UI: open contact form
   $('[href="#contact_form"]').click(function() {
-    toggleDialog('open');
+    if($(this).attr('rel')) {
+      toggleDialog('open', $(this).attr('rel'));
+    } else {
+      toggleDialog('open');
+    }
   });
   if(window.location.hash && $('.dialog' + window.location.hash).length > 0) { toggleDialog('open'); }
 
@@ -96,7 +100,7 @@ function toggleMenu(state) {
 
 
 // UI: toggle dialog
-function toggleDialog(state) {
+function toggleDialog(state, option) {
   state = (state) ? state : '';
   if(state == 'close') {
     $('body').removeClass('dialogIsOpen');
@@ -104,6 +108,11 @@ function toggleDialog(state) {
     $('body').addClass('dialogIsOpen');
   } else {
     $('body').toggleClass('dialogIsOpen');
+  }
+  // Contactform specific
+  if (option && option.length > 1) {
+    console.log(option);
+    $('#contact_form form select#space_type').val(option);
   }
   return false;
 }

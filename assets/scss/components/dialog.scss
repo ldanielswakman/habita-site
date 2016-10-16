@@ -16,8 +16,14 @@ dialog, .dialog {
   @include transition();
   @include transform(translateX($width));
 
+  @media screen and (max-width: 990px) {
+    max-width: 50vw;
+  }
   @media screen and (max-width: 768px) {
-    width: 100%;
+    max-width: 66.66666vw;
+  }
+  @media screen and (max-width: 480px) {
+    max-width: 100%;
   }
 }
 .dialogIsOpen dialog,

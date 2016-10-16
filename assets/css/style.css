@@ -6610,9 +6610,15 @@ dialog, .dialog {
   -moz-transform: translateX(33.33333vw);
   -o-transform: translateX(33.33333vw);
   transform: translateX(33.33333vw); }
+  @media screen and (max-width: 990px) {
+    dialog, .dialog {
+      max-width: 50vw; } }
   @media screen and (max-width: 768px) {
     dialog, .dialog {
-      width: 100%; } }
+      max-width: 66.66666vw; } }
+  @media screen and (max-width: 480px) {
+    dialog, .dialog {
+      max-width: 100%; } }
 
 .dialogIsOpen dialog,
 .dialogIsOpen .dialog {

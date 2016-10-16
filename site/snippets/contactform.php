@@ -25,11 +25,11 @@
     <div class="u-relative">
       <!-- <input class="field field-box" type="text" name="name" id="name" placeholder="your name" /> -->
       <select class="field field-box<? e($contact_form_obj->hasError('space_type'), ' field--error') ?>" name="space_type" id="space_type">
-        <option selected>-- Space type (optional)</option>
-        <option>Test 1</option>
-        <option>Test 1</option>
-        <option>Test 1</option>
-        <option>Test 1</option>
+        <option value="-" selected>-- Space type (optional)</option>
+        <? $options = $pages->find('membership-options')->cards()->toStructure(); ?>
+        <? foreach ($options as $option) : ?>
+          <option value="<?= str::slug($option->title()) ?>"><?= $option->title() ?></option>
+        <? endforeach ?>
       </select>
       <i class="ion ion-chevron-down u-pinned-topright u-mv25 u-mr15 u-no-p-events"></i>
     </div>
