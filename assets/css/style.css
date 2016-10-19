@@ -6683,7 +6683,7 @@ dialog, .dialog {
   background-color: white;
   border: 0;
   opacity: 0;
-  overflow: scroll;
+  overflow: auto;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
   -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);

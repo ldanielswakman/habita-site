@@ -4,6 +4,18 @@ $(document).ready(function() {
   $('body').addClass('isLoaded');
 
 
+  // initiating smooth scroll
+  $('a[href^="#"]').smoothScroll({
+    afterScroll: function() {
+      if(history.pushState) {
+        history.pushState(null, null, $(this).attr('href'));
+      }
+      else {
+        location.hash = $(this).attr('href');
+      }
+    }
+  });
+
   // Owl carousel
   $('.owl-carousel').each(function() {
 
@@ -52,6 +64,15 @@ $(document).ready(function() {
     $this = $(this);
     $delay = ($(this).attr('data-delay')) ? $(this).attr('data-delay') : 500;
     setTimeout(function() { $this.addClass('isLoaded'); }, $delay);
+  });
+
+
+  // UI: scroll element up on focus
+  $('.dialog .field').on('focus', function() {
+    $.smoothScroll({
+      scrollElement: $(this).closest('.dialog'),
+      scrollTarget: $(this)
+    });
   });
 
 
