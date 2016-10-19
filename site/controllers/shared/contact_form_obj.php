@@ -1,7 +1,6 @@
 <?
 $contact_form_obj = uniform('contact-form', [
     'required' => [
-        'name'  => '',
         '_from' => 'email'
     ],
     'actions' => [
@@ -10,6 +9,10 @@ $contact_form_obj = uniform('contact-form', [
             'to'      => 'd.swakman@gmail.com',
             'sender'  => 'info@habita.com.tr',
             'subject' => 'New message from the contact form'
+        ],
+        [
+            '_action' => 'log',
+            'file' => './email.log'
         ]
     ]
 ]);

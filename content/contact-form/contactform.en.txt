@@ -1,0 +1,30 @@
+Title: Contact form (EN)
+
+----
+
+Heading: Get in touch
+
+----
+
+Form-fields: 
+
+- 
+  type: textarea
+  label: Message
+  placeholder: Hello great people at habita...
+- 
+  type: space_type
+  label: Space type
+  placeholder: Space type (optional)
+- 
+  type: text
+  label: Name
+  placeholder: Your name
+- 
+  type: email
+  label: Email
+  placeholder: Your email
+- 
+  type: tel
+  label: Phone number
+  placeholder: Your phone number

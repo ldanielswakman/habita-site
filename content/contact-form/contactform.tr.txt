@@ -1,0 +1,48 @@
+Title: Contact form (TR)
+
+----
+
+Heading: Bize ulaş
+
+----
+
+Form-fields: 
+
+- 
+  type: textarea
+  label: Message
+  placeholder: Hello great people at habita...
+- 
+  type: space_type
+  label: Space type
+  placeholder: Space type (optional)
+- 
+  type: text
+  label: Ad
+  placeholder: Adın
+- 
+  type: email
+  label: E-posta
+  placeholder: E-posta adresin
+- 
+  type: tel
+  label: Telefon
+  placeholder: Telefon numaranız
+
+----
+
+Followup-title: 
+
+**Thanks for reaching out to us!**
+We'll be in touch soon.
+
+----
+
+Followup-text: 
+
+In the mean time, see what's been keeping us busy lately:
+(link: ../blog text: Stories on our blog class: button button-outline u-widthfull u-mb10)
+(link: ../events text: Recent events class: button button-outline u-widthfull u-mb10)
+<br>
+
+Or (link: https://twitter.com/habita_co text: follow us on twitter popup: yes class: link-classic)!

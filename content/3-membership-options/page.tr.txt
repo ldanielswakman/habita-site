@@ -21,7 +21,7 @@ Cards:
     food, drink, coffee, wifi, envelope,
     printer, time, presentation, boiler,
     cabinets, security, lounge
-  action: '(link: #expand text: <span class="not-detail">Detay <i class="ion ion-chevron-down u-ml5 u-opacity50"></i></span><span class="detail">Kapat <i class="ion ion-chevron-up u-ml5 u-opacity50"></i></span> class: button button-transp ) (email: info@habita.com.tr?subject=[Sabit%20Masalar] text: İlgileniyorum class: button button-primary u-floatright)'
+  action: '(link: #expand text: <span class="not-detail">Detay <i class="ion ion-chevron-down u-ml5 u-opacity50"></i></span><span class="detail">Kapat <i class="ion ion-chevron-up u-ml5 u-opacity50"></i></span> class: button button-transp ) (link: #contact_form rel: sabit-masalar text: İlgileniyorum class: button button-primary u-floatright)'
 - 
   title: Kapalı Ofisler
   type: office
