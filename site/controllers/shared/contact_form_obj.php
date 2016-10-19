@@ -31,6 +31,13 @@ $contact_form_obj = uniform('contact-form', [
             'snippet' => 'email-contactform'
         ],
         [
+            '_action' => 'email',
+            'to'      => 'info@habita.com.tr',
+            'sender'  => 'info@habita.com.tr',
+            'subject' => '[' . $site->title()->html() . '] New message Form ' . $name,
+            'snippet' => 'email-contactform'
+        ],
+        [
             '_action' => 'log',
             'file' => './email.log'
         ],
