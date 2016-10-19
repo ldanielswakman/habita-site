@@ -5803,6 +5803,9 @@ figure img {
 .u-heightfull {
   height: 100% !important; }
 
+.u-minheightfull {
+  min-height: 100% !important; }
+
 .u-height100vh {
   height: 100% !important;
   height: 100vh !important; }
@@ -6388,6 +6391,10 @@ hr {
   -moz-appearance: none;
   -o-appearance: none;
   appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
   background-color: transparent;
   line-height: 20px;
   font-family: inherit;

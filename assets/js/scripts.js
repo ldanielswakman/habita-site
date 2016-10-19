@@ -68,12 +68,13 @@ $(document).ready(function() {
 
 
   // UI: scroll element up on focus
-  $('.dialog .field').on('focus', function() {
-    $.smoothScroll({
-      scrollElement: $(this).closest('.dialog'),
-      scrollTarget: $(this)
-    });
-  });
+  // NB: doesn't seem to work currently
+  // $('.dialog .field').on('focus', function() {
+  //   $.smoothScroll({
+  //     scrollElement: $(this).closest('.dialog'),
+  //     scrollTarget: $(this).attr('id')
+  //   });
+  // });
 
 
   scrollActions();
