@@ -10,11 +10,11 @@ Form-fields:
 
 - 
   type: textarea
-  label: Message
+  label: Mesaj
   placeholder: Hello great people at habita...
 - 
   type: space_type
-  label: Space type
+  label: Alan türü
   placeholder: Space type (optional)
 - 
   type: text

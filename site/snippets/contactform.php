@@ -37,11 +37,11 @@
           // Field type: Space type selection
           case 'space_type' : ?>
 
-            <select class="field field-box<? e($contact_form_obj->hasError('space_type'), ' field--error') ?>" name="space_type" id="space_type">
+            <select class="field field-box<? e($contact_form_obj->hasError('space_type'), ' field--error') ?>" name="Space Type" id="space_type">
               <option value="-"><?= $field->placeholder() ?></option>
               <? $options = $pages->find('membership-options')->cards()->toStructure(); ?>
               <? foreach ($options as $option) : ?>
-                <option value="<?= str::slug($option->title()) ?>" <?= ( $contact_form_obj->value('space_type') == str::slug($option->title()) ) ? 'selected' : ''; ?>><?= $option->title() ?></option>
+                <option value="<?= $option->title() ?>" <?= ( $contact_form_obj->value('space_type') == $option->title() ) ? 'selected' : ''; ?>><?= $option->title() ?></option>
               <? endforeach ?>
             </select>
             <i class="ion ion-chevron-down u-pinned-topright u-mv25 u-mr15 u-no-p-events"></i>

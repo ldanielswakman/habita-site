@@ -1,4 +1,23 @@
 <?
+
+$slack_fields_array  = array();
+$name = '';
+foreach(get() as $key => $param) {
+    // include all parameters except 'invisible ones'
+    $exclude = array('website', '_submit');
+    if(!in_array($key, $exclude)) {
+        $short_bool = (in_array(strtolower($key), array('message', 'mesaj'))) ? false : true;
+        $field = array(
+            'title' => $key,
+            'value' => $param,
+            'short' => $short_bool
+        );
+        array_push($slack_fields_array, $field);
+    }
+    // getting correct value for name (to use in subject)
+    if(in_array(strtolower($key), array('name', 'ad'))) { $name = $param; }
+}
+
 $contact_form_obj = uniform('contact-form', [
     'required' => [
         '_from' => 'email'
@@ -8,7 +27,8 @@ $contact_form_obj = uniform('contact-form', [
             '_action' => 'email',
             'to'      => 'd.swakman@gmail.com',
             'sender'  => 'info@habita.com.tr',
-            'subject' => 'New message from the contact form'
+            'subject' => '[' . $site->title()->html() . '] New message Form ' . $name,
+            'snippet' => 'email-contactform'
         ],
         [
             '_action' => 'log',
@@ -20,13 +40,22 @@ $contact_form_obj = uniform('contact-form', [
             'json' => true,
             'params' => array(
                 'method' => 'post',
-                'payload' => array(
+                'data' => array(
                     'channel' => '#promotion',
                     'username' => 'Contact Form (website)',
-                    'text' => 'This is posted to #promotion and comes from a bot named webhookbot.',
-                    'icon_emoji' => ':habita:'
-              )
-           )
+                    'icon_emoji' => ':habita:',
+                    'attachments' => [
+                        [
+                            'fallback' => 'New message from *' . $name . '* via habita.com.tr',
+                            'text' => 'New message from *' . $name . '* via habita.com.tr',
+                            'color' => '#ff5000',
+                            'mrkdwn' => true,
+                            'mrkdwn_in' => ['text', 'pretext'],
+                            'fields' => $slack_fields_array
+                        ]
+                    ]
+                )
+            )
 
         ]
     ]

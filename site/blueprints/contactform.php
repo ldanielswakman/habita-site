@@ -44,6 +44,7 @@ fields:
         icon: text-width
         width: 1/2
         required: true
+        translate: false
         help: Each field title must be unique
       placeholder:
         label: Field placeholder
