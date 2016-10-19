@@ -9,6 +9,14 @@
   transition: $arguments;
 }
 
+// Transition delay
+@mixin transition-delay($arguments: 0.3s) {
+  -webkit-transition-delay: $arguments;
+  -moz-transition-delay: $arguments;
+  -o-transition-delay: $arguments;
+  transition-delay: $arguments;
+}
+
 // Transform
 @mixin transform($arguments) {
   -webkit-transform: $arguments;
@@ -64,10 +72,36 @@
   background: linear-gradient(to bottom, $from, $to);
 }
 
+// Filter prefixing
 @mixin filter($filter-type,$filter-amount) { 
   -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
   -moz-filter: $filter-type+unquote('(#{$filter-amount})');
   -ms-filter: $filter-type+unquote('(#{$filter-amount})');
   -o-filter: $filter-type+unquote('(#{$filter-amount})');
   filter: $filter-type+unquote('(#{$filter-amount})');
+}
+
+// Animmation
+@mixin animation($arguments) {
+  -webkit-animation: $arguments;
+  -moz-animation: $arguments;
+  -o-animation: $arguments;
+  animation: $arguments;
+}
+
+// continuous spinning
+@mixin isSpinning($arguments: spinning 1s infinite linear) {
+  @include animation($arguments);
+}
+@-webkit-keyframes spinning {
+    0% { -webkit-transform: rotate(0); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes spinning {
+    0% { -moz-transform: rotate(0); }
+  100% { -moz-transform: rotate(360deg); }
+}
+@keyframes spinning {
+    0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
 }

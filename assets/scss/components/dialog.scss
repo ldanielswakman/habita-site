@@ -11,6 +11,7 @@ dialog, .dialog {
   background-color: white;
   border: 0;
   opacity: 0;
+  overflow: scroll;
 
   @include box-shadow(0 0 20px rgba($black, 0.25));
   @include transition();
@@ -21,9 +22,13 @@ dialog, .dialog {
   }
   @media screen and (max-width: 768px) {
     max-width: 66.66666vw;
+    z-index: 12;
   }
   @media screen and (max-width: 480px) {
+    top: 4rem;
+    width: 100%;
     max-width: 100%;
+    height: calc(100% - 4rem);
   }
 }
 .dialogIsOpen dialog,

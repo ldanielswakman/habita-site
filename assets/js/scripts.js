@@ -34,17 +34,54 @@ $(document).ready(function() {
   if(window.location.hash && $('.dialog' + window.location.hash).length > 0) { toggleDialog('open'); }
 
 
+  // UI: submit form isBusy
+  $('form .button').click(function(e) {
+    addIsBusy($(this));
+  });
+
+
   // UI: expand card
   $('.card [href="#expand"]').click(function(e) {
     e.preventDefault();
     $(this).closest('.card').toggleClass('isExpanded');
   });
 
+
+  // UI: add isLoaded to u-appearOnLoadBody
+  $('.u-appearOnLoadBody, .u-fromLeftOnLoadBody, .u-fromBottomOnLoadBody').each(function() {
+    $this = $(this);
+    $delay = ($(this).attr('data-delay')) ? $(this).attr('data-delay') : 500;
+    setTimeout(function() { $this.addClass('isLoaded'); }, $delay);
+  });
+
+
   scrollActions();
   setTimeout(function() { scrollActions() }, 500);
   setTimeout(function() { scrollActions() }, 1000);
 
 });
+
+
+//UI: add busy class for form
+function addIsBusy(obj) {
+  if(typeof obj != 'undefined') {
+    $validated = true;
+    // check all required inputs in form
+    obj.closest('form').find('input[required], textarea[required]').each(function() {
+      if($(this).attr('type') == 'checkbox') { 
+        if(!$(this).is(':checked')) { $validated = false }
+      } else if($(this).val().length < 1) { 
+        $validated = false;
+        $(this).addClass('field--error');
+      }
+    });
+    // only apply isBusy class if inputs are validated
+    if(obj.hasClass('button') && $validated == true) {
+      obj.addClass('isBusy');
+    }
+  }
+}
+
 
 
 $(document).on('ready scroll resize scrollstart scrollstop', function() { scrollActions() });
@@ -104,6 +141,7 @@ function toggleDialog(state, option) {
   state = (state) ? state : '';
   if(state == 'close') {
     $('body').removeClass('dialogIsOpen');
+    $('#contact_form #message_success').addClass('u-hide');
   } else if (state == 'open') {
     $('body').addClass('dialogIsOpen');
   } else {
@@ -111,7 +149,6 @@ function toggleDialog(state, option) {
   }
   // Contactform specific
   if (option && option.length > 1) {
-    console.log(option);
     $('#contact_form form select#space_type').val(option);
   }
   return false;
@@ -123,6 +160,7 @@ $(document).ready(function() {
   $('.field-box').bind('keyup change', function() {
     if($(this).val().length > 0) {
       $(this).addClass('field-box__notempty');
+      $(this).removeClass('field--error');
     } else {
       $(this).removeClass('field-box__notempty');
     }

@@ -195,6 +195,14 @@ $u: 5;
   -webkit-justify-content: center !important;
   justify-content: center !important;
 }
+.u-flex-col-between {
+  -webkit-display: flex;
+  display: flex;
+  -webkit-flex-direction: column !important;
+  flex-direction: column !important;
+  -webkit-justify-content: space-between !important;
+  justify-content: space-between !important;
+}
 
 
 // z-indexes
@@ -287,7 +295,8 @@ $u: 5;
 }
 
 
-.u-appearOnLoad {
+.u-appearOnLoad,
+.u-appearOnLoadBody {
   opacity: 0;
   pointer-events: none;
   @include transition(all 0.6s ease);
@@ -300,11 +309,25 @@ $u: 5;
     pointer-events: all;
   }
 }
-.u-fromLeftOnLoad {
+.u-fromLeftOnLoad,
+.u-fromLeftOnLoadBody {
   opacity: 0;
   pointer-events: none;
   @include transition(all 0.6s ease);
   @include transform(translateX(-100px));
+
+  &.isLoaded {
+    opacity: 1;
+    @include transform(translateX(0));
+    pointer-events: all;
+  }
+}
+.u-fromBottomOnLoad,
+.u-fromBottomOnLoadBody {
+  opacity: 0;
+  pointer-events: none;
+  @include transition(all 0.6s ease);
+  @include transform(translateY(100px));
 
   &.isLoaded {
     opacity: 1;

@@ -66,4 +66,25 @@
     }
   }
 
+  &.isBusy {
+    position: relative;
+    background-color: $greylight !important;
+    color: transparent !important;
+
+    &:before {
+      content: "\f29a";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -0.25em;
+      margin-left: -0.25em;
+      font-family: "Ionicons";
+      font-size: 1.8em;
+      color: $white;
+      pointer-events: none;
+
+      @include isSpinning();
+    }
+  }
+
 }

@@ -1,0 +1,22 @@
+.message {
+  display: block;
+  margin: 15px;
+  padding: 15px;
+  background-color: $white;
+  color: $orange;
+}
+.message-successicon {
+  opacity: 0;
+  pointer-events: none;
+  @include transition(all 0.3s ease);
+  @include transition-delay(0.3s);
+  @include transform(scale(0.5));
+  @include transform-origin(bottom center);
+
+   font-size: 10em;
+}
+.isLoaded .message-successicon {
+  opacity: 1;
+  @include transform(scale(1));
+  pointer-events: all;
+}
