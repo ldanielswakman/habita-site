@@ -18,6 +18,8 @@ foreach(get() as $key => $param) {
     if(in_array(strtolower($key), array('name', 'ad'))) { $name = $param; }
 }
 
+$env = (c::get('env') === 'DEV') ? 'test environment' : 'website';
+
 $contact_form_obj = uniform('contact-form', [
     'required' => [
         '_from' => 'email'
@@ -48,8 +50,8 @@ $contact_form_obj = uniform('contact-form', [
             'params' => array(
                 'method' => 'post',
                 'data' => array(
-                    'channel' => '#promotion',
-                    'username' => 'Contact Form (website)',
+                    'channel' => '#contact-requests',
+                    'username' => 'Contact Form (' . $env . ')',
                     'icon_emoji' => ':habita:',
                     'attachments' => [
                         [
