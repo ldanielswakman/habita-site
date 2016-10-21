@@ -12,6 +12,7 @@ dialog, .dialog {
   border: 0;
   opacity: 0;
   overflow: auto;
+  pointer-events: none;
 
   @include box-shadow(0 0 20px rgba($black, 0.25));
   @include transition();
@@ -35,6 +36,7 @@ dialog, .dialog {
 .dialogIsOpen .dialog {
   @include transform(translateX(0));
   opacity: 1;
+  pointer-events: all;
 }
 
 a.dialog-fade {
