@@ -15,7 +15,7 @@ Form-fields:
 - 
   type: space_type
   label: Alan türü
-  placeholder: Space type (optional)
+  placeholder: İlgilendiğiniz Alan (isteğe bağlı)
 - 
   type: text
   label: Ad
@@ -33,16 +33,16 @@ Form-fields:
 
 Followup-title: 
 
-**Thanks for reaching out to us!**
-We'll be in touch soon.
+**habita'ya göstermiş olduğun ilgi için teşekkür ederiz!**
+En kısa sürede geri dönüş yapacağız.
 
 ----
 
 Followup-text: 
 
-In the mean time, see what's been keeping us busy lately:
-(link: ../blog text: Stories on our blog class: button button-outline u-widthfull u-mb10)
-(link: ../events text: Recent events class: button button-outline u-widthfull u-mb10)
+Bu arada şunları incelemek isteyebilirsin:
+(link: ../blog text: Blog class: button button-outline u-widthfull u-mb10)
+(link: ../events text: Etkinlikler class: button button-outline u-widthfull u-mb10)
 <br>
 
-Or (link: https://twitter.com/habita_co text: follow us on twitter popup: yes class: link-classic)!
+Or (link: https://twitter.com/habita_co text: habita'yı takip et! popup: yes class: link-classic)!

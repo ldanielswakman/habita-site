@@ -28,3 +28,21 @@ Form-fields:
   type: tel
   label: Phone number
   placeholder: Your phone number
+
+----
+
+Followup-title: 
+
+**Thank you for your interest in habita**
+We'll back to you soon.
+
+----
+
+Followup-text: 
+
+Meanwhile you can check what we are busy with:
+(link: ../blog text: Stories on our blog class: button button-outline u-widthfull u-mb10)
+(link: ../events text: Last events class: button button-outline u-widthfull u-mb10)
+<br>
+
+Or (link: https://twitter.com/habita_co text: follow us on twitter! popup: yes class: link-classic)!
