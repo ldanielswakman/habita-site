@@ -2,7 +2,7 @@ Title: Contact form (TR)
 
 ----
 
-Heading: Bize ulaş
+Heading: Bize ulaşın
 
 ----
 
@@ -11,7 +11,7 @@ Form-fields:
 - 
   type: textarea
   label: Mesaj
-  placeholder: Hello great people at habita...
+  placeholder: "habita'ya göstermiş olduğunuz ilgi için teşekkür ederiz..."
 - 
   type: space_type
   label: Alan türü
@@ -19,11 +19,11 @@ Form-fields:
 - 
   type: text
   label: Ad
-  placeholder: Adın
+  placeholder: Adınız
 - 
   type: email
   label: E-posta
-  placeholder: E-posta adresin
+  placeholder: E-posta adresiniz
 - 
   type: tel
   label: Telefon
