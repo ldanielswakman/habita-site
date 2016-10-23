@@ -1,13 +1,13 @@
-Title: Anasayfa
+Title: Home
 
 ----
 
 Text: 
 
->  Paylaşan, konuşan, tartışan, üreten herkese <div class="u-sm-hide"></div> **açık bir komünitenin** ortak yaşam ve çalışma alanı...
+> An open & transparent <div class="u-sm-hide"></div> **coworking hub** for everyone...
 
 <div class="u-mv20">
-(link: /ve-iste-habita text: keşfet class: button button-primary u-mr10) (link: #contact_form text: iletişim class: button button-white)
+(link: /ve-iste-habita text: explore class: button button-primary u-mr10) (link: #contact_form text: contact us class: button button-white)
 
 ----
 
