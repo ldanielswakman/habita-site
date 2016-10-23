@@ -43,3 +43,35 @@ RewriteRule ^(.*) index.php [L]
 # AddDefaultCharset UTF-8
 #
 # php_flag short_open_tag on
+
+
+
+# Cache-Control rules - taken from https://forums.cpanel.net/threads/enabling-browser-caching.279011/
+
+# 1 YEAR
+ExpiresActive On
+<FilesMatch "\.(otf|ico|pdf|flv)$">
+Header set Cache-Control "max-age=29030400, public"
+ExpiresDefault "access plus 1 years"
+Header unset Last-Modified
+Header unset ETag
+SetOutputFilter DEFLATE
+</FilesMatch>
+
+# 1 MONTHS
+<FilesMatch "\.(jpg|jpeg|png|gif|swf)$">
+Header set Cache-Control "max-age=2419200, public"
+ExpiresDefault "access plus 1 month"
+SetOutputFilter DEFLATE
+</FilesMatch>
+
+<FilesMatch "\.(xml|txt|css|js)$">
+Header set Cache-Control "max-age=604800, public"
+ExpiresDefault "access plus 1 week"
+SetOutputFilter DEFLATE
+</FilesMatch>
+
+# 30 MIN
+<FilesMatch "\.(html|htm|php)$">
+SetOutputFilter DEFLATE
+</FilesMatch>
