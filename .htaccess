@@ -50,7 +50,7 @@ RewriteRule ^(.*) index.php [L]
 
 # 1 YEAR
 ExpiresActive On
-<FilesMatch "\.(otf|ico|pdf|flv)$">
+<FilesMatch "\.(otf|woff|ttf|ico|pdf|flv)$">
 Header set Cache-Control "max-age=29030400, public"
 ExpiresDefault "access plus 1 years"
 Header unset Last-Modified
