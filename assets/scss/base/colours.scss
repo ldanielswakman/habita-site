@@ -50,7 +50,7 @@ $black:         #000000;
   background-color: $bluedarkfade;
 }
 .bg-white {
-  background-color: $white;
+  background-color: $white !important;
 }
 .bg-white-faded90 {
   background-color: rgba($white, 0.9);

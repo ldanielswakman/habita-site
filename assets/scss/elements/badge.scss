@@ -8,4 +8,9 @@
   background-color: $greylightest;
   background-size: cover;
   background-position: center center;
+
+  &.badge--large {
+    width: 80px;
+    height: 80px;
+  }
 }

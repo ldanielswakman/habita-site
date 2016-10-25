@@ -3260,7 +3260,7 @@
   background-color: #26454c; }
 
 .bg-white {
-  background-color: #ffffff; }
+  background-color: #ffffff !important; }
 
 .bg-white-faded90 {
   background-color: rgba(255, 255, 255, 0.9); }
@@ -6316,6 +6316,9 @@ hr {
   background-color: #edeeef;
   background-size: cover;
   background-position: center center; }
+  .badge.badge--large {
+    width: 80px;
+    height: 80px; }
 
 .button {
   -webkit-appearance: none;
