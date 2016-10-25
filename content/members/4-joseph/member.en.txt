@@ -1,0 +1,37 @@
+Title: Şiyba
+
+----
+
+Job-title: Customer Relations, Grey Enerji
+
+----
+
+Bio: 
+
+----
+
+Linkedin-url: 
+
+----
+
+Twitter-url: 
+
+----
+
+Facebook-url: 
+
+----
+
+Instagram-url: 
+
+----
+
+Website-url: 
+
+----
+
+Profile-image: screenshot_2016-09-01-13-14-41.jpg
+
+----
+
+Url-key: siyba

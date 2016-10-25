@@ -1,7 +1,3 @@
-Title: Daniel
-
-----
-
 Job-title: Designer
 
 ----
@@ -16,24 +12,4 @@ Currently working (part freelancer, part in-house) on UI design of applications,
 
 ----
 
-Linkedin-url: https://www.linkedin.com/in/ldanielswakman
-
-----
-
-Twitter-url: https://twitter.com/ldanielswakman
-
-----
-
-Facebook-url: 
-
-----
-
-Instagram-url: 
-
-----
-
-Website-url: http://www.ldaniel.eu/
-
-----
-
-Profile-image: avatar.jpg
+Url-key: daniel

@@ -1,0 +1,37 @@
+Title: Özgür
+
+----
+
+Job-title: Founder, Grey Enerji
+
+----
+
+Bio: 
+
+----
+
+Linkedin-url: 
+
+----
+
+Twitter-url: 
+
+----
+
+Facebook-url: 
+
+----
+
+Instagram-url: 
+
+----
+
+Website-url: 
+
+----
+
+Profile-image: ozgur.jpg
+
+----
+
+Url-key: ozgur

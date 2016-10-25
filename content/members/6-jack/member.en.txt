@@ -1,0 +1,37 @@
+Title: Eren
+
+----
+
+Job-title: Reklamcı, girişimci, konuşmacı, danışman
+
+----
+
+Bio: 
+
+----
+
+Linkedin-url: https://tr.linkedin.com/in/erendiril
+
+----
+
+Twitter-url: https://twitter.com/ErenDiril
+
+----
+
+Facebook-url: 
+
+----
+
+Instagram-url: https://www.instagram.com/eren.diril/
+
+----
+
+Website-url: 
+
+----
+
+Profile-image: eren_egitim2.jpg
+
+----
+
+Url-key: eren
