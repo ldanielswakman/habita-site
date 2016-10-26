@@ -22,3 +22,8 @@ l::set('next', 'Sonraki');
 l::set('back', 'Geri');
 l::set('more', 'Daha');
 l::set('less', 'Daha az');
+l::set('search', 'Ara');
+l::set('min_2_char', 'en az 2 karakter');
+l::set('search_habitans', 'Habitan\'larda ara...');
+l::set('result', 'sonuç');
+l::set('results', 'sonuç');

@@ -180,14 +180,20 @@ function toggleDialog(state, option) {
 // UI: listen for field-box empty
 $(document).ready(function() {
   $('.field-box').bind('keyup change', function() {
-    if($(this).val().length > 0) {
-      $(this).addClass('field-box__notempty');
-      $(this).removeClass('field--error');
-    } else {
-      $(this).removeClass('field-box__notempty');
-    }
+    checkFieldBoxLabel($(this));
+  });
+  $('.field-box').each(function() {
+    checkFieldBoxLabel($(this));
   });
 });
+function checkFieldBoxLabel(obj) { 
+  if(obj.val().length > 0) {
+    obj.addClass('field-box__notempty');
+    obj.removeClass('field--error');
+  } else {
+    obj.removeClass('field-box__notempty');
+  }
+}
 
 
 // retrieve blog posts from API and output a random post

@@ -22,3 +22,8 @@ l::set('next', 'Next');
 l::set('back', 'Back');
 l::set('more', 'More');
 l::set('less', 'Less');
+l::set('search', 'Search');
+l::set('min_2_char', 'min 2 characters');
+l::set('search_habitans', 'Search habitans...');
+l::set('result', 'result');
+l::set('results', 'results');

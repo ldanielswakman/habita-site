@@ -6349,6 +6349,13 @@ hr {
     .button.button-white:hover {
       background-color: #ff5000;
       color: #ffffff; }
+  .button.button-white-reveal {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #72716c; }
+    .button.button-white-reveal:hover {
+      background: #ffffff;
+      border-color: transparent; }
   .button.button-outline {
     background-color: transparent;
     border: 1px solid #ff5000;
@@ -6366,6 +6373,13 @@ hr {
     background-color: rgba(0, 0, 0, 0.2); }
     .button.button-transp:hover {
       background-color: rgba(0, 0, 0, 0.3); }
+  .button.button-grey-outline {
+    background-color: transparent;
+    border: 1px solid #d3d4d5;
+    color: #72716c; }
+    .button.button-grey-outline:hover {
+      background-color: #72716c;
+      color: #ffffff; }
   .button.isBusy {
     position: relative;
     background-color: #d3d4d5 !important;

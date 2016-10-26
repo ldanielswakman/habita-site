@@ -1,0 +1,33 @@
+Title: Daniel
+
+----
+
+Job-title: Designer
+
+----
+
+Bio: 
+
+----
+
+Linkedin-url: https://www.linkedin.com/in/ldanielswakman
+
+----
+
+Twitter-url: https://twitter.com/ldanielswakman
+
+----
+
+Facebook-url: 
+
+----
+
+Instagram-url: 
+
+----
+
+Website-url: http://www.ldaniel.eu/
+
+----
+
+Profile-image: avatar.jpg

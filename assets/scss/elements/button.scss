@@ -37,6 +37,16 @@
       color: $white;
     }
   }
+  &.button-white-reveal {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: $grey;
+
+    &:hover {
+      background: $white;
+      border-color: transparent;
+    }
+  }
 
   &.button-outline {
     background-color: transparent;
@@ -63,6 +73,17 @@
 
     &:hover {
       background-color: rgba($black, 0.3);
+    }
+  }
+
+  &.button-grey-outline {
+    background-color: transparent;
+    border: 1px solid $greylight;
+    color: $grey;
+
+    &:hover {
+      background-color: $grey;
+      color: $white;
     }
   }
 
