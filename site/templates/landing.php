@@ -135,6 +135,8 @@
       <div style="line-height: 30px;"><?= $page->actionbar_text()->value ?></div>
     </div>
 
+    <? snippet('google-analytics') ?>
+
   </body>
 
 </html>
