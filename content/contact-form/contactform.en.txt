@@ -22,8 +22,8 @@ Form-fields:
   placeholder: Your name
 - 
   type: email
-  label: Email
-  placeholder: Your email
+  label: null
+  placeholder: Your email (required)
 - 
   type: tel
   label: Phone number

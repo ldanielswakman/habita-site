@@ -23,7 +23,7 @@ Form-fields:
 - 
   type: email
   label: E-posta
-  placeholder: E-posta adresiniz
+  placeholder: E-posta adresiniz (gerekli)
 - 
   type: tel
   label: Telefon
