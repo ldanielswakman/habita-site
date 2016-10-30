@@ -67,7 +67,7 @@
                 <div class="u-clearfix u-mb10 u-mr15">
                   <div class="u-floatleft u-mr15">
                     <? if ($image = $member->image($image_obj)) : ?>
-                      <div class="badge badge--large" style="background-image:url('<?= $image->url() ?>');"></div>
+                      <div class="badge badge--large" style="background-image:url('<?= thumb($image, array('width' => 160))->url() ?>');"></div>
                     <? else : ?>
                       <div class="badge badge--large u-aligncenter bg-white u-pv25">
                         <i class="ion ion-ios-body ion-2x c-greylight"></i>
