@@ -33,7 +33,6 @@
       </div>
       <? endif ?>
 
-      <label for="mce-SOURCE">Kaynak sayfası </label>
       <input type="hidden" value="<?= $page->title() . ' (' .  $page->slug() . ')' ?>" name="SOURCE" id="mce-SOURCE">
 
       <input type="submit" value="<?= l::get('send') ?>" name="subscribe" id="mc-embedded-subscribe" class="button button-small">
