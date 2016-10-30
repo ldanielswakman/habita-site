@@ -119,15 +119,12 @@
                 ?>
               </div>
             </div>
-            <div class="col-xs-12 col-sm-7 col-md-6 c-white">
-              <?= $section->text()->kirbytext() ?>
-            </div>
 
           <? elseif($section->slug() == 'membership-options') : ?>
 
             <div class="col-xs-12 col-sm-5 col-md-4 col-md-offset-1 u-relative">
 
-              <div class="row row-internalpadding u-mt20 u-ph30-sm">
+              <div class="row row-internalpadding u-ph30-sm">
                 <? $membership = $pages->find('membership-options') ?>
                 <? foreach ($membership->cards()->toStructure() as $card) : ?>
 
@@ -149,11 +146,17 @@
 
             </div>
 
-            <div class="col-xs-12 col-sm-7 col-md-6 u-pt20">
-              <?= $section->text()->kirbytext() ?>
+          <? else: ?>
+
+            <div class="col-xs-12 col-sm-5 col-md-4 col-md-offset-1">
             </div>
 
           <?endif; ?>
+
+          <div class="col-xs-12 col-sm-7 col-md-6<?= (in_array($section->bgcolor(), ['grey', 'orange', 'orangedark', 'bluedarkfade'])) ? ' c-white' : ''; ?>">
+            <?= $section->text()->kirbytext() ?>
+          </div>
+
         </div>
       </section>
 

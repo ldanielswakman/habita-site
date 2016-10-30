@@ -1,0 +1,15 @@
+Title: Call to action
+
+----
+
+Text: 
+
+<h2 class="c-white">İlgilendin mi?</h2>
+<br>
+> Drop us a line and we'll get in touch with you. Or just come by for a cup of coffee <i class="ion ion-coffee c-bluedarkfade"></i>.
+
+(link: #contact_form text: drop us a line class: button button-white u-mt20) (link: /contact text: come have a <i class="ion ion-coffee"></i> class: button button-white-outline u-ml20 u-mt20)
+
+----
+
+Bgcolor: orange

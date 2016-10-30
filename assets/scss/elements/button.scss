@@ -87,6 +87,17 @@
     }
   }
 
+  &.button-white-outline {
+    background-color: transparent;
+    border: 1px solid $white;
+    color: $white;
+
+    &:hover {
+      background-color: $white;
+      color: $orange;
+    }
+  }
+
   &.isBusy {
     position: relative;
     background-color: $greylight !important;

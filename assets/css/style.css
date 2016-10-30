@@ -3232,7 +3232,7 @@
 .c-orangedark {
   color: #d94c0b; }
 
-.c-bluedarkfade {
+.c- {
   color: #26454c; }
 
 .c-white {
@@ -6380,6 +6380,13 @@ hr {
     .button.button-grey-outline:hover {
       background-color: #72716c;
       color: #ffffff; }
+  .button.button-white-outline {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff; }
+    .button.button-white-outline:hover {
+      background-color: #ffffff;
+      color: #ff5000; }
   .button.isBusy {
     position: relative;
     background-color: #d3d4d5 !important;
