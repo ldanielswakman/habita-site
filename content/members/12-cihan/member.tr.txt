@@ -1,0 +1,33 @@
+Title: Cihan
+
+----
+
+Job-title: Marketing Expert, Peoplise
+
+----
+
+Profile-image: habitans12.jpg
+
+----
+
+Bio: 
+
+----
+
+Linkedin-url: https://www.linkedin.com/in/coklap
+
+----
+
+Twitter-url: https://twitter.com/coklap
+
+----
+
+Facebook-url: 
+
+----
+
+Instagram-url: 
+
+----
+
+Website-url: https://www.quora.com/profile/Cihan-Oklap

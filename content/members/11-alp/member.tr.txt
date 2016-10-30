@@ -1,0 +1,33 @@
+Title: Alp
+
+----
+
+Job-title: Bütünsel Gelişim Koçu
+
+----
+
+Profile-image: ben.jpg
+
+----
+
+Bio: 
+
+----
+
+Linkedin-url: 
+
+----
+
+Twitter-url: 
+
+----
+
+Facebook-url: 
+
+----
+
+Instagram-url: 
+
+----
+
+Website-url: http://yenilensen.com
