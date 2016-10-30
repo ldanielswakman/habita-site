@@ -3,8 +3,9 @@
 
 # Kirby folders
 /site/accounts
-/site/config
+/site/config/config.habita.com.tr.php
 /site/cache
+/thumbs
 
 # Google site verifier html (server)
 googleaa37408530a000c3.html
