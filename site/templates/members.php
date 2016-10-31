@@ -51,8 +51,7 @@
 
     </section>
 
-    <? $article_padding = ($is_article) ? 'u-pb50' : 'u-pv50'; ?>
-    <section class="bg-greylightest <?= $article_padding ?> article-list">
+    <section class="bg-greylightest article-list">
 
       <div class="row row-nopadding">
         <div class="col-xs-12 col-md-11 col-md-offset-1">
@@ -66,7 +65,7 @@
 
                 <div class="u-clearfix u-mb10 u-mr15">
                   <div class="u-floatleft u-mr15">
-                    <? if ($image = $member->image($image_obj)) : ?>
+                    <? if ($image = $member->image()) : ?>
                       <div class="badge badge--large" style="background-image:url('<?= thumb($image, array('width' => 160))->url() ?>');"></div>
                     <? else : ?>
                       <div class="badge badge--large u-aligncenter bg-white u-pv25">

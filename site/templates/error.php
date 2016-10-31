@@ -45,7 +45,8 @@
           <div>
             <?
             // searches site for keyword and shows results if found
-            $searched_string = end(explode('/', $_SERVER['REQUEST_URI']));
+            $exploded_url = explode('/', $_SERVER['REQUEST_URI']);
+            $searched_string = end($exploded_url);
             $results = $site->search($searched_string);
             $index = 0;
             ?>
@@ -53,9 +54,11 @@
               <br>
               <?= $page->lookingfor_text() ?>
               <ul class="u-alignleft" style="margin: 0 auto; max-width: 250px;">
-              <? foreach($results as $result): $index++; if($index < 5) : ?>
+              <? foreach($results as $result): $index++; if($index < 6) : ?>
                 <li class="u-truncate">
-                  <?= (in_array($result->parent()->template(), ['blog', 'events', 'members'])) ? '<span class="u-opacity50">' . ucfirst($result->parent()->template()) . ':</span>' : ''; ?>
+                  <span class="u-inlineblock u-opacity50 u-width80">
+                    <?= (in_array($result->parent()->template(), ['blog', 'events', 'members'])) ? ucfirst($result->parent()->template()) : 'Page'; ?>:
+                  </span>
                   <a href="<?= $result->url() ?>" class="link-classic"><?= $result->title() ?></a>
                 </li>
               <? endif; endforeach; ?>
