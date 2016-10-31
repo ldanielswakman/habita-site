@@ -51,7 +51,7 @@
 
     </section>
 
-    <section class="bg-greylightest article-list">
+    <section class="bg-greylightest u-pv50 article-list">
 
       <div class="row row-nopadding">
         <div class="col-xs-12 col-md-11 col-md-offset-1">

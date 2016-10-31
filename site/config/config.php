@@ -12,6 +12,14 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 
 */
 
+$locale_tr = array(
+  LC_COLLATE  => 'tr_TR.utf8',
+  LC_MONETARY => 'tr_TR.utf8',
+  LC_NUMERIC  => 'tr_TR.utf8',
+  LC_TIME     => 'tr_TR.utf8',
+  LC_MESSAGES => 'tr_TR.utf8',
+  LC_CTYPE    => 'en_US.utf8'
+);
 
 // Language settings
 c::set('languages', array(
@@ -19,7 +27,7 @@ c::set('languages', array(
     'code' => 'tr',
     'name' => 'Türkçe',
     'default' => true,
-    'locale' => 'tr_TR.UTF-8',
+    'locale' => $locale_tr,
     'url' => '/',
   ),
   array(
@@ -29,6 +37,7 @@ c::set('languages', array(
     'url' => '/en',
   ),
 ));
+
 
 
 // Configure date handling
