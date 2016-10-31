@@ -5,11 +5,11 @@
 header('Content-type: application/json; charset=utf-8');
 
 // get query parameter (null if not set)
-$q = $_GET['q'];
+$q = (isset($_GET['q'])) ? $_GET['q'] : null;
 
 // search in updates or just query them
 $data = $pages->find('events')->children()->visible();
-if(isset($q) && strlen($q) > 0) { $data = $data->search($q, 'title'); }
+if(strlen($q) > 0) { $data = $data->search($q, 'title|description'); }
 // $data = $data->paginate(10);
 
 // build array basics
