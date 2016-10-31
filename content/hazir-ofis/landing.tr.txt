@@ -1,0 +1,107 @@
+Title: kapalı ofis - landing
+
+----
+
+Intro-headline: 
+
+----
+
+Test-text: Paylaşan, konuşan, tartışan, üreten herkes için hazır ofisler...
+
+----
+
+Testagain-text: Dilediğiniz gibi tasarlayabileceğiniz hazır ofisinizde hiç bir zahmete katlanmadan hemen çalışmaya başlayabilirsiniz!
+
+----
+
+Features-headline: 
+
+----
+
+Features-title: hazır ofis üyelik avantajları
+
+----
+
+Features-text: Zaman, verim ve nitelikten ödün vermeden çalışabilmeniz için ihtiyacınız olan herşey habita’da mevcut!
+
+----
+
+Features: 
+
+- 
+  title: Atıştırmalıklar
+  icon: food
+- 
+  title: Minimum 10 mbps internet
+  icon: wifi
+- 
+  title: 24 / 7 çalışma imkanı
+  icon: time
+- 
+  title: Bar
+  icon: drink
+- 
+  title: Adres gösterme
+  icon: envelope
+- 
+  title: Toplantı salonları
+  icon: presentation
+- 
+  title: Sıcak İçecekler
+  icon: coffee
+- 
+  title: Printer
+  icon: printer
+- 
+  title: Mutfak
+  icon: boiler
+
+----
+
+Membership-headline: 
+
+----
+
+Membership-title: Ve işte habita!
+
+----
+
+Membership-text: habita’da kendini çalışırken daha iyi hissetmek isteyen, nefes almaya ihtiyaç duyan ve belki de en önemlisi hep beraber “güzel şeylerin” yaratıldığı bir ekosistemin parçası olmak isteyen herkese göre bir şeyler var...
+
+----
+
+Membership-options: 
+
+- 
+  title: Hazır Ofisler
+  icon: office
+- 
+  title: Sabit Masalar
+  icon: desk
+- 
+  title: Esnek Çalışma Alanları
+  icon: flexible
+
+----
+
+Events-headline: 
+
+----
+
+Events-title: Etkinlikler
+
+----
+
+Events-text: İlham veren hikayeler, yol gösterici öneriler, üretilen ve yaratılan güzellikler kısacası paylaştıkça çoğalan, değerlenen her şey için habita event space...
+
+----
+
+Actionbar-info: 
+
+----
+
+Actionbar-text: habita e-posta bültene üye ol
+
+----
+
+Actionbar-button: Siteye devam et
