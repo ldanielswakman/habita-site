@@ -61,6 +61,10 @@
             <? $members = (isset($query) && strlen($query) > 0) ? $results : $site->find('members')->children()->visible()->shuffle(); ?>
             <? foreach ($members as $member) : ?>
 
+              <? if ($members->count() < 3 && $member == $members->first()) : ?>
+                <div class="col-xs-12 col-sm-6 col-md-4"></div>
+              <? endif ?>
+
               <div class="col-xs-12 col-sm-6 col-md-4 u-pv20 card">
 
                 <div class="u-clearfix u-mb10 u-mr15">
@@ -123,6 +127,16 @@
               </div>
 
             <? endforeach ?>
+
+            <? if ($members->count() < 1) : ?>
+              <div class="col-xs-12 col-sm-4"></div>
+              <div class="col-xs-12 col-sm-8 col-md-7 u-pt30 c-greymedium">
+                No members found...<br>
+                <? if(strlen($query) > 0) : ?>
+                  <a href="<?= page()->url() ?>" class="button button-outline button-small u-mt20"><i class="ion ion-arrow-left-c ion-15x u-floatleft u-mr10"></i> Geri al</a>
+                <? endif ?>
+              </div>
+            <? endif; ?>
 
           </div>
 
