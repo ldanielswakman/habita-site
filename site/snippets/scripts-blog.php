@@ -1,6 +1,6 @@
 <script>
   $(document).ready(function() {
-    getHabitaContent('<?= $site->url() ?>/' + getLang() + 'blog/api', '#blog_result', 'blog');
+    getHabitaContent('<?= $site->url() ?>/' + getLang() + 'blog.json', '#blog_result', 'blog');
 
     randomContentRequest['blog'].done(function() {
       setFavicon();

@@ -1,13 +1,9 @@
 <?php
 
-// if(!r::is_ajax()) notFound();
-
-header('Content-type: application/json; charset=utf-8');
-
 // get query parameter (null if not set)
 $q = (isset($_GET['q'])) ? $_GET['q'] : null;
 
-// search in updates or just query them
+// search in members or just query them
 $data = $pages->find('members')->children()->visible();
 if(strlen($q) > 0) { $data = $data->search($q, 'title|text'); }
 // $data = $data->paginate(10);

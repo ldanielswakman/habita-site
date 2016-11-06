@@ -1,13 +1,9 @@
 <?php
 
-// if(!r::is_ajax()) notFound();
-
-header('Content-type: application/json; charset=utf-8');
-
 // get query parameter (null if not set)
 $q = (isset($_GET['q'])) ? $_GET['q'] : null;
 
-// search in updates or just query them
+// search in blog or just query them
 $data = $pages->find('blog')->children()->visible();
 if(isset($q) && strlen($q) > 0) { $data = $data->search($q, 'title|text'); }
 $data = $data->sortBy('date', 'desc'); // ->paginate(10);

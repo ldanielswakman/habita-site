@@ -1,13 +1,9 @@
-<?
-
-// if(!r::is_ajax()) notFound();
-
-header('Content-type: application/json; charset=utf-8');
+<?php
 
 // get query parameter (null if not set)
 $q = (isset($_GET['q'])) ? $_GET['q'] : null;
 
-// search in updates or just query them
+// search in events or just query them
 $data = $pages->find('events')->children()->visible();
 if(strlen($q) > 0) { $data = $data->search($q, 'title|description'); }
 // $data = $data->paginate(10);
