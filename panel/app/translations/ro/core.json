@@ -272,6 +272,7 @@
     "fields.structure.add.first": "Completează formularul!",
     "fields.structure.empty": "Nicio inserţie.",
     "fields.structure.entry.error": "The item could not be found",
+    "fields.structure.max.error": "No new items allowed or field is readonly",
     "fields.structure.cancel": "Renunţă",
     "fields.structure.save": "Salvează",
     "fields.structure.edit": "Editează",
@@ -306,6 +307,7 @@
     "editor.image.empty": "Această pagină nu conţine imagini.",
     "autocomplete.method.error": "Invalid autocomplete method",
     "blueprints.error.default.missing": "Missing default blueprint",
+    "permissions.error": "You are not allowed to do this",
     "error": "Eroare",
     "error.headline": "Eroare"
 }

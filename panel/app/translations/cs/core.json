@@ -272,6 +272,7 @@
     "fields.structure.add.first": "Přidat první záznam",
     "fields.structure.empty": "Zatím nejsou žádné záznamy.",
     "fields.structure.entry.error": "Položku se nepodařilo najít",
+    "fields.structure.max.error": "No new items allowed or field is readonly",
     "fields.structure.cancel": "Zrušit",
     "fields.structure.save": "Uložit",
     "fields.structure.edit": "Upravit",
@@ -306,6 +307,7 @@
     "editor.image.empty": "Tato stránka nemá žádné obrázky",
     "autocomplete.method.error": "Neplatná našeptávací metoda",
     "blueprints.error.default.missing": "Chybí výchozí blueprint",
+    "permissions.error": "You are not allowed to do this",
     "error": "Chyba",
     "error.headline": "Chyba"
 }

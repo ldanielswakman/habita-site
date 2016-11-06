@@ -272,6 +272,7 @@
     "fields.structure.add.first": "Lisää ensimmäinen kirjoitus",
     "fields.structure.empty": "Ei kirjoituksia toistaiseksi.",
     "fields.structure.entry.error": "The item could not be found",
+    "fields.structure.max.error": "No new items allowed or field is readonly",
     "fields.structure.cancel": "Peruuta",
     "fields.structure.save": "Tallenna",
     "fields.structure.edit": "Muokkaa",
@@ -306,6 +307,7 @@
     "editor.image.empty": "Sivulle ei ole lisätty kuvia",
     "autocomplete.method.error": "Invalid autocomplete method",
     "blueprints.error.default.missing": "Missing default blueprint",
+    "permissions.error": "You are not allowed to do this",
     "error": "Virhe",
     "error.headline": "Virhe"
 }

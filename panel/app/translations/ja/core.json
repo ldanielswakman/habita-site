@@ -272,6 +272,7 @@
     "fields.structure.add.first": "最初のカードを作成してください。",
     "fields.structure.empty": "カードがありません。",
     "fields.structure.entry.error": "The item could not be found",
+    "fields.structure.max.error": "No new items allowed or field is readonly",
     "fields.structure.cancel": "キャンセル",
     "fields.structure.save": "保存",
     "fields.structure.edit": "編集",
@@ -306,6 +307,7 @@
     "editor.image.empty": "'このページには画像がありません',",
     "autocomplete.method.error": "オートコンプリートがエラーを起こしました",
     "blueprints.error.default.missing": "デフォルトの定義ファイル（/site/blueprints/default.php）がありません",
+    "permissions.error": "You are not allowed to do this",
     "error": "エラー",
     "error.headline": "エラー"
 }

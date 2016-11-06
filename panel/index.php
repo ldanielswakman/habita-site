@@ -22,14 +22,6 @@ if(file_exists($index . DS . 'site.php')) {
   $kirby = kirby();
 }
 
-// fix the base url for the kirby installation
-// we always need to call the index() method because
-// it needs to detect the URL for the check below to work
-$indexUrl = $kirby->urls()->index();
-if($kirby->urls()->indexDetected === true) {
-  $kirby->urls->index = dirname($indexUrl);
-}
-
 // the default index directory
 if(!isset($kirby->roots->index)) {
   $kirby->roots->index = $index;
@@ -45,14 +37,8 @@ if(!isset($kirby->roots->thumbs)) {
   $kirby->roots->thumbs = $index . DS . 'thumbs';
 }
 
-try {
+// create the panel object
+$panel = new Panel($kirby, __DIR__);  
 
-  // create the panel object
-  $panel = new Panel($kirby, __DIR__);  
-
-  // launch the panel
-  echo $panel->launch();
-
-} catch(Exception $e) {
-  echo Panel::fatal($e, __DIR__);
-}
+// launch the panel
+echo $panel->launch();

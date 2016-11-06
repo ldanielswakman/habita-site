@@ -272,6 +272,7 @@
     "fields.structure.add.first": "Füge den ersten Eintrag hinzu",
     "fields.structure.empty": "Es bestehen keine Einträge.",
     "fields.structure.entry.error": "Der Eintrag konnte nicht gefunden werden",
+    "fields.structure.max.error": "Keine weiteren Einträge zugelassen oder das Feld ist nicht bearbeitbar",
     "fields.structure.cancel": "Abbrechen",
     "fields.structure.save": "Ok",
     "fields.structure.edit": "Bearbeiten",
@@ -306,6 +307,7 @@
     "editor.image.empty": "Diese Seite hat keine Bilder",
     "autocomplete.method.error": "Ungültige Autocomplete-Methode",
     "blueprints.error.default.missing": "Standard-Blueprint fehlt",
+    "permissions.error": "Du darfst dies nicht tun",
     "error": "Fehler",
     "error.headline": "Fehler"
 }

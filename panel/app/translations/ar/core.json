@@ -272,6 +272,7 @@
     "fields.structure.add.first": "إضافة السجل الأول",
     "fields.structure.empty": "لا توجد سجلات حالياً.",
     "fields.structure.entry.error": "The item could not be found",
+    "fields.structure.max.error": "No new items allowed or field is readonly",
     "fields.structure.cancel": "إلغاء",
     "fields.structure.save": "حفظ",
     "fields.structure.edit": "تعديل",
@@ -306,6 +307,7 @@
     "editor.image.empty": "هذه الصفحة لا تملك صوراً",
     "autocomplete.method.error": "Invalid autocomplete method",
     "blueprints.error.default.missing": "Missing default blueprint",
+    "permissions.error": "You are not allowed to do this",
     "error": "خطأ",
     "error.headline": "خطأ"
 }

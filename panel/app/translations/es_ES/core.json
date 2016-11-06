@@ -272,6 +272,7 @@
     "fields.structure.add.first": "Añadir la primera entrada",
     "fields.structure.empty": "Aún no hay entradas.",
     "fields.structure.entry.error": "No se ha podido encontrar el item",
+    "fields.structure.max.error": "No new items allowed or field is readonly",
     "fields.structure.cancel": "Cancelar",
     "fields.structure.save": "Guardar",
     "fields.structure.edit": "Editar",
@@ -306,6 +307,7 @@
     "editor.image.empty": "Esta página no tiene imágenes",
     "autocomplete.method.error": "Método de autocompletado inválido",
     "blueprints.error.default.missing": "Falta el blueprint por defecto",
+    "permissions.error": "You are not allowed to do this",
     "error": "Error",
     "error.headline": "Error"
 }
