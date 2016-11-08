@@ -6,7 +6,7 @@ c::set('env', 'DEV');
 
 
 // Debug mode
-c::set('debug', 'true');
+c::set('debug', true);
 
 
 // Caching

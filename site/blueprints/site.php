@@ -3,7 +3,7 @@
 title: Site
 pages: true
   template:
-    - default
+    - page
     - landing
     - redirect
 fields:
