@@ -28,8 +28,10 @@
 
           <a href="<?= $site->find('blog')->url() ?>"><h2 class="u-semibold c-greymedium"><?= $site->find('blog')->title() ?></h2></a>
 
-          <div class="u-maxheight100p u-overflowscroll u-mt50 article-list u-pl120 u-sm-hide u-fromLeftOnLoad">
-            <div id="blog_result"></div>
+          <div class="u-relative article-list u-mt50 u-sm-hide u-fromLeftOnLoad" style="height: calc(100% - 130px);">
+            <div class="u-pin-topfull u-widthfull u-heightfull u-overflowscroll u-pl120 u-pr10">
+              <div id="blog_result"></div>
+            </div>
             <style>
               #blog_result .excerpt { display: none; }
             </style>
@@ -40,7 +42,7 @@
 
           <div class="u-pt60 u-pb40">
             <h1><?= $page->title() ?></h1>
-            <time class="c-greylight"><?= $page->date('%d %B %Y') ?></time>
+            <time class="c-grey u-opacity50"><?= $page->date('%d %B %Y') ?></time>
           </div>
 
           <?= $page->text()->kirbytext() ?>
