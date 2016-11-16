@@ -1,0 +1,12 @@
+Title: Toplantı Odası
+
+----
+
+Text: 
+
+(image: mr1.png class: small)
+(link: https://habita.youcanbook.me/ text: Toplantı Odası Rezerve Et class: button button-primary u-mr10)
+
+----
+
+Cards: 

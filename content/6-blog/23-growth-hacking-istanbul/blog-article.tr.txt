@@ -1,0 +1,21 @@
+Title: Growth Hacking İstanbul
+
+----
+
+Date: 2016-11-09
+
+----
+
+Text: 
+
+(image: gh.jpg class:medium)
+
+(link: http://growthhacking.istanbul/ text: Growth Hacking İstanbul popup: yes) ilk etkinliğini habita'da gerçekleştirdi.
+
+ (link: http://leanmarketing.co/home-en/ text: Lean Marketing popup: yes) ve (link: http://www.userspots.com/ text: Userspots popup: yes)'un birlikteliği ile hazırlanan etkinlikte girişimciler ve pazarlama profesyonelleri için büyüme sürecinin önemli üç temel konusu ele alındı.
+
+Lean Marketing kurucusu Muhammed Tüfekyapan başarılı growth hacking süreci tasarlamak için gerekli üç temel bileşenin neler olduğundan bahsederken, Userspots kurucusu Mustafa Dalcı "UX ve Growth" konusunda paylaşımlarda bulundu. Son olarak (link: http://karakademi.com/ text: Kara Akademi popup: yes) kurucusu Enes Karaboğa ise CRO çalışmalarının inceliklerinden bahsetti.
+
+----
+
+Tags: 
