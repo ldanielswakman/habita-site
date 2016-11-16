@@ -1,4 +1,4 @@
-Title: habita "resmen" açıldı!
+Title: habita resmen açıldı!
 
 ----
 
@@ -8,7 +8,7 @@ Date: 2016-10-06
 
 Text: 
 
-(image: 5-ekim.png class: medium)
+(image: 5-ekim.jpg)
 
 Projeydi, şantiyeydi derken Eylül ayı itibariyle habita'da habitanları ağırlamaya başlamıştık. Tüm operasyonel eksiklerimizi de giderdikten sonra artık sıra resmi açılışa geldi. 
 
