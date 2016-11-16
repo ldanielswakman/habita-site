@@ -6614,6 +6614,14 @@ select.field.field-box {
     .article figure.small img {
       margin: 0 auto;
       max-width: 30%; }
+  .article figure.video {
+    padding-bottom: 65%; }
+    .article figure.video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
   .article p {
     font-family: "Martel", Times, Times New Roman, serif; }
     .article p + p, .article p + figure, .article p + ul, .article p + blockquote {

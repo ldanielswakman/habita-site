@@ -96,6 +96,17 @@ $padding_xs: 1rem;
         max-width: 30%;
       }
     }
+    &.video {
+      padding-bottom: 65%;
+
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
   p {
     font-family: "Martel", Times, Times New Roman, serif;
