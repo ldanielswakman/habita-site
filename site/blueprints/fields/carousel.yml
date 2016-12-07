@@ -1,4 +1,7 @@
 label: Carousel images
+label: >
+  <label>Carousel images</label><br>
+  <small style="color: #999;"sd><i>Ideal image resolution: <strong>1500x750px</strong>. Or, 2:1 aspect ratio (twice as wide as tall), and max 2000px wide.</i></small>
 type: structure
 modalsize: small
 style: table
