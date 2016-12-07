@@ -66,3 +66,17 @@ Cards:
     contact us for <b class="c-orange">prices and info</b>
   action: |
     (link: #expand text: <span class="not-detail">More <i class="ion ion-chevron-down u-ml5 u-opacity50"></i></span><span class="detail">Less <i class="ion ion-chevron-up u-ml5 u-opacity50"></i></span> class: button button-transp) (link: #contact_form rel: habita venue text: I'm interested class: button button-primary u-floatright)
+- 
+  title: habita venue
+  type: event
+  bgcolor: greymedium
+  image: 6f6c0156.jpg
+  icons: >
+    coffee, wifi, printer, presentation,
+    lounge
+  text: |
+    <small class="detail">Multiple options, comfortable spaces capable of accommodating presentations and workshops for groups</small>
+    
+    contact us for <b class="c-orange">prices and info</b>
+  action: |
+    (link: #expand text: <span class="not-detail">More <i class="ion ion-chevron-down u-ml5 u-opacity50"></i></span><span class="detail">Less <i class="ion ion-chevron-up u-ml5 u-opacity50"></i></span> class: button button-transp) (link: #contact_form rel: habita venue text: I'm interested class: button button-primary u-floatright)

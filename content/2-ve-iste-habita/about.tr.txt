@@ -68,6 +68,10 @@ Carousel-images:
 - 
   carousel_image: 1dm47064.jpg
 - 
+  carousel_image: habita17.jpg
+- 
+  carousel_image: habita24.jpg
+- 
   carousel_image: 1dm47066.jpg
 - 
   carousel_image: 1dm47136.jpg
@@ -78,4 +82,6 @@ Carousel-images:
 - 
   carousel_image: 1dm47299.jpg
 - 
-  carousel_image: 1dm47336.jpg
+  carousel_image: habita14.jpg
+- 
+  carousel_image: habita22.jpg

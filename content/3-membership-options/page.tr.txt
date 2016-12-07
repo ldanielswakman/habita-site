@@ -12,9 +12,8 @@ Cards:
   title: Sabit Masalar
   image: desks.jpg
   text: |
-    <small class="detail">Kişiye özel masalarda açık ofis deneyimi.
-    </small>
-    <b class="c-orange">590 TL</b>'den başlayan fiyatlar
+    Kişiye özel masalarda açık ofis deneyimi.
+    <b class="c-orange"> 590 TL</b>'den başlayan fiyatlar
   bgcolor: bluedarkfade
   type: desk
   icons: >
@@ -26,14 +25,14 @@ Cards:
   title: Kapalı Ofisler
   type: office
   bgcolor: bluedarkfade
-  image: closed-offices.jpg
+  image: habita8.jpg
   icons: >
     food, drink, coffee, wifi, envelope,
     printer, time, presentation, boiler,
     security, lounge
   text: |
-    <small class="detail">Farklı büyüklüklerde, dilediğiniz gibi tasarlayacağınız özel ofisler.</small>
-    <b class="c-orange">1800 TL</b>'den başlayan fiyatlar
+    Farklı büyüklüklerde, dilediğiniz gibi tasarlayacağınız hazır ofisler.
+    <b class="c-orange">2000 TL</b>'den başlayan fiyatlar
   action: '(link: #expand text: <span class="not-detail">Detay <i class="ion ion-chevron-down u-ml5 u-opacity50"></i></span><span class="detail">Kapat <i class="ion ion-chevron-up u-ml5 u-opacity50"></i></span> class: button button-transp ) (link: #contact_form rel: Kapalı Ofisler text: İlgileniyorum class: button button-primary u-floatright)'
 - 
   title: Esnek Çalışma Alanları
@@ -44,14 +43,30 @@ Cards:
     food, coffee, wifi, printer, boiler,
     security, lounge
   text: |
-    <small class="detail">Kısa süreli işleriniz için günlük kiralama seçenekleri ile esnek çalışma alanları.</small>
+    Kısa süreli işleriniz için günlük kiralama seçenekleri ile esnek çalışma alanları.
     <b class="c-orange">30 TL</b>'den başlayan fiyatlar
   action: '(link: #expand text: <span class="not-detail">Detay <i class="ion ion-chevron-down u-ml5 u-opacity50"></i></span><span class="detail">Kapat <i class="ion ion-chevron-up u-ml5 u-opacity50"></i></span> class: button button-transp ) (link: #contact_form rel: Esnek Çalışma Alanları text: İlgileniyorum class: button button-primary u-floatright)'
+- 
+  title: habita hall
+  type: event
+  bgcolor: greymedium
+  image: event-space.jpg
+  icons: >
+    coffee, wifi, printer, presentation,
+    security, lounge
+  text: |
+    habita'nın tam kalbinde; etkileşime, paylaşarak büyümeye açık ve yaratıcılığın ön plana çıktığı bir alan.
+    <b class="c-orange">özel fiyatlar</b> için bilgi al
+  action: '(link: #expand text: <span class="not-detail">Detay <i class="ion ion-chevron-down u-ml5 u-opacity50"></i></span><span class="detail">Less <i class="ion ion-chevron-up u-ml5 u-opacity50"></i></span> class: button button-transp) (link: #contact_form rel: habita venue text: İlgileniyorum class: button button-primary u-floatright)'
 - 
   title: habita venue
   type: event
   bgcolor: greymedium
-  image: event-space.jpg
-  icons: coffee, wifi, security, lounge
-  text: '<b class="c-orange">özel fiyatlar</b> için bilgi al'
-  action: '(link: #expand text: <span class="not-detail">More <i class="ion ion-chevron-down u-ml5 u-opacity50"></i></span><span class="detail">Less <i class="ion ion-chevron-up u-ml5 u-opacity50"></i></span> class: button button-transp) (link: #contact_form rel: habita venue text: İlgileniyorum class: button button-primary u-floatright)'
+  image: 6f6c0156.jpg
+  icons: >
+    coffee, wifi, printer, presentation,
+    lounge
+  text: |
+    Her türlü etkinliğinize ev sahipliği yapabilecek bu alanı etkinliğinizin içeriğini bütünleyecek şekilde tasarlayabilir, misafirlerinize etkin ve akılda kalıcı deneyimler yaşatabilirsiniz.
+    <b class="c-orange">özel fiyatlar</b> için bilgi al
+  action: '(link: #expand text: <span class="not-detail">Detay <i class="ion ion-chevron-down u-ml5 u-opacity50"></i></span><span class="detail">Less <i class="ion ion-chevron-up u-ml5 u-opacity50"></i></span> class: button button-transp) (link: #contact_form rel: habita venue text: İlgileniyorum class: button button-primary u-floatright)'
