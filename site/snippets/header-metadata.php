@@ -12,6 +12,6 @@ if (strlen($description) < 1) { $description = $site->description()->html(); }
 
 <!-- Social share parameters -->
 <meta property="og:image" content="<?= (isset($meta_image)) ? $meta_image : $meta_image_url; ?>" />
-<meta property="og:title" content="<?= $page->title() ?>" />
-<meta property="og:site_name" content="<?= $site->title() ?>" />
+<meta property="og:title" content="<? e($page->isHome(), $site->title(), $page->title()) ?>" />
+<meta property="og:site_name" content="<? e($page->isHome(), $site->description()->html(), $site->title()) ?>" />
 <meta property="og:description" content="<?= $description ?>" />
