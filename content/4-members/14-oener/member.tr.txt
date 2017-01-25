@@ -1,0 +1,33 @@
+Title: Öner
+
+----
+
+Job-title: Web Developer
+
+----
+
+Profile-image: fullsizerender.jpg
+
+----
+
+Bio: 
+
+----
+
+Linkedin-url: 
+
+----
+
+Twitter-url: 
+
+----
+
+Facebook-url: 
+
+----
+
+Instagram-url: 
+
+----
+
+Website-url: 
