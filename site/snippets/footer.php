@@ -32,8 +32,11 @@
 </footer>
 
 <?
-// shows awards section if homepage and current date within 60 days of adding date (31 aug)
-if ($page->isHomePage() && (time() - (60*60*24*60)) < strtotime('2016-08-31')) :
+// shows awards section if homepage and current date within 60 days of adding date (31 aug 2016)
+// resurfaced on 2 feb 2017
+$daysShown = 30;
+$fromDate = '2017-02-01';
+if ($page->isHomePage() && (time() - (60*60*24*$daysShown)) < strtotime($fromDate)) :
 ?>
 <section class="bg-white" id="site_awards">
   <div class="row u-pb30">
@@ -43,6 +46,9 @@ if ($page->isHomePage() && (time() - (60*60*24*60)) < strtotime('2016-08-31')) :
       </small>
     </div>
     <div class="col-xs-12 col-sm-7">
+      <a href="http://www.webdesign-inspiration.com/web-design/habitacomtr-34631" target="_blank" class="u-floatleft u-mr30 u-h-opacity50">
+        <img src="<?= url('assets/images/site-awards/webdesign-inspiration.png') ?>" alt="" />
+      </a>
       <a href="http://www.csswinner.com/details/habita-coworking-space/10746" target="_blank" class="u-floatleft u-mr10 u-h-opacity50">
         <img src="<?= url('assets/images/site-awards/csswinner.png') ?>" alt="" />
       </a>
