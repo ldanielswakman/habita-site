@@ -77,7 +77,7 @@ Events-text: İlham veren hikayeler, yol gösterici öneriler, üretilen ve yara
 
 ----
 
-Test-text: Paylaşan, konuşan, tartışan, üreten herkese açık bir komünitenin ortak yaşam ve çalışma alanı.
+Test-text: Paylaşan, konuşan, tartışan ve üreten herkese açık bir komünitenin ortak yaşam ve çalışma alanı...
 
 ----
 
