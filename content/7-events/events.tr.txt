@@ -10,4 +10,8 @@ habita'nın bir tam katını ise **"habita venue"** olarak tasarladık. Her tür
 
 ----
 
+Cards: 
+
+----
+
 Bgimage: event-space.jpg
