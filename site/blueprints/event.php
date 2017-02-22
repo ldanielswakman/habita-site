@@ -2,6 +2,8 @@
 
 title: Event
 pages: false
+options:
+  template: false
 icon: calendar
 fields:
   title:

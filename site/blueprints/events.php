@@ -3,6 +3,8 @@
 title: Events
 pages:
   template: event
+options:
+  template: false
 icon: calendar
 fields:
   title:
