@@ -53,7 +53,7 @@
           <div class="col-xs-9 col-sm-8 col-md-7 article">
 
             <h3><?= $article->title() ?></h3>
-            <time><?= $article->date('%d %B %Y') ?></time>
+            <time><?= (strlen($article->date()) > 0) ? $article->date('%d %B %Y'): $article->modified('%d %B %Y'); ?></time>
             <p class="u-lineheight20 u-mt5"><small><?= excerpt($article->text(), 100) ?></small></p>
 
           </div>

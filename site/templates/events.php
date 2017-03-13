@@ -52,7 +52,7 @@
 
           <div class="row row-internalpadding">
 
-            <? foreach ($site->find('events')->children()->visible()->flip() as $event) : ?>
+            <? foreach ($site->find('events')->children()->visible()->flip()->sortBy('date', 'desc') as $event) : ?>
 
               <div class="col-xs-12 col-sm-6 col-md-4 u-flex-grow1">
                 <div class="card bg-white u-mb20">
