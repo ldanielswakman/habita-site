@@ -40,6 +40,9 @@
   <?= css($css_assets) ?>
   <?= js($js_assets) ?>
 
+  <link rel="alternate" href="http://habita.com.tr" hreflang="tr-TR" />
+  <link rel="alternate" href="http://habita.com.tr/en" hreflang="en-GB" />
+
   <link id="favicon" rel="shortcut icon" href="<?= url('assets/images/favicon_loading.ico') ?>">
 
 </head>
