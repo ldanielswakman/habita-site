@@ -1,0 +1,29 @@
+Title: SOL FOOD CINEMA
+
+----
+
+Date: 2017-05-26
+
+----
+
+Start-time: 19:00
+
+----
+
+End-time: 22:00
+
+----
+
+Info: 
+
+----
+
+Cover-image: solfood.png
+
+----
+
+Description: İtalya'dan Singapur'a kadar uzanan bir yolculukta, bir aşçı (Guglielmo) ve bir film yapımcısının (Cameron) ilham veren hikayesini dinlerken, İtalyan şefimizin yol boyu deneyimleriyle oluşturduğu bir birinden lezzetli menüyü tadarak bu heyecan dolu yolcuğa adım adım ortak olduk.
+
+----
+
+Facebook-link: 

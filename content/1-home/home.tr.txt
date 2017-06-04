@@ -26,13 +26,23 @@ Carousel-images:
 - 
   carousel_image: space-overview.jpg
 - 
+  carousel_image: o53a3889.jpg
+- 
   carousel_image: corner-conversation.jpg
 - 
+  carousel_image: o53a3982.jpg
+- 
+  carousel_image: o53a4016.jpg
+- 
+  carousel_image: o53a4013.jpg
+- 
+  carousel_image: o53a4022.jpg
+- 
+  carousel_image: o53a4029.jpg
+- 
+  carousel_image: o53a3971.jpg
+- 
   carousel_image: desk-detail.jpg
-- 
-  carousel_image: sitting-meeting.jpg
-- 
-  carousel_image: cabin-kitchen.jpg
 - 
   carousel_image: plants-desks.jpg
 

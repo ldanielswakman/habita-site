@@ -11,9 +11,9 @@ Cards:
 - 
   title: Sabit Masalar
   image: desks.jpg
-  text: |
-    Kişiye özel masalarda açık ofis deneyimi.
-    <b class="c-orange"> 590 TL</b>'den başlayan fiyatlar
+  text: >
+    Kişiye özel masalarda açık ofis
+    deneyimi.
   bgcolor: bluedarkfade
   type: desk
   icons: >
@@ -30,9 +30,9 @@ Cards:
     food, drink, coffee, wifi, envelope,
     printer, time, presentation, boiler,
     security, lounge
-  text: |
-    Farklı büyüklüklerde, dilediğiniz gibi tasarlayacağınız hazır ofisler.
-    <b class="c-orange">2000 TL</b>'den başlayan fiyatlar
+  text: >
+    Farklı büyüklüklerde, dilediğiniz
+    gibi tasarlayacağınız hazır ofisler.
   action: '(link: #expand text: <span class="not-detail">Detay <i class="ion ion-chevron-down u-ml5 u-opacity50"></i></span><span class="detail">Kapat <i class="ion ion-chevron-up u-ml5 u-opacity50"></i></span> class: button button-transp ) (link: #contact_form rel: Kapalı Ofisler text: İlgileniyorum class: button button-primary u-floatright)'
 - 
   title: Esnek Çalışma Alanları
@@ -42,9 +42,10 @@ Cards:
   icons: >
     food, coffee, wifi, printer, boiler,
     security, lounge
-  text: |
-    Kısa süreli işleriniz için günlük kiralama seçenekleri ile esnek çalışma alanları.
-    <b class="c-orange">30 TL</b>'den başlayan fiyatlar
+  text: >
+    Kısa süreli işleriniz için günlük
+    kiralama seçenekleri ile esnek
+    çalışma alanları.
   action: '(link: #expand text: <span class="not-detail">Detay <i class="ion ion-chevron-down u-ml5 u-opacity50"></i></span><span class="detail">Kapat <i class="ion ion-chevron-up u-ml5 u-opacity50"></i></span> class: button button-transp ) (link: #contact_form rel: Esnek Çalışma Alanları text: İlgileniyorum class: button button-primary u-floatright)'
 - 
   title: habita hall

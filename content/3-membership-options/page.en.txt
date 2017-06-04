@@ -18,7 +18,6 @@ Cards:
   text: |
     <small class="detail">Open office experience with dedicated desks
     </small>
-    starting from <b class="c-orange"> 590 TL</b>
   bgcolor: bluedarkfade
   type: desk
   icons: >
@@ -36,9 +35,7 @@ Cards:
     food, drink, coffee, wifi, envelope,
     printer, time, presentation, boiler,
     security, lounge
-  text: |
-    <small class="detail">Design your private office in any way you want</small>
-    starting from <b class="c-orange">1800 TL</b>
+  text: '<small class="detail">Design your private office in any way you want</small>'
   action: |
     (link: #expand text: <span class="not-detail">More <i class="ion ion-chevron-down u-ml5 u-opacity50"></i></span><span class="detail">Less <i class="ion ion-chevron-up u-ml5 u-opacity50"></i></span> class: button button-transp) (link: #contact_form rel: Closed offices text: I'm interested class: button button-primary u-floatright)
 - 
@@ -49,9 +46,7 @@ Cards:
   icons: >
     food, coffee, wifi, printer, boiler,
     security, lounge
-  text: |
-    <small class="detail">Flexible working spaces and lounges.</small>
-    starting from <b class="c-orange">30 TL</b>
+  text: '<small class="detail">Flexible working spaces and lounges.</small>'
   action: |
     (link: #expand text: <span class="not-detail">More <i class="ion ion-chevron-down u-ml5 u-opacity50"></i></span><span class="detail">Less <i class="ion ion-chevron-up u-ml5 u-opacity50"></i></span> class: button button-transp) (link: #contact_form rel: Flexible desks text: I'm interested class: button button-primary u-floatright)
 - 

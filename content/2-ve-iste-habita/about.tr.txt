@@ -64,13 +64,19 @@ Features:
 Carousel-images: 
 
 - 
-  carousel_image: 1dm46997.jpg
+  carousel_image: o53a4013.jpg
 - 
   carousel_image: 1dm47064.jpg
 - 
+  carousel_image: o53a4026.jpg
+- 
   carousel_image: habita17.jpg
 - 
+  carousel_image: o53a3944.jpg
+- 
   carousel_image: habita24.jpg
+- 
+  carousel_image: habita22.jpg
 - 
   carousel_image: 1dm47066.jpg
 - 
@@ -83,5 +89,3 @@ Carousel-images:
   carousel_image: 1dm47299.jpg
 - 
   carousel_image: habita14.jpg
-- 
-  carousel_image: habita22.jpg

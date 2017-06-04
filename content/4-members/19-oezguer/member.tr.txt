@@ -1,0 +1,33 @@
+Title: Özgür
+
+----
+
+Job-title: Mimar
+
+----
+
+Profile-image: img_1753.jpg
+
+----
+
+Bio: 
+
+----
+
+Linkedin-url: 
+
+----
+
+Twitter-url: 
+
+----
+
+Facebook-url: 
+
+----
+
+Instagram-url: 
+
+----
+
+Website-url: http://www.ozgurkayabay.com
