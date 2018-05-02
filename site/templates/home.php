@@ -69,7 +69,7 @@
 
             <? if (in_array('blog', $boxes)) : ?>
               <div class="bg-white-faded90 u-pa15 u-widthfull u-appearOnLoad u-mb1r">
-                <a href="<?= url('blog') ?>" class="button button-small button-outline-reveal u-floatright">See all</a>
+                <a href="<?= url('blog') ?>" class="button button-small button-outline-reveal u-floatright"><?= l::get('see_all') ?></a>
                 <h4 class="h4-capped"><?= strtoupper($site->find('blog')->title()) ?></h4>
                 <div id="blog_result"></div>
               </div>
@@ -80,7 +80,7 @@
 
             <? if (in_array('event', $boxes)) : ?>
               <div class="bg-white-faded90 u-pa15 u-widthfull u-appearOnLoad u-mb1r">
-                <a href="<?= url('events') ?>" class="button button-small button-outline-reveal u-floatright">See all</a>
+                <a href="<?= url('events') ?>" class="button button-small button-outline-reveal u-floatright"><?= l::get('see_all') ?></a>
                 <h4 class="h4-capped"><?= strtoupper($site->find('events')->title()) ?></h4>
                 <div id="event_result"></div>
               </div>

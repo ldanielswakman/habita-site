@@ -27,3 +27,4 @@ l::set('min_2_char', 'min 2 characters');
 l::set('search_habitans', 'Search habitans...');
 l::set('result', 'result');
 l::set('results', 'results');
+l::set('see_all', 'See all');

@@ -27,3 +27,4 @@ l::set('min_2_char', 'en az 2 karakter');
 l::set('search_habitans', 'Habitan\'larda ara...');
 l::set('result', 'sonuç');
 l::set('results', 'sonuç');
+l::set('see_all', 'Tümü');
