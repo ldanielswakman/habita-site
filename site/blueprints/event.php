@@ -2,6 +2,7 @@
 
 title: Event
 pages: false
+preview: parent
 options:
   template: false
 icon: calendar

@@ -1,0 +1,1 @@
+<? go($page->parent()->url() . '#' . $page->uid()) ?>

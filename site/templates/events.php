@@ -55,7 +55,7 @@
             <? foreach ($site->find('events')->children()->visible()->flip()->sortBy('date', 'desc') as $event) : ?>
 
               <div class="col-xs-12 col-sm-6 col-md-4 u-flex-grow1">
-                <div class="card bg-white u-mb20">
+                <div class="card bg-white u-mb20" id="<?= $event->slug() ?>">
                   <?
                   $bgimage = '';
                   if ($image = $event->cover_image()) {
@@ -70,7 +70,7 @@
                   <div class="u-pa20">
 
                     <h3><?= $event->title() ?></h3>
-                    <date><?= $event->date('%d %B %Y') ?></date>
+                    <a href="<?= $event->url() ?>"><date><?= $event->date('%d %B %Y') ?></date></a>
 
                     <? $excerpt_length = 140; ?>
                     <? if(strlen($event->description()) > $excerpt_length) : ?>
