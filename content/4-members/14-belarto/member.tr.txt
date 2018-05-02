@@ -1,0 +1,33 @@
+Title: Belarto
+
+----
+
+Job-title: 
+
+----
+
+Profile-image: dene-belocuk.png
+
+----
+
+Bio: 
+
+----
+
+Linkedin-url: 
+
+----
+
+Twitter-url: 
+
+----
+
+Facebook-url: 
+
+----
+
+Instagram-url: 
+
+----
+
+Website-url: 

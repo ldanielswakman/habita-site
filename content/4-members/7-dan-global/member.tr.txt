@@ -1,0 +1,33 @@
+Title: Dan Global
+
+----
+
+Job-title: Digital Agency Network
+
+----
+
+Profile-image: dan-deneme1.png
+
+----
+
+Bio: 
+
+----
+
+Linkedin-url: 
+
+----
+
+Twitter-url: 
+
+----
+
+Facebook-url: 
+
+----
+
+Instagram-url: 
+
+----
+
+Website-url: 

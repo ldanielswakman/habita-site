@@ -1,0 +1,33 @@
+Title: Scorp
+
+----
+
+Job-title: 
+
+----
+
+Profile-image: scorp.png
+
+----
+
+Bio: 
+
+----
+
+Linkedin-url: 
+
+----
+
+Twitter-url: 
+
+----
+
+Facebook-url: 
+
+----
+
+Instagram-url: 
+
+----
+
+Website-url: 

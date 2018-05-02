@@ -1,0 +1,33 @@
+Title: Dobo
+
+----
+
+Job-title: Creative Agency
+
+----
+
+Profile-image: dobo-logo.png
+
+----
+
+Bio: 
+
+----
+
+Linkedin-url: 
+
+----
+
+Twitter-url: 
+
+----
+
+Facebook-url: 
+
+----
+
+Instagram-url: 
+
+----
+
+Website-url: 

@@ -1,0 +1,33 @@
+Title: Lala
+
+----
+
+Job-title: 
+
+----
+
+Profile-image: lalalalalalalala.png
+
+----
+
+Bio: 
+
+----
+
+Linkedin-url: 
+
+----
+
+Twitter-url: 
+
+----
+
+Facebook-url: 
+
+----
+
+Instagram-url: 
+
+----
+
+Website-url: 
